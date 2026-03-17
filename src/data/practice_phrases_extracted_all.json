@@ -1898,7 +1898,7 @@
   {
     "id": 317,
     "turkish": "2 okulun",
-    "english": "of 2 schools",
+    "english": "of two schools",
     "source_page": 9
   },
   {
@@ -2552,13 +2552,13 @@
   {
     "id": 426,
     "turkish": "İki bardak suyla",
-    "english": "with 2 glasses of water",
+    "english": "with two glasses of water",
     "source_page": 12
   },
   {
     "id": 427,
     "turkish": "Üç şişe sütle",
-    "english": "with 3 bottles of milk",
+    "english": "with three bottles of milk",
     "source_page": 12
   },
   {
@@ -2576,25 +2576,25 @@
   {
     "id": 430,
     "turkish": "İki fincan kahveyle",
-    "english": "with 2 cups of coffee",
+    "english": "with two cups of coffee",
     "source_page": 12
   },
   {
     "id": 431,
     "turkish": "Üç kutu kolayla",
-    "english": "with 3 cans of coke",
+    "english": "with three cans of coke",
     "source_page": 12
   },
   {
     "id": 432,
     "turkish": "Üç kutu kolanın",
-    "english": "of 3 cans of coke",
+    "english": "of three cans of coke",
     "source_page": 12
   },
   {
     "id": 433,
     "turkish": "Üç kutu kolaya",
-    "english": "to 3 cans of coke",
+    "english": "to three cans of coke",
     "source_page": 12
   },
   {
@@ -2624,19 +2624,19 @@
   {
     "id": 438,
     "turkish": "İki bardak suyun",
-    "english": "of 2 glasses of water",
+    "english": "of two glasses of water",
     "source_page": 12
   },
   {
     "id": 439,
     "turkish": "İki bardak suyu",
-    "english": "2 glasses of water",
+    "english": "two",
     "source_page": 12
   },
   {
     "id": 440,
     "turkish": "İki bardak suya",
-    "english": "to 2 glasses of water",
+    "english": "to two glasses of water",
     "source_page": 12
   },
   {
@@ -2671,7 +2671,7 @@
   },
   {
     "id": 446,
-    "turkish": "kıştan winter",
+    "turkish": "kıştan",
     "english": "from the winter",
     "source_page": 13
   },
@@ -2822,7 +2822,7 @@
   {
     "id": 471,
     "turkish": "gözlerim için",
-    "english": "from my eyes",
+    "english": "for my eyes",
     "source_page": 13
   },
   {
@@ -4610,7 +4610,7 @@
   {
     "id": 769,
     "turkish": "yıldızlar yüzünden",
-    "english": "because the stars",
+    "english": "because of the stars",
     "source_page": 20
   },
   {
@@ -5119,7 +5119,7 @@
   },
   {
     "id": 854,
-    "turkish": "Dört aile yüzünde",
+    "turkish": "Dört aile yüzünden",
     "english": "because of four families",
     "source_page": 22
   },
@@ -5191,7 +5191,7 @@
   },
   {
     "id": 866,
-    "turkish": "Br doktor yüzünden",
+    "turkish": "Bir doktor yüzünden",
     "english": "because of a doctor",
     "source_page": 22
   },
@@ -5281,7 +5281,7 @@
   },
   {
     "id": 881,
-    "turkish": "Senin çocuklarımdan sonra",
+    "turkish": "Senin çocuklarından sonra",
     "english": "after your children",
     "source_page": 23
   },
@@ -6326,7 +6326,7 @@
   {
     "id": 1055,
     "turkish": "pazar günü",
-    "english": "on monday",
+    "english": "on sunday",
     "source_page": 27
   },
   {
@@ -7274,7 +7274,7 @@
   {
     "id": 1213,
     "turkish": "2 kutu kolada",
-    "english": "in two cans on coke",
+    "english": "in two cans of coke",
     "source_page": 30
   },
   {
@@ -7418,7 +7418,7 @@
   {
     "id": 1237,
     "turkish": "Senin Tişörtünde",
-    "english": "on the t-shirt",
+    "english": "on your t-shirt",
     "source_page": 31
   },
   {

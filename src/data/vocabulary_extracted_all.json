@@ -1,7592 +1,2074 @@
 [
   {
     "id": 1,
-    "turkish": "İnsanlar",
-    "english": "the people",
-    "source_page": 1
+    "english": "THE DAY",
+    "pronunciation_tr": "DI-DEY",
+    "turkish": "GÜN",
+    "source_page": 2
   },
   {
     "id": 2,
-    "turkish": "Kadınlar",
-    "english": "the women",
-    "source_page": 1
+    "english": "MONDAY",
+    "pronunciation_tr": "MAN-DEY",
+    "turkish": "PAZARTESİ",
+    "source_page": 2
   },
   {
     "id": 3,
-    "turkish": "Çocuklar",
-    "english": "the children",
-    "source_page": 1
+    "english": "TUESDAY",
+    "pronunciation_tr": "TÜĞÜZ-DEY",
+    "turkish": "SALI",
+    "source_page": 2
   },
   {
     "id": 4,
-    "turkish": "Erkekler",
-    "english": "the men",
-    "source_page": 1
+    "english": "WEDNESDAY",
+    "pronunciation_tr": "VED-NIS-DEY",
+    "turkish": "ÇARŞAMBA",
+    "source_page": 2
   },
   {
     "id": 5,
-    "turkish": "Evler",
-    "english": "the houses",
-    "source_page": 1
+    "english": "THURSDAY",
+    "pronunciation_tr": "THÖRS-DEY",
+    "turkish": "PERŞEMBE",
+    "source_page": 2
   },
   {
     "id": 6,
-    "turkish": "Portakallar",
-    "english": "the oranges",
-    "source_page": 1
+    "english": "FRIDAY",
+    "pronunciation_tr": "FI-RAY-DEY",
+    "turkish": "CUMA",
+    "source_page": 2
   },
   {
     "id": 7,
-    "turkish": "Elmalar",
-    "english": "the apples",
-    "source_page": 1
+    "english": "SATURDAY",
+    "pronunciation_tr": "SE-TIR-DEY",
+    "turkish": "CUMARTESİ",
+    "source_page": 2
   },
   {
     "id": 8,
-    "turkish": "Sular water",
-    "english": "the water",
-    "source_page": 1
+    "english": "SUNDAY",
+    "pronunciation_tr": "SAN-DEY",
+    "turkish": "PAZAR",
+    "source_page": 2
   },
   {
     "id": 9,
-    "turkish": "Yağmurlar",
-    "english": "the rain",
-    "source_page": 1
+    "english": "HOLIDAY",
+    "pronunciation_tr": "HA-Lİ-DEY",
+    "turkish": "TATİL",
+    "source_page": 2
   },
   {
     "id": 10,
-    "turkish": "Kumlar",
-    "english": "the sand",
-    "source_page": 1
+    "english": "BIRTHDAY",
+    "pronunciation_tr": "BÖRTH-DEY",
+    "turkish": "DOĞUMGÜNÜ",
+    "source_page": 2
   },
   {
     "id": 11,
-    "turkish": "Saçlar",
-    "english": "the hair",
-    "source_page": 1
+    "english": "THE MONTH",
+    "pronunciation_tr": "DI-MONT",
+    "turkish": "AY",
+    "source_page": 3
   },
   {
     "id": 12,
-    "turkish": "Doktorlar",
-    "english": "the doctors",
-    "source_page": 1
+    "english": "JANUARY",
+    "pronunciation_tr": "CE-NU-ERİ",
+    "turkish": "OCAK",
+    "source_page": 3
   },
   {
     "id": 13,
-    "turkish": "Otobüsler",
-    "english": "the buses",
-    "source_page": 1
+    "english": "FEBRUARY",
+    "pronunciation_tr": "FEB-RU-ERİ",
+    "turkish": "ŞUBAT",
+    "source_page": 3
   },
   {
     "id": 14,
-    "turkish": "Kirazlar",
-    "english": "the cherries",
-    "source_page": 1
+    "english": "MARCH",
+    "pronunciation_tr": "MARÇ",
+    "turkish": "MART",
+    "source_page": 3
   },
   {
     "id": 15,
-    "turkish": "Ülkeler",
-    "english": "the countries",
-    "source_page": 1
+    "english": "APRIL",
+    "pronunciation_tr": "EYP-RIL",
+    "turkish": "NİSAN",
+    "source_page": 3
   },
   {
     "id": 16,
-    "turkish": "Şehirler",
-    "english": "the cities",
-    "source_page": 1
+    "english": "MAY",
+    "pronunciation_tr": "MEY",
+    "turkish": "MAYIS",
+    "source_page": 3
   },
   {
     "id": 17,
-    "turkish": "Dağlar",
-    "english": "the mountains",
-    "source_page": 1
+    "english": "JUNE",
+    "pronunciation_tr": "CUĞUN",
+    "turkish": "HAZİRAN",
+    "source_page": 3
   },
   {
     "id": 18,
-    "turkish": "Mevsimler",
-    "english": "the seasons",
-    "source_page": 1
+    "english": "JULY",
+    "pronunciation_tr": "CU-LAY",
+    "turkish": "TEMMUZ",
+    "source_page": 3
   },
   {
     "id": 19,
-    "turkish": "Dakikalar",
-    "english": "the minutes",
-    "source_page": 1
+    "english": "AUGUST",
+    "pronunciation_tr": "OO-GUST",
+    "turkish": "AĞUSTOS",
+    "source_page": 3
   },
   {
     "id": 20,
-    "turkish": "Yıllar",
-    "english": "the years",
-    "source_page": 1
+    "english": "SEPTEMBER",
+    "pronunciation_tr": "SEP-TEM-BIR",
+    "turkish": "EYLÜL",
+    "source_page": 4
   },
   {
     "id": 21,
-    "turkish": "İlkbaharda",
-    "english": "the springs",
-    "source_page": 1
+    "english": "OCTOBER",
+    "pronunciation_tr": "AK-TAA-BIR",
+    "turkish": "EKİM",
+    "source_page": 4
   },
   {
     "id": 22,
-    "turkish": "Eylüller",
-    "english": "septembers",
-    "source_page": 1
+    "english": "NOVEMBER",
+    "pronunciation_tr": "NO-VEM-BIR",
+    "turkish": "KASIM",
+    "source_page": 4
   },
   {
     "id": 23,
-    "turkish": "Kışlar",
-    "english": "the winters",
-    "source_page": 1
+    "english": "DECEMBER",
+    "pronunciation_tr": "Dİ-SEM-BIR",
+    "turkish": "ARALIK",
+    "source_page": 4
   },
   {
     "id": 24,
-    "turkish": "Pazartesiler",
-    "english": "mondays",
-    "source_page": 1
+    "english": "THE SEASON",
+    "pronunciation_tr": "DI-Sİİ-ZIN",
+    "turkish": "MEVSİM",
+    "source_page": 5
   },
   {
     "id": 25,
-    "turkish": "Cumartesiler",
-    "english": "saturdays",
-    "source_page": 1
+    "english": "THE SPRING",
+    "pronunciation_tr": "DI-SIP-RİNG",
+    "turkish": "İLKBAHAR",
+    "source_page": 5
   },
   {
     "id": 26,
-    "turkish": "Pazarlar",
-    "english": "sundays",
-    "source_page": 1
+    "english": "THE SUMMER",
+    "pronunciation_tr": "DI-SA-MIR",
+    "turkish": "YAZ",
+    "source_page": 5
   },
   {
     "id": 27,
-    "turkish": "Sabahlar",
-    "english": "the mornings",
-    "source_page": 1
+    "english": "THE AUTUMN",
+    "pronunciation_tr": "DI-OO-TUM",
+    "turkish": "SONBAHAR",
+    "source_page": 5
   },
   {
     "id": 28,
-    "turkish": "Diller",
-    "english": "the languages",
-    "source_page": 1
+    "english": "THE WINTER",
+    "pronunciation_tr": "DI-VİN-TIR",
+    "turkish": "KIŞ",
+    "source_page": 5
   },
   {
     "id": 29,
-    "turkish": "Ağızlar",
-    "english": "the mouths",
-    "source_page": 1
+    "english": "THE TIME",
+    "pronunciation_tr": "DI-TAYM",
+    "turkish": "ZAMAN",
+    "source_page": 6
   },
   {
     "id": 30,
-    "turkish": "Gövdeler",
-    "english": "the bodies",
-    "source_page": 1
+    "english": "THE SECOND",
+    "pronunciation_tr": "DI-SE-KIND",
+    "turkish": "SANİYE",
+    "source_page": 6
   },
   {
     "id": 31,
-    "turkish": "Şehirler",
-    "english": "the cities",
-    "source_page": 1
+    "english": "THE MINUTE",
+    "pronunciation_tr": "DI-Mi-NIT",
+    "turkish": "DAKİKA",
+    "source_page": 6
   },
   {
     "id": 32,
-    "turkish": "Ekmekler",
-    "english": "the bread",
-    "source_page": 1
+    "english": "THE HOUR",
+    "pronunciation_tr": "DI-A-VIR",
+    "turkish": "SAAT",
+    "source_page": 6
   },
   {
     "id": 33,
-    "turkish": "Çaylar",
-    "english": "the tea",
-    "source_page": 1
+    "english": "THE DAY",
+    "pronunciation_tr": "DI-DEY",
+    "turkish": "GÜN",
+    "source_page": 6
   },
   {
     "id": 34,
-    "turkish": "Bıçaklar",
-    "english": "the knives",
-    "source_page": 1
+    "english": "THE WEEK",
+    "pronunciation_tr": "DI-VİİK",
+    "turkish": "HAFTA",
+    "source_page": 6
   },
   {
     "id": 35,
-    "turkish": "Yapraklar",
-    "english": "the leaves",
-    "source_page": 1
+    "english": "THE MONTH",
+    "pronunciation_tr": "DI-MONT",
+    "turkish": "AY",
+    "source_page": 6
   },
   {
     "id": 36,
-    "turkish": "Koyunlar",
-    "english": "the sheep",
-    "source_page": 1
+    "english": "THE SEASON",
+    "pronunciation_tr": "DI-Sİİ-ZIN",
+    "turkish": "MEVSİM",
+    "source_page": 6
   },
   {
     "id": 37,
-    "turkish": "Elbiseler",
-    "english": "the dresses",
-    "source_page": 1
+    "english": "THE YEAR",
+    "pronunciation_tr": "DI-Yİ-IR",
+    "turkish": "YIL-SENE",
+    "source_page": 6
   },
   {
     "id": 38,
-    "turkish": "Yağmurlar",
-    "english": "the rain",
-    "source_page": 1
+    "english": "THE JOB",
+    "pronunciation_tr": "DI-CAB",
+    "turkish": "MESLEK",
+    "source_page": 7
   },
   {
     "id": 39,
-    "turkish": "Karlar",
-    "english": "the snow",
-    "source_page": 1
+    "english": "THE TEACHER",
+    "pronunciation_tr": "DI-Tİİ-ÇIR",
+    "turkish": "ÖĞRETMEN",
+    "source_page": 8
   },
   {
     "id": 40,
-    "turkish": "Havalar",
-    "english": "the weather",
-    "source_page": 1
+    "english": "THE MANAGER",
+    "pronunciation_tr": "DI-ME-NI-CIR",
+    "turkish": "YÖNETİCİ",
+    "source_page": 8
   },
   {
     "id": 41,
-    "turkish": "Paralar",
-    "english": "the money",
-    "source_page": 1
+    "english": "THE STUDENT",
+    "pronunciation_tr": "DI-SÜ-TÜ-DINT",
+    "turkish": "ÖĞRENCİ",
+    "source_page": 8
   },
   {
     "id": 42,
-    "turkish": "Buzlar",
-    "english": "the ice",
-    "source_page": 2
+    "english": "THE SOLDIER",
+    "pronunciation_tr": "DI-SOL-CIR",
+    "turkish": "ASKER",
+    "source_page": 8
   },
   {
     "id": 43,
-    "turkish": "Çimenler",
-    "english": "the grass",
-    "source_page": 2
+    "english": "THE WAITER",
+    "pronunciation_tr": "DI-VEY-TIR",
+    "turkish": "GARSON",
+    "source_page": 8
   },
   {
     "id": 44,
-    "turkish": "Hikayeler",
-    "english": "the stories",
-    "source_page": 2
+    "english": "THE COP",
+    "pronunciation_tr": "DI-KAP",
+    "turkish": "POLİS",
+    "source_page": 8
   },
   {
     "id": 45,
-    "turkish": "Yaşamlar",
-    "english": "the lives",
-    "source_page": 2
+    "english": "THE DOCTOR",
+    "pronunciation_tr": "DI-DAK-TIR",
+    "turkish": "DOKTOR",
+    "source_page": 9
   },
   {
     "id": 46,
-    "turkish": "Hayatlar",
-    "english": "the lives",
-    "source_page": 2
+    "english": "WORK",
+    "pronunciation_tr": "VÖRK",
+    "turkish": "İŞ",
+    "source_page": 9
   },
   {
     "id": 47,
-    "turkish": "Dertler",
-    "english": "the problems",
-    "source_page": 2
+    "english": "THE NURSE",
+    "pronunciation_tr": "DI-NÖRS",
+    "turkish": "HEMŞİRE",
+    "source_page": 9
   },
   {
     "id": 48,
-    "turkish": "Saniyeler",
-    "english": "the seconds",
-    "source_page": 2
+    "english": "THE LAWYER",
+    "pronunciation_tr": "DI-LOV-YIR",
+    "turkish": "AVUKAT",
+    "source_page": 9
   },
   {
     "id": 49,
-    "turkish": "Haftalar",
-    "english": "the weeks",
-    "source_page": 2
+    "english": "THE COOK",
+    "pronunciation_tr": "DI-KUK",
+    "turkish": "AŞÇI",
+    "source_page": 9
   },
   {
     "id": 50,
-    "turkish": "Sandalyeler",
-    "english": "the chairs",
-    "source_page": 2
+    "english": "THE VET",
+    "pronunciation_tr": "DI-VET",
+    "turkish": "VETERİNER",
+    "source_page": 9
   },
   {
     "id": 51,
-    "turkish": "Koltuklar",
-    "english": "the couches",
-    "source_page": 2
+    "english": "THE WORKER",
+    "pronunciation_tr": "DI-VÖR-KIR",
+    "turkish": "İŞÇİ",
+    "source_page": 9
   },
   {
     "id": 52,
-    "turkish": "Masalar",
-    "english": "the tables",
-    "source_page": 2
+    "english": "THE PLACE",
+    "pronunciation_tr": "PI-LEY-S",
+    "turkish": "YER-MEKAN",
+    "source_page": 10
   },
   {
     "id": 53,
-    "turkish": "Defterler",
-    "english": "the notebooks",
-    "source_page": 2
+    "english": "THE HOUSE",
+    "pronunciation_tr": "DI-HAVS",
+    "turkish": "EV",
+    "source_page": 10
   },
   {
     "id": 54,
-    "turkish": "çamaşır makineleri",
-    "english": "the laundry machines",
-    "source_page": 2
+    "english": "THE SCHOOL",
+    "pronunciation_tr": "DI-SI-KUĞUL",
+    "turkish": "OKUL",
+    "source_page": 10
   },
   {
     "id": 55,
-    "turkish": "kaşıklar",
-    "english": "the spoons",
-    "source_page": 2
+    "english": "THE BANK",
+    "pronunciation_tr": "DI-BENK",
+    "turkish": "BANKA",
+    "source_page": 10
   },
   {
     "id": 56,
-    "turkish": "bardaklar",
-    "english": "the glasses",
-    "source_page": 2
+    "english": "THE HOSPITAL",
+    "pronunciation_tr": "DI-HAS-Pİ-TIL",
+    "turkish": "HASTANE",
+    "source_page": 10
   },
   {
     "id": 57,
-    "turkish": "bulaşıklar",
-    "english": "the dishes",
-    "source_page": 2
+    "english": "THE SHOP",
+    "pronunciation_tr": "DI-ŞAP",
+    "turkish": "DÜKKAN MARKET",
+    "source_page": 11
   },
   {
     "id": 58,
-    "turkish": "yiyecekler",
-    "english": "the food",
-    "source_page": 2
+    "english": "THE RESTAURANT",
+    "pronunciation_tr": "DI-REST-RANT",
+    "turkish": "RESTORAN LOKANTA",
+    "source_page": 11
   },
   {
     "id": 59,
-    "turkish": "paralar",
-    "english": "the money",
-    "source_page": 2
+    "english": "THE CAFÉ",
+    "pronunciation_tr": "DI-KA-FE",
+    "turkish": "KAFE KAFETERYA",
+    "source_page": 11
   },
   {
     "id": 60,
-    "turkish": "Pantolonlar",
-    "english": "the pants",
-    "source_page": 2
+    "english": "THE OFFICE",
+    "pronunciation_tr": "DI-A-FİS",
+    "turkish": "OFİS İŞYERİ",
+    "source_page": 11
   },
   {
     "id": 61,
-    "turkish": "Kotpantolonlar",
-    "english": "the jeans",
-    "source_page": 2
+    "english": "THE LIVING ROOM",
+    "pronunciation_tr": "DI-Lİ-VİNG RUUM",
+    "turkish": "OTURMA ODASI SALON",
+    "source_page": 12
   },
   {
     "id": 62,
-    "turkish": "Şortlar",
-    "english": "the shorts",
-    "source_page": 2
+    "english": "THE KITCHEN",
+    "pronunciation_tr": "DI-Kİ-ÇIN",
+    "turkish": "MUTFAK",
+    "source_page": 12
   },
   {
     "id": 63,
-    "turkish": "Çoraplar",
-    "english": "the socks",
-    "source_page": 2
+    "english": "THE GUEST ROOM",
+    "pronunciation_tr": "DI-GEST RUUM",
+    "turkish": "MİSAFİR ODASI",
+    "source_page": 12
   },
   {
     "id": 64,
-    "turkish": "Gözlükler",
-    "english": "the glasses",
-    "source_page": 2
+    "english": "THE BEDROOM",
+    "pronunciation_tr": "DI-BED-RUUM",
+    "turkish": "YATAK ODASI",
+    "source_page": 12
   },
   {
     "id": 65,
-    "turkish": "Kapılar",
-    "english": "the doors",
-    "source_page": 2
+    "english": "THE BATHROOM",
+    "pronunciation_tr": "DI-BET-RUUM",
+    "turkish": "BANYO TUVALET",
+    "source_page": 12
   },
   {
     "id": 66,
-    "turkish": "Arabalar",
-    "english": "the cars",
-    "source_page": 2
+    "english": "THE ARMCHAIR",
+    "pronunciation_tr": "DI-ARM-ÇE-YIR",
+    "turkish": "TEKLİ KOLTUK",
+    "source_page": 13
   },
   {
     "id": 67,
-    "turkish": "Köpekler",
-    "english": "the dogs",
-    "source_page": 2
+    "english": "BED",
+    "pronunciation_tr": "DI-BED",
+    "turkish": "YATAK",
+    "source_page": 13
   },
   {
     "id": 68,
-    "turkish": "Pencereler",
-    "english": "the windows",
-    "source_page": 2
+    "english": "CHAIR",
+    "pronunciation_tr": "DI-ÇE-YIR",
+    "turkish": "SANDALYE",
+    "source_page": 13
   },
   {
     "id": 69,
-    "turkish": "Otobüsler",
-    "english": "the buses",
-    "source_page": 2
+    "english": "COUCH",
+    "pronunciation_tr": "DI-KA-UÇ",
+    "turkish": "KANEPE",
+    "source_page": 13
   },
   {
     "id": 70,
-    "turkish": "Kahramanlar",
-    "english": "the heroes",
-    "source_page": 2
+    "english": "PC / COMPUTER",
+    "pronunciation_tr": "DI-Pİ-Sİ DI-KOM-PÜ-TIR",
+    "turkish": "BİLGİSAYAR",
+    "source_page": 13
   },
   {
     "id": 71,
-    "turkish": "Oyuncaklar",
-    "english": "the toys",
-    "source_page": 2
+    "english": "PHONE",
+    "pronunciation_tr": "DI-FOON",
+    "turkish": "TELEFON",
+    "source_page": 13
   },
   {
     "id": 72,
-    "turkish": "Anahtarlar",
-    "english": "the keys",
-    "source_page": 2
+    "english": "TABLE / DESK",
+    "pronunciation_tr": "DI-TEY-BIL / DI-DESK",
+    "turkish": "MASA",
+    "source_page": 13
   },
   {
     "id": 73,
-    "turkish": "Maymunlar",
-    "english": "the monkeys",
-    "source_page": 2
+    "english": "TV",
+    "pronunciation_tr": "DI-Tİ-Vİ",
+    "turkish": "TELEVİZYON",
+    "source_page": 13
   },
   {
     "id": 74,
-    "turkish": "Şehirler",
-    "english": "the cities",
-    "source_page": 2
+    "english": "THE SPOON",
+    "pronunciation_tr": "DI-SI-PUUN",
+    "turkish": "KAŞIK",
+    "source_page": 14
   },
   {
     "id": 75,
-    "turkish": "Kütüphaneler",
-    "english": "the libraries",
-    "source_page": 2
+    "english": "THE PLATE",
+    "pronunciation_tr": "DI-PI-LEYT",
+    "turkish": "TABAK",
+    "source_page": 14
   },
   {
     "id": 76,
-    "turkish": "Kirazlar",
-    "english": "the cherries",
-    "source_page": 2
+    "english": "THE FORK",
+    "pronunciation_tr": "DI-FORK",
+    "turkish": "ÇATAL",
+    "source_page": 14
   },
   {
     "id": 77,
-    "turkish": "Ayaklar",
-    "english": "the feet",
-    "source_page": 2
+    "english": "THE CUP",
+    "pronunciation_tr": "DI-KAP",
+    "turkish": "FİNCAN ÇAY-KAHVE BARDAĞI",
+    "source_page": 14
   },
   {
     "id": 78,
-    "turkish": "Dişler",
-    "english": "the teeth",
-    "source_page": 2
+    "english": "THE KNIFE",
+    "pronunciation_tr": "DI-NAYF",
+    "turkish": "BIÇAK",
+    "source_page": 14
   },
   {
     "id": 79,
-    "turkish": "Hayatlar",
-    "english": "the lives",
-    "source_page": 2
+    "english": "THE BOTTLE",
+    "pronunciation_tr": "DI-BA-TIL",
+    "turkish": "ŞİŞE",
+    "source_page": 14
   },
   {
     "id": 80,
-    "turkish": "Yapraklar",
-    "english": "the leaves",
-    "source_page": 2
+    "english": "THE GLASS",
+    "pronunciation_tr": "DI-GI-LAS",
+    "turkish": "BARDAK - CAM",
+    "source_page": 14
   },
   {
     "id": 81,
-    "turkish": "Bıçaklar",
-    "english": "the knives",
-    "source_page": 2
+    "english": "THE DISHES",
+    "pronunciation_tr": "DI-Dİ-ŞIZ",
+    "turkish": "BULAŞIKLAR",
+    "source_page": 15
   },
   {
     "id": 82,
-    "turkish": "Adamlar",
-    "english": "the men",
-    "source_page": 2
+    "english": "THE LAUNDRY",
+    "pronunciation_tr": "DI-LOĞN-DI-Rİ",
+    "turkish": "KİRLİ ÇAMAŞIRLAR",
+    "source_page": 15
   },
   {
     "id": 83,
-    "turkish": "Kadınlar",
-    "english": "the women",
-    "source_page": 3
+    "english": "THE DISH WASHER",
+    "pronunciation_tr": "DI-DİŞ-VO-ŞIR",
+    "turkish": "BULAŞIK MAKİNESİ",
+    "source_page": 15
   },
   {
     "id": 84,
-    "turkish": "İnsanlar",
-    "english": "the people",
-    "source_page": 3
+    "english": "THE LAUNDRY MACHINE",
+    "pronunciation_tr": "DI-LOĞN-DI-Rİ ME-ŞİİN",
+    "turkish": "ÇAMAŞIR MAKİNESİ",
+    "source_page": 15
   },
   {
     "id": 85,
-    "turkish": "Çocuklar",
-    "english": "the children",
-    "source_page": 3
+    "english": "THE APP",
+    "pronunciation_tr": "DI-EP",
+    "turkish": "APLİKASYON",
+    "source_page": 16
   },
   {
     "id": 86,
-    "turkish": "Fareler",
-    "english": "the mice",
-    "source_page": 3
+    "english": "THE PHOTO",
+    "pronunciation_tr": "DI-FO-TO",
+    "turkish": "FOTOĞRAF",
+    "source_page": 16
   },
   {
     "id": 87,
-    "turkish": "Balıklar",
-    "english": "the fish",
-    "source_page": 3
+    "english": "SOCIAL MEDIA",
+    "pronunciation_tr": "DI-SO-ŞIL-Mİ-Dİ-YA",
+    "turkish": "SOSYAL MEDYA",
+    "source_page": 16
   },
   {
     "id": 88,
-    "turkish": "Geyikler",
-    "english": "the deer",
-    "source_page": 3
+    "english": "THE PICTURE",
+    "pronunciation_tr": "DI-PİK-ÇIR",
+    "turkish": "RESİM",
+    "source_page": 16
   },
   {
     "id": 89,
-    "turkish": "Koyunlar",
-    "english": "the sheep",
-    "source_page": 3
+    "english": "THE STOVE",
+    "pronunciation_tr": "DI-SI-TOV",
+    "turkish": "OCAK",
+    "source_page": 17
   },
   {
     "id": 90,
-    "turkish": "Gözler",
-    "english": "the eyes",
-    "source_page": 3
+    "english": "THE OVEN",
+    "pronunciation_tr": "DI-O-VIN",
+    "turkish": "FIRIN",
+    "source_page": 17
   },
   {
     "id": 91,
-    "turkish": "Kulaklar",
-    "english": "the ears",
-    "source_page": 3
+    "english": "THE FRIDGE",
+    "pronunciation_tr": "DI-FI-RİC",
+    "turkish": "BUZDOLABI",
+    "source_page": 17
   },
   {
     "id": 92,
-    "turkish": "Bacaklar",
-    "english": "the legs",
-    "source_page": 3
+    "english": "THE STRAWBERRY",
+    "pronunciation_tr": "DI-SIT-ROV-BE-Rİ",
+    "turkish": "ÇİLEK",
+    "source_page": 18
   },
   {
     "id": 93,
-    "turkish": "Pantolon",
-    "english": "the pants",
-    "source_page": 3
+    "english": "THE APPLE",
+    "pronunciation_tr": "DI-E-PIL",
+    "turkish": "ELMA",
+    "source_page": 18
   },
   {
     "id": 94,
-    "turkish": "Şort",
-    "english": "the shorts",
-    "source_page": 3
+    "english": "THE ORANGE",
+    "pronunciation_tr": "DI-O-RINÇ",
+    "turkish": "PORTAKAL",
+    "source_page": 18
   },
   {
     "id": 95,
-    "turkish": "Kotpantalon",
-    "english": "the jeans",
-    "source_page": 3
+    "english": "THE BANANA",
+    "pronunciation_tr": "DI-BA-NA-NA",
+    "turkish": "MUZ",
+    "source_page": 18
   },
   {
     "id": 96,
-    "turkish": "Ceketler",
-    "english": "the jackets",
-    "source_page": 3
+    "english": "THE CHERRY",
+    "pronunciation_tr": "DI-ÇE-Rİ",
+    "turkish": "KİRAZ",
+    "source_page": 18
   },
   {
     "id": 97,
-    "turkish": "Tşörtler",
-    "english": "the t-shirts",
-    "source_page": 3
+    "english": "THE FRUITS",
+    "pronunciation_tr": "DI-FU-RÜÜTS",
+    "turkish": "MEYVELER",
+    "source_page": 18
   },
   {
     "id": 98,
-    "turkish": "Gömlekler",
-    "english": "the shirts",
-    "source_page": 3
+    "english": "THE VEGETABLES",
+    "pronunciation_tr": "DI-VEC-TI-BILS",
+    "turkish": "SEBZELER",
+    "source_page": 19
   },
   {
     "id": 99,
-    "turkish": "Sular",
-    "english": "the water",
-    "source_page": 3
+    "english": "THE TOMATO",
+    "pronunciation_tr": "DI-TO-MEY-TO",
+    "turkish": "DOMATES",
+    "source_page": 19
   },
   {
     "id": 100,
-    "turkish": "Sütler",
-    "english": "the milk",
-    "source_page": 3
+    "english": "THE CUCUMBER",
+    "pronunciation_tr": "DI-KÜ-KIM-BIR",
+    "turkish": "SALATALIK",
+    "source_page": 19
   },
   {
     "id": 101,
-    "turkish": "Buzlar",
-    "english": "the ice",
-    "source_page": 3
+    "english": "THE PEPPER",
+    "pronunciation_tr": "DI-PE-PIR",
+    "turkish": "BİBER",
+    "source_page": 19
   },
   {
     "id": 102,
-    "turkish": "Kahveler",
-    "english": "the coffee",
-    "source_page": 3
+    "english": "THE POTATO",
+    "pronunciation_tr": "DI-PO-TEY-TO",
+    "turkish": "PATATES",
+    "source_page": 19
   },
   {
     "id": 103,
-    "turkish": "Çaylar",
-    "english": "the tea",
-    "source_page": 3
+    "english": "TURKEY",
+    "pronunciation_tr": "TÖR-Kİ",
+    "turkish": "TÜRKİYE",
+    "source_page": 20
   },
   {
     "id": 104,
-    "turkish": "Tereyağlar",
-    "english": "the butter",
-    "source_page": 3
+    "english": "TURKISH",
+    "pronunciation_tr": "TÖR-KİŞ",
+    "turkish": "TÜRKÇE / TÜRK",
+    "source_page": 20
   },
   {
     "id": 105,
-    "turkish": "Pirinçler",
-    "english": "the rice",
-    "source_page": 3
+    "english": "AMERICA",
+    "pronunciation_tr": "A-ME-Rİ-KA",
+    "turkish": "AMERİKA",
+    "source_page": 20
   },
   {
     "id": 106,
-    "turkish": "Unlar",
-    "english": "the flour",
-    "source_page": 3
+    "english": "AMERICAN",
+    "pronunciation_tr": "A-ME-Rİ-KIN",
+    "turkish": "AMERİKALI",
+    "source_page": 20
   },
   {
     "id": 107,
-    "turkish": "Kumlar",
-    "english": "the sand",
-    "source_page": 3
+    "english": "GERMANY",
+    "pronunciation_tr": "CÖR-MI-Nİ",
+    "turkish": "ALMANYA",
+    "source_page": 21
   },
   {
     "id": 108,
-    "turkish": "Saçlar",
-    "english": "the hair",
-    "source_page": 3
+    "english": "GERMAN",
+    "pronunciation_tr": "CÖR-MIN",
+    "turkish": "ALMAN / ALMANCA",
+    "source_page": 21
   },
   {
     "id": 109,
-    "turkish": "Çimenler",
-    "english": "the grass",
-    "source_page": 3
+    "english": "FRANCE",
+    "pronunciation_tr": "FI-RENS",
+    "turkish": "FRANSA",
+    "source_page": 21
   },
   {
     "id": 110,
-    "turkish": "Reçeller",
-    "english": "the jam",
-    "source_page": 3
+    "english": "FRENCH",
+    "pronunciation_tr": "FI-RENÇ",
+    "turkish": "FRANSIZ / FRANSIZCA",
+    "source_page": 21
   },
   {
     "id": 111,
-    "turkish": "Ekmekler",
-    "english": "the bread",
-    "source_page": 3
+    "english": "ITALY",
+    "pronunciation_tr": "İ-TI-Lİ",
+    "turkish": "İTALYA",
+    "source_page": 22
   },
   {
     "id": 112,
-    "turkish": "Yemekler",
-    "english": "the food",
-    "source_page": 3
+    "english": "ITALIAN",
+    "pronunciation_tr": "İ-TE-Lİ-YIN",
+    "turkish": "İTALYAN İTALYANCA",
+    "source_page": 22
   },
   {
     "id": 113,
-    "turkish": "Zamanlar",
-    "english": "the time",
-    "source_page": 3
+    "english": "ENGLAND",
+    "pronunciation_tr": "İNG-LIND",
+    "turkish": "İNGİLTERE",
+    "source_page": 22
   },
   {
     "id": 114,
-    "turkish": "Paralar",
-    "english": "the money",
-    "source_page": 3
+    "english": "ENGLISH",
+    "pronunciation_tr": "İNG-LİŞ",
+    "turkish": "İNGİLİZ İNGİLİZCE",
+    "source_page": 22
   },
   {
     "id": 115,
-    "turkish": "Çilekler",
-    "english": "the strawberries",
-    "source_page": 3
+    "english": "RUSSIA",
+    "pronunciation_tr": "RA-ŞA",
+    "turkish": "RUSYA",
+    "source_page": 23
   },
   {
     "id": 116,
-    "turkish": "Kirazlar",
-    "english": "the cherries",
-    "source_page": 3
+    "english": "RUSSIAN",
+    "pronunciation_tr": "RA-ŞIN",
+    "turkish": "RUS / RUSÇA",
+    "source_page": 23
   },
   {
     "id": 117,
-    "turkish": "Elmalar",
-    "english": "the apples",
-    "source_page": 3
+    "english": "CHINA",
+    "pronunciation_tr": "ÇAY-NA",
+    "turkish": "ÇİN",
+    "source_page": 23
   },
   {
     "id": 118,
-    "turkish": "İnsanlar",
-    "english": "the people",
-    "source_page": 4
+    "english": "CHINESE",
+    "pronunciation_tr": "ÇAY-NİİZ",
+    "turkish": "ÇİNLİ / ÇİNCE",
+    "source_page": 23
   },
   {
     "id": 119,
-    "turkish": "Bu insanlar",
-    "english": "these people",
-    "source_page": 4
+    "english": "THE BIRD",
+    "pronunciation_tr": "DI-BÖRD",
+    "turkish": "KUŞ",
+    "source_page": 24
   },
   {
     "id": 120,
-    "turkish": "Şu insanlar",
-    "english": "those people",
-    "source_page": 4
+    "english": "THE CAT",
+    "pronunciation_tr": "DI-KET",
+    "turkish": "KEDİ",
+    "source_page": 24
   },
   {
     "id": 121,
-    "turkish": "3 insan",
-    "english": "three people",
-    "source_page": 4
+    "english": "THE FISH",
+    "pronunciation_tr": "DI-FİŞ",
+    "turkish": "BALIK",
+    "source_page": 24
   },
   {
     "id": 122,
-    "turkish": "5 insan",
-    "english": "five people",
-    "source_page": 4
+    "english": "THE ANIMALS",
+    "pronunciation_tr": "DI-E-Nİ-MILS",
+    "turkish": "HAYVANLAR",
+    "source_page": 24
   },
   {
     "id": 123,
-    "turkish": "Çocuklar",
-    "english": "the children",
-    "source_page": 4
+    "english": "THE DOG",
+    "pronunciation_tr": "DI-DOG",
+    "turkish": "KÖPEK",
+    "source_page": 24
   },
   {
     "id": 124,
-    "turkish": "5 çocuk",
-    "english": "five children",
-    "source_page": 4
+    "english": "THE HORSE",
+    "pronunciation_tr": "DI-HORS",
+    "turkish": "AT",
+    "source_page": 24
   },
   {
     "id": 125,
-    "turkish": "Bu çocuklar",
-    "english": "these children",
-    "source_page": 4
+    "english": "THE MONKEY",
+    "pronunciation_tr": "DI-MAN-Kİ",
+    "turkish": "MAYMUN",
+    "source_page": 25
   },
   {
     "id": 126,
-    "turkish": "Senin çocukların",
-    "english": "your children",
-    "source_page": 4
+    "english": "THE MOUSE",
+    "pronunciation_tr": "DI-MAĞUS",
+    "turkish": "FARE",
+    "source_page": 25
   },
   {
     "id": 127,
-    "turkish": "Benim çocuklarım",
-    "english": "my children",
-    "source_page": 4
+    "english": "THE SNAKE",
+    "pronunciation_tr": "DI-SI-NEYK",
+    "turkish": "YILAN",
+    "source_page": 25
   },
   {
     "id": 128,
-    "turkish": "Evler",
-    "english": "the houses",
-    "source_page": 4
+    "english": "THE FLY",
+    "pronunciation_tr": "DI-FI-LAY",
+    "turkish": "SİNEK",
+    "source_page": 25
   },
   {
     "id": 129,
-    "turkish": "bu evler",
-    "english": "these houses",
-    "source_page": 4
+    "english": "THE ELEPHANT",
+    "pronunciation_tr": "DI-E-Lİ-FINT",
+    "turkish": "FİL",
+    "source_page": 25
   },
   {
     "id": 130,
-    "turkish": "şu evler",
-    "english": "those houses",
-    "source_page": 4
+    "english": "THE MAN",
+    "pronunciation_tr": "DI-MEĞN",
+    "turkish": "ADAM / ERKEK",
+    "source_page": 26
   },
   {
     "id": 131,
-    "turkish": "evlerim",
-    "english": "my houses",
-    "source_page": 4
+    "english": "THE WOMAN",
+    "pronunciation_tr": "DI-VO-MIN",
+    "turkish": "KADIN",
+    "source_page": 26
   },
   {
     "id": 132,
-    "turkish": "senin evlerin",
-    "english": "your houses",
-    "source_page": 4
+    "english": "THE PERSON",
+    "pronunciation_tr": "DI-PÖR-SIN",
+    "turkish": "KİŞİ / BİREY",
+    "source_page": 26
   },
   {
     "id": 133,
-    "turkish": "portakallarım",
-    "english": "my oranges",
-    "source_page": 4
+    "english": "THE CHILD",
+    "pronunciation_tr": "DI-ÇA-YILD",
+    "turkish": "ÇOCUK",
+    "source_page": 26
   },
   {
     "id": 134,
-    "turkish": "3 portakal",
-    "english": "three oranges",
-    "source_page": 4
+    "english": "THE BOY",
+    "pronunciation_tr": "DI-BOY",
+    "turkish": "ERKEK ÇOCUK",
+    "source_page": 26
   },
   {
     "id": 135,
-    "turkish": "Bu portakallar",
-    "english": "these oranges",
-    "source_page": 4
+    "english": "THE GIRL",
+    "pronunciation_tr": "DI-GÖRL",
+    "turkish": "KIZ ÇOCUK",
+    "source_page": 26
   },
   {
     "id": 136,
-    "turkish": "Şu elmalar",
-    "english": "those apples",
-    "source_page": 4
+    "english": "THE BABY",
+    "pronunciation_tr": "DI-BEY-Bİ",
+    "turkish": "BEBEK",
+    "source_page": 26
   },
   {
     "id": 137,
-    "turkish": "Elmalar",
-    "english": "the apples",
-    "source_page": 4
+    "english": "THE TEENAGER",
+    "pronunciation_tr": "DI-Tİ-NEY-CIR",
+    "turkish": "ERGEN / GENÇ",
+    "source_page": 26
   },
   {
     "id": 138,
-    "turkish": "Bu elmalar",
-    "english": "these apples",
-    "source_page": 4
+    "english": "THE RELATIVES",
+    "pronunciation_tr": "DI-RE-LA-TİVS",
+    "turkish": "AKRABALAR",
+    "source_page": 27
   },
   {
     "id": 139,
-    "turkish": "10 elma",
-    "english": "ten apples",
-    "source_page": 4
+    "english": "THE FAMILY",
+    "pronunciation_tr": "DI-FE-Mİ-Lİ",
+    "turkish": "AİLE",
+    "source_page": 27
   },
   {
     "id": 140,
-    "turkish": "Doktorlar",
-    "english": "the doctors",
-    "source_page": 4
+    "english": "THE PARENTS",
+    "pronunciation_tr": "DI-PE-RINTS",
+    "turkish": "ANNE + BABA",
+    "source_page": 27
   },
   {
     "id": 141,
-    "turkish": "Bu doktorlar",
-    "english": "these doctors",
-    "source_page": 4
+    "english": "THE FATHER",
+    "pronunciation_tr": "DI-FA-DIR",
+    "turkish": "BABA",
+    "source_page": 27
   },
   {
     "id": 142,
-    "turkish": "Şu doktorlar",
-    "english": "those doctors",
-    "source_page": 4
+    "english": "THE MOTHER",
+    "pronunciation_tr": "DI-MA-DIR",
+    "turkish": "ANNE",
+    "source_page": 27
   },
   {
     "id": 143,
-    "turkish": "mühendisler",
-    "english": "the engineers",
-    "source_page": 4
+    "english": "THE GRANDFATHER",
+    "pronunciation_tr": "DI-GI-REND-FA-DIR",
+    "turkish": "DEDE / BÜYÜKBABA",
+    "source_page": 27
   },
   {
     "id": 144,
-    "turkish": "müdürler",
-    "english": "the managers",
-    "source_page": 4
+    "english": "THE GRANDMOTHER",
+    "pronunciation_tr": "DI-GI-REND-MA-DIR",
+    "turkish": "ANNEANNE / NİNE",
+    "source_page": 27
   },
   {
     "id": 145,
-    "turkish": "çilekler",
-    "english": "the strawberries",
-    "source_page": 4
+    "english": "THE SON",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "ERKEK EVLAT",
+    "source_page": 27
   },
   {
     "id": 146,
-    "turkish": "bu çilekler",
-    "english": "these strawberries",
-    "source_page": 4
+    "english": "THE DAUGHTER",
+    "pronunciation_tr": "DI-DOO-TIR",
+    "turkish": "KIZ EVLAT",
+    "source_page": 27
   },
   {
     "id": 147,
-    "turkish": "şu çilekler",
-    "english": "those strawberries",
-    "source_page": 4
+    "english": "THE GRANDSON",
+    "pronunciation_tr": "DI-GI-REND-SAN",
+    "turkish": "ERKEK TORUN",
+    "source_page": 27
   },
   {
     "id": 148,
-    "turkish": "kirazlar",
-    "english": "the cherries",
-    "source_page": 4
+    "english": "THE GRAND DAUGHTER",
+    "pronunciation_tr": "DI-GI-REND-DOO-TIR",
+    "turkish": "KIZ TORUN",
+    "source_page": 27
   },
   {
     "id": 149,
-    "turkish": "bu kirazlar",
-    "english": "these cherries",
-    "source_page": 4
+    "english": "THE BROTHER",
+    "pronunciation_tr": "DI-BI-RA-DIR",
+    "turkish": "ERKEK KARDEŞ",
+    "source_page": 27
   },
   {
     "id": 150,
-    "turkish": "10 kiraz",
-    "english": "ten cherries",
-    "source_page": 4
+    "english": "THE SISTER",
+    "pronunciation_tr": "DI-SİS-TIR",
+    "turkish": "KIZ KARDEŞ",
+    "source_page": 27
   },
   {
     "id": 151,
-    "turkish": "kirazlarım",
-    "english": "my cherries",
-    "source_page": 4
+    "english": "THE AUNT",
+    "pronunciation_tr": "DI-OONT",
+    "turkish": "HALA / YENGE",
+    "source_page": 27
   },
   {
     "id": 152,
-    "turkish": "günler",
-    "english": "the days",
-    "source_page": 4
+    "english": "THE UNCLE",
+    "pronunciation_tr": "DI-AN-KIL",
+    "turkish": "AMCA / DAYI",
+    "source_page": 27
   },
   {
     "id": 153,
-    "turkish": "bu günler",
-    "english": "these days",
-    "source_page": 4
+    "english": "THE COUSIN",
+    "pronunciation_tr": "DI-KAZIN",
+    "turkish": "KUZEN",
+    "source_page": 27
   },
   {
     "id": 154,
-    "turkish": "şu günler",
-    "english": "those days",
-    "source_page": 4
+    "english": "HERE",
+    "pronunciation_tr": "Hİ-YIR",
+    "turkish": "BURADA",
+    "source_page": 28
   },
   {
     "id": 155,
-    "turkish": "3 gün",
-    "english": "three days",
-    "source_page": 4
+    "english": "THERE",
+    "pronunciation_tr": "DER",
+    "turkish": "ORADA",
+    "source_page": 28
   },
   {
     "id": 156,
-    "turkish": "5 gün",
-    "english": "five days",
-    "source_page": 5
+    "english": "YESTERDAY",
+    "pronunciation_tr": "YES-TIR-DEY",
+    "turkish": "DÜN",
+    "source_page": 28
   },
   {
     "id": 157,
-    "turkish": "Otobüsler",
-    "english": "the buses",
-    "source_page": 5
+    "english": "TODAY",
+    "pronunciation_tr": "TU-DEY",
+    "turkish": "BUGÜN",
+    "source_page": 28
   },
   {
     "id": 158,
-    "turkish": "Oyuncaklar",
-    "english": "the toys",
-    "source_page": 5
+    "english": "TOMORROW",
+    "pronunciation_tr": "TU-MAR-ROV",
+    "turkish": "YARIN",
+    "source_page": 28
   },
   {
     "id": 159,
-    "turkish": "Oyuncaklarım",
-    "english": "my toys",
-    "source_page": 5
+    "english": "THE BREAKFAST",
+    "pronunciation_tr": "DI-BI-REK-FIST",
+    "turkish": "KAHVALTI",
+    "source_page": 28
   },
   {
     "id": 160,
-    "turkish": "bu ülkeler",
-    "english": "these countries",
-    "source_page": 5
+    "english": "THE LUNCH",
+    "pronunciation_tr": "DI-LANÇ",
+    "turkish": "ÖĞLEN YEMEĞİ",
+    "source_page": 28
   },
   {
     "id": 161,
-    "turkish": "benim ülkem",
-    "english": "my country",
-    "source_page": 5
+    "english": "THE DINNER",
+    "pronunciation_tr": "DI-Dİ-NIR",
+    "turkish": "AKŞAM YEMEĞİ",
+    "source_page": 28
   },
   {
     "id": 162,
-    "turkish": "dağlar",
-    "english": "the mountains",
-    "source_page": 5
+    "english": "THE VILLAGE",
+    "pronunciation_tr": "DI-Vİ-LIC",
+    "turkish": "KÖY",
+    "source_page": 29
   },
   {
     "id": 163,
-    "turkish": "mevsimler",
-    "english": "the seasons",
-    "source_page": 5
+    "english": "THE TOWN",
+    "pronunciation_tr": "DI-TAVN",
+    "turkish": "KASABA",
+    "source_page": 29
   },
   {
     "id": 164,
-    "turkish": "saatler",
-    "english": "the hours",
-    "source_page": 5
+    "english": "THE CITY",
+    "pronunciation_tr": "DI-Sİ-Tİ",
+    "turkish": "ŞEHİR",
+    "source_page": 29
   },
   {
     "id": 165,
-    "turkish": "5 saat",
-    "english": "five hours",
-    "source_page": 5
+    "english": "THE COUNTRY",
+    "pronunciation_tr": "DI-KAĞUN-TIRİ",
+    "turkish": "ÜLKE",
+    "source_page": 29
   },
   {
     "id": 166,
-    "turkish": "10 yıl",
-    "english": "ten years",
-    "source_page": 5
+    "english": "THE RIVER",
+    "pronunciation_tr": "DI-Rİ-VIR",
+    "turkish": "NEHİR",
+    "source_page": 29
   },
   {
     "id": 167,
-    "turkish": "bu ilkbaharlar",
-    "english": "these springs",
-    "source_page": 5
+    "english": "THE SEA",
+    "pronunciation_tr": "DI-Sİİ",
+    "turkish": "DENİZ",
+    "source_page": 29
   },
   {
     "id": 168,
-    "turkish": "bu kışlar",
-    "english": "these winters",
-    "source_page": 5
+    "english": "THE LAKE",
+    "pronunciation_tr": "DI-LEYK",
+    "turkish": "GÖL",
+    "source_page": 29
   },
   {
     "id": 169,
-    "turkish": "bu Pazartesiler",
-    "english": "these mondays",
-    "source_page": 5
+    "english": "THE MOUNTAIN",
+    "pronunciation_tr": "DI-MAĞUN-TIN",
+    "turkish": "DAĞ",
+    "source_page": 29
   },
   {
     "id": 170,
-    "turkish": "haftalar",
-    "english": "the weeks",
-    "source_page": 5
+    "english": "THE CAR",
+    "pronunciation_tr": "DI-KAR",
+    "turkish": "ARABA",
+    "source_page": 30
   },
   {
     "id": 171,
-    "turkish": "bu sabahlar",
-    "english": "these mornings",
-    "source_page": 5
+    "english": "THE BUS",
+    "pronunciation_tr": "DI-BAS",
+    "turkish": "OTOBÜS",
+    "source_page": 30
   },
   {
     "id": 172,
-    "turkish": "bu Pazarlar",
-    "english": "these sundays",
-    "source_page": 5
+    "english": "THE TRAIN",
+    "pronunciation_tr": "DI-TI-REYN",
+    "turkish": "TREN",
+    "source_page": 30
   },
   {
     "id": 173,
-    "turkish": "bu akşamlar",
-    "english": "these evenings",
-    "source_page": 5
+    "english": "THE SHIP",
+    "pronunciation_tr": "DI-ŞİP",
+    "turkish": "GEMİ",
+    "source_page": 30
   },
   {
     "id": 174,
-    "turkish": "Masalarım",
-    "english": "my tables",
-    "source_page": 5
+    "english": "THE BOAT",
+    "pronunciation_tr": "DI-BOOT",
+    "turkish": "SANDAL/TEKNE/BOT",
+    "source_page": 30
   },
   {
     "id": 175,
-    "turkish": "Senin masaların",
-    "english": "your tables",
-    "source_page": 5
+    "english": "THE PLANE",
+    "pronunciation_tr": "DI-PI-LEYN",
+    "turkish": "UÇAK",
+    "source_page": 30
   },
   {
     "id": 176,
-    "turkish": "bu masalar",
-    "english": "these tables",
-    "source_page": 5
+    "english": "THE BIKE",
+    "pronunciation_tr": "DI-BAYK",
+    "turkish": "BİSİKLET",
+    "source_page": 30
   },
   {
     "id": 177,
-    "turkish": "şu masalar",
-    "english": "those tables",
-    "source_page": 5
+    "english": "THE MOTORBIKE",
+    "pronunciation_tr": "DI-MA-TIR-BAYK",
+    "turkish": "MOTOSİKLET",
+    "source_page": 30
   },
   {
     "id": 178,
-    "turkish": "aileler",
-    "english": "the families",
-    "source_page": 5
+    "english": "THE ROAD",
+    "pronunciation_tr": "DI-ROOD",
+    "turkish": "YOL / OTOBAN",
+    "source_page": 30
   },
   {
     "id": 179,
-    "turkish": "bu aileler",
-    "english": "these families",
-    "source_page": 5
+    "english": "THE STREET",
+    "pronunciation_tr": "DI-SIT-RİİT",
+    "turkish": "CADDE / SOKAK",
+    "source_page": 30
   },
   {
     "id": 180,
-    "turkish": "bu öğretmenler",
-    "english": "these teachers",
-    "source_page": 5
+    "english": "THE BRIDGE",
+    "pronunciation_tr": "DI-BI-RİC",
+    "turkish": "KÖPRÜ",
+    "source_page": 30
   },
   {
     "id": 181,
-    "turkish": "şu öğretmenler",
-    "english": "those teachers",
-    "source_page": 5
+    "english": "THE TUNNEL",
+    "pronunciation_tr": "DI-TA-NIL",
+    "turkish": "TÜNEL",
+    "source_page": 30
   },
   {
     "id": 182,
-    "turkish": "şehirler",
-    "english": "the cities",
-    "source_page": 5
+    "english": "THE BUS STOP",
+    "pronunciation_tr": "DI-BAS-SI-TAP",
+    "turkish": "OTOBÜS DURAĞI",
+    "source_page": 30
   },
   {
     "id": 183,
-    "turkish": "bu şehirler",
-    "english": "these cities",
-    "source_page": 5
+    "english": "THE STATION",
+    "pronunciation_tr": "DI-SI-TEY-ŞIN",
+    "turkish": "İSTASYON",
+    "source_page": 30
   },
   {
     "id": 184,
-    "turkish": "şu hemşireler",
-    "english": "those nurses",
-    "source_page": 5
+    "english": "THE AIRPORT",
+    "pronunciation_tr": "DI-E-YIR-PORT",
+    "turkish": "HAVAALANI",
+    "source_page": 30
   },
   {
     "id": 185,
-    "turkish": "oturma odaları",
-    "english": "the living rooms",
-    "source_page": 5
+    "english": "THE SUBWAY",
+    "pronunciation_tr": "DI-SAB-VEY",
+    "turkish": "METRO",
+    "source_page": 30
   },
   {
     "id": 186,
-    "turkish": "kaşıklar",
-    "english": "the spoons",
-    "source_page": 5
+    "english": "THE MORNING",
+    "pronunciation_tr": "DI-MOR-NİNG",
+    "turkish": "SABAH",
+    "source_page": 31
   },
   {
     "id": 187,
-    "turkish": "bu kaşıklar",
-    "english": "these spoons",
-    "source_page": 5
+    "english": "NOON",
+    "pronunciation_tr": "NUUN",
+    "turkish": "ÖĞLEN",
+    "source_page": 31
   },
   {
     "id": 188,
-    "turkish": "ofisler",
-    "english": "the offices",
-    "source_page": 5
+    "english": "THE AFTERNOON",
+    "pronunciation_tr": "DI-EFTIR-NUUN",
+    "turkish": "ÖĞLEDEN SONRA",
+    "source_page": 31
   },
   {
     "id": 189,
-    "turkish": "bu ofisler",
-    "english": "these offices",
-    "source_page": 5
+    "english": "THE EVENING",
+    "pronunciation_tr": "DI-İV-NİNG",
+    "turkish": "AKŞAM",
+    "source_page": 31
   },
   {
     "id": 190,
-    "turkish": "kulaklar",
-    "english": "the ears",
-    "source_page": 5
+    "english": "NIGHT",
+    "pronunciation_tr": "NAYT",
+    "turkish": "GECE",
+    "source_page": 31
   },
   {
     "id": 191,
-    "turkish": "kulaklarım",
-    "english": "my ears",
-    "source_page": 5
+    "english": "THE QUESTION",
+    "pronunciation_tr": "DI-KU-ES-ÇIN",
+    "turkish": "SORU",
+    "source_page": 31
   },
   {
     "id": 192,
-    "turkish": "senin kulakların",
-    "english": "your ears",
-    "source_page": 5
+    "english": "THE ANSWER",
+    "pronunciation_tr": "DI-EN-SIR",
+    "turkish": "CEVAP / YANIT",
+    "source_page": 31
   },
   {
     "id": 193,
-    "turkish": "gözler",
-    "english": "the eyes",
-    "source_page": 5
+    "english": "THE PROBLEM",
+    "pronunciation_tr": "DI-PI-RAB-LIM",
+    "turkish": "SORUN / DERT /",
+    "source_page": 31
   },
   {
     "id": 194,
-    "turkish": "gözlerim",
-    "english": "my eyes",
-    "source_page": 5
+    "english": "THE REPORT",
+    "pronunciation_tr": "DI-Rİ-PORT",
+    "turkish": "RAPOR / KARNE",
+    "source_page": 31
   },
   {
     "id": 195,
-    "turkish": "filler",
-    "english": "the elephants",
-    "source_page": 5
+    "english": "THE MEETING",
+    "pronunciation_tr": "DI-Mİ-TİNG",
+    "turkish": "TOPLANTI",
+    "source_page": 31
   },
   {
     "id": 196,
-    "turkish": "sonbaharlar",
-    "english": "the autumns",
-    "source_page": 5
+    "english": "MONEY",
+    "pronunciation_tr": "MA-Nİ",
+    "turkish": "PARA",
+    "source_page": 31
   },
   {
     "id": 197,
-    "turkish": "bu aylar",
-    "english": "these months",
-    "source_page": 5
+    "english": "THE SKY",
+    "pronunciation_tr": "DI-SI-KAY",
+    "turkish": "GÖKYÜZÜ",
+    "source_page": 32
   },
   {
     "id": 198,
-    "turkish": "bu yazlar",
-    "english": "these summers",
-    "source_page": 5
+    "english": "THE STAR",
+    "pronunciation_tr": "DI-SI-TAR",
+    "turkish": "YILDIZ",
+    "source_page": 32
   },
   {
     "id": 199,
-    "turkish": "bu kışlar",
-    "english": "these winters",
-    "source_page": 5
+    "english": "THE MOON",
+    "pronunciation_tr": "DI-MUUN",
+    "turkish": "AY",
+    "source_page": 32
   },
   {
     "id": 200,
-    "turkish": "Bu bilgisayarlar",
-    "english": "these computers",
-    "source_page": 5
+    "english": "THE WORLD",
+    "pronunciation_tr": "DI-VÖRLD",
+    "turkish": "DÜNYA",
+    "source_page": 32
   },
   {
     "id": 201,
-    "turkish": "Arkadaşlar",
-    "english": "the friends",
-    "source_page": 5
+    "english": "THE EARTH",
+    "pronunciation_tr": "DI-ÖRTH",
+    "turkish": "YERKÜRE",
+    "source_page": 32
   },
   {
     "id": 202,
-    "turkish": "Arkadaşlarım",
-    "english": "my friends",
-    "source_page": 5
+    "english": "THE SUN",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "GÜNEŞ",
+    "source_page": 32
   },
   {
     "id": 203,
-    "turkish": "Amcalar",
-    "english": "the uncles",
-    "source_page": 6
+    "english": "THE WEATHER",
+    "pronunciation_tr": "DI-VE-DIR",
+    "turkish": "HAVA / HAVA DURUMU",
+    "source_page": 32
   },
   {
     "id": 204,
-    "turkish": "amcalarım",
-    "english": "my uncles",
-    "source_page": 6
+    "english": "THE RAIN",
+    "pronunciation_tr": "DI-REYN",
+    "turkish": "YAĞMUR",
+    "source_page": 32
   },
   {
     "id": 205,
-    "turkish": "halalarım",
-    "english": "my aunts",
-    "source_page": 6
+    "english": "THE WIND",
+    "pronunciation_tr": "DI-VİND",
+    "turkish": "RÜZGAR",
+    "source_page": 32
   },
   {
     "id": 206,
-    "turkish": "bu pantalonlar",
-    "english": "these pants",
-    "source_page": 6
+    "english": "THE SNOW",
+    "pronunciation_tr": "DI-SI-NOV",
+    "turkish": "KAR",
+    "source_page": 32
   },
   {
     "id": 207,
-    "turkish": "şu insanlar",
-    "english": "those people",
-    "source_page": 6
+    "english": "THE CLOUD",
+    "pronunciation_tr": "DI-KI-LAVD",
+    "turkish": "BULUT",
+    "source_page": 32
   },
   {
     "id": 208,
-    "turkish": "şu kadınlar",
-    "english": "those women",
-    "source_page": 6
+    "english": "THE FOG",
+    "pronunciation_tr": "DI-FOG",
+    "turkish": "SİS",
+    "source_page": 32
   },
   {
     "id": 209,
-    "turkish": "şu çocuklar",
-    "english": "those children",
-    "source_page": 6
+    "english": "THE STORM",
+    "pronunciation_tr": "DI-SI-TORM",
+    "turkish": "FIRTINA",
+    "source_page": 32
   },
   {
     "id": 210,
-    "turkish": "şu fareler",
-    "english": "those mice",
-    "source_page": 6
+    "english": "THE TREE",
+    "pronunciation_tr": "DI-TI-Rİ",
+    "turkish": "AĞAÇ",
+    "source_page": 33
   },
   {
     "id": 211,
-    "turkish": "şu balıklar",
-    "english": "those fish",
-    "source_page": 6
+    "english": "THE FOREST",
+    "pronunciation_tr": "DI-FO-RIST",
+    "turkish": "ORMAN",
+    "source_page": 33
   },
   {
     "id": 212,
-    "turkish": "balıklar",
-    "english": "the fish",
-    "source_page": 6
+    "english": "THE GARDEN",
+    "pronunciation_tr": "DI-GAR-DIN",
+    "turkish": "BAHÇE",
+    "source_page": 33
   },
   {
     "id": 213,
-    "turkish": "balıklarım",
-    "english": "my fish",
-    "source_page": 6
+    "english": "THE FLOWER",
+    "pronunciation_tr": "DI-FI-LA-VIR",
+    "turkish": "ÇİÇEK",
+    "source_page": 33
   },
   {
     "id": 214,
-    "turkish": "senin balıkların",
-    "english": "your fish",
-    "source_page": 6
+    "english": "THE GRASS",
+    "pronunciation_tr": "DI-GI-RES",
+    "turkish": "ÇİMEN",
+    "source_page": 33
   },
   {
     "id": 215,
-    "turkish": "çamaşır makineleri",
-    "english": "the laundry machines",
-    "source_page": 6
+    "english": "THE DOOR",
+    "pronunciation_tr": "DI-DOĞOR",
+    "turkish": "KAPI",
+    "source_page": 33
   },
   {
     "id": 216,
-    "turkish": "bu çamaşır makineleri",
-    "english": "these laundry machines",
-    "source_page": 6
+    "english": "THE WINDOW",
+    "pronunciation_tr": "DI-VİN-DOV",
+    "turkish": "PENCERE",
+    "source_page": 33
   },
   {
     "id": 217,
-    "turkish": "bu ayaklar",
-    "english": "these feet",
-    "source_page": 6
+    "english": "THE FLOOR",
+    "pronunciation_tr": "DI-FI-LOR",
+    "turkish": "ZEMİN / YER",
+    "source_page": 33
   },
   {
     "id": 218,
-    "turkish": "ayaklarım",
-    "english": "my feet",
-    "source_page": 6
+    "english": "LIFE",
+    "pronunciation_tr": "LAYF",
+    "turkish": "HAYAT / YAŞAM / ÖMÜR",
+    "source_page": 34
   },
   {
     "id": 219,
-    "turkish": "dişler",
-    "english": "the teeth",
-    "source_page": 6
+    "english": "LOVE",
+    "pronunciation_tr": "LAV",
+    "turkish": "SEVGİ / AŞK",
+    "source_page": 34
   },
   {
     "id": 220,
-    "turkish": "senin dişlerin",
-    "english": "your teeth",
-    "source_page": 6
+    "english": "LUCK",
+    "pronunciation_tr": "LAK",
+    "turkish": "ŞANS / KISMET",
+    "source_page": 34
   },
   {
     "id": 221,
-    "turkish": "bu bıçaklar",
-    "english": "these knives",
-    "source_page": 6
+    "english": "THE COLOR",
+    "pronunciation_tr": "DI-KA-LIR",
+    "turkish": "RENK",
+    "source_page": 34
   },
   {
     "id": 222,
-    "turkish": "şu bıçaklar",
-    "english": "those knives",
-    "source_page": 6
+    "english": "THE PLACE",
+    "pronunciation_tr": "DI-PI-LEYS",
+    "turkish": "YER",
+    "source_page": 34
   },
   {
     "id": 223,
-    "turkish": "yapraklar",
-    "english": "the leaves",
-    "source_page": 6
+    "english": "THE THING",
+    "pronunciation_tr": "DI-TING",
+    "turkish": "ŞEY",
+    "source_page": 34
   },
   {
     "id": 224,
-    "turkish": "bu yapraklar",
-    "english": "these leaves",
-    "source_page": 6
+    "english": "THE BALL",
+    "pronunciation_tr": "DI-BOL",
+    "turkish": "TOP",
+    "source_page": 34
   },
   {
     "id": 225,
-    "turkish": "bu şehirler",
-    "english": "these cities",
-    "source_page": 6
+    "english": "THE BOOK",
+    "pronunciation_tr": "DI-BUK",
+    "turkish": "KİTAP",
+    "source_page": 34
   },
   {
     "id": 226,
-    "turkish": "şehirler",
-    "english": "the cities",
-    "source_page": 6
+    "english": "THE PENCIL",
+    "pronunciation_tr": "DI-PEN-SIL",
+    "turkish": "KALEM",
+    "source_page": 34
   },
   {
     "id": 227,
-    "turkish": "çiçekler",
-    "english": "the flowers",
-    "source_page": 6
+    "english": "THE TOY",
+    "pronunciation_tr": "DI-TOY",
+    "turkish": "OYUNCAK",
+    "source_page": 34
   },
   {
     "id": 228,
-    "turkish": "dağlar",
-    "english": "the mountains",
-    "source_page": 6
+    "english": "THE STORY",
+    "pronunciation_tr": "DI-SI-TO-Rİ",
+    "turkish": "MASAL / HİKAYE",
+    "source_page": 34
   },
   {
     "id": 229,
-    "turkish": "nehirler",
-    "english": "the rivers",
-    "source_page": 6
+    "english": "THE SONG",
+    "pronunciation_tr": "DI-SANG",
+    "turkish": "ŞARKI",
+    "source_page": 34
   },
   {
     "id": 230,
-    "turkish": "bu dağlar",
-    "english": "these mountains",
-    "source_page": 6
+    "english": "THE NOTEBOOK",
+    "pronunciation_tr": "DI-NOT-BUK",
+    "turkish": "DEFTER",
+    "source_page": 34
   },
   {
     "id": 231,
-    "turkish": "şu dağlar",
-    "english": "those mountains",
-    "source_page": 6
+    "english": "THE NUMBER",
+    "pronunciation_tr": "DI-NAM-BIR",
+    "turkish": "NUMARA / RAKAM",
+    "source_page": 34
   },
   {
     "id": 232,
-    "turkish": "şu göller",
-    "english": "those lakes",
-    "source_page": 6
+    "english": "THE CLOTHES",
+    "pronunciation_tr": "KI-LOOTS",
+    "turkish": "KITAFETLER",
+    "source_page": 35
   },
   {
     "id": 233,
-    "turkish": "bu yüzler",
-    "english": "these faces",
-    "source_page": 6
+    "english": "THE HAT",
+    "pronunciation_tr": "DI-HET",
+    "turkish": "ŞAPKA",
+    "source_page": 35
   },
   {
     "id": 234,
-    "turkish": "bu çiçekler",
-    "english": "these flowers",
-    "source_page": 6
+    "english": "THE JACKET",
+    "pronunciation_tr": "DICE-KIT",
+    "turkish": "CEKET",
+    "source_page": 35
   },
   {
     "id": 235,
-    "turkish": "anneler",
-    "english": "the mothers",
-    "source_page": 6
+    "english": "THE DRESS",
+    "pronunciation_tr": "DI-DI-RES",
+    "turkish": "ELBİSE",
+    "source_page": 35
   },
   {
     "id": 236,
-    "turkish": "babalar",
-    "english": "the fathers",
-    "source_page": 6
+    "english": "THE COAT",
+    "pronunciation_tr": "DI-KOOT",
+    "turkish": "PALTO",
+    "source_page": 35
   },
   {
     "id": 237,
-    "turkish": "mutfaklar",
-    "english": "the kitchens",
-    "source_page": 6
+    "english": "THE JEANS",
+    "pronunciation_tr": "DI-CİİNS",
+    "turkish": "KOT PANTALON",
+    "source_page": 35
   },
   {
     "id": 238,
-    "turkish": "bardaklar",
-    "english": "the glasses",
-    "source_page": 6
+    "english": "THE SHIRT",
+    "pronunciation_tr": "DI-ŞÖRT",
+    "turkish": "GÖMLEK",
+    "source_page": 35
   },
   {
     "id": 239,
-    "turkish": "bardaklarım",
-    "english": "my glasses",
-    "source_page": 6
+    "english": "THE SHOE",
+    "pronunciation_tr": "DI-ŞUU",
+    "turkish": "AYAKKABI",
+    "source_page": 36
   },
   {
     "id": 240,
-    "turkish": "bu Bardaklar",
-    "english": "these glasses",
-    "source_page": 6
+    "english": "THE SWEATER",
+    "pronunciation_tr": "DI-SI-VE-TIR",
+    "turkish": "SÜVETER",
+    "source_page": 36
   },
   {
     "id": 241,
-    "turkish": "şu bardaklar",
-    "english": "those glasses",
-    "source_page": 6
+    "english": "THE SHORT",
+    "pronunciation_tr": "DI-ŞORTS",
+    "turkish": "ŞORT",
+    "source_page": 36
   },
   {
     "id": 242,
-    "turkish": "Benim bardaklarım",
-    "english": "my glasses",
-    "source_page": 6
+    "english": "THE TROUSERS",
+    "pronunciation_tr": "DI-TI-RAV-ZIRS",
+    "turkish": "PANTALON",
+    "source_page": 36
   },
   {
     "id": 243,
-    "turkish": "7 bardak",
-    "english": "seven glasses",
-    "source_page": 6
+    "english": "THE SOCKS",
+    "pronunciation_tr": "DI-SAKS",
+    "turkish": "ÇORAP",
+    "source_page": 36
   },
   {
     "id": 244,
-    "turkish": "4 bilgisayar",
-    "english": "four computers",
-    "source_page": 6
+    "english": "THE WATCH",
+    "pronunciation_tr": "DI-VOTÇ",
+    "turkish": "KOL SAATİ",
+    "source_page": 36
   },
   {
     "id": 245,
-    "turkish": "10 kitap",
-    "english": "ten books",
-    "source_page": 6
+    "english": "THE T-SHIRT",
+    "pronunciation_tr": "DI-Tİ-ŞÖRT",
+    "turkish": "TİŞÖRT",
+    "source_page": 36
   },
   {
     "id": 246,
-    "turkish": "8 defter",
-    "english": "eight notebooks",
-    "source_page": 6
+    "english": "THE HAMBURGER",
+    "pronunciation_tr": "DI-HEM-BÖR-GIR",
+    "turkish": "HAMBURGER",
+    "source_page": 37
   },
   {
     "id": 247,
-    "turkish": "9 oyuncak",
-    "english": "nine toys",
-    "source_page": 6
+    "english": "THE CAKE",
+    "pronunciation_tr": "DI-KEYK",
+    "turkish": "PASTA",
+    "source_page": 37
   },
   {
     "id": 248,
-    "turkish": "20 Sandalye",
-    "english": "twenty chairs",
-    "source_page": 6
+    "english": "THE CHICKEN",
+    "pronunciation_tr": "DI-Çİ-KIN",
+    "turkish": "TAVUK",
+    "source_page": 37
   },
   {
     "id": 249,
-    "turkish": "Şu sandalyeler",
-    "english": "those chairs",
-    "source_page": 6
+    "english": "THE DESSERT",
+    "pronunciation_tr": "DI-Dİ-ZÖRT",
+    "turkish": "TATLI",
+    "source_page": 37
   },
   {
     "id": 250,
-    "turkish": "Bu sandalyeler",
-    "english": "these chairs",
-    "source_page": 7
+    "english": "THE EGG",
+    "pronunciation_tr": "DI-EG",
+    "turkish": "YUMURTA",
+    "source_page": 37
   },
   {
     "id": 251,
-    "turkish": "Senin sandalyelerin",
-    "english": "your chairs",
-    "source_page": 7
+    "english": "THE OLIVE",
+    "pronunciation_tr": "DI-A-LİV",
+    "turkish": "ZEYTİN",
+    "source_page": 37
   },
   {
     "id": 252,
-    "turkish": "Defterlerim",
-    "english": "my notebooks",
-    "source_page": 7
+    "english": "THE PASTA",
+    "pronunciation_tr": "DI-PAS-TA",
+    "turkish": "MAKARNA",
+    "source_page": 37
   },
   {
     "id": 253,
-    "turkish": "Bu defterler",
-    "english": "these notebooks",
-    "source_page": 7
+    "english": "THE PIZZA",
+    "pronunciation_tr": "DI-PİT-ZA",
+    "turkish": "PİZZA",
+    "source_page": 37
   },
   {
     "id": 254,
-    "turkish": "Senin defterlerin",
-    "english": "your notebooks",
-    "source_page": 7
+    "english": "THE SALAD",
+    "pronunciation_tr": "DI-SE-LID",
+    "turkish": "SALATA",
+    "source_page": 37
   },
   {
     "id": 255,
-    "turkish": "6 defter",
-    "english": "six notebooks",
-    "source_page": 7
+    "english": "THE FOOD",
+    "pronunciation_tr": "DI-FUUD",
+    "turkish": "BESİN-GIDA-YEMEK-YİYECEK",
+    "source_page": 37
   },
   {
     "id": 256,
-    "turkish": "2 Elma",
-    "english": "two apples",
-    "source_page": 7
+    "english": "TEA",
+    "pronunciation_tr": "Tİİ",
+    "turkish": "ÇAY",
+    "source_page": 38
   },
   {
     "id": 257,
-    "turkish": "Bu elmalar",
-    "english": "these apples",
-    "source_page": 7
+    "english": "COFFEE",
+    "pronunciation_tr": "KA-Fİ",
+    "turkish": "KAHVE",
+    "source_page": 38
   },
   {
     "id": 258,
-    "turkish": "Benim elmalarım",
-    "english": "my apples",
-    "source_page": 7
+    "english": "WATER",
+    "pronunciation_tr": "VA-DIR",
+    "turkish": "SU",
+    "source_page": 38
   },
   {
     "id": 259,
-    "turkish": "7 Elma",
-    "english": "seven apples",
-    "source_page": 7
+    "english": "COKE",
+    "pronunciation_tr": "KOOK",
+    "turkish": "KOLA",
+    "source_page": 38
   },
   {
     "id": 260,
-    "turkish": "Senin elmaların",
-    "english": "your apples",
-    "source_page": 7
+    "english": "ORANGE JUICE",
+    "pronunciation_tr": "A-RINC-CÜÜS",
+    "turkish": "PORTAKAL SUYU",
+    "source_page": 38
   },
   {
     "id": 261,
-    "turkish": "Restoranlar",
-    "english": "the restaurants",
-    "source_page": 7
+    "english": "MILK",
+    "pronunciation_tr": "MİLK",
+    "turkish": "SÜT",
+    "source_page": 38
   },
   {
     "id": 262,
-    "turkish": "3 restoran",
-    "english": "three restaurants",
-    "source_page": 7
+    "english": "OIL",
+    "pronunciation_tr": "O-YIL",
+    "turkish": "ZEYTİN YAĞ",
+    "source_page": 38
   },
   {
     "id": 263,
-    "turkish": "Bu restoranlar",
-    "english": "these restaurants",
-    "source_page": 7
+    "english": "DRINKS",
+    "pronunciation_tr": "DI-RİNKS",
+    "turkish": "İÇECEKLER",
+    "source_page": 38
   },
   {
     "id": 264,
-    "turkish": "Şu restoranlar",
-    "english": "those restaurants",
-    "source_page": 7
+    "english": "THE SALT",
+    "pronunciation_tr": "DI-SOLT",
+    "turkish": "TUZ",
+    "source_page": 39
   },
   {
     "id": 265,
-    "turkish": "Şu Kitaplar",
-    "english": "those books",
-    "source_page": 7
+    "english": "THE SUGAR",
+    "pronunciation_tr": "DI-ŞU-GIR",
+    "turkish": "ŞEKER",
+    "source_page": 39
   },
   {
     "id": 266,
-    "turkish": "Bu Tatiller",
-    "english": "these holidays",
-    "source_page": 7
+    "english": "THE BREAD",
+    "pronunciation_tr": "DI-BI-RED",
+    "turkish": "EKMEK",
+    "source_page": 39
   },
   {
     "id": 267,
-    "turkish": "Bu Pazartesiler",
-    "english": "these mondays",
-    "source_page": 7
+    "english": "THE BUTTER",
+    "pronunciation_tr": "DI-BA-DIR",
+    "turkish": "TEREYAĞ",
+    "source_page": 39
   },
   {
     "id": 268,
-    "turkish": "İlkbaharlar",
-    "english": "the springs",
-    "source_page": 7
+    "english": "THE HONEY",
+    "pronunciation_tr": "DI-HA-Nİ",
+    "turkish": "BAL",
+    "source_page": 39
   },
   {
     "id": 269,
-    "turkish": "ilkbaharlarım",
-    "english": "my springs",
-    "source_page": 7
+    "english": "THE JAM",
+    "pronunciation_tr": "DI-CEM",
+    "turkish": "REÇEL",
+    "source_page": 39
   },
   {
     "id": 270,
-    "turkish": "bu yazlar",
-    "english": "these summers",
-    "source_page": 7
+    "english": "THE MEAT",
+    "pronunciation_tr": "DI-MİİT",
+    "turkish": "ET",
+    "source_page": 39
   },
   {
     "id": 271,
-    "turkish": "Bu kışlar",
-    "english": "the winters",
-    "source_page": 7
+    "english": "THE CHEESE",
+    "pronunciation_tr": "DI-ÇİİZ",
+    "turkish": "PEYNİR",
+    "source_page": 39
   },
   {
     "id": 272,
-    "turkish": "Bu sonbaharlar",
-    "english": "these autumns",
-    "source_page": 7
+    "english": "THE FOOD",
+    "pronunciation_tr": "DI-FUUD",
+    "turkish": "BESİN-GIDA-YEMEK-YİYECEK",
+    "source_page": 39
   },
   {
     "id": 273,
-    "turkish": "Yıllar",
-    "english": "the years",
-    "source_page": 7
+    "english": "THE BODY",
+    "pronunciation_tr": "DI-BA-Dİ",
+    "turkish": "VÜCUT",
+    "source_page": 40
   },
   {
     "id": 274,
-    "turkish": "yıllarım",
-    "english": "my years",
-    "source_page": 7
+    "english": "THE HAND",
+    "pronunciation_tr": "DI-HEND",
+    "turkish": "EL",
+    "source_page": 40
   },
   {
     "id": 275,
-    "turkish": "haftalar",
-    "english": "the weeks",
-    "source_page": 7
+    "english": "THE ARM",
+    "pronunciation_tr": "DI-ARM",
+    "turkish": "KOL",
+    "source_page": 40
   },
   {
     "id": 276,
-    "turkish": "haftalarım",
-    "english": "my weeks",
-    "source_page": 7
+    "english": "THE FINGER",
+    "pronunciation_tr": "DI-FİN-GIR",
+    "turkish": "PARMAK",
+    "source_page": 40
   },
   {
     "id": 277,
-    "turkish": "5 hafta",
-    "english": "five weeks",
-    "source_page": 7
+    "english": "THE FOOT",
+    "pronunciation_tr": "DI-FUUT",
+    "turkish": "AYAK",
+    "source_page": 40
   },
   {
     "id": 278,
-    "turkish": "3 yıl",
-    "english": "three years",
-    "source_page": 7
+    "english": "THE LEG",
+    "pronunciation_tr": "DI-LEG",
+    "turkish": "BACAK",
+    "source_page": 40
   },
   {
     "id": 279,
-    "turkish": "2 sabah",
-    "english": "two mornings",
-    "source_page": 7
+    "english": "THE TOE",
+    "pronunciation_tr": "DI-TO",
+    "turkish": "AYAK PARMAĞI",
+    "source_page": 40
   },
   {
     "id": 280,
-    "turkish": "Geceler",
-    "english": "the nights",
-    "source_page": 7
+    "english": "THE FACE",
+    "pronunciation_tr": "DI-FEYS",
+    "turkish": "YÜZ-SURAT",
+    "source_page": 41
   },
   {
     "id": 281,
-    "turkish": "öğlenler",
-    "english": "the noons",
-    "source_page": 7
+    "english": "THE EYE",
+    "pronunciation_tr": "DI-AYY",
+    "turkish": "GÖZ",
+    "source_page": 41
   },
   {
     "id": 282,
-    "turkish": "Sabahlar",
-    "english": "the mornings",
-    "source_page": 7
+    "english": "THE NOSE",
+    "pronunciation_tr": "DI-NOOZ",
+    "turkish": "BURUN",
+    "source_page": 41
   },
   {
     "id": 283,
-    "turkish": "Akşamlar",
-    "english": "the evenings",
-    "source_page": 7
+    "english": "THE MOUTH",
+    "pronunciation_tr": "DI-MAUT",
+    "turkish": "AĞIZ",
+    "source_page": 41
   },
   {
     "id": 284,
-    "turkish": "Öğleden sonraları",
-    "english": "the afternoons",
-    "source_page": 7
+    "english": "THE TOOTH",
+    "pronunciation_tr": "DI-TUUT",
+    "turkish": "DİŞ",
+    "source_page": 41
   },
   {
     "id": 285,
-    "turkish": "Şu kadınlar",
-    "english": "those women",
-    "source_page": 7
+    "english": "THE HAIR",
+    "pronunciation_tr": "DI-HE-YIR",
+    "turkish": "SAÇ",
+    "source_page": 41
   },
   {
     "id": 286,
-    "turkish": "Ülkeler",
-    "english": "the countries",
-    "source_page": 7
+    "english": "THE EAR",
+    "pronunciation_tr": "DI-İ-YIR",
+    "turkish": "KULAK",
+    "source_page": 41
   },
   {
     "id": 287,
-    "turkish": "Bu ülkeler",
-    "english": "these countries",
-    "source_page": 7
+    "english": "THE TONGUE",
+    "pronunciation_tr": "DI-TANG",
+    "turkish": "DİL",
+    "source_page": 41
   },
   {
     "id": 288,
-    "turkish": "Şu ülkeler",
-    "english": "those countries",
-    "source_page": 7
+    "english": "THE HEAD",
+    "pronunciation_tr": "DI-HED",
+    "turkish": "KAFA",
+    "source_page": 41
   },
   {
     "id": 289,
-    "turkish": "Odalar",
-    "english": "the rooms",
-    "source_page": 7
+    "english": "THE SUN",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "GÜNEŞ",
+    "source_page": 42
   },
   {
     "id": 290,
-    "turkish": "odalarım",
-    "english": "my rooms",
-    "source_page": 7
+    "english": "THE STORM",
+    "pronunciation_tr": "DI-SI-TORM",
+    "turkish": "FIRTINA",
+    "source_page": 42
   },
   {
     "id": 291,
-    "turkish": "Şu sandalyeler",
-    "english": "those chairs",
-    "source_page": 7
+    "english": "THE WIND",
+    "pronunciation_tr": "DI-VİND",
+    "turkish": "RÜZGAR",
+    "source_page": 42
   },
   {
     "id": 292,
-    "turkish": "Şu masalar",
-    "english": "those tables",
-    "source_page": 7
+    "english": "THE RAIN",
+    "pronunciation_tr": "DI-REYN",
+    "turkish": "YAĞMUR",
+    "source_page": 42
   },
   {
     "id": 293,
-    "turkish": "Bu yataklar",
-    "english": "these beds",
-    "source_page": 7
+    "english": "THE CLOUD",
+    "pronunciation_tr": "DI-KI-LAVD",
+    "turkish": "BULTU",
+    "source_page": 42
   },
   {
     "id": 294,
-    "turkish": "Şu yataklar",
-    "english": "those beds",
-    "source_page": 7
+    "english": "THE SNOW",
+    "pronunciation_tr": "DI-SI-NOV",
+    "turkish": "KAR",
+    "source_page": 42
   },
   {
     "id": 295,
-    "turkish": "Bu sebzeler",
-    "english": "these vegetables",
-    "source_page": 7
+    "english": "THE FOG",
+    "pronunciation_tr": "FAG",
+    "turkish": "SİS",
+    "source_page": 42
   },
   {
     "id": 296,
-    "turkish": "Şu sebzeler",
-    "english": "those vegetables",
-    "source_page": 7
-  },
-  {
-    "id": 297,
-    "turkish": "Şu mutfaklar",
-    "english": "those kitchens",
-    "source_page": 7
-  },
-  {
-    "id": 298,
-    "turkish": "Şu göller",
-    "english": "those lakes",
-    "source_page": 8
-  },
-  {
-    "id": 299,
-    "turkish": "Öğrenciler",
-    "english": "the students",
-    "source_page": 8
-  },
-  {
-    "id": 300,
-    "turkish": "Öğrencilerim",
-    "english": "my students",
-    "source_page": 8
-  },
-  {
-    "id": 301,
-    "turkish": "Bu öğretmenler",
-    "english": "these teachers",
-    "source_page": 8
-  },
-  {
-    "id": 302,
-    "turkish": "Şu doktorlar",
-    "english": "those doctors",
-    "source_page": 8
-  },
-  {
-    "id": 303,
-    "turkish": "Bu öğretmenler",
-    "english": "these teachers",
-    "source_page": 8
-  },
-  {
-    "id": 304,
-    "turkish": "10 öğretmen",
-    "english": "ten teachers",
-    "source_page": 8
-  },
-  {
-    "id": 305,
-    "turkish": "7 doktor",
-    "english": "seven doctors",
-    "source_page": 8
-  },
-  {
-    "id": 306,
-    "turkish": "6 hemşire",
-    "english": "six nurses",
-    "source_page": 8
-  },
-  {
-    "id": 307,
-    "turkish": "5 bilgisayar",
-    "english": "five computers",
-    "source_page": 8
-  },
-  {
-    "id": 308,
-    "turkish": "7 arkadaş",
-    "english": "seven friends",
-    "source_page": 8
-  },
-  {
-    "id": 309,
-    "turkish": "8 çilek",
-    "english": "eight strawberries",
-    "source_page": 8
-  },
-  {
-    "id": 310,
-    "turkish": "4 muz",
-    "english": "four bananas",
-    "source_page": 8
-  },
-  {
-    "id": 311,
-    "turkish": "Muzlar",
-    "english": "the bananas",
-    "source_page": 8
-  },
-  {
-    "id": 312,
-    "turkish": "Meyveler",
-    "english": "the fruits",
-    "source_page": 8
-  },
-  {
-    "id": 313,
-    "turkish": "Benim meyvelerim",
-    "english": "my fruits",
-    "source_page": 8
-  },
-  {
-    "id": 314,
-    "turkish": "Okulun",
-    "english": "of the school",
-    "source_page": 9
-  },
-  {
-    "id": 315,
-    "turkish": "Bu okulun",
-    "english": "of this school",
-    "source_page": 9
-  },
-  {
-    "id": 316,
-    "turkish": "Bu okulların",
-    "english": "of these schools",
-    "source_page": 9
-  },
-  {
-    "id": 317,
-    "turkish": "2 okulun",
-    "english": "of two schools",
-    "source_page": 9
-  },
-  {
-    "id": 318,
-    "turkish": "Okula",
-    "english": "to the school",
-    "source_page": 9
-  },
-  {
-    "id": 319,
-    "turkish": "Okulu",
-    "english": "the school",
-    "source_page": 9
-  },
-  {
-    "id": 320,
-    "turkish": "Okullara",
-    "english": "to the schools",
-    "source_page": 9
-  },
-  {
-    "id": 321,
-    "turkish": "Okulları",
-    "english": "the schools",
-    "source_page": 9
-  },
-  {
-    "id": 322,
-    "turkish": "Evime",
-    "english": "to my house",
-    "source_page": 9
-  },
-  {
-    "id": 323,
-    "turkish": "Evimi",
-    "english": "my house",
-    "source_page": 9
-  },
-  {
-    "id": 324,
-    "turkish": "Evimin",
-    "english": "of my house",
-    "source_page": 9
-  },
-  {
-    "id": 325,
-    "turkish": "Senin evinin",
-    "english": "of your house",
-    "source_page": 9
-  },
-  {
-    "id": 326,
-    "turkish": "Bu evin",
-    "english": "of this house",
-    "source_page": 9
-  },
-  {
-    "id": 327,
-    "turkish": "Şu eve",
-    "english": "to that house",
-    "source_page": 9
-  },
-  {
-    "id": 328,
-    "turkish": "Bu evlere",
-    "english": "to these houses",
-    "source_page": 9
-  },
-  {
-    "id": 329,
-    "turkish": "Bu evlerin",
-    "english": "of these houses",
-    "source_page": 9
-  },
-  {
-    "id": 330,
-    "turkish": "Hayatımın",
-    "english": "of my life",
-    "source_page": 9
-  },
-  {
-    "id": 331,
-    "turkish": "Hayatıma",
-    "english": "to my life",
-    "source_page": 9
-  },
-  {
-    "id": 332,
-    "turkish": "Hayatımı",
-    "english": "my life",
-    "source_page": 9
-  },
-  {
-    "id": 333,
-    "turkish": "Arkadaşıma",
-    "english": "to my friend",
-    "source_page": 9
-  },
-  {
-    "id": 334,
-    "turkish": "Arkadaşlarıma",
-    "english": "to my friends",
-    "source_page": 9
-  },
-  {
-    "id": 335,
-    "turkish": "Arkadaşlarımı",
-    "english": "my friends",
-    "source_page": 9
-  },
-  {
-    "id": 336,
-    "turkish": "Arkadaşlarımın",
-    "english": "of my friends",
-    "source_page": 9
-  },
-  {
-    "id": 337,
-    "turkish": "Ülkemin",
-    "english": "of my country",
-    "source_page": 9
-  },
-  {
-    "id": 338,
-    "turkish": "Senin odanın",
-    "english": "of your room",
-    "source_page": 9
-  },
-  {
-    "id": 339,
-    "turkish": "Bu odanın",
-    "english": "of this room",
-    "source_page": 9
-  },
-  {
-    "id": 340,
-    "turkish": "Şu arabanın",
-    "english": "of that car",
-    "source_page": 9
-  },
-  {
-    "id": 341,
-    "turkish": "Arabalarımın",
-    "english": "of my cars",
-    "source_page": 9
-  },
-  {
-    "id": 342,
-    "turkish": "Yüzümün",
-    "english": "of my face",
-    "source_page": 9
-  },
-  {
-    "id": 343,
-    "turkish": "Gözlerimin",
-    "english": "of my eyes",
-    "source_page": 10
-  },
-  {
-    "id": 344,
-    "turkish": "Senin gözlerinin",
-    "english": "of your eyes",
-    "source_page": 10
-  },
-  {
-    "id": 345,
-    "turkish": "Ellerimin",
-    "english": "of my hands",
-    "source_page": 10
-  },
-  {
-    "id": 346,
-    "turkish": "Elimin",
-    "english": "of my hand",
-    "source_page": 10
-  },
-  {
-    "id": 347,
-    "turkish": "Elime",
-    "english": "to my hand",
-    "source_page": 10
-  },
-  {
-    "id": 348,
-    "turkish": "Elimi",
-    "english": "my hand",
-    "source_page": 10
-  },
-  {
-    "id": 349,
-    "turkish": "Şu elmaları",
-    "english": "those apples",
-    "source_page": 10
-  },
-  {
-    "id": 350,
-    "turkish": "Şu elmaların",
-    "english": "of those apples",
-    "source_page": 10
-  },
-  {
-    "id": 351,
-    "turkish": "Şu elmalara",
-    "english": "to those apples",
-    "source_page": 10
-  },
-  {
-    "id": 352,
-    "turkish": "Oturma odasının",
-    "english": "of the living room",
-    "source_page": 10
-  },
-  {
-    "id": 353,
-    "turkish": "Oturma odasına",
-    "english": "to the living room",
-    "source_page": 10
-  },
-  {
-    "id": 354,
-    "turkish": "Oturma odasını",
-    "english": "the living room",
-    "source_page": 10
-  },
-  {
-    "id": 355,
-    "turkish": "Oturma odalarının",
-    "english": "of the living rooms",
-    "source_page": 10
-  },
-  {
-    "id": 356,
-    "turkish": "Banyonun",
-    "english": "of the bathroom",
-    "source_page": 10
-  },
-  {
-    "id": 357,
-    "turkish": "Mutfağın",
-    "english": "of the kitchen",
-    "source_page": 10
-  },
-  {
-    "id": 358,
-    "turkish": "Benim mutfağımın",
-    "english": "of my kitchen",
-    "source_page": 10
-  },
-  {
-    "id": 359,
-    "turkish": "Benim mutfağıma",
-    "english": "to my kitchen",
-    "source_page": 10
-  },
-  {
-    "id": 360,
-    "turkish": "Benim mutfağımı",
-    "english": "my kitchen",
-    "source_page": 10
-  },
-  {
-    "id": 361,
-    "turkish": "Şu kitapların",
-    "english": "of those books",
-    "source_page": 10
-  },
-  {
-    "id": 362,
-    "turkish": "Kitaplarıma",
-    "english": "to my books",
-    "source_page": 10
-  },
-  {
-    "id": 363,
-    "turkish": "Senin kitaplarını",
-    "english": "your books",
-    "source_page": 10
-  },
-  {
-    "id": 364,
-    "turkish": "Senin kitaplarına",
-    "english": "to your books",
-    "source_page": 10
-  },
-  {
-    "id": 365,
-    "turkish": "Senin kitaplarının",
-    "english": "of your books",
-    "source_page": 10
-  },
-  {
-    "id": 366,
-    "turkish": "Senin ofisinin",
-    "english": "of your office",
-    "source_page": 10
-  },
-  {
-    "id": 367,
-    "turkish": "Ofise",
-    "english": "to the office",
-    "source_page": 10
-  },
-  {
-    "id": 368,
-    "turkish": "Ofisi",
-    "english": "the office",
-    "source_page": 10
-  },
-  {
-    "id": 369,
-    "turkish": "Ofisimin",
-    "english": "of my office",
-    "source_page": 10
-  },
-  {
-    "id": 370,
-    "turkish": "Senin ofisine",
-    "english": "to your office",
-    "source_page": 10
-  },
-  {
-    "id": 371,
-    "turkish": "Bu ofise",
-    "english": "to this office",
-    "source_page": 10
-  },
-  {
-    "id": 372,
-    "turkish": "Şu ofise",
-    "english": "to that office",
-    "source_page": 10
-  },
-  {
-    "id": 373,
-    "turkish": "Bu ofislere",
-    "english": "to these offices",
-    "source_page": 10
-  },
-  {
-    "id": 374,
-    "turkish": "Şu ofislerin",
-    "english": "of those offices",
-    "source_page": 10
-  },
-  {
-    "id": 375,
-    "turkish": "Portakalın",
-    "english": "of the orange",
-    "source_page": 10
-  },
-  {
-    "id": 376,
-    "turkish": "Senin portakalına",
-    "english": "to your orange",
-    "source_page": 10
-  },
-  {
-    "id": 377,
-    "turkish": "Portakallara",
-    "english": "to the oranges",
-    "source_page": 10
-  },
-  {
-    "id": 378,
-    "turkish": "Şu portakalların",
-    "english": "of those oranges",
-    "source_page": 10
-  },
-  {
-    "id": 379,
-    "turkish": "Bu portakalları",
-    "english": "these oranges",
-    "source_page": 10
-  },
-  {
-    "id": 380,
-    "turkish": "Bu portakallara",
-    "english": "to these oranges",
-    "source_page": 10
-  },
-  {
-    "id": 381,
-    "turkish": "Bu portakalların",
-    "english": "of these oranges",
-    "source_page": 10
-  },
-  {
-    "id": 382,
-    "turkish": "Şu okula",
-    "english": "to that school",
-    "source_page": 10
-  },
-  {
-    "id": 383,
-    "turkish": "Bu okula",
-    "english": "to this school",
-    "source_page": 10
-  },
-  {
-    "id": 384,
-    "turkish": "Okullara",
-    "english": "to the schools",
-    "source_page": 10
-  },
-  {
-    "id": 385,
-    "turkish": "Okulların",
-    "english": "of the schools",
-    "source_page": 10
-  },
-  {
-    "id": 386,
-    "turkish": "Okul ile",
-    "english": "with the school",
-    "source_page": 11
-  },
-  {
-    "id": 387,
-    "turkish": "Bu okul olmadan",
-    "english": "without this school",
-    "source_page": 11
-  },
-  {
-    "id": 388,
-    "turkish": "Bu okullarla",
-    "english": "with these schools",
-    "source_page": 11
-  },
-  {
-    "id": 389,
-    "turkish": "2 okul ile",
-    "english": "with 2 schools",
-    "source_page": 11
-  },
-  {
-    "id": 390,
-    "turkish": "Okul olmadan",
-    "english": "without the school",
-    "source_page": 11
-  },
-  {
-    "id": 391,
-    "turkish": "Okullar olmadan",
-    "english": "without the schools",
-    "source_page": 11
-  },
-  {
-    "id": 392,
-    "turkish": "Okullara",
-    "english": "to the schools",
-    "source_page": 11
-  },
-  {
-    "id": 393,
-    "turkish": "Okulların",
-    "english": "of the schools",
-    "source_page": 11
-  },
-  {
-    "id": 394,
-    "turkish": "Evime",
-    "english": "to my house",
-    "source_page": 11
-  },
-  {
-    "id": 395,
-    "turkish": "Evim olmadan",
-    "english": "without my house",
-    "source_page": 11
-  },
-  {
-    "id": 396,
-    "turkish": "Evimin",
-    "english": "of my house",
-    "source_page": 11
-  },
-  {
-    "id": 397,
-    "turkish": "Senin evinin",
-    "english": "of your house",
-    "source_page": 11
-  },
-  {
-    "id": 398,
-    "turkish": "Bu ev ile",
-    "english": "with this house",
-    "source_page": 11
-  },
-  {
-    "id": 399,
-    "turkish": "Şu ev olmadan",
-    "english": "without that house",
-    "source_page": 11
-  },
-  {
-    "id": 400,
-    "turkish": "Bu evler ile",
-    "english": "with these houses",
-    "source_page": 11
-  },
-  {
-    "id": 401,
-    "turkish": "Bu evler olmadan",
-    "english": "without these houses",
-    "source_page": 11
-  },
-  {
-    "id": 402,
-    "turkish": "Hayatımın",
-    "english": "of my life",
-    "source_page": 11
-  },
-  {
-    "id": 403,
-    "turkish": "Hayatıma",
-    "english": "to my life",
-    "source_page": 11
-  },
-  {
-    "id": 404,
-    "turkish": "Hayatımı",
-    "english": "my life",
-    "source_page": 11
-  },
-  {
-    "id": 405,
-    "turkish": "Arkadaşımla",
-    "english": "with my friend",
-    "source_page": 11
-  },
-  {
-    "id": 406,
-    "turkish": "Arkadaşlarımla",
-    "english": "with my friends",
-    "source_page": 11
-  },
-  {
-    "id": 407,
-    "turkish": "Arkadaşlarım olmadan",
-    "english": "without my friends",
-    "source_page": 11
-  },
-  {
-    "id": 408,
-    "turkish": "Arkadaşlarımın",
-    "english": "of my friends",
-    "source_page": 11
-  },
-  {
-    "id": 409,
-    "turkish": "Senin arkadaşların ile",
-    "english": "with your friends",
-    "source_page": 11
-  },
-  {
-    "id": 410,
-    "turkish": "Ülkem olmadan",
-    "english": "without my country",
-    "source_page": 11
-  },
-  {
-    "id": 411,
-    "turkish": "Odam olmadan",
-    "english": "without my room",
-    "source_page": 11
-  },
-  {
-    "id": 412,
-    "turkish": "Bu odayla birlikte",
-    "english": "with this room",
-    "source_page": 11
-  },
-  {
-    "id": 413,
-    "turkish": "Şu arabayla",
-    "english": "with that car",
-    "source_page": 11
-  },
-  {
-    "id": 414,
-    "turkish": "Ayaklarım olmadan",
-    "english": "without my feet",
-    "source_page": 11
-  },
-  {
-    "id": 415,
-    "turkish": "Yüzümle",
-    "english": "with my face",
-    "source_page": 11
-  },
-  {
-    "id": 416,
-    "turkish": "Gözlerim olmadan",
-    "english": "without my eyes",
-    "source_page": 11
-  },
-  {
-    "id": 417,
-    "turkish": "Senin gözlerin olmadan",
-    "english": "without your eyes",
-    "source_page": 11
-  },
-  {
-    "id": 418,
-    "turkish": "Ellerimle",
-    "english": "with my hands",
-    "source_page": 11
-  },
-  {
-    "id": 419,
-    "turkish": "Elim olmadan",
-    "english": "without my hand",
-    "source_page": 11
-  },
-  {
-    "id": 420,
-    "turkish": "Ellerim olmadan",
-    "english": "without my hands",
-    "source_page": 11
-  },
-  {
-    "id": 421,
-    "turkish": "Kahvaltıyla",
-    "english": "with the breakfast",
-    "source_page": 11
-  },
-  {
-    "id": 422,
-    "turkish": "Akşam yemeği olmadan",
-    "english": "without the dinner",
-    "source_page": 11
-  },
-  {
-    "id": 423,
-    "turkish": "Öğlen yemeğiyle beraber",
-    "english": "with the lunch",
-    "source_page": 12
-  },
-  {
-    "id": 424,
-    "turkish": "Oturma odası olmadan",
-    "english": "without the living room",
-    "source_page": 12
-  },
-  {
-    "id": 425,
-    "turkish": "Bir bardak suyla",
-    "english": "with a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 426,
-    "turkish": "İki bardak suyla",
-    "english": "with two glasses of water",
-    "source_page": 12
-  },
-  {
-    "id": 427,
-    "turkish": "Üç şişe sütle",
-    "english": "with three bottles of milk",
-    "source_page": 12
-  },
-  {
-    "id": 428,
-    "turkish": "Bir bardak su olmadan",
-    "english": "without a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 429,
-    "turkish": "Bir kase un ile",
-    "english": "with a bowl of flour",
-    "source_page": 12
-  },
-  {
-    "id": 430,
-    "turkish": "İki fincan kahveyle",
-    "english": "with two cups of coffee",
-    "source_page": 12
-  },
-  {
-    "id": 431,
-    "turkish": "Üç kutu kolayla",
-    "english": "with three cans of coke",
-    "source_page": 12
-  },
-  {
-    "id": 432,
-    "turkish": "Üç kutu kolanın",
-    "english": "of three cans of coke",
-    "source_page": 12
-  },
-  {
-    "id": 433,
-    "turkish": "Üç kutu kolaya",
-    "english": "to three cans of coke",
-    "source_page": 12
-  },
-  {
-    "id": 434,
-    "turkish": "Bir bardak suyu",
-    "english": "a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 435,
-    "turkish": "Bir bardak suyun",
-    "english": "of a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 436,
-    "turkish": "Bir bardak suya",
-    "english": "to a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 437,
-    "turkish": "Bir bardak suyla",
-    "english": "with a glass of water",
-    "source_page": 12
-  },
-  {
-    "id": 438,
-    "turkish": "İki bardak suyun",
-    "english": "of two glasses of water",
-    "source_page": 12
-  },
-  {
-    "id": 439,
-    "turkish": "İki bardak suyu",
-    "english": "two",
-    "source_page": 12
-  },
-  {
-    "id": 440,
-    "turkish": "İki bardak suya",
-    "english": "to two glasses of water",
-    "source_page": 12
-  },
-  {
-    "id": 441,
-    "turkish": "On bardak suya",
-    "english": "to ten glasses of water",
-    "source_page": 12
-  },
-  {
-    "id": 442,
-    "turkish": "Okul için",
-    "english": "for the school",
-    "source_page": 13
-  },
-  {
-    "id": 443,
-    "turkish": "Bu okullardan",
-    "english": "from these schools",
-    "source_page": 13
-  },
-  {
-    "id": 444,
-    "turkish": "ilkbahardan",
-    "english": "from the spring",
-    "source_page": 13
-  },
-  {
-    "id": 445,
-    "turkish": "sonbahar için",
-    "english": "for the autum",
-    "source_page": 13
-  },
-  {
-    "id": 446,
-    "turkish": "kıştan winter",
-    "english": "from the winter",
-    "source_page": 13
-  },
-  {
-    "id": 447,
-    "turkish": "yaz için",
-    "english": "for the summer",
-    "source_page": 13
-  },
-  {
-    "id": 448,
-    "turkish": "Veterinerden",
-    "english": "from the vet",
-    "source_page": 13
-  },
-  {
-    "id": 449,
-    "turkish": "doktor için",
-    "english": "for the doctor",
-    "source_page": 13
-  },
-  {
-    "id": 450,
-    "turkish": "doktordan",
-    "english": "from the doctor",
-    "source_page": 13
-  },
-  {
-    "id": 451,
-    "turkish": "evden",
-    "english": "from the house",
-    "source_page": 13
-  },
-  {
-    "id": 452,
-    "turkish": "senin evinden",
-    "english": "from your house",
-    "source_page": 13
-  },
-  {
-    "id": 453,
-    "turkish": "evim için",
-    "english": "for my house",
-    "source_page": 13
-  },
-  {
-    "id": 454,
-    "turkish": "şu evden",
-    "english": "from that house",
-    "source_page": 13
-  },
-  {
-    "id": 455,
-    "turkish": "bu evler için",
-    "english": "for these houses",
-    "source_page": 13
-  },
-  {
-    "id": 456,
-    "turkish": "hayatımdan",
-    "english": "from my life",
-    "source_page": 13
-  },
-  {
-    "id": 457,
-    "turkish": "2 avukattan",
-    "english": "from two lawyers",
-    "source_page": 13
-  },
-  {
-    "id": 458,
-    "turkish": "4 restoran için",
-    "english": "for four restaurants",
-    "source_page": 13
-  },
-  {
-    "id": 459,
-    "turkish": "2 bardak su için",
-    "english": "for two glasses of water",
-    "source_page": 13
-  },
-  {
-    "id": 460,
-    "turkish": "bir şişe sudan",
-    "english": "from a bottle of water",
-    "source_page": 13
-  },
-  {
-    "id": 461,
-    "turkish": "amerika'dan",
-    "english": "from america",
-    "source_page": 13
-  },
-  {
-    "id": 462,
-    "turkish": "türkiye'den",
-    "english": "from turkey",
-    "source_page": 13
-  },
-  {
-    "id": 463,
-    "turkish": "Türkiye için",
-    "english": "for turkey",
-    "source_page": 13
-  },
-  {
-    "id": 464,
-    "turkish": "ülkem için",
-    "english": "for my country",
-    "source_page": 13
-  },
-  {
-    "id": 465,
-    "turkish": "köyümden village",
-    "english": "from the village",
-    "source_page": 13
-  },
-  {
-    "id": 466,
-    "turkish": "ormanlardan",
-    "english": "from the forests",
-    "source_page": 13
-  },
-  {
-    "id": 467,
-    "turkish": "dağlardan",
-    "english": "from the mountains",
-    "source_page": 13
-  },
-  {
-    "id": 468,
-    "turkish": "nehirlerden",
-    "english": "from the rivers",
-    "source_page": 13
-  },
-  {
-    "id": 469,
-    "turkish": "ayaklarımdan",
-    "english": "from my feet",
-    "source_page": 13
-  },
-  {
-    "id": 470,
-    "turkish": "yüzüm için",
-    "english": "from my face",
-    "source_page": 13
-  },
-  {
-    "id": 471,
-    "turkish": "gözlerim için",
-    "english": "for my eyes",
-    "source_page": 13
-  },
-  {
-    "id": 472,
-    "turkish": "senin gözlerinden",
-    "english": "from your eyes",
-    "source_page": 13
-  },
-  {
-    "id": 473,
-    "turkish": "ellerimden",
-    "english": "from my hands",
-    "source_page": 13
-  },
-  {
-    "id": 474,
-    "turkish": "vücudum için",
-    "english": "for my body",
-    "source_page": 13
-  },
-  {
-    "id": 475,
-    "turkish": "pazartesi için",
-    "english": "for monday",
-    "source_page": 13
-  },
-  {
-    "id": 476,
-    "turkish": "kahvaltıdan",
-    "english": "from the breakfast",
-    "source_page": 13
-  },
-  {
-    "id": 477,
-    "turkish": "akşam yemeği için",
-    "english": "for the dinner",
-    "source_page": 13
-  },
-  {
-    "id": 478,
-    "turkish": "öğlen yemeği için",
-    "english": "for the lunch",
-    "source_page": 13
-  },
-  {
-    "id": 479,
-    "turkish": "oturma odasından",
-    "english": "from the living room",
-    "source_page": 13
-  },
-  {
-    "id": 480,
-    "turkish": "iki bardak su için",
-    "english": "for two glasses of water",
-    "source_page": 13
-  },
-  {
-    "id": 481,
-    "turkish": "üç şişe sütten",
-    "english": "from three bottles of milk",
-    "source_page": 13
-  },
-  {
-    "id": 482,
-    "turkish": "çamaşır Makinasından",
-    "english": "from the laundry machine",
-    "source_page": 13
-  },
-  {
-    "id": 483,
-    "turkish": "bulaşık makinesi için",
-    "english": "for the dishwasher",
-    "source_page": 13
-  },
-  {
-    "id": 484,
-    "turkish": "bilgisayardan",
-    "english": "from the computer",
-    "source_page": 13
-  },
-  {
-    "id": 485,
-    "turkish": "sosyal Medyadan",
-    "english": "from the social media",
-    "source_page": 13
-  },
-  {
-    "id": 486,
-    "turkish": "çocuklarımdan",
-    "english": "from my children",
-    "source_page": 13
-  },
-  {
-    "id": 487,
-    "turkish": "çocuklarım için",
-    "english": "for my children",
-    "source_page": 14
-  },
-  {
-    "id": 488,
-    "turkish": "ailem için",
-    "english": "for my family",
-    "source_page": 14
-  },
-  {
-    "id": 489,
-    "turkish": "2 kase çorba için",
-    "english": "for two bowls of soup",
-    "source_page": 14
-  },
-  {
-    "id": 490,
-    "turkish": "İnsanlardan",
-    "english": "from the people",
-    "source_page": 14
-  },
-  {
-    "id": 491,
-    "turkish": "Sorunlardan",
-    "english": "from the problems",
-    "source_page": 14
-  },
-  {
-    "id": 492,
-    "turkish": "para için",
-    "english": "for money",
-    "source_page": 14
-  },
-  {
-    "id": 493,
-    "turkish": "aşk için",
-    "english": "for love",
-    "source_page": 14
-  },
-  {
-    "id": 494,
-    "turkish": "şans için",
-    "english": "for luck",
-    "source_page": 14
-  },
-  {
-    "id": 495,
-    "turkish": "evimden",
-    "english": "from my house",
-    "source_page": 14
-  },
-  {
-    "id": 496,
-    "turkish": "bu evlerden",
-    "english": "from these houses",
-    "source_page": 14
-  },
-  {
-    "id": 497,
-    "turkish": "bu evler için",
-    "english": "for these houses",
-    "source_page": 14
-  },
-  {
-    "id": 498,
-    "turkish": "bu sorunlardan",
-    "english": "from these problems",
-    "source_page": 14
-  },
-  {
-    "id": 499,
-    "turkish": "doktorumdan",
-    "english": "from my doctor",
-    "source_page": 14
-  },
-  {
-    "id": 500,
-    "turkish": "avukatım için",
-    "english": "for my lawyer",
-    "source_page": 14
-  },
-  {
-    "id": 501,
-    "turkish": "avukatıma",
-    "english": "to my lawyer",
-    "source_page": 14
-  },
-  {
-    "id": 502,
-    "turkish": "avukatımın",
-    "english": "of my lawyer",
-    "source_page": 14
-  },
-  {
-    "id": 503,
-    "turkish": "veterinerler için",
-    "english": "for the vets",
-    "source_page": 14
-  },
-  {
-    "id": 504,
-    "turkish": "veterinerlerden",
-    "english": "from the vets",
-    "source_page": 14
-  },
-  {
-    "id": 505,
-    "turkish": "veterinerlere",
-    "english": "to the vets",
-    "source_page": 14
-  },
-  {
-    "id": 506,
-    "turkish": "veterinerleri",
-    "english": "the vets",
-    "source_page": 14
-  },
-  {
-    "id": 507,
-    "turkish": "veterinerlerle",
-    "english": "with the vets",
-    "source_page": 14
-  },
-  {
-    "id": 508,
-    "turkish": "veterinerlerin",
-    "english": "of the vets",
-    "source_page": 14
-  },
-  {
-    "id": 509,
-    "turkish": "veterinerler olmadan",
-    "english": "without the vets",
-    "source_page": 14
-  },
-  {
-    "id": 510,
-    "turkish": "bu okullardan",
-    "english": "from these schools",
-    "source_page": 14
-  },
-  {
-    "id": 511,
-    "turkish": "şu okullar için",
-    "english": "for those schools",
-    "source_page": 14
-  },
-  {
-    "id": 512,
-    "turkish": "okulum için",
-    "english": "for my school",
-    "source_page": 14
-  },
-  {
-    "id": 513,
-    "turkish": "senin okulundan",
-    "english": "from your school",
-    "source_page": 14
-  },
-  {
-    "id": 514,
-    "turkish": "arkadaşlarımdan",
-    "english": "from my friends",
-    "source_page": 14
-  },
-  {
-    "id": 515,
-    "turkish": "senin arkadaşların için",
-    "english": "for your friends",
-    "source_page": 14
-  },
-  {
-    "id": 516,
-    "turkish": "ailem için",
-    "english": "for my family",
-    "source_page": 14
-  },
-  {
-    "id": 517,
-    "turkish": "çocuklarım için",
-    "english": "for my children",
-    "source_page": 14
-  },
-  {
-    "id": 518,
-    "turkish": "insanlar için",
-    "english": "for the people",
-    "source_page": 14
-  },
-  {
-    "id": 519,
-    "turkish": "insanlardan",
-    "english": "from the people",
-    "source_page": 14
-  },
-  {
-    "id": 520,
-    "turkish": "dişlerimden",
-    "english": "from my teeth",
-    "source_page": 14
-  },
-  {
-    "id": 521,
-    "turkish": "ayaklarımdan",
-    "english": "from my feet",
-    "source_page": 14
-  },
-  {
-    "id": 522,
-    "turkish": "kedilerden",
-    "english": "from the cats",
-    "source_page": 14
-  },
-  {
-    "id": 523,
-    "turkish": "kediler için",
-    "english": "for the cats",
-    "source_page": 14
-  },
-  {
-    "id": 524,
-    "turkish": "yüzümden",
-    "english": "from my face",
-    "source_page": 14
-  },
-  {
-    "id": 525,
-    "turkish": "yüzüm için",
-    "english": "for my face",
-    "source_page": 14
-  },
-  {
-    "id": 526,
-    "turkish": "burnuma",
-    "english": "to my nose",
-    "source_page": 14
-  },
-  {
-    "id": 527,
-    "turkish": "burnumdan",
-    "english": "from my nose",
-    "source_page": 14
-  },
-  {
-    "id": 528,
-    "turkish": "burnum için",
-    "english": "for my nose",
-    "source_page": 14
-  },
-  {
-    "id": 529,
-    "turkish": "burnumun",
-    "english": "of my nose",
-    "source_page": 14
-  },
-  {
-    "id": 530,
-    "turkish": "burnum olmadan",
-    "english": "without my nose",
-    "source_page": 14
-  },
-  {
-    "id": 531,
-    "turkish": "ellerime",
-    "english": "to my hands",
-    "source_page": 14
-  },
-  {
-    "id": 532,
-    "turkish": "ellerimi",
-    "english": "my hands",
-    "source_page": 14
-  },
-  {
-    "id": 533,
-    "turkish": "ellerimle",
-    "english": "with my hands",
-    "source_page": 14
-  },
-  {
-    "id": 534,
-    "turkish": "ellerim olmadan",
-    "english": "without my hands",
-    "source_page": 14
-  },
-  {
-    "id": 535,
-    "turkish": "ellerimin",
-    "english": "of my hands",
-    "source_page": 15
-  },
-  {
-    "id": 536,
-    "turkish": "ellerim için",
-    "english": "for my hands",
-    "source_page": 15
-  },
-  {
-    "id": 537,
-    "turkish": "ellerimden",
-    "english": "from my hands",
-    "source_page": 15
-  },
-  {
-    "id": 538,
-    "turkish": "gözlerinden",
-    "english": "from your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 539,
-    "turkish": "gözlerin için",
-    "english": "for your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 540,
-    "turkish": "gözlerine",
-    "english": "to your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 541,
-    "turkish": "gözlerinin",
-    "english": "of your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 542,
-    "turkish": "gözlerini",
-    "english": "your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 543,
-    "turkish": "gözlerinle",
-    "english": "with your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 544,
-    "turkish": "gözlerin olmadan",
-    "english": "without your eyes",
-    "source_page": 15
-  },
-  {
-    "id": 545,
-    "turkish": "Türkiye’den",
-    "english": "from turkey",
-    "source_page": 15
-  },
-  {
-    "id": 546,
-    "turkish": "Almanya’da",
-    "english": "in germany",
-    "source_page": 15
-  },
-  {
-    "id": 547,
-    "turkish": "Fransa’dan",
-    "english": "from france",
-    "source_page": 15
-  },
-  {
-    "id": 548,
-    "turkish": "İngiltere’den",
-    "english": "from england",
-    "source_page": 15
-  },
-  {
-    "id": 549,
-    "turkish": "Amerika’dan",
-    "english": "from america",
-    "source_page": 15
-  },
-  {
-    "id": 550,
-    "turkish": "Çin’den",
-    "english": "from china",
-    "source_page": 15
-  },
-  {
-    "id": 551,
-    "turkish": "İtalya’dan",
-    "english": "from italy",
-    "source_page": 15
-  },
-  {
-    "id": 552,
-    "turkish": "Türkçe için",
-    "english": "for turkish",
-    "source_page": 15
-  },
-  {
-    "id": 553,
-    "turkish": "İngilizce için",
-    "english": "for english",
-    "source_page": 15
-  },
-  {
-    "id": 554,
-    "turkish": "Fransızca için",
-    "english": "for french",
-    "source_page": 15
-  },
-  {
-    "id": 555,
-    "turkish": "Almanca olmadan",
-    "english": "without german",
-    "source_page": 15
-  },
-  {
-    "id": 556,
-    "turkish": "İtalyanca için",
-    "english": "for italian",
-    "source_page": 15
-  },
-  {
-    "id": 557,
-    "turkish": "Çinliler için",
-    "english": "for chinese",
-    "source_page": 15
-  },
-  {
-    "id": 558,
-    "turkish": "üç kutu kola için",
-    "english": "for three cans of coke",
-    "source_page": 15
-  },
-  {
-    "id": 559,
-    "turkish": "bir bardak sudan",
-    "english": "from a glass of water",
-    "source_page": 15
-  },
-  {
-    "id": 560,
-    "turkish": "bir bardak suyu",
-    "english": "a glass of water",
-    "source_page": 15
-  },
-  {
-    "id": 561,
-    "turkish": "bir bardak suyun",
-    "english": "of a glass of water",
-    "source_page": 15
-  },
-  {
-    "id": 562,
-    "turkish": "bir bardak suyla",
-    "english": "with a glass of water",
-    "source_page": 15
-  },
-  {
-    "id": 563,
-    "turkish": "bir bardak su olmadan",
-    "english": "without a glass of water",
-    "source_page": 15
-  },
-  {
-    "id": 564,
-    "turkish": "iki bardak sudan",
-    "english": "from two glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 565,
-    "turkish": "iki bardak su için",
-    "english": "for two glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 566,
-    "turkish": "iki bardak suyun",
-    "english": "of two glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 567,
-    "turkish": "iki bardak suyu",
-    "english": "two glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 568,
-    "turkish": "iki bardak suya",
-    "english": "to two glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 569,
-    "turkish": "dört bardak su için",
-    "english": "for four glasses of water",
-    "source_page": 15
-  },
-  {
-    "id": 570,
-    "turkish": "Almanya’dan Türkiye’ye",
-    "english": "from germany to turkey",
-    "source_page": 15
-  },
-  {
-    "id": 571,
-    "turkish": "Köylerden şehirlere",
-    "english": "from the villages to the cities",
-    "source_page": 15
-  },
-  {
-    "id": 572,
-    "turkish": "Evden işe",
-    "english": "from home to work",
-    "source_page": 15
-  },
-  {
-    "id": 573,
-    "turkish": "Okuldan eve",
-    "english": "from the school to home",
-    "source_page": 15
-  },
-  {
-    "id": 574,
-    "turkish": "Edirne’den Ardahan’a",
-    "english": "from edirne to ardahan",
-    "source_page": 15
-  },
-  {
-    "id": 575,
-    "turkish": "Kuzeyden Güneye",
-    "english": "from the north to the south",
-    "source_page": 15
-  },
-  {
-    "id": 576,
-    "turkish": "Batıdan Doğuya",
-    "english": "from the west to the east",
-    "source_page": 15
-  },
-  {
-    "id": 577,
-    "turkish": "Sabahtan akşama",
-    "english": "from the morning to the evening",
-    "source_page": 15
-  },
-  {
-    "id": 578,
-    "turkish": "Pazartesiden Salıya",
-    "english": "from monday to tuesday",
-    "source_page": 15
-  },
-  {
-    "id": 579,
-    "turkish": "Ocak’tan Eylül’e",
-    "english": "from january to september",
-    "source_page": 15
-  },
-  {
-    "id": 580,
-    "turkish": "Mart’tan Ekim’e",
-    "english": "from march to october",
-    "source_page": 15
-  },
-  {
-    "id": 581,
-    "turkish": "Şubat’tan Temmuz’a",
-    "english": "from february to july",
-    "source_page": 15
-  },
-  {
-    "id": 582,
-    "turkish": "Ağustos’tan Aralık’a",
-    "english": "from august to december",
-    "source_page": 16
-  },
-  {
-    "id": 583,
-    "turkish": "İlkbahardan sonbahara",
-    "english": "from the spring to the autumn",
-    "source_page": 16
-  },
-  {
-    "id": 584,
-    "turkish": "Yazdan kışa",
-    "english": "from the summer to the winter",
-    "source_page": 16
-  },
-  {
-    "id": 585,
-    "turkish": "Kıştan yaza",
-    "english": "from the winter to the summer",
-    "source_page": 16
-  },
-  {
-    "id": 586,
-    "turkish": "Günden güne",
-    "english": "from the day to day",
-    "source_page": 16
-  },
-  {
-    "id": 587,
-    "turkish": "Benden sana",
-    "english": "from me to you",
-    "source_page": 16
-  },
-  {
-    "id": 588,
-    "turkish": "Gündüzden geceye",
-    "english": "from day to night",
-    "source_page": 16
-  },
-  {
-    "id": 589,
-    "turkish": "Bu evden şu eve",
-    "english": "from this house to that house",
-    "source_page": 16
-  },
-  {
-    "id": 590,
-    "turkish": "Bu ülkeden şu ülkeye",
-    "english": "from this country to that country",
-    "source_page": 16
-  },
-  {
-    "id": 591,
-    "turkish": "Bu evlerden şu evlere",
-    "english": "from these houses to those houses",
-    "source_page": 16
-  },
-  {
-    "id": 592,
-    "turkish": "Bu ükelerden şu ülkelere",
-    "english": "from these countries to those countries",
-    "source_page": 16
-  },
-  {
-    "id": 593,
-    "turkish": "Bilgisayarımdan",
-    "english": "from my computer",
-    "source_page": 16
-  },
-  {
-    "id": 594,
-    "turkish": "Televizyonum için",
-    "english": "for my tv",
-    "source_page": 16
-  },
-  {
-    "id": 595,
-    "turkish": "Telefonuma",
-    "english": "to my phone",
-    "source_page": 16
-  },
-  {
-    "id": 596,
-    "turkish": "Oturma odasından",
-    "english": "from the living room",
-    "source_page": 16
-  },
-  {
-    "id": 597,
-    "turkish": "Misafir odası için",
-    "english": "for the guest room",
-    "source_page": 16
-  },
-  {
-    "id": 598,
-    "turkish": "Öğrencilerim için",
-    "english": "for my students",
-    "source_page": 16
-  },
-  {
-    "id": 599,
-    "turkish": "Okuldan sonra",
-    "english": "after the school",
-    "source_page": 17
-  },
-  {
-    "id": 600,
-    "turkish": "okuldan önce",
-    "english": "before the school",
-    "source_page": 17
-  },
-  {
-    "id": 601,
-    "turkish": "işten sonra",
-    "english": "after work",
-    "source_page": 17
-  },
-  {
-    "id": 602,
-    "turkish": "işten önce",
-    "english": "before work",
-    "source_page": 17
-  },
-  {
-    "id": 603,
-    "turkish": "sonbahardan önce",
-    "english": "before the autumn",
-    "source_page": 17
-  },
-  {
-    "id": 604,
-    "turkish": "sonbaharın ardından",
-    "english": "before the autumn",
-    "source_page": 17
-  },
-  {
-    "id": 605,
-    "turkish": "ilkbahar için",
-    "english": "for the spring",
-    "source_page": 17
-  },
-  {
-    "id": 606,
-    "turkish": "ilkbaharın öncesinde",
-    "english": "before the spring",
-    "source_page": 17
-  },
-  {
-    "id": 607,
-    "turkish": "kışın ardından",
-    "english": "after the winter",
-    "source_page": 17
-  },
-  {
-    "id": 608,
-    "turkish": "yazın öncesinde",
-    "english": "before the summer",
-    "source_page": 17
-  },
-  {
-    "id": 609,
-    "turkish": "ekimden önce",
-    "english": "before october",
-    "source_page": 17
-  },
-  {
-    "id": 610,
-    "turkish": "eylülden sonra",
-    "english": "after september",
-    "source_page": 17
-  },
-  {
-    "id": 611,
-    "turkish": "aralıktan sonra",
-    "english": "after december",
-    "source_page": 17
-  },
-  {
-    "id": 612,
-    "turkish": "ocaktan evvel",
-    "english": "before january",
-    "source_page": 17
-  },
-  {
-    "id": 613,
-    "turkish": "marttan sonra",
-    "english": "after march",
-    "source_page": 17
-  },
-  {
-    "id": 614,
-    "turkish": "mayıstan evvel",
-    "english": "before may",
-    "source_page": 17
-  },
-  {
-    "id": 615,
-    "turkish": "şubattan önce",
-    "english": "before february",
-    "source_page": 17
-  },
-  {
-    "id": 616,
-    "turkish": "nisan'ın ardından",
-    "english": "after april",
-    "source_page": 17
-  },
-  {
-    "id": 617,
-    "turkish": "haziran'la beraber",
-    "english": "with june",
-    "source_page": 17
-  },
-  {
-    "id": 618,
-    "turkish": "haziran olmadan",
-    "english": "without june",
-    "source_page": 17
-  },
-  {
-    "id": 619,
-    "turkish": "hazirana",
-    "english": "to june",
-    "source_page": 17
-  },
-  {
-    "id": 620,
-    "turkish": "haziran için",
-    "english": "for june",
-    "source_page": 17
-  },
-  {
-    "id": 621,
-    "turkish": "hazirandan",
-    "english": "from june",
-    "source_page": 17
-  },
-  {
-    "id": 622,
-    "turkish": "haziranIN",
-    "english": "of june",
-    "source_page": 17
-  },
-  {
-    "id": 623,
-    "turkish": "haziran'ın ardından",
-    "english": "after june",
-    "source_page": 17
-  },
-  {
-    "id": 624,
-    "turkish": "temmuz'un ardından",
-    "english": "after july",
-    "source_page": 17
-  },
-  {
-    "id": 625,
-    "turkish": "ağustostan önce",
-    "english": "before august",
-    "source_page": 17
-  },
-  {
-    "id": 626,
-    "turkish": "eylülden önce",
-    "english": "before september",
-    "source_page": 17
-  },
-  {
-    "id": 627,
-    "turkish": "kasım'dan sonra",
-    "english": "after november",
-    "source_page": 17
-  },
-  {
-    "id": 628,
-    "turkish": "aralıktan önce",
-    "english": "before december",
-    "source_page": 17
-  },
-  {
-    "id": 629,
-    "turkish": "pazartesinden önce",
-    "english": "before monday",
-    "source_page": 17
-  },
-  {
-    "id": 630,
-    "turkish": "salıdan önce",
-    "english": "before tuesday",
-    "source_page": 17
-  },
-  {
-    "id": 631,
-    "turkish": "çarşambadan önce",
-    "english": "before wednesday",
-    "source_page": 17
-  },
-  {
-    "id": 632,
-    "turkish": "perşembeden sonra",
-    "english": "after tuesday",
-    "source_page": 17
-  },
-  {
-    "id": 633,
-    "turkish": "cumadan sonra",
-    "english": "after friday",
-    "source_page": 17
-  },
-  {
-    "id": 634,
-    "turkish": "cumartesiden sonra",
-    "english": "after saturday",
-    "source_page": 17
-  },
-  {
-    "id": 635,
-    "turkish": "pazardan evvel",
-    "english": "before sunday",
-    "source_page": 17
-  },
-  {
-    "id": 636,
-    "turkish": "kahvaltıdan evvel",
-    "english": "before the breakfast",
-    "source_page": 17
-  },
-  {
-    "id": 637,
-    "turkish": "akşam yemeğinin ardından",
-    "english": "after the dinner",
-    "source_page": 17
-  },
-  {
-    "id": 638,
-    "turkish": "öğlen yemeğinin öncesinde",
-    "english": "before the lunch",
-    "source_page": 17
-  },
-  {
-    "id": 639,
-    "turkish": "öğlen yemeğinin ardından",
-    "english": "after the lunch",
-    "source_page": 17
-  },
-  {
-    "id": 640,
-    "turkish": "akşam yemeğinden evvel",
-    "english": "before the evening",
-    "source_page": 17
-  },
-  {
-    "id": 641,
-    "turkish": "kahvaltıdan sonra",
-    "english": "after the breakfast",
-    "source_page": 17
-  },
-  {
-    "id": 642,
-    "turkish": "bir şişe sütle",
-    "english": "with a bottle of milk",
-    "source_page": 17
-  },
-  {
-    "id": 643,
-    "turkish": "2 bardak su ile",
-    "english": "with two glasses of water",
-    "source_page": 17
-  },
-  {
-    "id": 644,
-    "turkish": "2 bardak sudan sonra",
-    "english": "after two glasses of water",
-    "source_page": 17
-  },
-  {
-    "id": 645,
-    "turkish": "insanlardan önce",
-    "english": "before the people",
-    "source_page": 18
-  },
-  {
-    "id": 646,
-    "turkish": "hayvanlardan önce",
-    "english": "before the animals",
-    "source_page": 18
-  },
-  {
-    "id": 647,
-    "turkish": "ailemden önce",
-    "english": "before my family",
-    "source_page": 18
-  },
-  {
-    "id": 648,
-    "turkish": "ailemin ardından",
-    "english": "after my family",
-    "source_page": 18
-  },
-  {
-    "id": 649,
-    "turkish": "Çocuklarımdan önce",
-    "english": "before my children",
-    "source_page": 18
-  },
-  {
-    "id": 650,
-    "turkish": "karımdan önce",
-    "english": "before my wife",
-    "source_page": 18
-  },
-  {
-    "id": 651,
-    "turkish": "oğlumdan önce",
-    "english": "before my son",
-    "source_page": 18
-  },
-  {
-    "id": 652,
-    "turkish": "yarından önce",
-    "english": "before tomorrow",
-    "source_page": 18
-  },
-  {
-    "id": 653,
-    "turkish": "dünden sonra",
-    "english": "after yesterday",
-    "source_page": 18
-  },
-  {
-    "id": 654,
-    "turkish": "yarından sonra",
-    "english": "after tomorrow",
-    "source_page": 18
-  },
-  {
-    "id": 655,
-    "turkish": "Doğum günümden önce",
-    "english": "before my birthday",
-    "source_page": 18
-  },
-  {
-    "id": 656,
-    "turkish": "doğum günümün ardından",
-    "english": "after my birthday",
-    "source_page": 18
-  },
-  {
-    "id": 657,
-    "turkish": "tatilden önce",
-    "english": "before holiday",
-    "source_page": 18
-  },
-  {
-    "id": 658,
-    "turkish": "tatilin ardından",
-    "english": "after holiday",
-    "source_page": 18
-  },
-  {
-    "id": 659,
-    "turkish": "problemlerin ardından",
-    "english": "after the problems",
-    "source_page": 18
-  },
-  {
-    "id": 660,
-    "turkish": "şarkının ardından",
-    "english": "after the song",
-    "source_page": 18
-  },
-  {
-    "id": 661,
-    "turkish": "şarkıdan önce",
-    "english": "before the song",
-    "source_page": 18
-  },
-  {
-    "id": 662,
-    "turkish": "kahvenin ardından",
-    "english": "after the coffee",
-    "source_page": 18
-  },
-  {
-    "id": 663,
-    "turkish": "bir fincan kahvenin ardından",
-    "english": "after a cup of coffee",
-    "source_page": 18
-  },
-  {
-    "id": 664,
-    "turkish": "2 bardak sudan önce",
-    "english": "before two glasses of water",
-    "source_page": 18
-  },
-  {
-    "id": 665,
-    "turkish": "çaydan evvel",
-    "english": "before the tea",
-    "source_page": 18
-  },
-  {
-    "id": 666,
-    "turkish": "fırtınadan evvel",
-    "english": "before the storm",
-    "source_page": 18
-  },
-  {
-    "id": 667,
-    "turkish": "yağmurdan önce",
-    "english": "before the rain",
-    "source_page": 18
-  },
-  {
-    "id": 668,
-    "turkish": "kardan önce",
-    "english": "before the snow",
-    "source_page": 18
-  },
-  {
-    "id": 669,
-    "turkish": "karın ardından",
-    "english": "after the snow",
-    "source_page": 18
-  },
-  {
-    "id": 670,
-    "turkish": "Toplantının ardından",
-    "english": "after the meeting",
-    "source_page": 18
-  },
-  {
-    "id": 671,
-    "turkish": "arkadaşımla",
-    "english": "with my friend",
-    "source_page": 18
-  },
-  {
-    "id": 672,
-    "turkish": "arkadaşlarımla",
-    "english": "with my friends",
-    "source_page": 18
-  },
-  {
-    "id": 673,
-    "turkish": "arkadaşlarım olmadan",
-    "english": "without my friends",
-    "source_page": 18
-  },
-  {
-    "id": 674,
-    "turkish": "arkadaşlarımın",
-    "english": "of my friends",
-    "source_page": 18
-  },
-  {
-    "id": 675,
-    "turkish": "arkadaşlarım için",
-    "english": "for my friends",
-    "source_page": 18
-  },
-  {
-    "id": 676,
-    "turkish": "arkadaşlarımdan",
-    "english": "from my friends",
-    "source_page": 18
-  },
-  {
-    "id": 677,
-    "turkish": "arkadaşlarımı",
-    "english": "my friends",
-    "source_page": 18
-  },
-  {
-    "id": 678,
-    "turkish": "arkadaşlarıma",
-    "english": "to my friends",
-    "source_page": 18
-  },
-  {
-    "id": 679,
-    "turkish": "okulumun",
-    "english": "of my school",
-    "source_page": 18
-  },
-  {
-    "id": 680,
-    "turkish": "okuluma",
-    "english": "to my school",
-    "source_page": 18
-  },
-  {
-    "id": 681,
-    "turkish": "okulumu",
-    "english": "my school",
-    "source_page": 18
-  },
-  {
-    "id": 682,
-    "turkish": "okulum için",
-    "english": "for my school",
-    "source_page": 18
-  },
-  {
-    "id": 683,
-    "turkish": "okulumdan",
-    "english": "from my school",
-    "source_page": 18
-  },
-  {
-    "id": 684,
-    "turkish": "okulumdan önce",
-    "english": "before my school",
-    "source_page": 18
-  },
-  {
-    "id": 685,
-    "turkish": "okulumdan sonra",
-    "english": "after my school",
-    "source_page": 18
-  },
-  {
-    "id": 686,
-    "turkish": "Ocak için",
-    "english": "for january",
-    "source_page": 18
-  },
-  {
-    "id": 687,
-    "turkish": "Şubattan",
-    "english": "from february",
-    "source_page": 18
-  },
-  {
-    "id": 688,
-    "turkish": "Mart olmadan",
-    "english": "without march",
-    "source_page": 18
-  },
-  {
-    "id": 689,
-    "turkish": "Nisan ile",
-    "english": "with april",
-    "source_page": 18
-  },
-  {
-    "id": 690,
-    "turkish": "Mayıstan önce",
-    "english": "before may",
-    "source_page": 18
-  },
-  {
-    "id": 691,
-    "turkish": "Hazirandan sonra",
-    "english": "after june",
-    "source_page": 18
-  },
-  {
-    "id": 692,
-    "turkish": "Temmuz için",
-    "english": "for july",
-    "source_page": 18
-  },
-  {
-    "id": 693,
-    "turkish": "Ağustostan",
-    "english": "from august",
-    "source_page": 19
-  },
-  {
-    "id": 694,
-    "turkish": "Eylül ile",
-    "english": "with september",
-    "source_page": 19
-  },
-  {
-    "id": 695,
-    "turkish": "Ekimden",
-    "english": "from october",
-    "source_page": 19
-  },
-  {
-    "id": 696,
-    "turkish": "Kasımdan önce",
-    "english": "before november",
-    "source_page": 19
-  },
-  {
-    "id": 697,
-    "turkish": "Aralıktan sonra",
-    "english": "after december",
-    "source_page": 19
-  },
-  {
-    "id": 698,
-    "turkish": "Bahçe için",
-    "english": "for the garden",
-    "source_page": 19
-  },
-  {
-    "id": 699,
-    "turkish": "Bahçeden",
-    "english": "from the garden",
-    "source_page": 19
-  },
-  {
-    "id": 700,
-    "turkish": "Bahçe ile",
-    "english": "with the garden",
-    "source_page": 19
-  },
-  {
-    "id": 701,
-    "turkish": "Bahçeye",
-    "english": "to the garden",
-    "source_page": 19
-  },
-  {
-    "id": 702,
-    "turkish": "Bahçenin",
-    "english": "of the garden",
-    "source_page": 19
-  },
-  {
-    "id": 703,
-    "turkish": "Köyden",
-    "english": "from the village",
-    "source_page": 19
-  },
-  {
-    "id": 704,
-    "turkish": "Şehir için",
-    "english": "for the city",
-    "source_page": 19
-  },
-  {
-    "id": 705,
-    "turkish": "Ülkemden",
-    "english": "from my country",
-    "source_page": 19
-  },
-  {
-    "id": 706,
-    "turkish": "Senin ülken için",
-    "english": "for your country",
-    "source_page": 19
-  },
-  {
-    "id": 707,
-    "turkish": "Bu ülke için",
-    "english": "for this country",
-    "source_page": 19
-  },
-  {
-    "id": 708,
-    "turkish": "Bu ülkeden",
-    "english": "from this country",
-    "source_page": 19
-  },
-  {
-    "id": 709,
-    "turkish": "Bu ülkeye",
-    "english": "to this country",
-    "source_page": 19
-  },
-  {
-    "id": 710,
-    "turkish": "Bu ülkeyle",
-    "english": "with this country",
-    "source_page": 19
-  },
-  {
-    "id": 711,
-    "turkish": "Bu ülke olmadan",
-    "english": "without this country",
-    "source_page": 19
-  },
-  {
-    "id": 712,
-    "turkish": "Bu ülkeden sonra",
-    "english": "after this country",
-    "source_page": 19
-  },
-  {
-    "id": 713,
-    "turkish": "Bu ülkeden önce",
-    "english": "before this country",
-    "source_page": 19
-  },
-  {
-    "id": 714,
-    "turkish": "Pazartesi için",
-    "english": "for monday",
-    "source_page": 19
-  },
-  {
-    "id": 715,
-    "turkish": "Salıdan",
-    "english": "from tuesday",
-    "source_page": 19
-  },
-  {
-    "id": 716,
-    "turkish": "Çarşambaya",
-    "english": "to wednesday",
-    "source_page": 19
-  },
-  {
-    "id": 717,
-    "turkish": "Perşembe ile",
-    "english": "with thursday",
-    "source_page": 19
-  },
-  {
-    "id": 718,
-    "turkish": "Cuma olmadan",
-    "english": "without friday",
-    "source_page": 19
-  },
-  {
-    "id": 719,
-    "turkish": "Cumartesiden önce",
-    "english": "before saturday",
-    "source_page": 19
-  },
-  {
-    "id": 720,
-    "turkish": "Pazardan sonra",
-    "english": "after sunday",
-    "source_page": 19
-  },
-  {
-    "id": 721,
-    "turkish": "İlkbahar ile",
-    "english": "with the spring",
-    "source_page": 19
-  },
-  {
-    "id": 722,
-    "turkish": "Yazdan",
-    "english": "from the summer",
-    "source_page": 19
-  },
-  {
-    "id": 723,
-    "turkish": "Yaz için",
-    "english": "for the summer",
-    "source_page": 19
-  },
-  {
-    "id": 724,
-    "turkish": "Yaz ile",
-    "english": "with the summer",
-    "source_page": 19
-  },
-  {
-    "id": 725,
-    "turkish": "Yaza",
-    "english": "to the summer",
-    "source_page": 19
-  },
-  {
-    "id": 726,
-    "turkish": "Sonbahardan sonra",
-    "english": "after the autumn",
-    "source_page": 19
-  },
-  {
-    "id": 727,
-    "turkish": "Kıştan önce",
-    "english": "before the winter",
-    "source_page": 19
-  },
-  {
-    "id": 728,
-    "turkish": "Kış olmadan",
-    "english": "without the winter",
-    "source_page": 19
-  },
-  {
-    "id": 729,
-    "turkish": "Kış için",
-    "english": "for the winter",
-    "source_page": 19
-  },
-  {
-    "id": 730,
-    "turkish": "Kış ile",
-    "english": "with the winter",
-    "source_page": 19
-  },
-  {
-    "id": 731,
-    "turkish": "Kıştan",
-    "english": "from the winter",
-    "source_page": 19
-  },
-  {
-    "id": 732,
-    "turkish": "Arabadan",
-    "english": "from the car",
-    "source_page": 19
-  },
-  {
-    "id": 733,
-    "turkish": "Otobüs için",
-    "english": "for the bus",
-    "source_page": 19
-  },
-  {
-    "id": 734,
-    "turkish": "Trene",
-    "english": "to the train",
-    "source_page": 19
-  },
-  {
-    "id": 735,
-    "turkish": "Tren ile",
-    "english": "with the train",
-    "source_page": 19
-  },
-  {
-    "id": 736,
-    "turkish": "Gemiler olmadan",
-    "english": "without the ships",
-    "source_page": 19
-  },
-  {
-    "id": 737,
-    "turkish": "Uçaktan",
-    "english": "from the plane",
-    "source_page": 19
-  },
-  {
-    "id": 738,
-    "turkish": "Uçağa",
-    "english": "to the plane",
-    "source_page": 19
-  },
-  {
-    "id": 739,
-    "turkish": "Uçaktan önce",
-    "english": "before the plane",
-    "source_page": 19
-  },
-  {
-    "id": 740,
-    "turkish": "Uçaktan sonra",
-    "english": "after the plane",
-    "source_page": 19
-  },
-  {
-    "id": 741,
-    "turkish": "Okul hakkında",
-    "english": "about the school",
-    "source_page": 20
-  },
-  {
-    "id": 742,
-    "turkish": "okul yüzünden",
-    "english": "because of the school",
-    "source_page": 20
-  },
-  {
-    "id": 743,
-    "turkish": "iş hakkında",
-    "english": "about work",
-    "source_page": 20
-  },
-  {
-    "id": 744,
-    "turkish": "iş yüzünden",
-    "english": "because of work",
-    "source_page": 20
-  },
-  {
-    "id": 745,
-    "turkish": "ailem hakkında",
-    "english": "about my family",
-    "source_page": 20
-  },
-  {
-    "id": 746,
-    "turkish": "ailem yüzünden",
-    "english": "because of my family",
-    "source_page": 20
-  },
-  {
-    "id": 747,
-    "turkish": "müzik hakkında",
-    "english": "about the music",
-    "source_page": 20
-  },
-  {
-    "id": 748,
-    "turkish": "müzik yüzünden",
-    "english": "from the music",
-    "source_page": 20
-  },
-  {
-    "id": 749,
-    "turkish": "işim hakkında",
-    "english": "about my work",
-    "source_page": 20
-  },
-  {
-    "id": 750,
-    "turkish": "senin işin yüzünden",
-    "english": "because of your work",
-    "source_page": 20
-  },
-  {
-    "id": 751,
-    "turkish": "hayatım hakkında",
-    "english": "about my life",
-    "source_page": 20
-  },
-  {
-    "id": 752,
-    "turkish": "hayatım yüzünden",
-    "english": "because of my life",
-    "source_page": 20
-  },
-  {
-    "id": 753,
-    "turkish": "bu kitap hakkında",
-    "english": "about this book",
-    "source_page": 20
-  },
-  {
-    "id": 754,
-    "turkish": "bu kitaplar yüzünden",
-    "english": "about these books",
-    "source_page": 20
-  },
-  {
-    "id": 755,
-    "turkish": "bu şarkılar yüzünden",
-    "english": "about these songs",
-    "source_page": 20
-  },
-  {
-    "id": 756,
-    "turkish": "bu sorunlar hakkında",
-    "english": "about these problems",
-    "source_page": 20
-  },
-  {
-    "id": 757,
-    "turkish": "bu sorunlar yüzünden",
-    "english": "because of these problems",
-    "source_page": 20
-  },
-  {
-    "id": 758,
-    "turkish": "sorunlar hakkında",
-    "english": "about the problems",
-    "source_page": 20
-  },
-  {
-    "id": 759,
-    "turkish": "sorunlarım hakkında",
-    "english": "about my problems",
-    "source_page": 20
-  },
-  {
-    "id": 760,
-    "turkish": "sorunlar yüzünden",
-    "english": "because of the problems",
-    "source_page": 20
-  },
-  {
-    "id": 761,
-    "turkish": "sorunlarım yüzünden",
-    "english": "because of my problems",
-    "source_page": 20
-  },
-  {
-    "id": 762,
-    "turkish": "Yağmur yüzünden",
-    "english": "because of the rain",
-    "source_page": 20
-  },
-  {
-    "id": 763,
-    "turkish": "kar yüzünden",
-    "english": "because of the snow",
-    "source_page": 20
-  },
-  {
-    "id": 764,
-    "turkish": "fırtına yüzünden",
-    "english": "because of the storm",
-    "source_page": 20
-  },
-  {
-    "id": 765,
-    "turkish": "Hava yüzünden",
-    "english": "because of the weather",
-    "source_page": 20
-  },
-  {
-    "id": 766,
-    "turkish": "sis yüzünden",
-    "english": "because of the fog",
-    "source_page": 20
-  },
-  {
-    "id": 767,
-    "turkish": "yağmurdan sonra",
-    "english": "after the rain",
-    "source_page": 20
-  },
-  {
-    "id": 768,
-    "turkish": "yağmurdan önce",
-    "english": "before the rain",
-    "source_page": 20
-  },
-  {
-    "id": 769,
-    "turkish": "yıldızlar yüzünden",
-    "english": "because of the stars",
-    "source_page": 20
-  },
-  {
-    "id": 770,
-    "turkish": "yıldızlar hakkında",
-    "english": "about the stars",
-    "source_page": 20
-  },
-  {
-    "id": 771,
-    "turkish": "nisan'ın ardından",
-    "english": "after april",
-    "source_page": 20
-  },
-  {
-    "id": 772,
-    "turkish": "haziran'la beraber",
-    "english": "with june",
-    "source_page": 20
-  },
-  {
-    "id": 773,
-    "turkish": "haziran'ın ardından",
-    "english": "after june",
-    "source_page": 20
-  },
-  {
-    "id": 774,
-    "turkish": "temmuz'un ardından",
-    "english": "after july",
-    "source_page": 20
-  },
-  {
-    "id": 775,
-    "turkish": "ağustostan önce",
-    "english": "before august",
-    "source_page": 20
-  },
-  {
-    "id": 776,
-    "turkish": "eylülden önce",
-    "english": "before september",
-    "source_page": 20
-  },
-  {
-    "id": 777,
-    "turkish": "kasım'dan sonra",
-    "english": "after november",
-    "source_page": 20
-  },
-  {
-    "id": 778,
-    "turkish": "aralıktan önce",
-    "english": "before december",
-    "source_page": 20
-  },
-  {
-    "id": 779,
-    "turkish": "pazartesinden önce",
-    "english": "before monday",
-    "source_page": 20
-  },
-  {
-    "id": 780,
-    "turkish": "salıdan önce",
-    "english": "before tuesday",
-    "source_page": 20
-  },
-  {
-    "id": 781,
-    "turkish": "çarşambadan önce",
-    "english": "before wednesday",
-    "source_page": 21
-  },
-  {
-    "id": 782,
-    "turkish": "perşembeden sonra",
-    "english": "after thursday",
-    "source_page": 21
-  },
-  {
-    "id": 783,
-    "turkish": "cumadan sonra",
-    "english": "after friday",
-    "source_page": 21
-  },
-  {
-    "id": 784,
-    "turkish": "cumartesiden sonra",
-    "english": "after saturday",
-    "source_page": 21
-  },
-  {
-    "id": 785,
-    "turkish": "pazardan evvel",
-    "english": "before sunday",
-    "source_page": 21
-  },
-  {
-    "id": 786,
-    "turkish": "İnsanlar yüzünden",
-    "english": "because of the people",
-    "source_page": 21
-  },
-  {
-    "id": 787,
-    "turkish": "insanlar hakkında",
-    "english": "about the people",
-    "source_page": 21
-  },
-  {
-    "id": 788,
-    "turkish": "hayvanlar yüzünden",
-    "english": "because of the animals",
-    "source_page": 21
-  },
-  {
-    "id": 789,
-    "turkish": "hayvanlar hakkında",
-    "english": "about the animals",
-    "source_page": 21
-  },
-  {
-    "id": 790,
-    "turkish": "çocuklarım hakkında",
-    "english": "about my children",
-    "source_page": 21
-  },
-  {
-    "id": 791,
-    "turkish": "karım hakkında wife",
-    "english": "about my wife",
-    "source_page": 21
-  },
-  {
-    "id": 792,
-    "turkish": "kocam yüzünden",
-    "english": "because of my husband",
-    "source_page": 21
-  },
-  {
-    "id": 793,
-    "turkish": "halam hakkında",
-    "english": "about my aunt",
-    "source_page": 21
-  },
-  {
-    "id": 794,
-    "turkish": "dayım yüzünden",
-    "english": "because of my uncle",
-    "source_page": 21
-  },
-  {
-    "id": 795,
-    "turkish": "tatil yüzünden",
-    "english": "because of the holiday",
-    "source_page": 21
-  },
-  {
-    "id": 796,
-    "turkish": "doğum günüm yüzünden",
-    "english": "because of my birthday",
-    "source_page": 21
-  },
-  {
-    "id": 797,
-    "turkish": "sorunlar hakkında",
-    "english": "about the problems",
-    "source_page": 21
-  },
-  {
-    "id": 798,
-    "turkish": "sorunlar yüzünden",
-    "english": "because of the problems",
-    "source_page": 21
-  },
-  {
-    "id": 799,
-    "turkish": "toplantı yüzünden",
-    "english": "because of the meeting",
-    "source_page": 21
-  },
-  {
-    "id": 800,
-    "turkish": "arkadaşlarım yüzünden",
-    "english": "because of my friends",
-    "source_page": 21
-  },
-  {
-    "id": 801,
-    "turkish": "Türkiye için",
-    "english": "for turkey",
-    "source_page": 21
-  },
-  {
-    "id": 802,
-    "turkish": "Türkiye’den",
-    "english": "from turkey",
-    "source_page": 21
-  },
-  {
-    "id": 803,
-    "turkish": "Türkiye ile",
-    "english": "with turkey",
-    "source_page": 21
-  },
-  {
-    "id": 804,
-    "turkish": "Türkiye olmadan",
-    "english": "without turkey",
-    "source_page": 21
-  },
-  {
-    "id": 805,
-    "turkish": "Türkiye’ye",
-    "english": "to turkey",
-    "source_page": 21
-  },
-  {
-    "id": 806,
-    "turkish": "Türkiye’yi",
-    "english": "turkey",
-    "source_page": 21
-  },
-  {
-    "id": 807,
-    "turkish": "Türkiye’den önce",
-    "english": "before turkey",
-    "source_page": 21
-  },
-  {
-    "id": 808,
-    "turkish": "Türkiye’den sonra",
-    "english": "after turkey",
-    "source_page": 21
-  },
-  {
-    "id": 809,
-    "turkish": "Türkiye hakkında",
-    "english": "about turkey",
-    "source_page": 21
-  },
-  {
-    "id": 810,
-    "turkish": "Türkiye yüzünden",
-    "english": "because of turkey",
-    "source_page": 21
-  },
-  {
-    "id": 811,
-    "turkish": "Türkiye’nin",
-    "english": "of turkey",
-    "source_page": 21
-  },
-  {
-    "id": 812,
-    "turkish": "Gelecek hakkında",
-    "english": "about the future",
-    "source_page": 21
-  },
-  {
-    "id": 813,
-    "turkish": "Geleceğim hakkında",
-    "english": "about my future",
-    "source_page": 21
-  },
-  {
-    "id": 814,
-    "turkish": "Ailem hakkında",
-    "english": "about my family",
-    "source_page": 21
-  },
-  {
-    "id": 815,
-    "turkish": "Çocuklarım ile",
-    "english": "with my children",
-    "source_page": 21
-  },
-  {
-    "id": 816,
-    "turkish": "Bir sorun yüzünden",
-    "english": "because of a problem",
-    "source_page": 21
-  },
-  {
-    "id": 817,
-    "turkish": "Bu sorun yüzünden",
-    "english": "because of this problem",
-    "source_page": 21
-  },
-  {
-    "id": 818,
-    "turkish": "Bu sorunlar hakkında",
-    "english": "about these problems",
-    "source_page": 21
-  },
-  {
-    "id": 819,
-    "turkish": "Ülkem için",
-    "english": "for my country",
-    "source_page": 21
-  },
-  {
-    "id": 820,
-    "turkish": "Evimden",
-    "english": "from my house",
-    "source_page": 21
-  },
-  {
-    "id": 821,
-    "turkish": "Evim olmadan",
-    "english": "without my house",
-    "source_page": 21
-  },
-  {
-    "id": 822,
-    "turkish": "Telefonum olmadan",
-    "english": "without my phone",
-    "source_page": 21
-  },
-  {
-    "id": 823,
-    "turkish": "Telefonum için",
-    "english": "for my phone",
-    "source_page": 21
-  },
-  {
-    "id": 824,
-    "turkish": "Telefonum yüzünden",
-    "english": "because of my phone",
-    "source_page": 21
-  },
-  {
-    "id": 825,
-    "turkish": "Bilgisayarımla",
-    "english": "with my pc",
-    "source_page": 21
-  },
-  {
-    "id": 826,
-    "turkish": "Bilgisayarımın",
-    "english": "of my pc",
-    "source_page": 21
-  },
-  {
-    "id": 827,
-    "turkish": "Bilgisayarım için",
-    "english": "for my pc",
-    "source_page": 21
-  },
-  {
-    "id": 828,
-    "turkish": "Bilgisayarın yüzünden",
-    "english": "because of your pc",
-    "source_page": 22
-  },
-  {
-    "id": 829,
-    "turkish": "Restoran için",
-    "english": "for the restaurant",
-    "source_page": 22
-  },
-  {
-    "id": 830,
-    "turkish": "Okulum yüzünden",
-    "english": "because of my school",
-    "source_page": 22
-  },
-  {
-    "id": 831,
-    "turkish": "Bir bardak su için",
-    "english": "for a glass of water",
-    "source_page": 22
-  },
-  {
-    "id": 832,
-    "turkish": "Bir bardak sudan",
-    "english": "from a glass of water",
-    "source_page": 22
-  },
-  {
-    "id": 833,
-    "turkish": "Bir bardak su ile",
-    "english": "with a glass of water",
-    "source_page": 22
-  },
-  {
-    "id": 834,
-    "turkish": "Bir bardak su olmadan",
-    "english": "without a glass of water",
-    "source_page": 22
-  },
-  {
-    "id": 835,
-    "turkish": "Bir bardak su yüzünden",
-    "english": "because of a glass of water",
-    "source_page": 22
-  },
-  {
-    "id": 836,
-    "turkish": "İki bardak su hakkında",
-    "english": "about two glasses of water",
-    "source_page": 22
-  },
-  {
-    "id": 837,
-    "turkish": "Üç arkadaş hakkında",
-    "english": "about three friends",
-    "source_page": 22
-  },
-  {
-    "id": 838,
-    "turkish": "Bahçem yüzünden",
-    "english": "because of my garden",
-    "source_page": 22
-  },
-  {
-    "id": 839,
-    "turkish": "Sebzeler için",
-    "english": "for the vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 840,
-    "turkish": "Sebzeler hakkında",
-    "english": "about the vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 841,
-    "turkish": "Bu sebzeler yüzünden",
-    "english": "because of these vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 842,
-    "turkish": "Sebzelerin",
-    "english": "of the vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 843,
-    "turkish": "Sebzelere",
-    "english": "to the vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 844,
-    "turkish": "Sebzeleri",
-    "english": "the vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 845,
-    "turkish": "Sebzelerimi",
-    "english": "my vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 846,
-    "turkish": "3 sebzeyi",
-    "english": "three vegetables",
-    "source_page": 22
-  },
-  {
-    "id": 847,
-    "turkish": "5 öğrenciyi",
-    "english": "five students",
-    "source_page": 22
-  },
-  {
-    "id": 848,
-    "turkish": "10 doktordan",
-    "english": "from ten doctors",
-    "source_page": 22
-  },
-  {
-    "id": 849,
-    "turkish": "7 aileden",
-    "english": "from seven families",
-    "source_page": 22
-  },
-  {
-    "id": 850,
-    "turkish": "7 aileyle",
-    "english": "with seven families",
-    "source_page": 22
-  },
-  {
-    "id": 851,
-    "turkish": "Dört okul için",
-    "english": "for four schools",
-    "source_page": 22
-  },
-  {
-    "id": 852,
-    "turkish": "İki okula",
-    "english": "to two schools",
-    "source_page": 22
-  },
-  {
-    "id": 853,
-    "turkish": "Dört aile için",
-    "english": "for four families",
-    "source_page": 22
-  },
-  {
-    "id": 854,
-    "turkish": "Dört aile yüzünden",
-    "english": "because of four families",
-    "source_page": 22
-  },
-  {
-    "id": 855,
-    "turkish": "Dört aile hakkında",
-    "english": "about four families",
-    "source_page": 22
-  },
-  {
-    "id": 856,
-    "turkish": "Dört aileye",
-    "english": "to four families",
-    "source_page": 22
-  },
-  {
-    "id": 857,
-    "turkish": "Sorunlarım hakkında",
-    "english": "about my problems",
-    "source_page": 22
-  },
-  {
-    "id": 858,
-    "turkish": "Dertlerim hakkında",
-    "english": "about my problems",
-    "source_page": 22
-  },
-  {
-    "id": 859,
-    "turkish": "Tasalarım hakkında",
-    "english": "about my problems",
-    "source_page": 22
-  },
-  {
-    "id": 860,
-    "turkish": "Problemlerim hakkında",
-    "english": "about my problems",
-    "source_page": 22
-  },
-  {
-    "id": 861,
-    "turkish": "Okulum yüzünden",
-    "english": "because of my school",
-    "source_page": 22
-  },
-  {
-    "id": 862,
-    "turkish": "Senin okulun hakkında",
-    "english": "about your school",
-    "source_page": 22
-  },
-  {
-    "id": 863,
-    "turkish": "Bu okullar yüzünden",
-    "english": "because of these schools",
-    "source_page": 22
-  },
-  {
-    "id": 864,
-    "turkish": "Üç elma yüzünden",
-    "english": "because of three apples",
-    "source_page": 22
-  },
-  {
-    "id": 865,
-    "turkish": "Bir kilo süt yüzünden",
-    "english": "because of a kilo of milk",
-    "source_page": 22
-  },
-  {
-    "id": 866,
-    "turkish": "Bir doktor yüzünden",
-    "english": "because of a doctor",
-    "source_page": 22
-  },
-  {
-    "id": 867,
-    "turkish": "Bir öğretmen hakkında",
-    "english": "about a teacher",
-    "source_page": 22
-  },
-  {
-    "id": 868,
-    "turkish": "Bu aile için",
-    "english": "for this family",
-    "source_page": 22
-  },
-  {
-    "id": 869,
-    "turkish": "Bu aile hakkında",
-    "english": "about this family",
-    "source_page": 22
-  },
-  {
-    "id": 870,
-    "turkish": "Senin ailenden",
-    "english": "from your family",
-    "source_page": 22
-  },
-  {
-    "id": 871,
-    "turkish": "Brnm aileme",
-    "english": "to my family",
-    "source_page": 22
-  },
-  {
-    "id": 872,
-    "turkish": "Benim ailemin",
-    "english": "of my family",
-    "source_page": 22
-  },
-  {
-    "id": 873,
-    "turkish": "Benim ailemden",
-    "english": "from my family",
-    "source_page": 22
-  },
-  {
-    "id": 874,
-    "turkish": "Benim aileme",
-    "english": "to my family",
-    "source_page": 23
-  },
-  {
-    "id": 875,
-    "turkish": "Benim ailemi",
-    "english": "my family",
-    "source_page": 23
-  },
-  {
-    "id": 876,
-    "turkish": "Benim çocuklarımı",
-    "english": "my children",
-    "source_page": 23
-  },
-  {
-    "id": 877,
-    "turkish": "Benim çocuklarım için",
-    "english": "for my children",
-    "source_page": 23
-  },
-  {
-    "id": 878,
-    "turkish": "Brnim çıcuklarımla",
-    "english": "with my children",
-    "source_page": 23
-  },
-  {
-    "id": 879,
-    "turkish": "Benim çocuklarımdan",
-    "english": "from my children",
-    "source_page": 23
-  },
-  {
-    "id": 880,
-    "turkish": "Benm çocuklarımdan önce",
-    "english": "before my children",
-    "source_page": 23
-  },
-  {
-    "id": 881,
-    "turkish": "Senin çocuklarından sonra",
-    "english": "after your children",
-    "source_page": 23
-  },
-  {
-    "id": 882,
-    "turkish": "Öğlenden önce",
-    "english": "before noon",
-    "source_page": 23
-  },
-  {
-    "id": 883,
-    "turkish": "Öğlenden sonra",
-    "english": "afternoon",
-    "source_page": 23
-  },
-  {
-    "id": 884,
-    "turkish": "Akşamdan önce",
-    "english": "before evening",
-    "source_page": 23
-  },
-  {
-    "id": 885,
-    "turkish": "Akşamdan sonra",
-    "english": "after evening",
-    "source_page": 23
-  },
-  {
-    "id": 886,
-    "turkish": "Türkiye hakkında",
-    "english": "about turkey",
-    "source_page": 23
-  },
-  {
-    "id": 887,
-    "turkish": "Amerika yüzünden",
-    "english": "because of america",
-    "source_page": 23
-  },
-  {
-    "id": 888,
-    "turkish": "Almanya için",
-    "english": "for germany",
-    "source_page": 23
-  },
-  {
-    "id": 889,
-    "turkish": "Çin’den",
-    "english": "from china",
-    "source_page": 23
-  },
-  {
-    "id": 890,
-    "turkish": "Çin için",
-    "english": "for china",
-    "source_page": 23
-  },
-  {
-    "id": 891,
-    "turkish": "Japonyayla",
-    "english": "with japan",
-    "source_page": 23
-  },
-  {
-    "id": 892,
-    "turkish": "Fransa yüzünden",
-    "english": "because of france",
-    "source_page": 23
-  },
-  {
-    "id": 893,
-    "turkish": "İngiltere hakkında",
-    "english": "about england",
-    "source_page": 23
-  },
-  {
-    "id": 894,
-    "turkish": "Okulda",
-    "english": "at the school",
-    "source_page": 24
-  },
-  {
-    "id": 895,
-    "turkish": "işte",
-    "english": "at work",
-    "source_page": 24
-  },
-  {
-    "id": 896,
-    "turkish": "ofiste",
-    "english": "at office",
-    "source_page": 24
-  },
-  {
-    "id": 897,
-    "turkish": "evde",
-    "english": "at home",
-    "source_page": 24
-  },
-  {
-    "id": 898,
-    "turkish": "okulda",
-    "english": "at the school",
-    "source_page": 24
-  },
-  {
-    "id": 899,
-    "turkish": "hastanede",
-    "english": "at the hospital",
-    "source_page": 24
-  },
-  {
-    "id": 900,
-    "turkish": "otobüs durağında",
-    "english": "at the bus stop",
-    "source_page": 24
-  },
-  {
-    "id": 901,
-    "turkish": "marmaray'da",
-    "english": "at the marmaray",
-    "source_page": 24
-  },
-  {
-    "id": 902,
-    "turkish": "metroda",
-    "english": "on the metro",
-    "source_page": 24
-  },
-  {
-    "id": 903,
-    "turkish": "havaalanında",
-    "english": "at the airport",
-    "source_page": 24
-  },
-  {
-    "id": 904,
-    "turkish": "sokakta",
-    "english": "at the street",
-    "source_page": 24
-  },
-  {
-    "id": 905,
-    "turkish": "caddede",
-    "english": "on the street",
-    "source_page": 24
-  },
-  {
-    "id": 906,
-    "turkish": "yolda",
-    "english": "on the road",
-    "source_page": 24
-  },
-  {
-    "id": 907,
-    "turkish": "Evimde",
-    "english": "at my home",
-    "source_page": 24
-  },
-  {
-    "id": 908,
-    "turkish": "İşimde",
-    "english": "at my work",
-    "source_page": 24
-  },
-  {
-    "id": 909,
-    "turkish": "Senin Ofisinde",
-    "english": "at your office",
-    "source_page": 24
-  },
-  {
-    "id": 910,
-    "turkish": "Okulunda",
-    "english": "at your school",
-    "source_page": 24
-  },
-  {
-    "id": 911,
-    "turkish": "bu hastanede",
-    "english": "at this hospital",
-    "source_page": 24
-  },
-  {
-    "id": 912,
-    "turkish": "şu okulda",
-    "english": "at that hospital",
-    "source_page": 24
-  },
-  {
-    "id": 913,
-    "turkish": "bir okulda",
-    "english": "at a school",
-    "source_page": 24
-  },
-  {
-    "id": 914,
-    "turkish": "bir evde",
-    "english": "at a house",
-    "source_page": 24
-  },
-  {
-    "id": 915,
-    "turkish": "Ailemde",
-    "english": "in my family",
-    "source_page": 24
-  },
-  {
-    "id": 916,
-    "turkish": "bir ailede",
-    "english": "in a family",
-    "source_page": 24
-  },
-  {
-    "id": 917,
-    "turkish": "hayatımda",
-    "english": "in my life",
-    "source_page": 24
-  },
-  {
-    "id": 918,
-    "turkish": "ömrümde",
-    "english": "in my life",
-    "source_page": 24
-  },
-  {
-    "id": 919,
-    "turkish": "kitaplarda",
-    "english": "in the book",
-    "source_page": 24
-  },
-  {
-    "id": 920,
-    "turkish": "sayfalarda",
-    "english": "on the pages",
-    "source_page": 24
-  },
-  {
-    "id": 921,
-    "turkish": "hikayelerde",
-    "english": "in the stories",
-    "source_page": 24
-  },
-  {
-    "id": 922,
-    "turkish": "şarkılarda",
-    "english": "in the songs",
-    "source_page": 24
-  },
-  {
-    "id": 923,
-    "turkish": "yağmurda",
-    "english": "in the rain",
-    "source_page": 24
-  },
-  {
-    "id": 924,
-    "turkish": "karda",
-    "english": "in the snow",
-    "source_page": 24
-  },
-  {
-    "id": 925,
-    "turkish": "fırtınada",
-    "english": "in the storm",
-    "source_page": 24
-  },
-  {
-    "id": 926,
-    "turkish": "havada",
-    "english": "in the weather",
-    "source_page": 24
-  },
-  {
-    "id": 927,
-    "turkish": "siste",
-    "english": "in the fog",
-    "source_page": 24
-  },
-  {
-    "id": 928,
-    "turkish": "gökyüzünde",
-    "english": "in the sky",
-    "source_page": 24
-  },
-  {
-    "id": 929,
-    "turkish": "yıldızlarda",
-    "english": "in the stars",
-    "source_page": 25
-  },
-  {
-    "id": 930,
-    "turkish": "pazarteside",
-    "english": "on monday",
-    "source_page": 25
-  },
-  {
-    "id": 931,
-    "turkish": "salı gününde",
-    "english": "on tuesday",
-    "source_page": 25
-  },
-  {
-    "id": 932,
-    "turkish": "perşembe günü",
-    "english": "on thursday",
-    "source_page": 25
-  },
-  {
-    "id": 933,
-    "turkish": "cuma günü",
-    "english": "on friday",
-    "source_page": 25
-  },
-  {
-    "id": 934,
-    "turkish": "pazar günü",
-    "english": "on sunday",
-    "source_page": 25
-  },
-  {
-    "id": 935,
-    "turkish": "ilkbaharda",
-    "english": "in the spring",
-    "source_page": 25
-  },
-  {
-    "id": 936,
-    "turkish": "sonbaharda",
-    "english": "in the autum",
-    "source_page": 25
-  },
-  {
-    "id": 937,
-    "turkish": "yazda",
-    "english": "in the summer",
-    "source_page": 25
-  },
-  {
-    "id": 938,
-    "turkish": "yazın",
-    "english": "in the summer",
-    "source_page": 25
-  },
-  {
-    "id": 939,
-    "turkish": "yazları",
-    "english": "in the summers",
-    "source_page": 25
-  },
-  {
-    "id": 940,
-    "turkish": "kışta",
-    "english": "in the winter",
-    "source_page": 25
-  },
-  {
-    "id": 941,
-    "turkish": "kışın",
-    "english": "in the winter",
-    "source_page": 25
-  },
-  {
-    "id": 942,
-    "turkish": "kışları",
-    "english": "in the winters",
-    "source_page": 25
-  },
-  {
-    "id": 943,
-    "turkish": "ocak ayında",
-    "english": "in january",
-    "source_page": 25
-  },
-  {
-    "id": 944,
-    "turkish": "Şubat ayında",
-    "english": "in february",
-    "source_page": 25
-  },
-  {
-    "id": 945,
-    "turkish": "mart ayında",
-    "english": "in march",
-    "source_page": 25
-  },
-  {
-    "id": 946,
-    "turkish": "nisanda",
-    "english": "in april",
-    "source_page": 25
-  },
-  {
-    "id": 947,
-    "turkish": "mayısta",
-    "english": "in may",
-    "source_page": 25
-  },
-  {
-    "id": 948,
-    "turkish": "haziranda",
-    "english": "in june",
-    "source_page": 25
-  },
-  {
-    "id": 949,
-    "turkish": "temmuz'da",
-    "english": "in july",
-    "source_page": 25
-  },
-  {
-    "id": 950,
-    "turkish": "eylülde",
-    "english": "in september",
-    "source_page": 25
-  },
-  {
-    "id": 951,
-    "turkish": "ekimde",
-    "english": "in october",
-    "source_page": 25
-  },
-  {
-    "id": 952,
-    "turkish": "kasımda",
-    "english": "in november",
-    "source_page": 25
-  },
-  {
-    "id": 953,
-    "turkish": "aralıkta",
-    "english": "in december",
-    "source_page": 25
-  },
-  {
-    "id": 954,
-    "turkish": "doğum günümde",
-    "english": "on my birthday",
-    "source_page": 25
-  },
-  {
-    "id": 955,
-    "turkish": "senin doğum gününde",
-    "english": "on your birthday",
-    "source_page": 25
-  },
-  {
-    "id": 956,
-    "turkish": "tatilde",
-    "english": "on the holiday",
-    "source_page": 25
-  },
-  {
-    "id": 957,
-    "turkish": "yılbaşında",
-    "english": "on the new year",
-    "source_page": 25
-  },
-  {
-    "id": 958,
-    "turkish": "yeni yılda",
-    "english": "on the new year",
-    "source_page": 25
-  },
-  {
-    "id": 959,
-    "turkish": "noelde Christmas",
-    "english": "on christmas",
-    "source_page": 25
-  },
-  {
-    "id": 960,
-    "turkish": "bayramda",
-    "english": "on bayram",
-    "source_page": 25
-  },
-  {
-    "id": 961,
-    "turkish": "bayramlarda",
-    "english": "on bayrams",
-    "source_page": 25
-  },
-  {
-    "id": 962,
-    "turkish": "Sabahleyin",
-    "english": "in the morning",
-    "source_page": 25
-  },
-  {
-    "id": 963,
-    "turkish": "Sabahları",
-    "english": "in the mornings",
-    "source_page": 25
-  },
-  {
-    "id": 964,
-    "turkish": "Öğlenleyin",
-    "english": "at noon",
-    "source_page": 25
-  },
-  {
-    "id": 965,
-    "turkish": "Öğlenleri",
-    "english": "at noons",
-    "source_page": 25
-  },
-  {
-    "id": 966,
-    "turkish": "öğleden sonra",
-    "english": "in the afternoon",
-    "source_page": 25
-  },
-  {
-    "id": 967,
-    "turkish": "öğleden sonralarda",
-    "english": "in the afternoons",
-    "source_page": 25
-  },
-  {
-    "id": 968,
-    "turkish": "akşamleyin",
-    "english": "in the evening",
-    "source_page": 25
-  },
-  {
-    "id": 969,
-    "turkish": "akşamları",
-    "english": "in the evenings",
-    "source_page": 25
-  },
-  {
-    "id": 970,
-    "turkish": "geceleyin",
-    "english": "at night",
-    "source_page": 25
-  },
-  {
-    "id": 971,
-    "turkish": "geceleri",
-    "english": "at nights",
-    "source_page": 25
-  },
-  {
-    "id": 972,
-    "turkish": "evde",
-    "english": "at home",
-    "source_page": 25
-  },
-  {
-    "id": 973,
-    "turkish": "işte",
-    "english": "at work",
-    "source_page": 25
-  },
-  {
-    "id": 974,
-    "turkish": "öğlende",
-    "english": "at noon",
-    "source_page": 25
-  },
-  {
-    "id": 975,
-    "turkish": "geceleyin",
-    "english": "at night",
-    "source_page": 26
-  },
-  {
-    "id": 976,
-    "turkish": "şu anda",
-    "english": "at the moment",
-    "source_page": 26
-  },
-  {
-    "id": 977,
-    "turkish": "haftanın sonunda",
-    "english": "at the end of the week",
-    "source_page": 26
-  },
-  {
-    "id": 978,
-    "turkish": "ayın başında",
-    "english": "at the beginning of the month",
-    "source_page": 26
-  },
-  {
-    "id": 979,
-    "turkish": "haftanın sonunda",
-    "english": "at the end of the week",
-    "source_page": 26
-  },
-  {
-    "id": 980,
-    "turkish": "yılın başında",
-    "english": "at the beginning of the year",
-    "source_page": 26
-  },
-  {
-    "id": 981,
-    "turkish": "günün sonunda",
-    "english": "at the end of the day",
-    "source_page": 26
-  },
-  {
-    "id": 982,
-    "turkish": "Doğum günümde",
-    "english": "on my birthday",
-    "source_page": 26
-  },
-  {
-    "id": 983,
-    "turkish": "partinin sonunda",
-    "english": "at the end of the party",
-    "source_page": 26
-  },
-  {
-    "id": 984,
-    "turkish": "toplantının başında",
-    "english": "at the beginning of the meeting",
-    "source_page": 26
-  },
-  {
-    "id": 985,
-    "turkish": "toplantıda",
-    "english": "in the meeting",
-    "source_page": 26
-  },
-  {
-    "id": 986,
-    "turkish": "trende",
-    "english": "on the train",
-    "source_page": 26
-  },
-  {
-    "id": 987,
-    "turkish": "otobüste",
-    "english": "on the bus",
-    "source_page": 26
-  },
-  {
-    "id": 988,
-    "turkish": "uçakta",
-    "english": "on the plane",
-    "source_page": 26
-  },
-  {
-    "id": 989,
-    "turkish": "Arabada",
-    "english": "in the car",
-    "source_page": 26
-  },
-  {
-    "id": 990,
-    "turkish": "Bisiklette",
-    "english": "on the bike",
-    "source_page": 26
-  },
-  {
-    "id": 991,
-    "turkish": "Takside",
-    "english": "in the taxi",
-    "source_page": 26
-  },
-  {
-    "id": 992,
-    "turkish": "Şehirde",
-    "english": "in the city",
-    "source_page": 26
-  },
-  {
-    "id": 993,
-    "turkish": "Köyde",
-    "english": "in the village",
-    "source_page": 26
-  },
-  {
-    "id": 994,
-    "turkish": "Şehirlerde",
-    "english": "in the cities",
-    "source_page": 26
-  },
-  {
-    "id": 995,
-    "turkish": "Kasabalarda",
-    "english": "in the towns",
-    "source_page": 26
-  },
-  {
-    "id": 996,
-    "turkish": "Köylerde",
-    "english": "in the villages",
-    "source_page": 26
-  },
-  {
-    "id": 997,
-    "turkish": "Köyümde",
-    "english": "in my village",
-    "source_page": 26
-  },
-  {
-    "id": 998,
-    "turkish": "türkiye'de",
-    "english": "in turkey",
-    "source_page": 26
-  },
-  {
-    "id": 999,
-    "turkish": "almanya'da",
-    "english": "in germany",
-    "source_page": 26
-  },
-  {
-    "id": 1000,
-    "turkish": "amerika'da",
-    "english": "in america",
-    "source_page": 26
-  },
-  {
-    "id": 1001,
-    "turkish": "rusya'da",
-    "english": "in russia",
-    "source_page": 26
-  },
-  {
-    "id": 1002,
-    "turkish": "italya'da",
-    "english": "in italia",
-    "source_page": 26
-  },
-  {
-    "id": 1003,
-    "turkish": "yunanistan'da",
-    "english": "in greece",
-    "source_page": 26
-  },
-  {
-    "id": 1004,
-    "turkish": "fransa'da",
-    "english": "in france",
-    "source_page": 26
-  },
-  {
-    "id": 1005,
-    "turkish": "İstanbul'da",
-    "english": "in istanbul",
-    "source_page": 26
-  },
-  {
-    "id": 1006,
-    "turkish": "berlin'de",
-    "english": "in berlin",
-    "source_page": 26
-  },
-  {
-    "id": 1007,
-    "turkish": "anadolu'da",
-    "english": "in anatolia",
-    "source_page": 26
-  },
-  {
-    "id": 1008,
-    "turkish": "new york'ta",
-    "english": "in new york",
-    "source_page": 26
-  },
-  {
-    "id": 1009,
-    "turkish": "nevşehir'de",
-    "english": "in nevsehir",
-    "source_page": 26
-  },
-  {
-    "id": 1010,
-    "turkish": "dünyada",
-    "english": "in the world",
-    "source_page": 26
-  },
-  {
-    "id": 1011,
-    "turkish": "bahçede",
-    "english": "in the garden",
-    "source_page": 26
-  },
-  {
-    "id": 1012,
-    "turkish": "gelecekte",
-    "english": "in the future",
-    "source_page": 26
-  },
-  {
-    "id": 1013,
-    "turkish": "geçmişte",
-    "english": "in the past",
-    "source_page": 26
-  },
-  {
-    "id": 1014,
-    "turkish": "bilgisayarda",
-    "english": "on the computer",
-    "source_page": 26
-  },
-  {
-    "id": 1015,
-    "turkish": "televizyonda",
-    "english": "on the tv",
-    "source_page": 26
-  },
-  {
-    "id": 1016,
-    "turkish": "radyoda",
-    "english": "on the radio",
-    "source_page": 26
-  },
-  {
-    "id": 1017,
-    "turkish": "internette",
-    "english": "on the internet",
-    "source_page": 26
-  },
-  {
-    "id": 1018,
-    "turkish": "facebook'ta",
-    "english": "on facebook",
-    "source_page": 26
-  },
-  {
-    "id": 1019,
-    "turkish": "instagram'da",
-    "english": "on instagram",
-    "source_page": 26
-  },
-  {
-    "id": 1020,
-    "turkish": "tiktok ta",
-    "english": "on tik tok",
-    "source_page": 26
-  },
-  {
-    "id": 1021,
-    "turkish": "telefonda",
-    "english": "on the phone",
-    "source_page": 26
-  },
-  {
-    "id": 1022,
-    "turkish": "telefonumda",
-    "english": "on my phone",
-    "source_page": 26
-  },
-  {
-    "id": 1023,
-    "turkish": "dağlarda",
-    "english": "on the mountains",
-    "source_page": 27
-  },
-  {
-    "id": 1024,
-    "turkish": "denizlerde",
-    "english": "in the seas",
-    "source_page": 27
-  },
-  {
-    "id": 1025,
-    "turkish": "nehirlerde",
-    "english": "in the rivers",
-    "source_page": 27
-  },
-  {
-    "id": 1026,
-    "turkish": "mutfakta",
-    "english": "in the kitchen",
-    "source_page": 27
-  },
-  {
-    "id": 1027,
-    "turkish": "salonda",
-    "english": "in the living room",
-    "source_page": 27
-  },
-  {
-    "id": 1028,
-    "turkish": "misafir odasında",
-    "english": "in the guest room",
-    "source_page": 27
-  },
-  {
-    "id": 1029,
-    "turkish": "yatak odasında",
-    "english": "in the bedroom",
-    "source_page": 27
-  },
-  {
-    "id": 1030,
-    "turkish": "banyoda",
-    "english": "in the bathroom",
-    "source_page": 27
-  },
-  {
-    "id": 1031,
-    "turkish": "odada",
-    "english": "in the room",
-    "source_page": 27
-  },
-  {
-    "id": 1032,
-    "turkish": "sınıfta",
-    "english": "in the classroom",
-    "source_page": 27
-  },
-  {
-    "id": 1033,
-    "turkish": "sinemada",
-    "english": "in the cinema",
-    "source_page": 27
-  },
-  {
-    "id": 1034,
-    "turkish": "tiyatroda",
-    "english": "in the theater",
-    "source_page": 27
-  },
-  {
-    "id": 1035,
-    "turkish": "maçta",
-    "english": "in the game",
-    "source_page": 27
-  },
-  {
-    "id": 1036,
-    "turkish": "Saat birde",
-    "english": "at one o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1037,
-    "turkish": "Saat ikide",
-    "english": "at two o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1038,
-    "turkish": "saat üçte",
-    "english": "at three o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1039,
-    "turkish": "saat dörtte",
-    "english": "at four o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1040,
-    "turkish": "saat beşte",
-    "english": "at five o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1041,
-    "turkish": "saat 6 da",
-    "english": "at six o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1042,
-    "turkish": "saat yedide",
-    "english": "at seven o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1043,
-    "turkish": "saat sekizde",
-    "english": "at eight o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1044,
-    "turkish": "saat dokuzda",
-    "english": "at nine o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1045,
-    "turkish": "saat 10 da",
-    "english": "at ten o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1046,
-    "turkish": "saat 11de",
-    "english": "at eleven o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1047,
-    "turkish": "saat 12 de",
-    "english": "at twelve o'clock",
-    "source_page": 27
-  },
-  {
-    "id": 1048,
-    "turkish": "öğlenleyin",
-    "english": "at noon",
-    "source_page": 27
-  },
-  {
-    "id": 1049,
-    "turkish": "Geceleyin",
-    "english": "at night",
-    "source_page": 27
-  },
-  {
-    "id": 1050,
-    "turkish": "şu anda",
-    "english": "at the moment",
-    "source_page": 27
-  },
-  {
-    "id": 1051,
-    "turkish": "haftanın sonunda",
-    "english": "at the end of the week",
-    "source_page": 27
-  },
-  {
-    "id": 1052,
-    "turkish": "yılın başında",
-    "english": "at the beginning of the year",
-    "source_page": 27
-  },
-  {
-    "id": 1053,
-    "turkish": "günün sonunda",
-    "english": "at the end of the day",
-    "source_page": 27
-  },
-  {
-    "id": 1054,
-    "turkish": "Cumartesi günü",
-    "english": "on saturday",
-    "source_page": 27
-  },
-  {
-    "id": 1055,
-    "turkish": "pazar günü",
-    "english": "on sunday",
-    "source_page": 27
-  },
-  {
-    "id": 1056,
-    "turkish": "doğum günümde",
-    "english": "on my birthday",
-    "source_page": 27
-  },
-  {
-    "id": 1057,
-    "turkish": "tatilde",
-    "english": "on the holiday",
-    "source_page": 27
-  },
-  {
-    "id": 1058,
-    "turkish": "ocak ayında",
-    "english": "in january",
-    "source_page": 27
-  },
-  {
-    "id": 1059,
-    "turkish": "Nisan ayında",
-    "english": "in april",
-    "source_page": 27
-  },
-  {
-    "id": 1060,
-    "turkish": "Eylül ayında",
-    "english": "in september",
-    "source_page": 27
-  },
-  {
-    "id": 1061,
-    "turkish": "İlkbaharda",
-    "english": "in the spring",
-    "source_page": 27
-  },
-  {
-    "id": 1062,
-    "turkish": "Yazın",
-    "english": "in the summer",
-    "source_page": 27
-  },
-  {
-    "id": 1063,
-    "turkish": "Sonbaharda",
-    "english": "in the autumn",
-    "source_page": 27
-  },
-  {
-    "id": 1064,
-    "turkish": "Kışın",
-    "english": "in the winter",
-    "source_page": 27
-  },
-  {
-    "id": 1065,
-    "turkish": "Yüzümde",
-    "english": "on my face",
-    "source_page": 27
-  },
-  {
-    "id": 1066,
-    "turkish": "Gözümde",
-    "english": "in my eye",
-    "source_page": 27
-  },
-  {
-    "id": 1067,
-    "turkish": "Vücudumda",
-    "english": "on my body",
-    "source_page": 27
-  },
-  {
-    "id": 1068,
-    "turkish": "ellerimde",
-    "english": "in my hands",
-    "source_page": 27
-  },
-  {
-    "id": 1069,
-    "turkish": "elimde",
-    "english": "in my hand",
-    "source_page": 27
-  },
-  {
-    "id": 1070,
-    "turkish": "kolumda",
-    "english": "on my arm",
-    "source_page": 27
-  },
-  {
-    "id": 1071,
-    "turkish": "bacağında",
-    "english": "on your leg",
-    "source_page": 28
-  },
-  {
-    "id": 1072,
-    "turkish": "bacaklarımda",
-    "english": "on my legs",
-    "source_page": 28
-  },
-  {
-    "id": 1073,
-    "turkish": "ayaklarımda",
-    "english": "on my feet",
-    "source_page": 28
-  },
-  {
-    "id": 1074,
-    "turkish": "ayağımda",
-    "english": "on my foot",
-    "source_page": 28
-  },
-  {
-    "id": 1075,
-    "turkish": "burnumda",
-    "english": "in my nose",
-    "source_page": 28
-  },
-  {
-    "id": 1076,
-    "turkish": "saçımda",
-    "english": "in my hair",
-    "source_page": 28
-  },
-  {
-    "id": 1077,
-    "turkish": "senin dişlerinde",
-    "english": "on your teeth",
-    "source_page": 28
-  },
-  {
-    "id": 1078,
-    "turkish": "ağzımda",
-    "english": "in my mouth",
-    "source_page": 28
-  },
-  {
-    "id": 1079,
-    "turkish": "hayatımda",
-    "english": "in my life",
-    "source_page": 28
-  },
-  {
-    "id": 1080,
-    "turkish": "Bir dakika içinde",
-    "english": "in a minute",
-    "source_page": 28
-  },
-  {
-    "id": 1081,
-    "turkish": "5 dakika içinde",
-    "english": "in five minutes",
-    "source_page": 28
-  },
-  {
-    "id": 1082,
-    "turkish": "5 dakikada",
-    "english": "in five minutes",
-    "source_page": 28
-  },
-  {
-    "id": 1083,
-    "turkish": "bir saatte",
-    "english": "in an hour",
-    "source_page": 28
-  },
-  {
-    "id": 1084,
-    "turkish": "2 saatte",
-    "english": "in two hours",
-    "source_page": 28
-  },
-  {
-    "id": 1085,
-    "turkish": "3 saatte",
-    "english": "in three hours",
-    "source_page": 28
-  },
-  {
-    "id": 1086,
-    "turkish": "4 saatte",
-    "english": "in four hours",
-    "source_page": 28
-  },
-  {
-    "id": 1087,
-    "turkish": "5 saatte",
-    "english": "in five hours",
-    "source_page": 28
-  },
-  {
-    "id": 1088,
-    "turkish": "6 saat içinde",
-    "english": "in six hours",
-    "source_page": 28
-  },
-  {
-    "id": 1089,
-    "turkish": "7 saatte",
-    "english": "in seven hours",
-    "source_page": 28
-  },
-  {
-    "id": 1090,
-    "turkish": "bir günde",
-    "english": "in a day",
-    "source_page": 28
-  },
-  {
-    "id": 1091,
-    "turkish": "2 günde",
-    "english": "in two days",
-    "source_page": 28
-  },
-  {
-    "id": 1092,
-    "turkish": "bir gün içinde",
-    "english": "in a day",
-    "source_page": 28
-  },
-  {
-    "id": 1093,
-    "turkish": "2 gün içinde",
-    "english": "in two days",
-    "source_page": 28
-  },
-  {
-    "id": 1094,
-    "turkish": "3 günde",
-    "english": "in three days",
-    "source_page": 28
-  },
-  {
-    "id": 1095,
-    "turkish": "3 gün içinde",
-    "english": "in three days",
-    "source_page": 28
-  },
-  {
-    "id": 1096,
-    "turkish": "bir haftada",
-    "english": "in a week",
-    "source_page": 28
-  },
-  {
-    "id": 1097,
-    "turkish": "bir hafta içinde",
-    "english": "in a week",
-    "source_page": 28
-  },
-  {
-    "id": 1098,
-    "turkish": "2 hafta içinde",
-    "english": "in two weeks",
-    "source_page": 28
-  },
-  {
-    "id": 1099,
-    "turkish": "bir ayda",
-    "english": "in a month",
-    "source_page": 28
-  },
-  {
-    "id": 1100,
-    "turkish": "2 ayda",
-    "english": "in two months",
-    "source_page": 28
-  },
-  {
-    "id": 1101,
-    "turkish": "bir ay içinde",
-    "english": "in a month",
-    "source_page": 28
-  },
-  {
-    "id": 1102,
-    "turkish": "2 ay içinde",
-    "english": "in two months",
-    "source_page": 28
-  },
-  {
-    "id": 1103,
-    "turkish": "bir yılda",
-    "english": "in a year",
-    "source_page": 28
-  },
-  {
-    "id": 1104,
-    "turkish": "bir yıl içinde",
-    "english": "in a year",
-    "source_page": 28
-  },
-  {
-    "id": 1105,
-    "turkish": "2 yılda",
-    "english": "in two years",
-    "source_page": 28
-  },
-  {
-    "id": 1106,
-    "turkish": "2 yıl içinde",
-    "english": "in two years",
-    "source_page": 28
-  },
-  {
-    "id": 1107,
-    "turkish": "10 yılda",
-    "english": "in ten years",
-    "source_page": 28
-  },
-  {
-    "id": 1108,
-    "turkish": "10 yıl içinde",
-    "english": "in ten years",
-    "source_page": 28
-  },
-  {
-    "id": 1109,
-    "turkish": "Dükkanda",
-    "english": "in the shop",
-    "source_page": 28
-  },
-  {
-    "id": 1110,
-    "turkish": "Kafede",
-    "english": "in the cafe",
-    "source_page": 28
-  },
-  {
-    "id": 1111,
-    "turkish": "Restoranda",
-    "english": "in the restaurant",
-    "source_page": 28
-  },
-  {
-    "id": 1112,
-    "turkish": "Ofiste",
-    "english": "in the office",
-    "source_page": 28
-  },
-  {
-    "id": 1113,
-    "turkish": "bir yerde",
-    "english": "in a place",
-    "source_page": 28
-  },
-  {
-    "id": 1114,
-    "turkish": "burada",
-    "english": "here",
-    "source_page": 28
-  },
-  {
-    "id": 1115,
-    "turkish": "orada",
-    "english": "there",
-    "source_page": 28
-  },
-  {
-    "id": 1116,
-    "turkish": "Koltukta",
-    "english": "on the couch",
-    "source_page": 28
-  },
-  {
-    "id": 1117,
-    "turkish": "Sandalyede",
-    "english": "on the chair",
-    "source_page": 28
-  },
-  {
-    "id": 1118,
-    "turkish": "Masada",
-    "english": "on the table",
-    "source_page": 28
-  },
-  {
-    "id": 1119,
-    "turkish": "halıda",
-    "english": "on the carpet",
-    "source_page": 29
-  },
-  {
-    "id": 1120,
-    "turkish": "bilgisayarda",
-    "english": "on the computer",
-    "source_page": 29
-  },
-  {
-    "id": 1121,
-    "turkish": "televizyonda",
-    "english": "on the tv",
-    "source_page": 29
-  },
-  {
-    "id": 1122,
-    "turkish": "Tabakta",
-    "english": "on the plate",
-    "source_page": 29
-  },
-  {
-    "id": 1123,
-    "turkish": "Bardakta",
-    "english": "in the glass",
-    "source_page": 29
-  },
-  {
-    "id": 1124,
-    "turkish": "bu tabakta",
-    "english": "in this plate",
-    "source_page": 29
-  },
-  {
-    "id": 1125,
-    "turkish": "bu çorbada",
-    "english": "in this soup",
-    "source_page": 29
-  },
-  {
-    "id": 1126,
-    "turkish": "bu şişede",
-    "english": "in this bottle",
-    "source_page": 29
-  },
-  {
-    "id": 1127,
-    "turkish": "bu şişelerde",
-    "english": "in this bottles",
-    "source_page": 29
-  },
-  {
-    "id": 1128,
-    "turkish": "bu kasede",
-    "english": "in this bowl",
-    "source_page": 29
-  },
-  {
-    "id": 1129,
-    "turkish": "Çorbada",
-    "english": "in the soup",
-    "source_page": 29
-  },
-  {
-    "id": 1130,
-    "turkish": "Şişede",
-    "english": "in the bottle",
-    "source_page": 29
-  },
-  {
-    "id": 1131,
-    "turkish": "Kasede",
-    "english": "in the bowl",
-    "source_page": 29
-  },
-  {
-    "id": 1132,
-    "turkish": "Hikayelerde",
-    "english": "in the stories",
-    "source_page": 29
-  },
-  {
-    "id": 1133,
-    "turkish": "Kahvede",
-    "english": "in the coffee",
-    "source_page": 29
-  },
-  {
-    "id": 1134,
-    "turkish": "Çayda",
-    "english": "in the tea",
-    "source_page": 29
-  },
-  {
-    "id": 1135,
-    "turkish": "Senin Çayında",
-    "english": "in your tea",
-    "source_page": 29
-  },
-  {
-    "id": 1136,
-    "turkish": "Senin portakal suyunda",
-    "english": "in your orange juice",
-    "source_page": 29
-  },
-  {
-    "id": 1137,
-    "turkish": "benim portakal suyumda",
-    "english": "in my orange juice",
-    "source_page": 29
-  },
-  {
-    "id": 1138,
-    "turkish": "senin portakal suyunda",
-    "english": "in your orange juice",
-    "source_page": 29
-  },
-  {
-    "id": 1139,
-    "turkish": "çorbamda",
-    "english": "in my soup",
-    "source_page": 29
-  },
-  {
-    "id": 1140,
-    "turkish": "kalbimde",
-    "english": "in my heart",
-    "source_page": 29
-  },
-  {
-    "id": 1141,
-    "turkish": "aklımda",
-    "english": "in my mind",
-    "source_page": 29
-  },
-  {
-    "id": 1142,
-    "turkish": "yüreğimde",
-    "english": "in my heart",
-    "source_page": 29
-  },
-  {
-    "id": 1143,
-    "turkish": "Çamaşır makinesinde",
-    "english": "in the laundry machine",
-    "source_page": 29
-  },
-  {
-    "id": 1144,
-    "turkish": "bulaşık makinesinde",
-    "english": "in the dishwasher",
-    "source_page": 29
-  },
-  {
-    "id": 1145,
-    "turkish": "fırında",
-    "english": "in the oven",
-    "source_page": 29
-  },
-  {
-    "id": 1146,
-    "turkish": "ocakta",
-    "english": "on the stove",
-    "source_page": 29
-  },
-  {
-    "id": 1147,
-    "turkish": "buzdolabında",
-    "english": "in the fridge",
-    "source_page": 29
-  },
-  {
-    "id": 1148,
-    "turkish": "mutfakta",
-    "english": "in the kitchen",
-    "source_page": 29
-  },
-  {
-    "id": 1149,
-    "turkish": "Meyvelerde",
-    "english": "in the fruits",
-    "source_page": 29
-  },
-  {
-    "id": 1150,
-    "turkish": "Sebzelerde",
-    "english": "in the vegetables",
-    "source_page": 29
-  },
-  {
-    "id": 1151,
-    "turkish": "Elmada",
-    "english": "on the apple",
-    "source_page": 29
-  },
-  {
-    "id": 1152,
-    "turkish": "Elmalarda",
-    "english": "on the apples",
-    "source_page": 29
-  },
-  {
-    "id": 1153,
-    "turkish": "Portakalda",
-    "english": "in the orange",
-    "source_page": 29
-  },
-  {
-    "id": 1154,
-    "turkish": "portakal suyunda",
-    "english": "in the orange juice",
-    "source_page": 29
-  },
-  {
-    "id": 1155,
-    "turkish": "kirazda",
-    "english": "on the cherry",
-    "source_page": 29
-  },
-  {
-    "id": 1156,
-    "turkish": "kirazlarda",
-    "english": "on the cherries",
-    "source_page": 29
-  },
-  {
-    "id": 1157,
-    "turkish": "muzda",
-    "english": "on the banana",
-    "source_page": 29
-  },
-  {
-    "id": 1158,
-    "turkish": "muzlarda",
-    "english": "on the bananas",
-    "source_page": 29
-  },
-  {
-    "id": 1159,
-    "turkish": "maymunlarda",
-    "english": "at the monkeys",
-    "source_page": 29
-  },
-  {
-    "id": 1160,
-    "turkish": "domateste",
-    "english": "in the tomato",
-    "source_page": 29
-  },
-  {
-    "id": 1161,
-    "turkish": "domateslerin içinde",
-    "english": "in the tomato",
-    "source_page": 29
-  },
-  {
-    "id": 1162,
-    "turkish": "domateslerin üstünde",
-    "english": "on the tomato",
-    "source_page": 29
-  },
-  {
-    "id": 1163,
-    "turkish": "domateslerin yanında",
-    "english": "at the tomato",
-    "source_page": 29
-  },
-  {
-    "id": 1164,
-    "turkish": "domateslerde",
-    "english": "in the tomato",
-    "source_page": 29
-  },
-  {
-    "id": 1165,
-    "turkish": "patateste",
-    "english": "in the potato",
-    "source_page": 29
-  },
-  {
-    "id": 1166,
-    "turkish": "patateslerde",
-    "english": "in the potatoes",
-    "source_page": 29
-  },
-  {
-    "id": 1167,
-    "turkish": "salatalıkta",
-    "english": "in the cucumber",
-    "source_page": 30
-  },
-  {
-    "id": 1168,
-    "turkish": "Kahvaltıda",
-    "english": "in the breakfast",
-    "source_page": 30
-  },
-  {
-    "id": 1169,
-    "turkish": "öğlen yemeğinde",
-    "english": "at lunch",
-    "source_page": 30
-  },
-  {
-    "id": 1170,
-    "turkish": "akşam yemeğinde",
-    "english": "at dinner",
-    "source_page": 30
-  },
-  {
-    "id": 1171,
-    "turkish": "Gemide",
-    "english": "on the ship",
-    "source_page": 30
-  },
-  {
-    "id": 1172,
-    "turkish": "Sandalda",
-    "english": "on the boat",
-    "source_page": 30
-  },
-  {
-    "id": 1173,
-    "turkish": "Köprüde",
-    "english": "on the bridge",
-    "source_page": 30
-  },
-  {
-    "id": 1174,
-    "turkish": "Nehirde",
-    "english": "in the river",
-    "source_page": 30
-  },
-  {
-    "id": 1175,
-    "turkish": "Denizde",
-    "english": "in the sea",
-    "source_page": 30
-  },
-  {
-    "id": 1176,
-    "turkish": "Dağda",
-    "english": "on the mountain",
-    "source_page": 30
-  },
-  {
-    "id": 1177,
-    "turkish": "istanbul'da",
-    "english": "in istanbul",
-    "source_page": 30
-  },
-  {
-    "id": 1178,
-    "turkish": "ankara'da",
-    "english": "in ankara",
-    "source_page": 30
-  },
-  {
-    "id": 1179,
-    "turkish": "türkiye'de",
-    "english": "in turkey",
-    "source_page": 30
-  },
-  {
-    "id": 1180,
-    "turkish": "çin'de",
-    "english": "in chine",
-    "source_page": 30
-  },
-  {
-    "id": 1181,
-    "turkish": "sabahleyin",
-    "english": "in the morning",
-    "source_page": 30
-  },
-  {
-    "id": 1182,
-    "turkish": "öğlenleyin",
-    "english": "at noon",
-    "source_page": 30
-  },
-  {
-    "id": 1183,
-    "turkish": "öğleden sonra",
-    "english": "in the afternoon",
-    "source_page": 30
-  },
-  {
-    "id": 1184,
-    "turkish": "akşamleyin",
-    "english": "in the evening",
-    "source_page": 30
-  },
-  {
-    "id": 1185,
-    "turkish": "geceleyin",
-    "english": "at night",
-    "source_page": 30
-  },
-  {
-    "id": 1186,
-    "turkish": "sabahleyin",
-    "english": "in the morning",
-    "source_page": 30
-  },
-  {
-    "id": 1187,
-    "turkish": "öğlenleyin",
-    "english": "at noon",
-    "source_page": 30
-  },
-  {
-    "id": 1188,
-    "turkish": "öğleden sonra",
-    "english": "in the afternoon",
-    "source_page": 30
-  },
-  {
-    "id": 1189,
-    "turkish": "akşamleyin",
-    "english": "in the evening",
-    "source_page": 30
-  },
-  {
-    "id": 1190,
-    "turkish": "geceleyin",
-    "english": "at night",
-    "source_page": 30
-  },
-  {
-    "id": 1191,
-    "turkish": "hafta sonunda",
-    "english": "at the weekend",
-    "source_page": 30
-  },
-  {
-    "id": 1192,
-    "turkish": "haftanın başında",
-    "english": "at the beginning of the week",
-    "source_page": 30
-  },
-  {
-    "id": 1193,
-    "turkish": "haftanın sonunda",
-    "english": "at the end of the week",
-    "source_page": 30
-  },
-  {
-    "id": 1194,
-    "turkish": "pazartesi günü",
-    "english": "on monday",
-    "source_page": 30
-  },
-  {
-    "id": 1195,
-    "turkish": "çarşamba günü",
-    "english": "on wednesday",
-    "source_page": 30
-  },
-  {
-    "id": 1196,
-    "turkish": "cumartesi günü",
-    "english": "on saturday",
-    "source_page": 30
-  },
-  {
-    "id": 1197,
-    "turkish": "perşembe günü",
-    "english": "on thursday",
-    "source_page": 30
-  },
-  {
-    "id": 1198,
-    "turkish": "salı günü",
-    "english": "on tuesday",
-    "source_page": 30
-  },
-  {
-    "id": 1199,
-    "turkish": "cuma günü",
-    "english": "on friday",
-    "source_page": 30
-  },
-  {
-    "id": 1200,
-    "turkish": "Pazar günü",
-    "english": "on sunday",
-    "source_page": 30
-  },
-  {
-    "id": 1201,
-    "turkish": "pazar sabahı",
-    "english": "on sunday morning",
-    "source_page": 30
-  },
-  {
-    "id": 1202,
-    "turkish": "cuma öğleden sonra",
-    "english": "on friday afternoon",
-    "source_page": 30
-  },
-  {
-    "id": 1203,
-    "turkish": "cumartesi akşamı",
-    "english": "on saturday evening",
-    "source_page": 30
-  },
-  {
-    "id": 1204,
-    "turkish": "perşembe öğlen",
-    "english": "on thursday noon",
-    "source_page": 30
-  },
-  {
-    "id": 1205,
-    "turkish": "pazar gecesi",
-    "english": "on sunday night",
-    "source_page": 30
-  },
-  {
-    "id": 1206,
-    "turkish": "çarşamba akşamı",
-    "english": "on wednesday evening",
-    "source_page": 30
-  },
-  {
-    "id": 1207,
-    "turkish": "cuma sabahı",
-    "english": "on friday morning",
-    "source_page": 30
-  },
-  {
-    "id": 1208,
-    "turkish": "cumartesi gecesi",
-    "english": "on saturday night",
-    "source_page": 30
-  },
-  {
-    "id": 1209,
-    "turkish": "pazartesi sabahı",
-    "english": "on monday morning",
-    "source_page": 30
-  },
-  {
-    "id": 1210,
-    "turkish": "bir bardak suda",
-    "english": "in a glass of water",
-    "source_page": 30
-  },
-  {
-    "id": 1211,
-    "turkish": "2 kilo domates de",
-    "english": "in two kilos of tomatoes",
-    "source_page": 30
-  },
-  {
-    "id": 1212,
-    "turkish": "3 şişe sütte",
-    "english": "in three bottle of milk",
-    "source_page": 30
-  },
-  {
-    "id": 1213,
-    "turkish": "2 kutu kolada",
-    "english": "in two cans on coke",
-    "source_page": 30
-  },
-  {
-    "id": 1214,
-    "turkish": "bir kilo ette",
-    "english": "in a kilo of meat",
-    "source_page": 30
-  },
-  {
-    "id": 1215,
-    "turkish": "2 bardak suda",
-    "english": "in two glasses of water",
-    "source_page": 31
-  },
-  {
-    "id": 1216,
-    "turkish": "3 şişe suda",
-    "english": "in three bottles of water",
-    "source_page": 31
-  },
-  {
-    "id": 1217,
-    "turkish": "bir kase çorbada",
-    "english": "in a bowl of soup",
-    "source_page": 31
-  },
-  {
-    "id": 1218,
-    "turkish": "bir parça peynirde",
-    "english": "in a piece of cheese",
-    "source_page": 31
-  },
-  {
-    "id": 1219,
-    "turkish": "Toplantıda",
-    "english": "in the meeting",
-    "source_page": 31
-  },
-  {
-    "id": 1220,
-    "turkish": "Kapıda",
-    "english": "at the door",
-    "source_page": 31
-  },
-  {
-    "id": 1221,
-    "turkish": "Kapımda",
-    "english": "at my door",
-    "source_page": 31
-  },
-  {
-    "id": 1222,
-    "turkish": "Penceremde",
-    "english": "at my window",
-    "source_page": 31
-  },
-  {
-    "id": 1223,
-    "turkish": "Zeminde",
-    "english": "on the floor",
-    "source_page": 31
-  },
-  {
-    "id": 1224,
-    "turkish": "Duvarda",
-    "english": "on the wall",
-    "source_page": 31
-  },
-  {
-    "id": 1225,
-    "turkish": "Masada",
-    "english": "on the table",
-    "source_page": 31
-  },
-  {
-    "id": 1226,
-    "turkish": "Sandalyede",
-    "english": "on the chair",
-    "source_page": 31
-  },
-  {
-    "id": 1227,
-    "turkish": "Yatakta",
-    "english": "on the bed",
-    "source_page": 31
-  },
-  {
-    "id": 1228,
-    "turkish": "Koltukta",
-    "english": "on the couch",
-    "source_page": 31
-  },
-  {
-    "id": 1229,
-    "turkish": "Halıda",
-    "english": "on the carpet",
-    "source_page": 31
-  },
-  {
-    "id": 1230,
-    "turkish": "ağaç da",
-    "english": "on the tree",
-    "source_page": 31
-  },
-  {
-    "id": 1231,
-    "turkish": "ormanda",
-    "english": "in the forest",
-    "source_page": 31
-  },
-  {
-    "id": 1232,
-    "turkish": "ağaçlarda",
-    "english": "on the trees",
-    "source_page": 31
-  },
-  {
-    "id": 1233,
-    "turkish": "ormanlarda",
-    "english": "in the forests",
-    "source_page": 31
-  },
-  {
-    "id": 1234,
-    "turkish": "bahçede",
-    "english": "in the garden",
-    "source_page": 31
-  },
-  {
-    "id": 1235,
-    "turkish": "bahçemde",
-    "english": "in my garden",
-    "source_page": 31
-  },
-  {
-    "id": 1236,
-    "turkish": "çiçeklerde",
-    "english": "on the flowers",
-    "source_page": 31
-  },
-  {
-    "id": 1237,
-    "turkish": "Senin Tişörtünde",
-    "english": "on your t-shirt",
-    "source_page": 31
-  },
-  {
-    "id": 1238,
-    "turkish": "Senin Gömleğinde",
-    "english": "on the your shirt",
-    "source_page": 31
-  },
-  {
-    "id": 1239,
-    "turkish": "Pantolonumda",
-    "english": "on my pants",
-    "source_page": 31
-  },
-  {
-    "id": 1240,
-    "turkish": "Şortumda",
-    "english": "on my shorts",
-    "source_page": 31
-  },
-  {
-    "id": 1241,
-    "turkish": "Çoraplarımda",
-    "english": "on my socks",
-    "source_page": 31
-  },
-  {
-    "id": 1242,
-    "turkish": "Kotumda",
-    "english": "on my jeans",
-    "source_page": 31
-  },
-  {
-    "id": 1243,
-    "turkish": "Süeterimde",
-    "english": "on my sweater",
-    "source_page": 31
-  },
-  {
-    "id": 1244,
-    "turkish": "Ayakkabımda",
-    "english": "in my shoe",
-    "source_page": 31
-  },
-  {
-    "id": 1245,
-    "turkish": "Ayakkabılarımda",
-    "english": "in my shoes",
-    "source_page": 31
-  },
-  {
-    "id": 1246,
-    "turkish": "Elbiselerimde",
-    "english": "on my clothes",
-    "source_page": 31
-  },
-  {
-    "id": 1247,
-    "turkish": "Kıyafetlerimde",
-    "english": "on my clothes",
-    "source_page": 31
-  },
-  {
-    "id": 1248,
-    "turkish": "Şapkamda",
-    "english": "in my hat",
-    "source_page": 31
-  },
-  {
-    "id": 1249,
-    "turkish": "Saatimde",
-    "english": "at my watch",
-    "source_page": 31
-  },
-  {
-    "id": 1250,
-    "turkish": "Pizzamda",
-    "english": "in my pizza",
-    "source_page": 31
-  },
-  {
-    "id": 1251,
-    "turkish": "Pizzada",
-    "english": "in the pizza",
-    "source_page": 31
-  },
-  {
-    "id": 1252,
-    "turkish": "bu pizzada",
-    "english": "in this pizza",
-    "source_page": 31
-  },
-  {
-    "id": 1253,
-    "turkish": "Hamburgerimde",
-    "english": "in my hamburger",
-    "source_page": 31
-  },
-  {
-    "id": 1254,
-    "turkish": "hamburger de",
-    "english": "in the hamburger",
-    "source_page": 31
-  },
-  {
-    "id": 1255,
-    "turkish": "yumurtalarda",
-    "english": "in the eggs",
-    "source_page": 31
-  },
-  {
-    "id": 1256,
-    "turkish": "yumurtam da",
-    "english": "in my egg",
-    "source_page": 31
-  },
-  {
-    "id": 1257,
-    "turkish": "Tereyağında",
-    "english": "in the butter",
-    "source_page": 31
-  },
-  {
-    "id": 1258,
-    "turkish": "Zeytinyağında",
-    "english": "in the olive oil",
-    "source_page": 31
-  },
-  {
-    "id": 1259,
-    "turkish": "bir kilo zeytinyağında",
-    "english": "in a kilo of olive oil",
-    "source_page": 31
-  },
-  {
-    "id": 1260,
-    "turkish": "bir parça tereyağında",
-    "english": "in a piece of butter",
-    "source_page": 31
-  },
-  {
-    "id": 1261,
-    "turkish": "tatlımda",
-    "english": "in my dessert",
-    "source_page": 31
-  },
-  {
-    "id": 1262,
-    "turkish": "bir tabak",
-    "english": "in a plate of dessert",
-    "source_page": 31
-  },
-  {
-    "id": 1263,
-    "turkish": "bir fincan kahvede",
-    "english": "in a cup of coffee",
-    "source_page": 32
-  },
-  {
-    "id": 1264,
-    "turkish": "bir kutu kolada",
-    "english": "in a can of coke",
-    "source_page": 32
-  },
-  {
-    "id": 1265,
-    "turkish": "bir litre sütte",
-    "english": "in a liter of milk",
-    "source_page": 32
+    "english": "THE WEATHER",
+    "pronunciation_tr": "DI-VE-DIR",
+    "turkish": "HAVA – HAVA DURUMU",
+    "source_page": 42
   }
 ]
