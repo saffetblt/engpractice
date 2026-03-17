@@ -1,0 +1,2074 @@
+[
+  {
+    "id": 1,
+    "english": "THE DAY",
+    "pronunciation_tr": "DI-DEY",
+    "turkish": "GÜN",
+    "source_page": 2
+  },
+  {
+    "id": 2,
+    "english": "MONDAY",
+    "pronunciation_tr": "MAN-DEY",
+    "turkish": "PAZARTESİ",
+    "source_page": 2
+  },
+  {
+    "id": 3,
+    "english": "TUESDAY",
+    "pronunciation_tr": "TÜĞÜZ-DEY",
+    "turkish": "SALI",
+    "source_page": 2
+  },
+  {
+    "id": 4,
+    "english": "WEDNESDAY",
+    "pronunciation_tr": "VED-NIS-DEY",
+    "turkish": "ÇARŞAMBA",
+    "source_page": 2
+  },
+  {
+    "id": 5,
+    "english": "THURSDAY",
+    "pronunciation_tr": "THÖRS-DEY",
+    "turkish": "PERŞEMBE",
+    "source_page": 2
+  },
+  {
+    "id": 6,
+    "english": "FRIDAY",
+    "pronunciation_tr": "FI-RAY-DEY",
+    "turkish": "CUMA",
+    "source_page": 2
+  },
+  {
+    "id": 7,
+    "english": "SATURDAY",
+    "pronunciation_tr": "SE-TIR-DEY",
+    "turkish": "CUMARTESİ",
+    "source_page": 2
+  },
+  {
+    "id": 8,
+    "english": "SUNDAY",
+    "pronunciation_tr": "SAN-DEY",
+    "turkish": "PAZAR",
+    "source_page": 2
+  },
+  {
+    "id": 9,
+    "english": "HOLIDAY",
+    "pronunciation_tr": "HA-Lİ-DEY",
+    "turkish": "TATİL",
+    "source_page": 2
+  },
+  {
+    "id": 10,
+    "english": "BIRTHDAY",
+    "pronunciation_tr": "BÖRTH-DEY",
+    "turkish": "DOĞUMGÜNÜ",
+    "source_page": 2
+  },
+  {
+    "id": 11,
+    "english": "THE MONTH",
+    "pronunciation_tr": "DI-MONT",
+    "turkish": "AY",
+    "source_page": 3
+  },
+  {
+    "id": 12,
+    "english": "JANUARY",
+    "pronunciation_tr": "CE-NU-ERİ",
+    "turkish": "OCAK",
+    "source_page": 3
+  },
+  {
+    "id": 13,
+    "english": "FEBRUARY",
+    "pronunciation_tr": "FEB-RU-ERİ",
+    "turkish": "ŞUBAT",
+    "source_page": 3
+  },
+  {
+    "id": 14,
+    "english": "MARCH",
+    "pronunciation_tr": "MARÇ",
+    "turkish": "MART",
+    "source_page": 3
+  },
+  {
+    "id": 15,
+    "english": "APRIL",
+    "pronunciation_tr": "EYP-RIL",
+    "turkish": "NİSAN",
+    "source_page": 3
+  },
+  {
+    "id": 16,
+    "english": "MAY",
+    "pronunciation_tr": "MEY",
+    "turkish": "MAYIS",
+    "source_page": 3
+  },
+  {
+    "id": 17,
+    "english": "JUNE",
+    "pronunciation_tr": "CUĞUN",
+    "turkish": "HAZİRAN",
+    "source_page": 3
+  },
+  {
+    "id": 18,
+    "english": "JULY",
+    "pronunciation_tr": "CU-LAY",
+    "turkish": "TEMMUZ",
+    "source_page": 3
+  },
+  {
+    "id": 19,
+    "english": "AUGUST",
+    "pronunciation_tr": "OO-GUST",
+    "turkish": "AĞUSTOS",
+    "source_page": 3
+  },
+  {
+    "id": 20,
+    "english": "SEPTEMBER",
+    "pronunciation_tr": "SEP-TEM-BIR",
+    "turkish": "EYLÜL",
+    "source_page": 4
+  },
+  {
+    "id": 21,
+    "english": "OCTOBER",
+    "pronunciation_tr": "AK-TAA-BIR",
+    "turkish": "EKİM",
+    "source_page": 4
+  },
+  {
+    "id": 22,
+    "english": "NOVEMBER",
+    "pronunciation_tr": "NO-VEM-BIR",
+    "turkish": "KASIM",
+    "source_page": 4
+  },
+  {
+    "id": 23,
+    "english": "DECEMBER",
+    "pronunciation_tr": "Dİ-SEM-BIR",
+    "turkish": "ARALIK",
+    "source_page": 4
+  },
+  {
+    "id": 24,
+    "english": "THE SEASON",
+    "pronunciation_tr": "DI-Sİİ-ZIN",
+    "turkish": "MEVSİM",
+    "source_page": 5
+  },
+  {
+    "id": 25,
+    "english": "THE SPRING",
+    "pronunciation_tr": "DI-SIP-RİNG",
+    "turkish": "İLKBAHAR",
+    "source_page": 5
+  },
+  {
+    "id": 26,
+    "english": "THE SUMMER",
+    "pronunciation_tr": "DI-SA-MIR",
+    "turkish": "YAZ",
+    "source_page": 5
+  },
+  {
+    "id": 27,
+    "english": "THE AUTUMN",
+    "pronunciation_tr": "DI-OO-TUM",
+    "turkish": "SONBAHAR",
+    "source_page": 5
+  },
+  {
+    "id": 28,
+    "english": "THE WINTER",
+    "pronunciation_tr": "DI-VİN-TIR",
+    "turkish": "KIŞ",
+    "source_page": 5
+  },
+  {
+    "id": 29,
+    "english": "THE TIME",
+    "pronunciation_tr": "DI-TAYM",
+    "turkish": "ZAMAN",
+    "source_page": 6
+  },
+  {
+    "id": 30,
+    "english": "THE SECOND",
+    "pronunciation_tr": "DI-SE-KIND",
+    "turkish": "SANİYE",
+    "source_page": 6
+  },
+  {
+    "id": 31,
+    "english": "THE MINUTE",
+    "pronunciation_tr": "DI-Mi-NIT",
+    "turkish": "DAKİKA",
+    "source_page": 6
+  },
+  {
+    "id": 32,
+    "english": "THE HOUR",
+    "pronunciation_tr": "DI-A-VIR",
+    "turkish": "SAAT",
+    "source_page": 6
+  },
+  {
+    "id": 33,
+    "english": "THE DAY",
+    "pronunciation_tr": "DI-DEY",
+    "turkish": "GÜN",
+    "source_page": 6
+  },
+  {
+    "id": 34,
+    "english": "THE WEEK",
+    "pronunciation_tr": "DI-VİİK",
+    "turkish": "HAFTA",
+    "source_page": 6
+  },
+  {
+    "id": 35,
+    "english": "THE MONTH",
+    "pronunciation_tr": "DI-MONT",
+    "turkish": "AY",
+    "source_page": 6
+  },
+  {
+    "id": 36,
+    "english": "THE SEASON",
+    "pronunciation_tr": "DI-Sİİ-ZIN",
+    "turkish": "MEVSİM",
+    "source_page": 6
+  },
+  {
+    "id": 37,
+    "english": "THE YEAR",
+    "pronunciation_tr": "DI-Yİ-IR",
+    "turkish": "YIL-SENE",
+    "source_page": 6
+  },
+  {
+    "id": 38,
+    "english": "THE JOB",
+    "pronunciation_tr": "DI-CAB",
+    "turkish": "MESLEK",
+    "source_page": 7
+  },
+  {
+    "id": 39,
+    "english": "THE TEACHER",
+    "pronunciation_tr": "DI-Tİİ-ÇIR",
+    "turkish": "ÖĞRETMEN",
+    "source_page": 8
+  },
+  {
+    "id": 40,
+    "english": "THE MANAGER",
+    "pronunciation_tr": "DI-ME-NI-CIR",
+    "turkish": "YÖNETİCİ",
+    "source_page": 8
+  },
+  {
+    "id": 41,
+    "english": "THE STUDENT",
+    "pronunciation_tr": "DI-SÜ-TÜ-DINT",
+    "turkish": "ÖĞRENCİ",
+    "source_page": 8
+  },
+  {
+    "id": 42,
+    "english": "THE SOLDIER",
+    "pronunciation_tr": "DI-SOL-CIR",
+    "turkish": "ASKER",
+    "source_page": 8
+  },
+  {
+    "id": 43,
+    "english": "THE WAITER",
+    "pronunciation_tr": "DI-VEY-TIR",
+    "turkish": "GARSON",
+    "source_page": 8
+  },
+  {
+    "id": 44,
+    "english": "THE COP",
+    "pronunciation_tr": "DI-KAP",
+    "turkish": "POLİS",
+    "source_page": 8
+  },
+  {
+    "id": 45,
+    "english": "THE DOCTOR",
+    "pronunciation_tr": "DI-DAK-TIR",
+    "turkish": "DOKTOR",
+    "source_page": 9
+  },
+  {
+    "id": 46,
+    "english": "WORK",
+    "pronunciation_tr": "VÖRK",
+    "turkish": "İŞ",
+    "source_page": 9
+  },
+  {
+    "id": 47,
+    "english": "THE NURSE",
+    "pronunciation_tr": "DI-NÖRS",
+    "turkish": "HEMŞİRE",
+    "source_page": 9
+  },
+  {
+    "id": 48,
+    "english": "THE LAWYER",
+    "pronunciation_tr": "DI-LOV-YIR",
+    "turkish": "AVUKAT",
+    "source_page": 9
+  },
+  {
+    "id": 49,
+    "english": "THE COOK",
+    "pronunciation_tr": "DI-KUK",
+    "turkish": "AŞÇI",
+    "source_page": 9
+  },
+  {
+    "id": 50,
+    "english": "THE VET",
+    "pronunciation_tr": "DI-VET",
+    "turkish": "VETERİNER",
+    "source_page": 9
+  },
+  {
+    "id": 51,
+    "english": "THE WORKER",
+    "pronunciation_tr": "DI-VÖR-KIR",
+    "turkish": "İŞÇİ",
+    "source_page": 9
+  },
+  {
+    "id": 52,
+    "english": "THE PLACE",
+    "pronunciation_tr": "PI-LEY-S",
+    "turkish": "YER-MEKAN",
+    "source_page": 10
+  },
+  {
+    "id": 53,
+    "english": "THE HOUSE",
+    "pronunciation_tr": "DI-HAVS",
+    "turkish": "EV",
+    "source_page": 10
+  },
+  {
+    "id": 54,
+    "english": "THE SCHOOL",
+    "pronunciation_tr": "DI-SI-KUĞUL",
+    "turkish": "OKUL",
+    "source_page": 10
+  },
+  {
+    "id": 55,
+    "english": "THE BANK",
+    "pronunciation_tr": "DI-BENK",
+    "turkish": "BANKA",
+    "source_page": 10
+  },
+  {
+    "id": 56,
+    "english": "THE HOSPITAL",
+    "pronunciation_tr": "DI-HAS-Pİ-TIL",
+    "turkish": "HASTANE",
+    "source_page": 10
+  },
+  {
+    "id": 57,
+    "english": "THE SHOP",
+    "pronunciation_tr": "DI-ŞAP",
+    "turkish": "DÜKKAN MARKET",
+    "source_page": 11
+  },
+  {
+    "id": 58,
+    "english": "THE RESTAURANT",
+    "pronunciation_tr": "DI-REST-RANT",
+    "turkish": "RESTORAN LOKANTA",
+    "source_page": 11
+  },
+  {
+    "id": 59,
+    "english": "THE CAFÉ",
+    "pronunciation_tr": "DI-KA-FE",
+    "turkish": "KAFE KAFETERYA",
+    "source_page": 11
+  },
+  {
+    "id": 60,
+    "english": "THE OFFICE",
+    "pronunciation_tr": "DI-A-FİS",
+    "turkish": "OFİS İŞYERİ",
+    "source_page": 11
+  },
+  {
+    "id": 61,
+    "english": "THE LIVING ROOM",
+    "pronunciation_tr": "DI-Lİ-VİNG RUUM",
+    "turkish": "OTURMA ODASI SALON",
+    "source_page": 12
+  },
+  {
+    "id": 62,
+    "english": "THE KITCHEN",
+    "pronunciation_tr": "DI-Kİ-ÇIN",
+    "turkish": "MUTFAK",
+    "source_page": 12
+  },
+  {
+    "id": 63,
+    "english": "THE GUEST ROOM",
+    "pronunciation_tr": "DI-GEST RUUM",
+    "turkish": "MİSAFİR ODASI",
+    "source_page": 12
+  },
+  {
+    "id": 64,
+    "english": "THE BEDROOM",
+    "pronunciation_tr": "DI-BED-RUUM",
+    "turkish": "YATAK ODASI",
+    "source_page": 12
+  },
+  {
+    "id": 65,
+    "english": "THE BATHROOM",
+    "pronunciation_tr": "DI-BET-RUUM",
+    "turkish": "BANYO TUVALET",
+    "source_page": 12
+  },
+  {
+    "id": 66,
+    "english": "THE ARMCHAIR",
+    "pronunciation_tr": "DI-ARM-ÇE-YIR",
+    "turkish": "TEKLİ KOLTUK",
+    "source_page": 13
+  },
+  {
+    "id": 67,
+    "english": "BED",
+    "pronunciation_tr": "DI-BED",
+    "turkish": "YATAK",
+    "source_page": 13
+  },
+  {
+    "id": 68,
+    "english": "CHAIR",
+    "pronunciation_tr": "DI-ÇE-YIR",
+    "turkish": "SANDALYE",
+    "source_page": 13
+  },
+  {
+    "id": 69,
+    "english": "COUCH",
+    "pronunciation_tr": "DI-KA-UÇ",
+    "turkish": "KANEPE",
+    "source_page": 13
+  },
+  {
+    "id": 70,
+    "english": "PC / COMPUTER",
+    "pronunciation_tr": "DI-Pİ-Sİ DI-KOM-PÜ-TIR",
+    "turkish": "BİLGİSAYAR",
+    "source_page": 13
+  },
+  {
+    "id": 71,
+    "english": "PHONE",
+    "pronunciation_tr": "DI-FOON",
+    "turkish": "TELEFON",
+    "source_page": 13
+  },
+  {
+    "id": 72,
+    "english": "TABLE / DESK",
+    "pronunciation_tr": "DI-TEY-BIL / DI-DESK",
+    "turkish": "MASA",
+    "source_page": 13
+  },
+  {
+    "id": 73,
+    "english": "TV",
+    "pronunciation_tr": "DI-Tİ-Vİ",
+    "turkish": "TELEVİZYON",
+    "source_page": 13
+  },
+  {
+    "id": 74,
+    "english": "THE SPOON",
+    "pronunciation_tr": "DI-SI-PUUN",
+    "turkish": "KAŞIK",
+    "source_page": 14
+  },
+  {
+    "id": 75,
+    "english": "THE PLATE",
+    "pronunciation_tr": "DI-PI-LEYT",
+    "turkish": "TABAK",
+    "source_page": 14
+  },
+  {
+    "id": 76,
+    "english": "THE FORK",
+    "pronunciation_tr": "DI-FORK",
+    "turkish": "ÇATAL",
+    "source_page": 14
+  },
+  {
+    "id": 77,
+    "english": "THE CUP",
+    "pronunciation_tr": "DI-KAP",
+    "turkish": "FİNCAN ÇAY-KAHVE BARDAĞI",
+    "source_page": 14
+  },
+  {
+    "id": 78,
+    "english": "THE KNIFE",
+    "pronunciation_tr": "DI-NAYF",
+    "turkish": "BIÇAK",
+    "source_page": 14
+  },
+  {
+    "id": 79,
+    "english": "THE BOTTLE",
+    "pronunciation_tr": "DI-BA-TIL",
+    "turkish": "ŞİŞE",
+    "source_page": 14
+  },
+  {
+    "id": 80,
+    "english": "THE GLASS",
+    "pronunciation_tr": "DI-GI-LAS",
+    "turkish": "BARDAK - CAM",
+    "source_page": 14
+  },
+  {
+    "id": 81,
+    "english": "THE DISHES",
+    "pronunciation_tr": "DI-Dİ-ŞIZ",
+    "turkish": "BULAŞIKLAR",
+    "source_page": 15
+  },
+  {
+    "id": 82,
+    "english": "THE LAUNDRY",
+    "pronunciation_tr": "DI-LOĞN-DI-Rİ",
+    "turkish": "KİRLİ ÇAMAŞIRLAR",
+    "source_page": 15
+  },
+  {
+    "id": 83,
+    "english": "THE DISH WASHER",
+    "pronunciation_tr": "DI-DİŞ-VO-ŞIR",
+    "turkish": "BULAŞIK MAKİNESİ",
+    "source_page": 15
+  },
+  {
+    "id": 84,
+    "english": "THE LAUNDRY MACHINE",
+    "pronunciation_tr": "DI-LOĞN-DI-Rİ ME-ŞİİN",
+    "turkish": "ÇAMAŞIR MAKİNESİ",
+    "source_page": 15
+  },
+  {
+    "id": 85,
+    "english": "THE APP",
+    "pronunciation_tr": "DI-EP",
+    "turkish": "APLİKASYON",
+    "source_page": 16
+  },
+  {
+    "id": 86,
+    "english": "THE PHOTO",
+    "pronunciation_tr": "DI-FO-TO",
+    "turkish": "FOTOĞRAF",
+    "source_page": 16
+  },
+  {
+    "id": 87,
+    "english": "SOCIAL MEDIA",
+    "pronunciation_tr": "DI-SO-ŞIL-Mİ-Dİ-YA",
+    "turkish": "SOSYAL MEDYA",
+    "source_page": 16
+  },
+  {
+    "id": 88,
+    "english": "THE PICTURE",
+    "pronunciation_tr": "DI-PİK-ÇIR",
+    "turkish": "RESİM",
+    "source_page": 16
+  },
+  {
+    "id": 89,
+    "english": "THE STOVE",
+    "pronunciation_tr": "DI-SI-TOV",
+    "turkish": "OCAK",
+    "source_page": 17
+  },
+  {
+    "id": 90,
+    "english": "THE OVEN",
+    "pronunciation_tr": "DI-O-VIN",
+    "turkish": "FIRIN",
+    "source_page": 17
+  },
+  {
+    "id": 91,
+    "english": "THE FRIDGE",
+    "pronunciation_tr": "DI-FI-RİC",
+    "turkish": "BUZDOLABI",
+    "source_page": 17
+  },
+  {
+    "id": 92,
+    "english": "THE STRAWBERRY",
+    "pronunciation_tr": "DI-SIT-ROV-BE-Rİ",
+    "turkish": "ÇİLEK",
+    "source_page": 18
+  },
+  {
+    "id": 93,
+    "english": "THE APPLE",
+    "pronunciation_tr": "DI-E-PIL",
+    "turkish": "ELMA",
+    "source_page": 18
+  },
+  {
+    "id": 94,
+    "english": "THE ORANGE",
+    "pronunciation_tr": "DI-O-RINÇ",
+    "turkish": "PORTAKAL",
+    "source_page": 18
+  },
+  {
+    "id": 95,
+    "english": "THE BANANA",
+    "pronunciation_tr": "DI-BA-NA-NA",
+    "turkish": "MUZ",
+    "source_page": 18
+  },
+  {
+    "id": 96,
+    "english": "THE CHERRY",
+    "pronunciation_tr": "DI-ÇE-Rİ",
+    "turkish": "KİRAZ",
+    "source_page": 18
+  },
+  {
+    "id": 97,
+    "english": "THE FRUITS",
+    "pronunciation_tr": "DI-FU-RÜÜTS",
+    "turkish": "MEYVELER",
+    "source_page": 18
+  },
+  {
+    "id": 98,
+    "english": "THE VEGETABLES",
+    "pronunciation_tr": "DI-VEC-TI-BILS",
+    "turkish": "SEBZELER",
+    "source_page": 19
+  },
+  {
+    "id": 99,
+    "english": "THE TOMATO",
+    "pronunciation_tr": "DI-TO-MEY-TO",
+    "turkish": "DOMATES",
+    "source_page": 19
+  },
+  {
+    "id": 100,
+    "english": "THE CUCUMBER",
+    "pronunciation_tr": "DI-KÜ-KIM-BIR",
+    "turkish": "SALATALIK",
+    "source_page": 19
+  },
+  {
+    "id": 101,
+    "english": "THE PEPPER",
+    "pronunciation_tr": "DI-PE-PIR",
+    "turkish": "BİBER",
+    "source_page": 19
+  },
+  {
+    "id": 102,
+    "english": "THE POTATO",
+    "pronunciation_tr": "DI-PO-TEY-TO",
+    "turkish": "PATATES",
+    "source_page": 19
+  },
+  {
+    "id": 103,
+    "english": "TURKEY",
+    "pronunciation_tr": "TÖR-Kİ",
+    "turkish": "TÜRKİYE",
+    "source_page": 20
+  },
+  {
+    "id": 104,
+    "english": "TURKISH",
+    "pronunciation_tr": "TÖR-KİŞ",
+    "turkish": "TÜRKÇE / TÜRK",
+    "source_page": 20
+  },
+  {
+    "id": 105,
+    "english": "AMERICA",
+    "pronunciation_tr": "A-ME-Rİ-KA",
+    "turkish": "AMERİKA",
+    "source_page": 20
+  },
+  {
+    "id": 106,
+    "english": "AMERICAN",
+    "pronunciation_tr": "A-ME-Rİ-KIN",
+    "turkish": "AMERİKALI",
+    "source_page": 20
+  },
+  {
+    "id": 107,
+    "english": "GERMANY",
+    "pronunciation_tr": "CÖR-MI-Nİ",
+    "turkish": "ALMANYA",
+    "source_page": 21
+  },
+  {
+    "id": 108,
+    "english": "GERMAN",
+    "pronunciation_tr": "CÖR-MIN",
+    "turkish": "ALMAN / ALMANCA",
+    "source_page": 21
+  },
+  {
+    "id": 109,
+    "english": "FRANCE",
+    "pronunciation_tr": "FI-RENS",
+    "turkish": "FRANSA",
+    "source_page": 21
+  },
+  {
+    "id": 110,
+    "english": "FRENCH",
+    "pronunciation_tr": "FI-RENÇ",
+    "turkish": "FRANSIZ / FRANSIZCA",
+    "source_page": 21
+  },
+  {
+    "id": 111,
+    "english": "ITALY",
+    "pronunciation_tr": "İ-TI-Lİ",
+    "turkish": "İTALYA",
+    "source_page": 22
+  },
+  {
+    "id": 112,
+    "english": "ITALIAN",
+    "pronunciation_tr": "İ-TE-Lİ-YIN",
+    "turkish": "İTALYAN İTALYANCA",
+    "source_page": 22
+  },
+  {
+    "id": 113,
+    "english": "ENGLAND",
+    "pronunciation_tr": "İNG-LIND",
+    "turkish": "İNGİLTERE",
+    "source_page": 22
+  },
+  {
+    "id": 114,
+    "english": "ENGLISH",
+    "pronunciation_tr": "İNG-LİŞ",
+    "turkish": "İNGİLİZ İNGİLİZCE",
+    "source_page": 22
+  },
+  {
+    "id": 115,
+    "english": "RUSSIA",
+    "pronunciation_tr": "RA-ŞA",
+    "turkish": "RUSYA",
+    "source_page": 23
+  },
+  {
+    "id": 116,
+    "english": "RUSSIAN",
+    "pronunciation_tr": "RA-ŞIN",
+    "turkish": "RUS / RUSÇA",
+    "source_page": 23
+  },
+  {
+    "id": 117,
+    "english": "CHINA",
+    "pronunciation_tr": "ÇAY-NA",
+    "turkish": "ÇİN",
+    "source_page": 23
+  },
+  {
+    "id": 118,
+    "english": "CHINESE",
+    "pronunciation_tr": "ÇAY-NİİZ",
+    "turkish": "ÇİNLİ / ÇİNCE",
+    "source_page": 23
+  },
+  {
+    "id": 119,
+    "english": "THE BIRD",
+    "pronunciation_tr": "DI-BÖRD",
+    "turkish": "KUŞ",
+    "source_page": 24
+  },
+  {
+    "id": 120,
+    "english": "THE CAT",
+    "pronunciation_tr": "DI-KET",
+    "turkish": "KEDİ",
+    "source_page": 24
+  },
+  {
+    "id": 121,
+    "english": "THE FISH",
+    "pronunciation_tr": "DI-FİŞ",
+    "turkish": "BALIK",
+    "source_page": 24
+  },
+  {
+    "id": 122,
+    "english": "THE ANIMALS",
+    "pronunciation_tr": "DI-E-Nİ-MILS",
+    "turkish": "HAYVANLAR",
+    "source_page": 24
+  },
+  {
+    "id": 123,
+    "english": "THE DOG",
+    "pronunciation_tr": "DI-DOG",
+    "turkish": "KÖPEK",
+    "source_page": 24
+  },
+  {
+    "id": 124,
+    "english": "THE HORSE",
+    "pronunciation_tr": "DI-HORS",
+    "turkish": "AT",
+    "source_page": 24
+  },
+  {
+    "id": 125,
+    "english": "THE MONKEY",
+    "pronunciation_tr": "DI-MAN-Kİ",
+    "turkish": "MAYMUN",
+    "source_page": 25
+  },
+  {
+    "id": 126,
+    "english": "THE MOUSE",
+    "pronunciation_tr": "DI-MAĞUS",
+    "turkish": "FARE",
+    "source_page": 25
+  },
+  {
+    "id": 127,
+    "english": "THE SNAKE",
+    "pronunciation_tr": "DI-SI-NEYK",
+    "turkish": "YILAN",
+    "source_page": 25
+  },
+  {
+    "id": 128,
+    "english": "THE FLY",
+    "pronunciation_tr": "DI-FI-LAY",
+    "turkish": "SİNEK",
+    "source_page": 25
+  },
+  {
+    "id": 129,
+    "english": "THE ELEPHANT",
+    "pronunciation_tr": "DI-E-Lİ-FINT",
+    "turkish": "FİL",
+    "source_page": 25
+  },
+  {
+    "id": 130,
+    "english": "THE MAN",
+    "pronunciation_tr": "DI-MEĞN",
+    "turkish": "ADAM / ERKEK",
+    "source_page": 26
+  },
+  {
+    "id": 131,
+    "english": "THE WOMAN",
+    "pronunciation_tr": "DI-VO-MIN",
+    "turkish": "KADIN",
+    "source_page": 26
+  },
+  {
+    "id": 132,
+    "english": "THE PERSON",
+    "pronunciation_tr": "DI-PÖR-SIN",
+    "turkish": "KİŞİ / BİREY",
+    "source_page": 26
+  },
+  {
+    "id": 133,
+    "english": "THE CHILD",
+    "pronunciation_tr": "DI-ÇA-YILD",
+    "turkish": "ÇOCUK",
+    "source_page": 26
+  },
+  {
+    "id": 134,
+    "english": "THE BOY",
+    "pronunciation_tr": "DI-BOY",
+    "turkish": "ERKEK ÇOCUK",
+    "source_page": 26
+  },
+  {
+    "id": 135,
+    "english": "THE GIRL",
+    "pronunciation_tr": "DI-GÖRL",
+    "turkish": "KIZ ÇOCUK",
+    "source_page": 26
+  },
+  {
+    "id": 136,
+    "english": "THE BABY",
+    "pronunciation_tr": "DI-BEY-Bİ",
+    "turkish": "BEBEK",
+    "source_page": 26
+  },
+  {
+    "id": 137,
+    "english": "THE TEENAGER",
+    "pronunciation_tr": "DI-Tİ-NEY-CIR",
+    "turkish": "ERGEN / GENÇ",
+    "source_page": 26
+  },
+  {
+    "id": 138,
+    "english": "THE RELATIVES",
+    "pronunciation_tr": "DI-RE-LA-TİVS",
+    "turkish": "AKRABALAR",
+    "source_page": 27
+  },
+  {
+    "id": 139,
+    "english": "THE FAMILY",
+    "pronunciation_tr": "DI-FE-Mİ-Lİ",
+    "turkish": "AİLE",
+    "source_page": 27
+  },
+  {
+    "id": 140,
+    "english": "THE PARENTS",
+    "pronunciation_tr": "DI-PE-RINTS",
+    "turkish": "ANNE + BABA",
+    "source_page": 27
+  },
+  {
+    "id": 141,
+    "english": "THE FATHER",
+    "pronunciation_tr": "DI-FA-DIR",
+    "turkish": "BABA",
+    "source_page": 27
+  },
+  {
+    "id": 142,
+    "english": "THE MOTHER",
+    "pronunciation_tr": "DI-MA-DIR",
+    "turkish": "ANNE",
+    "source_page": 27
+  },
+  {
+    "id": 143,
+    "english": "THE GRANDFATHER",
+    "pronunciation_tr": "DI-GI-REND-FA-DIR",
+    "turkish": "DEDE / BÜYÜKBABA",
+    "source_page": 27
+  },
+  {
+    "id": 144,
+    "english": "THE GRANDMOTHER",
+    "pronunciation_tr": "DI-GI-REND-MA-DIR",
+    "turkish": "ANNEANNE / NİNE",
+    "source_page": 27
+  },
+  {
+    "id": 145,
+    "english": "THE SON",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "ERKEK EVLAT",
+    "source_page": 27
+  },
+  {
+    "id": 146,
+    "english": "THE DAUGHTER",
+    "pronunciation_tr": "DI-DOO-TIR",
+    "turkish": "KIZ EVLAT",
+    "source_page": 27
+  },
+  {
+    "id": 147,
+    "english": "THE GRANDSON",
+    "pronunciation_tr": "DI-GI-REND-SAN",
+    "turkish": "ERKEK TORUN",
+    "source_page": 27
+  },
+  {
+    "id": 148,
+    "english": "THE GRAND DAUGHTER",
+    "pronunciation_tr": "DI-GI-REND-DOO-TIR",
+    "turkish": "KIZ TORUN",
+    "source_page": 27
+  },
+  {
+    "id": 149,
+    "english": "THE BROTHER",
+    "pronunciation_tr": "DI-BI-RA-DIR",
+    "turkish": "ERKEK KARDEŞ",
+    "source_page": 27
+  },
+  {
+    "id": 150,
+    "english": "THE SISTER",
+    "pronunciation_tr": "DI-SİS-TIR",
+    "turkish": "KIZ KARDEŞ",
+    "source_page": 27
+  },
+  {
+    "id": 151,
+    "english": "THE AUNT",
+    "pronunciation_tr": "DI-OONT",
+    "turkish": "HALA / YENGE",
+    "source_page": 27
+  },
+  {
+    "id": 152,
+    "english": "THE UNCLE",
+    "pronunciation_tr": "DI-AN-KIL",
+    "turkish": "AMCA / DAYI",
+    "source_page": 27
+  },
+  {
+    "id": 153,
+    "english": "THE COUSIN",
+    "pronunciation_tr": "DI-KAZIN",
+    "turkish": "KUZEN",
+    "source_page": 27
+  },
+  {
+    "id": 154,
+    "english": "HERE",
+    "pronunciation_tr": "Hİ-YIR",
+    "turkish": "BURADA",
+    "source_page": 28
+  },
+  {
+    "id": 155,
+    "english": "THERE",
+    "pronunciation_tr": "DER",
+    "turkish": "ORADA",
+    "source_page": 28
+  },
+  {
+    "id": 156,
+    "english": "YESTERDAY",
+    "pronunciation_tr": "YES-TIR-DEY",
+    "turkish": "DÜN",
+    "source_page": 28
+  },
+  {
+    "id": 157,
+    "english": "TODAY",
+    "pronunciation_tr": "TU-DEY",
+    "turkish": "BUGÜN",
+    "source_page": 28
+  },
+  {
+    "id": 158,
+    "english": "TOMORROW",
+    "pronunciation_tr": "TU-MAR-ROV",
+    "turkish": "YARIN",
+    "source_page": 28
+  },
+  {
+    "id": 159,
+    "english": "THE BREAKFAST",
+    "pronunciation_tr": "DI-BI-REK-FIST",
+    "turkish": "KAHVALTI",
+    "source_page": 28
+  },
+  {
+    "id": 160,
+    "english": "THE LUNCH",
+    "pronunciation_tr": "DI-LANÇ",
+    "turkish": "ÖĞLEN YEMEĞİ",
+    "source_page": 28
+  },
+  {
+    "id": 161,
+    "english": "THE DINNER",
+    "pronunciation_tr": "DI-Dİ-NIR",
+    "turkish": "AKŞAM YEMEĞİ",
+    "source_page": 28
+  },
+  {
+    "id": 162,
+    "english": "THE VILLAGE",
+    "pronunciation_tr": "DI-Vİ-LIC",
+    "turkish": "KÖY",
+    "source_page": 29
+  },
+  {
+    "id": 163,
+    "english": "THE TOWN",
+    "pronunciation_tr": "DI-TAVN",
+    "turkish": "KASABA",
+    "source_page": 29
+  },
+  {
+    "id": 164,
+    "english": "THE CITY",
+    "pronunciation_tr": "DI-Sİ-Tİ",
+    "turkish": "ŞEHİR",
+    "source_page": 29
+  },
+  {
+    "id": 165,
+    "english": "THE COUNTRY",
+    "pronunciation_tr": "DI-KAĞUN-TIRİ",
+    "turkish": "ÜLKE",
+    "source_page": 29
+  },
+  {
+    "id": 166,
+    "english": "THE RIVER",
+    "pronunciation_tr": "DI-Rİ-VIR",
+    "turkish": "NEHİR",
+    "source_page": 29
+  },
+  {
+    "id": 167,
+    "english": "THE SEA",
+    "pronunciation_tr": "DI-Sİİ",
+    "turkish": "DENİZ",
+    "source_page": 29
+  },
+  {
+    "id": 168,
+    "english": "THE LAKE",
+    "pronunciation_tr": "DI-LEYK",
+    "turkish": "GÖL",
+    "source_page": 29
+  },
+  {
+    "id": 169,
+    "english": "THE MOUNTAIN",
+    "pronunciation_tr": "DI-MAĞUN-TIN",
+    "turkish": "DAĞ",
+    "source_page": 29
+  },
+  {
+    "id": 170,
+    "english": "THE CAR",
+    "pronunciation_tr": "DI-KAR",
+    "turkish": "ARABA",
+    "source_page": 30
+  },
+  {
+    "id": 171,
+    "english": "THE BUS",
+    "pronunciation_tr": "DI-BAS",
+    "turkish": "OTOBÜS",
+    "source_page": 30
+  },
+  {
+    "id": 172,
+    "english": "THE TRAIN",
+    "pronunciation_tr": "DI-TI-REYN",
+    "turkish": "TREN",
+    "source_page": 30
+  },
+  {
+    "id": 173,
+    "english": "THE SHIP",
+    "pronunciation_tr": "DI-ŞİP",
+    "turkish": "GEMİ",
+    "source_page": 30
+  },
+  {
+    "id": 174,
+    "english": "THE BOAT",
+    "pronunciation_tr": "DI-BOOT",
+    "turkish": "SANDAL/TEKNE/BOT",
+    "source_page": 30
+  },
+  {
+    "id": 175,
+    "english": "THE PLANE",
+    "pronunciation_tr": "DI-PI-LEYN",
+    "turkish": "UÇAK",
+    "source_page": 30
+  },
+  {
+    "id": 176,
+    "english": "THE BIKE",
+    "pronunciation_tr": "DI-BAYK",
+    "turkish": "BİSİKLET",
+    "source_page": 30
+  },
+  {
+    "id": 177,
+    "english": "THE MOTORBIKE",
+    "pronunciation_tr": "DI-MA-TIR-BAYK",
+    "turkish": "MOTOSİKLET",
+    "source_page": 30
+  },
+  {
+    "id": 178,
+    "english": "THE ROAD",
+    "pronunciation_tr": "DI-ROOD",
+    "turkish": "YOL / OTOBAN",
+    "source_page": 30
+  },
+  {
+    "id": 179,
+    "english": "THE STREET",
+    "pronunciation_tr": "DI-SIT-RİİT",
+    "turkish": "CADDE / SOKAK",
+    "source_page": 30
+  },
+  {
+    "id": 180,
+    "english": "THE BRIDGE",
+    "pronunciation_tr": "DI-BI-RİC",
+    "turkish": "KÖPRÜ",
+    "source_page": 30
+  },
+  {
+    "id": 181,
+    "english": "THE TUNNEL",
+    "pronunciation_tr": "DI-TA-NIL",
+    "turkish": "TÜNEL",
+    "source_page": 30
+  },
+  {
+    "id": 182,
+    "english": "THE BUS STOP",
+    "pronunciation_tr": "DI-BAS-SI-TAP",
+    "turkish": "OTOBÜS DURAĞI",
+    "source_page": 30
+  },
+  {
+    "id": 183,
+    "english": "THE STATION",
+    "pronunciation_tr": "DI-SI-TEY-ŞIN",
+    "turkish": "İSTASYON",
+    "source_page": 30
+  },
+  {
+    "id": 184,
+    "english": "THE AIRPORT",
+    "pronunciation_tr": "DI-E-YIR-PORT",
+    "turkish": "HAVAALANI",
+    "source_page": 30
+  },
+  {
+    "id": 185,
+    "english": "THE SUBWAY",
+    "pronunciation_tr": "DI-SAB-VEY",
+    "turkish": "METRO",
+    "source_page": 30
+  },
+  {
+    "id": 186,
+    "english": "THE MORNING",
+    "pronunciation_tr": "DI-MOR-NİNG",
+    "turkish": "SABAH",
+    "source_page": 31
+  },
+  {
+    "id": 187,
+    "english": "NOON",
+    "pronunciation_tr": "NUUN",
+    "turkish": "ÖĞLEN",
+    "source_page": 31
+  },
+  {
+    "id": 188,
+    "english": "THE AFTERNOON",
+    "pronunciation_tr": "DI-EFTIR-NUUN",
+    "turkish": "ÖĞLEDEN SONRA",
+    "source_page": 31
+  },
+  {
+    "id": 189,
+    "english": "THE EVENING",
+    "pronunciation_tr": "DI-İV-NİNG",
+    "turkish": "AKŞAM",
+    "source_page": 31
+  },
+  {
+    "id": 190,
+    "english": "NIGHT",
+    "pronunciation_tr": "NAYT",
+    "turkish": "GECE",
+    "source_page": 31
+  },
+  {
+    "id": 191,
+    "english": "THE QUESTION",
+    "pronunciation_tr": "DI-KU-ES-ÇIN",
+    "turkish": "SORU",
+    "source_page": 31
+  },
+  {
+    "id": 192,
+    "english": "THE ANSWER",
+    "pronunciation_tr": "DI-EN-SIR",
+    "turkish": "CEVAP / YANIT",
+    "source_page": 31
+  },
+  {
+    "id": 193,
+    "english": "THE PROBLEM",
+    "pronunciation_tr": "DI-PI-RAB-LIM",
+    "turkish": "SORUN / DERT /",
+    "source_page": 31
+  },
+  {
+    "id": 194,
+    "english": "THE REPORT",
+    "pronunciation_tr": "DI-Rİ-PORT",
+    "turkish": "RAPOR / KARNE",
+    "source_page": 31
+  },
+  {
+    "id": 195,
+    "english": "THE MEETING",
+    "pronunciation_tr": "DI-Mİ-TİNG",
+    "turkish": "TOPLANTI",
+    "source_page": 31
+  },
+  {
+    "id": 196,
+    "english": "MONEY",
+    "pronunciation_tr": "MA-Nİ",
+    "turkish": "PARA",
+    "source_page": 31
+  },
+  {
+    "id": 197,
+    "english": "THE SKY",
+    "pronunciation_tr": "DI-SI-KAY",
+    "turkish": "GÖKYÜZÜ",
+    "source_page": 32
+  },
+  {
+    "id": 198,
+    "english": "THE STAR",
+    "pronunciation_tr": "DI-SI-TAR",
+    "turkish": "YILDIZ",
+    "source_page": 32
+  },
+  {
+    "id": 199,
+    "english": "THE MOON",
+    "pronunciation_tr": "DI-MUUN",
+    "turkish": "AY",
+    "source_page": 32
+  },
+  {
+    "id": 200,
+    "english": "THE WORLD",
+    "pronunciation_tr": "DI-VÖRLD",
+    "turkish": "DÜNYA",
+    "source_page": 32
+  },
+  {
+    "id": 201,
+    "english": "THE EARTH",
+    "pronunciation_tr": "DI-ÖRTH",
+    "turkish": "YERKÜRE",
+    "source_page": 32
+  },
+  {
+    "id": 202,
+    "english": "THE SUN",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "GÜNEŞ",
+    "source_page": 32
+  },
+  {
+    "id": 203,
+    "english": "THE WEATHER",
+    "pronunciation_tr": "DI-VE-DIR",
+    "turkish": "HAVA / HAVA DURUMU",
+    "source_page": 32
+  },
+  {
+    "id": 204,
+    "english": "THE RAIN",
+    "pronunciation_tr": "DI-REYN",
+    "turkish": "YAĞMUR",
+    "source_page": 32
+  },
+  {
+    "id": 205,
+    "english": "THE WIND",
+    "pronunciation_tr": "DI-VİND",
+    "turkish": "RÜZGAR",
+    "source_page": 32
+  },
+  {
+    "id": 206,
+    "english": "THE SNOW",
+    "pronunciation_tr": "DI-SI-NOV",
+    "turkish": "KAR",
+    "source_page": 32
+  },
+  {
+    "id": 207,
+    "english": "THE CLOUD",
+    "pronunciation_tr": "DI-KI-LAVD",
+    "turkish": "BULUT",
+    "source_page": 32
+  },
+  {
+    "id": 208,
+    "english": "THE FOG",
+    "pronunciation_tr": "DI-FOG",
+    "turkish": "SİS",
+    "source_page": 32
+  },
+  {
+    "id": 209,
+    "english": "THE STORM",
+    "pronunciation_tr": "DI-SI-TORM",
+    "turkish": "FIRTINA",
+    "source_page": 32
+  },
+  {
+    "id": 210,
+    "english": "THE TREE",
+    "pronunciation_tr": "DI-TI-Rİ",
+    "turkish": "AĞAÇ",
+    "source_page": 33
+  },
+  {
+    "id": 211,
+    "english": "THE FOREST",
+    "pronunciation_tr": "DI-FO-RIST",
+    "turkish": "ORMAN",
+    "source_page": 33
+  },
+  {
+    "id": 212,
+    "english": "THE GARDEN",
+    "pronunciation_tr": "DI-GAR-DIN",
+    "turkish": "BAHÇE",
+    "source_page": 33
+  },
+  {
+    "id": 213,
+    "english": "THE FLOWER",
+    "pronunciation_tr": "DI-FI-LA-VIR",
+    "turkish": "ÇİÇEK",
+    "source_page": 33
+  },
+  {
+    "id": 214,
+    "english": "THE GRASS",
+    "pronunciation_tr": "DI-GI-RES",
+    "turkish": "ÇİMEN",
+    "source_page": 33
+  },
+  {
+    "id": 215,
+    "english": "THE DOOR",
+    "pronunciation_tr": "DI-DOĞOR",
+    "turkish": "KAPI",
+    "source_page": 33
+  },
+  {
+    "id": 216,
+    "english": "THE WINDOW",
+    "pronunciation_tr": "DI-VİN-DOV",
+    "turkish": "PENCERE",
+    "source_page": 33
+  },
+  {
+    "id": 217,
+    "english": "THE FLOOR",
+    "pronunciation_tr": "DI-FI-LOR",
+    "turkish": "ZEMİN / YER",
+    "source_page": 33
+  },
+  {
+    "id": 218,
+    "english": "LIFE",
+    "pronunciation_tr": "LAYF",
+    "turkish": "HAYAT / YAŞAM / ÖMÜR",
+    "source_page": 34
+  },
+  {
+    "id": 219,
+    "english": "LOVE",
+    "pronunciation_tr": "LAV",
+    "turkish": "SEVGİ / AŞK",
+    "source_page": 34
+  },
+  {
+    "id": 220,
+    "english": "LUCK",
+    "pronunciation_tr": "LAK",
+    "turkish": "ŞANS / KISMET",
+    "source_page": 34
+  },
+  {
+    "id": 221,
+    "english": "THE COLOR",
+    "pronunciation_tr": "DI-KA-LIR",
+    "turkish": "RENK",
+    "source_page": 34
+  },
+  {
+    "id": 222,
+    "english": "THE PLACE",
+    "pronunciation_tr": "DI-PI-LEYS",
+    "turkish": "YER",
+    "source_page": 34
+  },
+  {
+    "id": 223,
+    "english": "THE THING",
+    "pronunciation_tr": "DI-TING",
+    "turkish": "ŞEY",
+    "source_page": 34
+  },
+  {
+    "id": 224,
+    "english": "THE BALL",
+    "pronunciation_tr": "DI-BOL",
+    "turkish": "TOP",
+    "source_page": 34
+  },
+  {
+    "id": 225,
+    "english": "THE BOOK",
+    "pronunciation_tr": "DI-BUK",
+    "turkish": "KİTAP",
+    "source_page": 34
+  },
+  {
+    "id": 226,
+    "english": "THE PENCIL",
+    "pronunciation_tr": "DI-PEN-SIL",
+    "turkish": "KALEM",
+    "source_page": 34
+  },
+  {
+    "id": 227,
+    "english": "THE TOY",
+    "pronunciation_tr": "DI-TOY",
+    "turkish": "OYUNCAK",
+    "source_page": 34
+  },
+  {
+    "id": 228,
+    "english": "THE STORY",
+    "pronunciation_tr": "DI-SI-TO-Rİ",
+    "turkish": "MASAL / HİKAYE",
+    "source_page": 34
+  },
+  {
+    "id": 229,
+    "english": "THE SONG",
+    "pronunciation_tr": "DI-SANG",
+    "turkish": "ŞARKI",
+    "source_page": 34
+  },
+  {
+    "id": 230,
+    "english": "THE NOTEBOOK",
+    "pronunciation_tr": "DI-NOT-BUK",
+    "turkish": "DEFTER",
+    "source_page": 34
+  },
+  {
+    "id": 231,
+    "english": "THE NUMBER",
+    "pronunciation_tr": "DI-NAM-BIR",
+    "turkish": "NUMARA / RAKAM",
+    "source_page": 34
+  },
+  {
+    "id": 232,
+    "english": "THE CLOTHES",
+    "pronunciation_tr": "KI-LOOTS",
+    "turkish": "KITAFETLER",
+    "source_page": 35
+  },
+  {
+    "id": 233,
+    "english": "THE HAT",
+    "pronunciation_tr": "DI-HET",
+    "turkish": "ŞAPKA",
+    "source_page": 35
+  },
+  {
+    "id": 234,
+    "english": "THE JACKET",
+    "pronunciation_tr": "DICE-KIT",
+    "turkish": "CEKET",
+    "source_page": 35
+  },
+  {
+    "id": 235,
+    "english": "THE DRESS",
+    "pronunciation_tr": "DI-DI-RES",
+    "turkish": "ELBİSE",
+    "source_page": 35
+  },
+  {
+    "id": 236,
+    "english": "THE COAT",
+    "pronunciation_tr": "DI-KOOT",
+    "turkish": "PALTO",
+    "source_page": 35
+  },
+  {
+    "id": 237,
+    "english": "THE JEANS",
+    "pronunciation_tr": "DI-CİİNS",
+    "turkish": "KOT PANTALON",
+    "source_page": 35
+  },
+  {
+    "id": 238,
+    "english": "THE SHIRT",
+    "pronunciation_tr": "DI-ŞÖRT",
+    "turkish": "GÖMLEK",
+    "source_page": 35
+  },
+  {
+    "id": 239,
+    "english": "THE SHOE",
+    "pronunciation_tr": "DI-ŞUU",
+    "turkish": "AYAKKABI",
+    "source_page": 36
+  },
+  {
+    "id": 240,
+    "english": "THE SWEATER",
+    "pronunciation_tr": "DI-SI-VE-TIR",
+    "turkish": "SÜVETER",
+    "source_page": 36
+  },
+  {
+    "id": 241,
+    "english": "THE SHORT",
+    "pronunciation_tr": "DI-ŞORTS",
+    "turkish": "ŞORT",
+    "source_page": 36
+  },
+  {
+    "id": 242,
+    "english": "THE TROUSERS",
+    "pronunciation_tr": "DI-TI-RAV-ZIRS",
+    "turkish": "PANTALON",
+    "source_page": 36
+  },
+  {
+    "id": 243,
+    "english": "THE SOCKS",
+    "pronunciation_tr": "DI-SAKS",
+    "turkish": "ÇORAP",
+    "source_page": 36
+  },
+  {
+    "id": 244,
+    "english": "THE WATCH",
+    "pronunciation_tr": "DI-VOTÇ",
+    "turkish": "KOL SAATİ",
+    "source_page": 36
+  },
+  {
+    "id": 245,
+    "english": "THE T-SHIRT",
+    "pronunciation_tr": "DI-Tİ-ŞÖRT",
+    "turkish": "TİŞÖRT",
+    "source_page": 36
+  },
+  {
+    "id": 246,
+    "english": "THE HAMBURGER",
+    "pronunciation_tr": "DI-HEM-BÖR-GIR",
+    "turkish": "HAMBURGER",
+    "source_page": 37
+  },
+  {
+    "id": 247,
+    "english": "THE CAKE",
+    "pronunciation_tr": "DI-KEYK",
+    "turkish": "PASTA",
+    "source_page": 37
+  },
+  {
+    "id": 248,
+    "english": "THE CHICKEN",
+    "pronunciation_tr": "DI-Çİ-KIN",
+    "turkish": "TAVUK",
+    "source_page": 37
+  },
+  {
+    "id": 249,
+    "english": "THE DESSERT",
+    "pronunciation_tr": "DI-Dİ-ZÖRT",
+    "turkish": "TATLI",
+    "source_page": 37
+  },
+  {
+    "id": 250,
+    "english": "THE EGG",
+    "pronunciation_tr": "DI-EG",
+    "turkish": "YUMURTA",
+    "source_page": 37
+  },
+  {
+    "id": 251,
+    "english": "THE OLIVE",
+    "pronunciation_tr": "DI-A-LİV",
+    "turkish": "ZEYTİN",
+    "source_page": 37
+  },
+  {
+    "id": 252,
+    "english": "THE PASTA",
+    "pronunciation_tr": "DI-PAS-TA",
+    "turkish": "MAKARNA",
+    "source_page": 37
+  },
+  {
+    "id": 253,
+    "english": "THE PIZZA",
+    "pronunciation_tr": "DI-PİT-ZA",
+    "turkish": "PİZZA",
+    "source_page": 37
+  },
+  {
+    "id": 254,
+    "english": "THE SALAD",
+    "pronunciation_tr": "DI-SE-LID",
+    "turkish": "SALATA",
+    "source_page": 37
+  },
+  {
+    "id": 255,
+    "english": "THE FOOD",
+    "pronunciation_tr": "DI-FUUD",
+    "turkish": "BESİN-GIDA-YEMEK-YİYECEK",
+    "source_page": 37
+  },
+  {
+    "id": 256,
+    "english": "TEA",
+    "pronunciation_tr": "Tİİ",
+    "turkish": "ÇAY",
+    "source_page": 38
+  },
+  {
+    "id": 257,
+    "english": "COFFEE",
+    "pronunciation_tr": "KA-Fİ",
+    "turkish": "KAHVE",
+    "source_page": 38
+  },
+  {
+    "id": 258,
+    "english": "WATER",
+    "pronunciation_tr": "VA-DIR",
+    "turkish": "SU",
+    "source_page": 38
+  },
+  {
+    "id": 259,
+    "english": "COKE",
+    "pronunciation_tr": "KOOK",
+    "turkish": "KOLA",
+    "source_page": 38
+  },
+  {
+    "id": 260,
+    "english": "ORANGE JUICE",
+    "pronunciation_tr": "A-RINC-CÜÜS",
+    "turkish": "PORTAKAL SUYU",
+    "source_page": 38
+  },
+  {
+    "id": 261,
+    "english": "MILK",
+    "pronunciation_tr": "MİLK",
+    "turkish": "SÜT",
+    "source_page": 38
+  },
+  {
+    "id": 262,
+    "english": "OIL",
+    "pronunciation_tr": "O-YIL",
+    "turkish": "ZEYTİN YAĞ",
+    "source_page": 38
+  },
+  {
+    "id": 263,
+    "english": "DRINKS",
+    "pronunciation_tr": "DI-RİNKS",
+    "turkish": "İÇECEKLER",
+    "source_page": 38
+  },
+  {
+    "id": 264,
+    "english": "THE SALT",
+    "pronunciation_tr": "DI-SOLT",
+    "turkish": "TUZ",
+    "source_page": 39
+  },
+  {
+    "id": 265,
+    "english": "THE SUGAR",
+    "pronunciation_tr": "DI-ŞU-GIR",
+    "turkish": "ŞEKER",
+    "source_page": 39
+  },
+  {
+    "id": 266,
+    "english": "THE BREAD",
+    "pronunciation_tr": "DI-BI-RED",
+    "turkish": "EKMEK",
+    "source_page": 39
+  },
+  {
+    "id": 267,
+    "english": "THE BUTTER",
+    "pronunciation_tr": "DI-BA-DIR",
+    "turkish": "TEREYAĞ",
+    "source_page": 39
+  },
+  {
+    "id": 268,
+    "english": "THE HONEY",
+    "pronunciation_tr": "DI-HA-Nİ",
+    "turkish": "BAL",
+    "source_page": 39
+  },
+  {
+    "id": 269,
+    "english": "THE JAM",
+    "pronunciation_tr": "DI-CEM",
+    "turkish": "REÇEL",
+    "source_page": 39
+  },
+  {
+    "id": 270,
+    "english": "THE MEAT",
+    "pronunciation_tr": "DI-MİİT",
+    "turkish": "ET",
+    "source_page": 39
+  },
+  {
+    "id": 271,
+    "english": "THE CHEESE",
+    "pronunciation_tr": "DI-ÇİİZ",
+    "turkish": "PEYNİR",
+    "source_page": 39
+  },
+  {
+    "id": 272,
+    "english": "THE FOOD",
+    "pronunciation_tr": "DI-FUUD",
+    "turkish": "BESİN-GIDA-YEMEK-YİYECEK",
+    "source_page": 39
+  },
+  {
+    "id": 273,
+    "english": "THE BODY",
+    "pronunciation_tr": "DI-BA-Dİ",
+    "turkish": "VÜCUT",
+    "source_page": 40
+  },
+  {
+    "id": 274,
+    "english": "THE HAND",
+    "pronunciation_tr": "DI-HEND",
+    "turkish": "EL",
+    "source_page": 40
+  },
+  {
+    "id": 275,
+    "english": "THE ARM",
+    "pronunciation_tr": "DI-ARM",
+    "turkish": "KOL",
+    "source_page": 40
+  },
+  {
+    "id": 276,
+    "english": "THE FINGER",
+    "pronunciation_tr": "DI-FİN-GIR",
+    "turkish": "PARMAK",
+    "source_page": 40
+  },
+  {
+    "id": 277,
+    "english": "THE FOOT",
+    "pronunciation_tr": "DI-FUUT",
+    "turkish": "AYAK",
+    "source_page": 40
+  },
+  {
+    "id": 278,
+    "english": "THE LEG",
+    "pronunciation_tr": "DI-LEG",
+    "turkish": "BACAK",
+    "source_page": 40
+  },
+  {
+    "id": 279,
+    "english": "THE TOE",
+    "pronunciation_tr": "DI-TO",
+    "turkish": "AYAK PARMAĞI",
+    "source_page": 40
+  },
+  {
+    "id": 280,
+    "english": "THE FACE",
+    "pronunciation_tr": "DI-FEYS",
+    "turkish": "YÜZ-SURAT",
+    "source_page": 41
+  },
+  {
+    "id": 281,
+    "english": "THE EYE",
+    "pronunciation_tr": "DI-AYY",
+    "turkish": "GÖZ",
+    "source_page": 41
+  },
+  {
+    "id": 282,
+    "english": "THE NOSE",
+    "pronunciation_tr": "DI-NOOZ",
+    "turkish": "BURUN",
+    "source_page": 41
+  },
+  {
+    "id": 283,
+    "english": "THE MOUTH",
+    "pronunciation_tr": "DI-MAUT",
+    "turkish": "AĞIZ",
+    "source_page": 41
+  },
+  {
+    "id": 284,
+    "english": "THE TOOTH",
+    "pronunciation_tr": "DI-TUUT",
+    "turkish": "DİŞ",
+    "source_page": 41
+  },
+  {
+    "id": 285,
+    "english": "THE HAIR",
+    "pronunciation_tr": "DI-HE-YIR",
+    "turkish": "SAÇ",
+    "source_page": 41
+  },
+  {
+    "id": 286,
+    "english": "THE EAR",
+    "pronunciation_tr": "DI-İ-YIR",
+    "turkish": "KULAK",
+    "source_page": 41
+  },
+  {
+    "id": 287,
+    "english": "THE TONGUE",
+    "pronunciation_tr": "DI-TANG",
+    "turkish": "DİL",
+    "source_page": 41
+  },
+  {
+    "id": 288,
+    "english": "THE HEAD",
+    "pronunciation_tr": "DI-HED",
+    "turkish": "KAFA",
+    "source_page": 41
+  },
+  {
+    "id": 289,
+    "english": "THE SUN",
+    "pronunciation_tr": "DI-SAN",
+    "turkish": "GÜNEŞ",
+    "source_page": 42
+  },
+  {
+    "id": 290,
+    "english": "THE STORM",
+    "pronunciation_tr": "DI-SI-TORM",
+    "turkish": "FIRTINA",
+    "source_page": 42
+  },
+  {
+    "id": 291,
+    "english": "THE WIND",
+    "pronunciation_tr": "DI-VİND",
+    "turkish": "RÜZGAR",
+    "source_page": 42
+  },
+  {
+    "id": 292,
+    "english": "THE RAIN",
+    "pronunciation_tr": "DI-REYN",
+    "turkish": "YAĞMUR",
+    "source_page": 42
+  },
+  {
+    "id": 293,
+    "english": "THE CLOUD",
+    "pronunciation_tr": "DI-KI-LAVD",
+    "turkish": "BULTU",
+    "source_page": 42
+  },
+  {
+    "id": 294,
+    "english": "THE SNOW",
+    "pronunciation_tr": "DI-SI-NOV",
+    "turkish": "KAR",
+    "source_page": 42
+  },
+  {
+    "id": 295,
+    "english": "THE FOG",
+    "pronunciation_tr": "FAG",
+    "turkish": "SİS",
+    "source_page": 42
+  },
+  {
+    "id": 296,
+    "english": "THE WEATHER",
+    "pronunciation_tr": "DI-VE-DIR",
+    "turkish": "HAVA – HAVA DURUMU",
+    "source_page": 42
+  }
+]
