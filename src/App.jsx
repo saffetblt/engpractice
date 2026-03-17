@@ -20,6 +20,32 @@ const PREPOSITIONS = [
   'ON',
   'AT',
 ]
+const MODES = ['home', 'vocabulary', 'drill', 'translation']
+const MODE_SET = new Set(MODES)
+
+function normalizeMode(mode) {
+  return MODE_SET.has(mode) ? mode : 'home'
+}
+
+function modeToHash(mode) {
+  const safeMode = normalizeMode(mode)
+  return safeMode === 'home' ? '#/' : `#/${safeMode}`
+}
+
+function hashToMode(hash) {
+  const cleanHash = hash.replace(/^#\/?/, '').split('?')[0].replace(/\/+$/, '').toLowerCase()
+  if (!cleanHash) {
+    return 'home'
+  }
+  return normalizeMode(cleanHash)
+}
+
+function getModeFromUrl() {
+  if (typeof window === 'undefined') {
+    return 'home'
+  }
+  return hashToMode(window.location.hash)
+}
 
 function shuffleArray(list) {
   const items = [...list]
@@ -181,11 +207,11 @@ function HomePage({ onSelect }) {
   )
 }
 
-function HeaderBar({ title, subtitle, onHome }) {
+function HeaderBar({ title, subtitle, onBack }) {
   return (
     <header className="topbar">
-      <button type="button" className="back-btn" onClick={onHome}>
-        ← Ana Sayfa
+      <button type="button" className="back-btn" onClick={onBack}>
+        ← Geri
       </button>
       <div className="title-wrap">
         <h1>{title}</h1>
@@ -195,7 +221,7 @@ function HeaderBar({ title, subtitle, onHome }) {
   )
 }
 
-function VocabularyStudy({ onHome }) {
+function VocabularyStudy({ onBack }) {
   const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(vocabularyData)
 
   return (
@@ -203,7 +229,7 @@ function VocabularyStudy({ onHome }) {
       <HeaderBar
         title="Kelime Çalışması"
         subtitle="Rastgele gelen kelimeyi incele ve tekrar et."
-        onHome={onHome}
+        onBack={onBack}
       />
 
       <article className="word-card">
@@ -244,7 +270,7 @@ function VocabularyStudy({ onHome }) {
   )
 }
 
-function PhraseDrillStudy({ onHome }) {
+function PhraseDrillStudy({ onBack }) {
   const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(vocabularyData)
   const [selectedPreposition, setSelectedPreposition] = useState(PREPOSITIONS[0])
 
@@ -255,7 +281,7 @@ function PhraseDrillStudy({ onHome }) {
       <HeaderBar
         title="Ağız Alıştırma"
         subtitle="Kalıpları sabit tekrar et, ardından kelimeyi sen ekleyerek sesli söyle."
-        onHome={onHome}
+        onBack={onBack}
       />
 
       <div className="drill-grid">
@@ -326,7 +352,7 @@ function PhraseDrillStudy({ onHome }) {
   )
 }
 
-function TurkishToEnglishStudy({ onHome }) {
+function TurkishToEnglishStudy({ onBack }) {
   const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(phrasePracticeData)
   const [answer, setAnswer] = useState('')
   const [result, setResult] = useState(null)
@@ -426,7 +452,7 @@ function TurkishToEnglishStudy({ onHome }) {
       <HeaderBar
         title="Türkçe → İngilizce Yazma"
         subtitle="Türkçe ifadeyi gör, İngilizcesini yaz ve doğru/yanlış kontrol et."
-        onHome={onHome}
+        onBack={onBack}
       />
 
       <article className="word-card qa-card">
@@ -518,17 +544,74 @@ function TurkishToEnglishStudy({ onHome }) {
 }
 
 function App() {
-  const [mode, setMode] = useState('home')
+  const [mode, setMode] = useState(() => getModeFromUrl())
+
+  useEffect(() => {
+    const initialMode = getModeFromUrl()
+    const existingDepth =
+      typeof window.history.state?.appDepth === 'number' ? window.history.state.appDepth : 0
+
+    window.history.replaceState(
+      { mode: initialMode, appDepth: existingDepth },
+      '',
+      modeToHash(initialMode),
+    )
+    setMode(initialMode)
+
+    function handlePopState(event) {
+      const stateMode = event.state?.mode
+      const nextMode = normalizeMode(stateMode ?? getModeFromUrl())
+      setMode(nextMode)
+    }
+
+    window.addEventListener('popstate', handlePopState)
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+
+  function navigateMode(nextMode) {
+    const safeNextMode = normalizeMode(nextMode)
+    if (safeNextMode === mode) {
+      return
+    }
+
+    const currentDepth =
+      typeof window.history.state?.appDepth === 'number' ? window.history.state.appDepth : 0
+    const nextDepth = currentDepth + 1
+
+    window.history.pushState(
+      { mode: safeNextMode, appDepth: nextDepth },
+      '',
+      modeToHash(safeNextMode),
+    )
+    setMode(safeNextMode)
+  }
+
+  function goBack() {
+    if (mode === 'home') {
+      return
+    }
+
+    const depth = typeof window.history.state?.appDepth === 'number' ? window.history.state.appDepth : 0
+    if (depth > 0) {
+      window.history.back()
+      return
+    }
+
+    navigateMode('home')
+  }
 
   return (
     <main className="page">
       <div className="ambient" />
 
       <div className="app-shell">
-        {mode === 'home' && <HomePage onSelect={setMode} />}
-        {mode === 'vocabulary' && <VocabularyStudy onHome={() => setMode('home')} />}
-        {mode === 'drill' && <PhraseDrillStudy onHome={() => setMode('home')} />}
-        {mode === 'translation' && <TurkishToEnglishStudy onHome={() => setMode('home')} />}
+        {mode === 'home' && <HomePage onSelect={navigateMode} />}
+        {mode === 'vocabulary' && <VocabularyStudy onBack={goBack} />}
+        {mode === 'drill' && <PhraseDrillStudy onBack={goBack} />}
+        {mode === 'translation' && <TurkishToEnglishStudy onBack={goBack} />}
       </div>
     </main>
   )
