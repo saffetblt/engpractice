@@ -150,7 +150,7 @@ function analyzeAnswer(userRaw, expectedRaw) {
 function HomePage({ onSelect }) {
   return (
     <section className="home-panel">
-      <p className="eyebrow">English Practice Studio</p>
+      <p className="eyebrow">EngPractice</p>
       <h1 className="main-title">Çalışma Modunu Seç</h1>
       <p className="home-text">
         İstediğin çalışma tipini seç ve doğrudan o alıştırma ekranına geç.
