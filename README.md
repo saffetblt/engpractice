@@ -25,6 +25,6 @@ npm run preview
 ## GitHub Pages
 
 Deployment runs automatically from GitHub Actions on pushes to `main`.
-Expected URL after repository rename:
+Live URL:
 
 `https://saffetblt.github.io/engpractice/`
