@@ -1,0 +1,1407 @@
+[
+  {
+    "id": 1,
+    "turkish": "Bana",
+    "english": "to me"
+  },
+  {
+    "id": 2,
+    "turkish": "Sana",
+    "english": "to you"
+  },
+  {
+    "id": 3,
+    "turkish": "Ona E",
+    "english": "to him"
+  },
+  {
+    "id": 4,
+    "turkish": "Ona K",
+    "english": "to her"
+  },
+  {
+    "id": 5,
+    "turkish": "Ona C",
+    "english": "to it"
+  },
+  {
+    "id": 6,
+    "turkish": "Bize",
+    "english": "to us"
+  },
+  {
+    "id": 7,
+    "turkish": "Size",
+    "english": "to you"
+  },
+  {
+    "id": 8,
+    "turkish": "Onlara",
+    "english": "to them"
+  },
+  {
+    "id": 9,
+    "turkish": "Çocuklarıma",
+    "english": "to my children"
+  },
+  {
+    "id": 10,
+    "turkish": "Arkadaşlarına",
+    "english": "to your friends"
+  },
+  {
+    "id": 11,
+    "turkish": "Onun annesine E",
+    "english": "to his mother"
+  },
+  {
+    "id": 12,
+    "turkish": "Onun evine K",
+    "english": "to her house"
+  },
+  {
+    "id": 13,
+    "turkish": "Bizim Evimize",
+    "english": "to our house"
+  },
+  {
+    "id": 14,
+    "turkish": "Sizin Okulunuza",
+    "english": "to your school"
+  },
+  {
+    "id": 15,
+    "turkish": "Onların köyüne",
+    "english": "to their village"
+  },
+  {
+    "id": 16,
+    "turkish": "Benimkine",
+    "english": "to mine"
+  },
+  {
+    "id": 17,
+    "turkish": "Seninkine",
+    "english": "to yours"
+  },
+  {
+    "id": 18,
+    "turkish": "Onunkine E",
+    "english": "to his"
+  },
+  {
+    "id": 19,
+    "turkish": "Onunkine K",
+    "english": "to hers"
+  },
+  {
+    "id": 20,
+    "turkish": "Bizimkine",
+    "english": "to ours"
+  },
+  {
+    "id": 21,
+    "turkish": "Sizinkine",
+    "english": "to yours"
+  },
+  {
+    "id": 22,
+    "turkish": "Onlarınkine",
+    "english": "to theirs"
+  },
+  {
+    "id": 23,
+    "turkish": "Beni",
+    "english": "me"
+  },
+  {
+    "id": 24,
+    "turkish": "Seni",
+    "english": "you"
+  },
+  {
+    "id": 25,
+    "turkish": "Onu E",
+    "english": "him"
+  },
+  {
+    "id": 26,
+    "turkish": "Onu K",
+    "english": "her"
+  },
+  {
+    "id": 27,
+    "turkish": "Onu C",
+    "english": "it"
+  },
+  {
+    "id": 28,
+    "turkish": "Bizi",
+    "english": "we"
+  },
+  {
+    "id": 29,
+    "turkish": "Sizi",
+    "english": "you"
+  },
+  {
+    "id": 30,
+    "turkish": "Onları",
+    "english": "them"
+  },
+  {
+    "id": 31,
+    "turkish": "Arkadaşlarımı",
+    "english": "my friends"
+  },
+  {
+    "id": 32,
+    "turkish": "Senin okulunu",
+    "english": "your school"
+  },
+  {
+    "id": 33,
+    "turkish": "Onun parasını E",
+    "english": "his money"
+  },
+  {
+    "id": 34,
+    "turkish": "Onun gözlerini K",
+    "english": "her money"
+  },
+  {
+    "id": 35,
+    "turkish": "Onun ayaklarını C",
+    "english": "its feet"
+  },
+  {
+    "id": 36,
+    "turkish": "Bizim ülkemizi",
+    "english": "our country"
+  },
+  {
+    "id": 37,
+    "turkish": "Sizin çocuklarınızı",
+    "english": "your children"
+  },
+  {
+    "id": 38,
+    "turkish": "Onların dertlerini",
+    "english": "their problems"
+  },
+  {
+    "id": 39,
+    "turkish": "Benimkini",
+    "english": "mine"
+  },
+  {
+    "id": 40,
+    "turkish": "Seninkini",
+    "english": "yours"
+  },
+  {
+    "id": 41,
+    "turkish": "Onunkini E",
+    "english": "his"
+  },
+  {
+    "id": 42,
+    "turkish": "Onunkini K",
+    "english": "hers"
+  },
+  {
+    "id": 43,
+    "turkish": "Bizimkini",
+    "english": "ours"
+  },
+  {
+    "id": 44,
+    "turkish": "Sizinkini",
+    "english": "yours"
+  },
+  {
+    "id": 45,
+    "turkish": "Onlarınkini",
+    "english": "theirs"
+  },
+  {
+    "id": 46,
+    "turkish": "Benim için",
+    "english": "for me"
+  },
+  {
+    "id": 47,
+    "turkish": "Senin için",
+    "english": "for you"
+  },
+  {
+    "id": 48,
+    "turkish": "Onun için E",
+    "english": "for him"
+  },
+  {
+    "id": 49,
+    "turkish": "Onun için K",
+    "english": "for her"
+  },
+  {
+    "id": 50,
+    "turkish": "Onun için C",
+    "english": "for it"
+  },
+  {
+    "id": 51,
+    "turkish": "Bizim için",
+    "english": "for us"
+  },
+  {
+    "id": 52,
+    "turkish": "Sizin için",
+    "english": "for you"
+  },
+  {
+    "id": 53,
+    "turkish": "Onlar için",
+    "english": "for them"
+  },
+  {
+    "id": 54,
+    "turkish": "Evim için",
+    "english": "for my house"
+  },
+  {
+    "id": 55,
+    "turkish": "Senin Evin için",
+    "english": "for your house"
+  },
+  {
+    "id": 56,
+    "turkish": "Evi için E",
+    "english": "for his house"
+  },
+  {
+    "id": 57,
+    "turkish": "Evi için K",
+    "english": "for her house"
+  },
+  {
+    "id": 58,
+    "turkish": "Evi için C",
+    "english": "for its house"
+  },
+  {
+    "id": 59,
+    "turkish": "Evimiz için",
+    "english": "for our house"
+  },
+  {
+    "id": 60,
+    "turkish": "Sizin eviniz için",
+    "english": "for your house"
+  },
+  {
+    "id": 61,
+    "turkish": "Onların evi için",
+    "english": "for their house"
+  },
+  {
+    "id": 62,
+    "turkish": "Benimki için",
+    "english": "for mine"
+  },
+  {
+    "id": 63,
+    "turkish": "Seninkiler için",
+    "english": "for yours"
+  },
+  {
+    "id": 64,
+    "turkish": "Onunki için E",
+    "english": "for his"
+  },
+  {
+    "id": 65,
+    "turkish": "Onunki için K",
+    "english": "for hers"
+  },
+  {
+    "id": 66,
+    "turkish": "Bizimki için",
+    "english": "for ours"
+  },
+  {
+    "id": 67,
+    "turkish": "Sizinki için",
+    "english": "for yours"
+  },
+  {
+    "id": 68,
+    "turkish": "Onlarınki için",
+    "english": "for theirs"
+  },
+  {
+    "id": 69,
+    "turkish": "Benden",
+    "english": "from me"
+  },
+  {
+    "id": 70,
+    "turkish": "Senden",
+    "english": "from you"
+  },
+  {
+    "id": 71,
+    "turkish": "Ondan E",
+    "english": "from him"
+  },
+  {
+    "id": 72,
+    "turkish": "Ondan K",
+    "english": "from her"
+  },
+  {
+    "id": 73,
+    "turkish": "Bizden",
+    "english": "from us"
+  },
+  {
+    "id": 74,
+    "turkish": "Sizden",
+    "english": "from you"
+  },
+  {
+    "id": 75,
+    "turkish": "Onlardan",
+    "english": "from them"
+  },
+  {
+    "id": 76,
+    "turkish": "Ülkemden",
+    "english": "from my country"
+  },
+  {
+    "id": 77,
+    "turkish": "Senin bahçenden",
+    "english": "from your garden"
+  },
+  {
+    "id": 78,
+    "turkish": "Onun arabasından E",
+    "english": "from his car"
+  },
+  {
+    "id": 79,
+    "turkish": "Onun kedisinden K",
+    "english": "from her cat"
+  },
+  {
+    "id": 80,
+    "turkish": "Arkadaşlarımızdan",
+    "english": "from our friends"
+  },
+  {
+    "id": 81,
+    "turkish": "Sizin köyünüzden",
+    "english": "from your village"
+  },
+  {
+    "id": 82,
+    "turkish": "Onların geleceğinden",
+    "english": "from their future"
+  },
+  {
+    "id": 83,
+    "turkish": "Benimkinden",
+    "english": "from me"
+  },
+  {
+    "id": 84,
+    "turkish": "Seninkinden",
+    "english": "from yours"
+  },
+  {
+    "id": 85,
+    "turkish": "Onunkinden E",
+    "english": "from his"
+  },
+  {
+    "id": 86,
+    "turkish": "Onunkinden K",
+    "english": "from hers"
+  },
+  {
+    "id": 87,
+    "turkish": "Onunkinden C",
+    "english": "from its"
+  },
+  {
+    "id": 88,
+    "turkish": "Bizimkinden",
+    "english": "from ours"
+  },
+  {
+    "id": 89,
+    "turkish": "Sizinkinden",
+    "english": "from yours"
+  },
+  {
+    "id": 90,
+    "turkish": "Onlarınkinden",
+    "english": "from theirs"
+  },
+  {
+    "id": 91,
+    "turkish": "Benimle",
+    "english": "with me"
+  },
+  {
+    "id": 92,
+    "turkish": "Seninle",
+    "english": "with you"
+  },
+  {
+    "id": 93,
+    "turkish": "Onunla E",
+    "english": "with him"
+  },
+  {
+    "id": 94,
+    "turkish": "Onunla K",
+    "english": "with her"
+  },
+  {
+    "id": 95,
+    "turkish": "Bizimle",
+    "english": "with us"
+  },
+  {
+    "id": 96,
+    "turkish": "Sizinle",
+    "english": "with you"
+  },
+  {
+    "id": 97,
+    "turkish": "Onlarla",
+    "english": "with them"
+  },
+  {
+    "id": 98,
+    "turkish": "Annemle",
+    "english": "with my mother"
+  },
+  {
+    "id": 99,
+    "turkish": "Senin babanla",
+    "english": "with your father"
+  },
+  {
+    "id": 100,
+    "turkish": "Onun kızıyla E",
+    "english": "with his daughter"
+  },
+  {
+    "id": 101,
+    "turkish": "Onun oğluyla K",
+    "english": "with her son"
+  },
+  {
+    "id": 102,
+    "turkish": "Dedemizle",
+    "english": "with our grandfather"
+  },
+  {
+    "id": 103,
+    "turkish": "Sizin akrabalarınızla",
+    "english": "with your relatives"
+  },
+  {
+    "id": 104,
+    "turkish": "Onların oturma odasıyla",
+    "english": "with their living room"
+  },
+  {
+    "id": 105,
+    "turkish": "Benimkiyle",
+    "english": "with mine"
+  },
+  {
+    "id": 106,
+    "turkish": "Seninkiyle",
+    "english": "with yours"
+  },
+  {
+    "id": 107,
+    "turkish": "Onunkiyle E",
+    "english": "with his"
+  },
+  {
+    "id": 108,
+    "turkish": "Onunkiyle K",
+    "english": "with hers"
+  },
+  {
+    "id": 109,
+    "turkish": "Bizimkiyle",
+    "english": "with ours"
+  },
+  {
+    "id": 110,
+    "turkish": "Sizinkilerle",
+    "english": "with yours"
+  },
+  {
+    "id": 111,
+    "turkish": "Onlarınkilerle",
+    "english": "with theirs"
+  },
+  {
+    "id": 112,
+    "turkish": "Ben olmadan",
+    "english": "without me"
+  },
+  {
+    "id": 113,
+    "turkish": "Sensiz",
+    "english": "without you"
+  },
+  {
+    "id": 114,
+    "turkish": "Onsuz E",
+    "english": "without him"
+  },
+  {
+    "id": 115,
+    "turkish": "Onsuz K",
+    "english": "without her"
+  },
+  {
+    "id": 116,
+    "turkish": "Bizsiz",
+    "english": "without us"
+  },
+  {
+    "id": 117,
+    "turkish": "Siz olmadan",
+    "english": "without you"
+  },
+  {
+    "id": 118,
+    "turkish": "Onlar olmadan",
+    "english": "without them"
+  },
+  {
+    "id": 119,
+    "turkish": "Arabam olmadan",
+    "english": "without my car"
+  },
+  {
+    "id": 120,
+    "turkish": "Senin paran olmadan",
+    "english": "without your money"
+  },
+  {
+    "id": 121,
+    "turkish": "Onun çiçekleri olmadan E",
+    "english": "without his flowers"
+  },
+  {
+    "id": 122,
+    "turkish": "Onun vakti olmadan K",
+    "english": "without her time"
+  },
+  {
+    "id": 123,
+    "turkish": "Bizim Evimiz olmadan",
+    "english": "without our house"
+  },
+  {
+    "id": 124,
+    "turkish": "Sizin geleceğiniz olmadan",
+    "english": "without your future"
+  },
+  {
+    "id": 125,
+    "turkish": "Onların tatili olmadan",
+    "english": "without their holiday"
+  },
+  {
+    "id": 126,
+    "turkish": "Benimki olmadan",
+    "english": "without mine"
+  },
+  {
+    "id": 127,
+    "turkish": "Seninki olmadan",
+    "english": "without your"
+  },
+  {
+    "id": 128,
+    "turkish": "Onunki olmadan E",
+    "english": "without his"
+  },
+  {
+    "id": 129,
+    "turkish": "Onunki olmadan K",
+    "english": "without hers"
+  },
+  {
+    "id": 130,
+    "turkish": "Bizimkiler olmadan",
+    "english": "without ours"
+  },
+  {
+    "id": 131,
+    "turkish": "Sizinkiler olmadan",
+    "english": "without yours"
+  },
+  {
+    "id": 132,
+    "turkish": "Onlarınkiler olmadan",
+    "english": "without theirs"
+  },
+  {
+    "id": 133,
+    "turkish": "Benden sonra",
+    "english": "after me"
+  },
+  {
+    "id": 134,
+    "turkish": "Senden sonra",
+    "english": "after you"
+  },
+  {
+    "id": 135,
+    "turkish": "Ondan önce E",
+    "english": "before him"
+  },
+  {
+    "id": 136,
+    "turkish": "Ondan sonra K",
+    "english": "after her"
+  },
+  {
+    "id": 137,
+    "turkish": "Bizden önce",
+    "english": "before us"
+  },
+  {
+    "id": 138,
+    "turkish": "Sizden sonra",
+    "english": "after you"
+  },
+  {
+    "id": 139,
+    "turkish": "Onlardan önce",
+    "english": "before them"
+  },
+  {
+    "id": 140,
+    "turkish": "Ülkemden önce",
+    "english": "before my country"
+  },
+  {
+    "id": 141,
+    "turkish": "Senin tatilinin ardından",
+    "english": "after your holiday"
+  },
+  {
+    "id": 142,
+    "turkish": "Onun tatilinin öncesinde E",
+    "english": "before his holiday"
+  },
+  {
+    "id": 143,
+    "turkish": "Onun kocasından önce K",
+    "english": "before her husband"
+  },
+  {
+    "id": 144,
+    "turkish": "Toplantımızdan önce",
+    "english": "before our meeting"
+  },
+  {
+    "id": 145,
+    "turkish": "Sizin tatilinizin ardından",
+    "english": "after your holiday"
+  },
+  {
+    "id": 146,
+    "turkish": "Onların çocuklarından evvel",
+    "english": "before their children"
+  },
+  {
+    "id": 147,
+    "turkish": "Benimkinden sonra",
+    "english": "after mine"
+  },
+  {
+    "id": 148,
+    "turkish": "Seninkinden önce",
+    "english": "before yours"
+  },
+  {
+    "id": 149,
+    "turkish": "Onunkinden sonra E",
+    "english": "after his"
+  },
+  {
+    "id": 150,
+    "turkish": "Onunkinden evvel K",
+    "english": "before hers"
+  },
+  {
+    "id": 151,
+    "turkish": "Bizimkinden önce",
+    "english": "before ours"
+  },
+  {
+    "id": 152,
+    "turkish": "Sizinkilerden sonra",
+    "english": "after yours"
+  },
+  {
+    "id": 153,
+    "turkish": "Onlarınkilerden önce",
+    "english": "before theirs"
+  },
+  {
+    "id": 154,
+    "turkish": "Benim hakkımda",
+    "english": "about me"
+  },
+  {
+    "id": 155,
+    "turkish": "Senin hakkında",
+    "english": "about you"
+  },
+  {
+    "id": 156,
+    "turkish": "Onun hakkında E",
+    "english": "about him"
+  },
+  {
+    "id": 157,
+    "turkish": "Onun hakkında K",
+    "english": "about her"
+  },
+  {
+    "id": 158,
+    "turkish": "Hakkımızda",
+    "english": "about us"
+  },
+  {
+    "id": 159,
+    "turkish": "Hakkınızda",
+    "english": "about you"
+  },
+  {
+    "id": 160,
+    "turkish": "Onların hakkında",
+    "english": "about them"
+  },
+  {
+    "id": 161,
+    "turkish": "Arabam hakkında",
+    "english": "about my car"
+  },
+  {
+    "id": 162,
+    "turkish": "Senin sorunların hakkında",
+    "english": "about your problems"
+  },
+  {
+    "id": 163,
+    "turkish": "Onun çocukları hakkında E",
+    "english": "about his children"
+  },
+  {
+    "id": 164,
+    "turkish": "Onun ailesi hakkında K",
+    "english": "about her family"
+  },
+  {
+    "id": 165,
+    "turkish": "Ailemiz hakkında",
+    "english": "about our family"
+  },
+  {
+    "id": 166,
+    "turkish": "Sizin tatiliniz hakkında",
+    "english": "about your holiday"
+  },
+  {
+    "id": 167,
+    "turkish": "Onların geleceği hakkında",
+    "english": "about their future"
+  },
+  {
+    "id": 168,
+    "turkish": "Benimki hakkında",
+    "english": "about mine"
+  },
+  {
+    "id": 169,
+    "turkish": "Onlarınki hakkında",
+    "english": "about theirs"
+  },
+  {
+    "id": 170,
+    "turkish": "Bizimki hakkında",
+    "english": "about ours"
+  },
+  {
+    "id": 171,
+    "turkish": "Benim yüzümden",
+    "english": "because of me"
+  },
+  {
+    "id": 172,
+    "turkish": "Senin yüzünden",
+    "english": "because of you"
+  },
+  {
+    "id": 173,
+    "turkish": "Onun yüzünden E",
+    "english": "because of him"
+  },
+  {
+    "id": 174,
+    "turkish": "Onun yüzünden K",
+    "english": "because of her"
+  },
+  {
+    "id": 175,
+    "turkish": "Bizim yüzümüzden",
+    "english": "because of us"
+  },
+  {
+    "id": 176,
+    "turkish": "Sizin yüzünüzden",
+    "english": "because of you"
+  },
+  {
+    "id": 177,
+    "turkish": "Onlar yüzünden",
+    "english": "because of them"
+  },
+  {
+    "id": 178,
+    "turkish": "Okulum yüzünden",
+    "english": "because of my school"
+  },
+  {
+    "id": 179,
+    "turkish": "Arkadaşların yüzünden",
+    "english": "because of your friends"
+  },
+  {
+    "id": 180,
+    "turkish": "Onun dayısı yüzünden E",
+    "english": "because of his uncle"
+  },
+  {
+    "id": 181,
+    "turkish": "Onun dedesi yüzünden K",
+    "english": "because of her grandfather"
+  },
+  {
+    "id": 182,
+    "turkish": "Geçmişimiz yüzünden",
+    "english": "because of our past"
+  },
+  {
+    "id": 183,
+    "turkish": "Sizin kitaplarınız yüzünden",
+    "english": "because of your books"
+  },
+  {
+    "id": 184,
+    "turkish": "Onların aileleri yüzünden",
+    "english": "because of their families"
+  },
+  {
+    "id": 185,
+    "turkish": "Benimkiler yüzünden",
+    "english": "because of mine"
+  },
+  {
+    "id": 186,
+    "turkish": "Benimki mutlu.",
+    "english": "mine is happy"
+  },
+  {
+    "id": 187,
+    "turkish": "Benimkiler mutlu.",
+    "english": "mine are happy"
+  },
+  {
+    "id": 188,
+    "turkish": "Benimki çok sinirli.",
+    "english": "mine is very angry"
+  },
+  {
+    "id": 189,
+    "turkish": "Benimkiler çok sinirli.",
+    "english": "mine are very angry"
+  },
+  {
+    "id": 190,
+    "turkish": "Bizimki yorgun.",
+    "english": "ours is tired"
+  },
+  {
+    "id": 191,
+    "turkish": "Benimkiler mutlu.",
+    "english": "mine are happy"
+  },
+  {
+    "id": 192,
+    "turkish": "Sizinkiler yüzünden",
+    "english": "because of yours"
+  },
+  {
+    "id": 193,
+    "turkish": "Onunkiler yüzünden E",
+    "english": "because of his"
+  },
+  {
+    "id": 194,
+    "turkish": "Onlarınkiler yüzünden",
+    "english": "because of theirs"
+  },
+  {
+    "id": 195,
+    "turkish": "İçimde",
+    "english": "in me"
+  },
+  {
+    "id": 196,
+    "turkish": "Senin üstünde",
+    "english": "on you"
+  },
+  {
+    "id": 197,
+    "turkish": "Onun yanında E",
+    "english": "at him"
+  },
+  {
+    "id": 198,
+    "turkish": "Onun üstünde K",
+    "english": "on her"
+  },
+  {
+    "id": 199,
+    "turkish": "İçimizde",
+    "english": "in us"
+  },
+  {
+    "id": 200,
+    "turkish": "Sizin içinizde",
+    "english": "in you"
+  },
+  {
+    "id": 201,
+    "turkish": "Onların içinde",
+    "english": "in them"
+  },
+  {
+    "id": 202,
+    "turkish": "Onların üstünde",
+    "english": "on them"
+  },
+  {
+    "id": 203,
+    "turkish": "Onların yanında",
+    "english": "at them"
+  },
+  {
+    "id": 204,
+    "turkish": "Benimkinin içinde",
+    "english": "in mine"
+  },
+  {
+    "id": 205,
+    "turkish": "Seninkinin içinde",
+    "english": "in yours"
+  },
+  {
+    "id": 206,
+    "turkish": "Onunkinin üstünde E",
+    "english": "on his"
+  },
+  {
+    "id": 207,
+    "turkish": "Onunkinin yanında K",
+    "english": "at hers"
+  },
+  {
+    "id": 208,
+    "turkish": "Bizimkilerin içinde",
+    "english": "in ours"
+  },
+  {
+    "id": 209,
+    "turkish": "Sizinkilerin yanında",
+    "english": "at yours"
+  },
+  {
+    "id": 210,
+    "turkish": "Onlarınkilerin içinde",
+    "english": "in theirs"
+  },
+  {
+    "id": 211,
+    "turkish": "Seninleyim.",
+    "english": "I am with you."
+  },
+  {
+    "id": 212,
+    "turkish": "Onunlayım. E",
+    "english": "I am with him."
+  },
+  {
+    "id": 213,
+    "turkish": "Onunlalar K.",
+    "english": "They are with her."
+  },
+  {
+    "id": 214,
+    "turkish": "Onlar bizimle",
+    "english": "They are with us."
+  },
+  {
+    "id": 215,
+    "turkish": "Biz onlarlayız",
+    "english": "We are with them."
+  },
+  {
+    "id": 216,
+    "turkish": "Sen bizimlesin.",
+    "english": "You are with us."
+  },
+  {
+    "id": 217,
+    "turkish": "O E, onunla K",
+    "english": "He is with her."
+  },
+  {
+    "id": 218,
+    "turkish": "O K, onunla E",
+    "english": "She is with him."
+  },
+  {
+    "id": 219,
+    "turkish": "Çocuklar benimle.",
+    "english": "The children are with me."
+  },
+  {
+    "id": 220,
+    "turkish": "Annem onlarla.",
+    "english": "My mother is with them."
+  },
+  {
+    "id": 221,
+    "turkish": "Bu, senin için",
+    "english": "This is for you."
+  },
+  {
+    "id": 222,
+    "turkish": "Bunlar senin için.",
+    "english": "These are for you."
+  },
+  {
+    "id": 223,
+    "turkish": "Bunlar, senin çocukların için",
+    "english": "These are for your children."
+  },
+  {
+    "id": 224,
+    "turkish": "Şunlar, bizim için.",
+    "english": "Those are for us."
+  },
+  {
+    "id": 225,
+    "turkish": "Şunlar, arkadaşlarımız için.",
+    "english": "Those are for our friends."
+  },
+  {
+    "id": 226,
+    "turkish": "Seninleyim.",
+    "english": "I am with you."
+  },
+  {
+    "id": 227,
+    "turkish": "Onunlayım E",
+    "english": "I am with him."
+  },
+  {
+    "id": 228,
+    "turkish": "Onunlayım K",
+    "english": "I am with her."
+  },
+  {
+    "id": 229,
+    "turkish": "Onunlayım.C",
+    "english": "I am with it."
+  },
+  {
+    "id": 230,
+    "turkish": "Onlar Onunla. K",
+    "english": "They are with her."
+  },
+  {
+    "id": 231,
+    "turkish": "Onunlayız E",
+    "english": "We are with him."
+  },
+  {
+    "id": 232,
+    "turkish": "Onlarlayız.",
+    "english": "We are with them."
+  },
+  {
+    "id": 233,
+    "turkish": "Onlar benimle.",
+    "english": "They are with me."
+  },
+  {
+    "id": 234,
+    "turkish": "Ben onlarla değilim.",
+    "english": "I am not with them."
+  },
+  {
+    "id": 235,
+    "turkish": "Onlar bizimle değil.",
+    "english": "They are not with us."
+  },
+  {
+    "id": 236,
+    "turkish": "Sen bizden değilsin.",
+    "english": "You aren't from us."
+  },
+  {
+    "id": 237,
+    "turkish": "Biz onlardan değiliz.",
+    "english": "We aren’t from them."
+  },
+  {
+    "id": 238,
+    "turkish": "Annem onların arkadaşlarıyla.",
+    "english": "My mother is with their friends."
+  },
+  {
+    "id": 239,
+    "turkish": "Onların arkadaşları benimle.",
+    "english": "Their friends are with me."
+  },
+  {
+    "id": 240,
+    "turkish": "Onlarınkiler bizimkilerle.",
+    "english": "Theirs are with ours."
+  },
+  {
+    "id": 241,
+    "turkish": "Bu, senin için.",
+    "english": "This is for you."
+  },
+  {
+    "id": 242,
+    "turkish": "Şu, benim için.",
+    "english": "That is for me."
+  },
+  {
+    "id": 243,
+    "turkish": "Onlar bizim için.",
+    "english": "They are for us."
+  },
+  {
+    "id": 244,
+    "turkish": "Onlar, biz olmadan ders çalışıyorlar.",
+    "english": "They study without us."
+  },
+  {
+    "id": 245,
+    "turkish": "Biz, Onlar olmadan yüzüyoruz.",
+    "english": "We swim without them."
+  },
+  {
+    "id": 246,
+    "turkish": "Sen biz olmadan tatile gidiyorsun.",
+    "english": "You go to the holiday without us."
+  },
+  {
+    "id": 247,
+    "turkish": "Bu para, benden.",
+    "english": "This money is from me."
+  },
+  {
+    "id": 248,
+    "turkish": "Kitabım onlardan.",
+    "english": "My book is from them."
+  },
+  {
+    "id": 249,
+    "turkish": "Sen, onların okulundansın.",
+    "english": "You are from their school."
+  },
+  {
+    "id": 250,
+    "turkish": "Bizimkiler gidiyor.",
+    "english": "Ours go."
+  },
+  {
+    "id": 251,
+    "turkish": "Sizinkiler yemek yiyor.",
+    "english": "Yours eat."
+  },
+  {
+    "id": 252,
+    "turkish": "Okuldan önce seninleyim.",
+    "english": "I am with you before school."
+  },
+  {
+    "id": 253,
+    "turkish": "Senden sonra onunlayım K",
+    "english": "I am with her after you."
+  },
+  {
+    "id": 254,
+    "turkish": "Bizimkiler seninle.",
+    "english": "Ours are with you."
+  },
+  {
+    "id": 255,
+    "turkish": "Arabam bahçenizde.",
+    "english": "My car is in your garden."
+  },
+  {
+    "id": 256,
+    "turkish": "Araban bahçemizde.",
+    "english": "Your car is in our garden."
+  },
+  {
+    "id": 257,
+    "turkish": "Param senin cebinde.",
+    "english": "My money is in your pocket."
+  },
+  {
+    "id": 258,
+    "turkish": "Senin paran benim cebimde.",
+    "english": "Your money is in my pocket."
+  },
+  {
+    "id": 259,
+    "turkish": "Seninki benim cebimde.",
+    "english": "Yours is in my pocket."
+  },
+  {
+    "id": 260,
+    "turkish": "Arkadaşlarımız onlarla.",
+    "english": "Our friends are with them."
+  },
+  {
+    "id": 261,
+    "turkish": "Senin arkadaşın bizimle.",
+    "english": "Your friend is with us."
+  },
+  {
+    "id": 262,
+    "turkish": "Senden sonra buradayım.",
+    "english": "I am here after you."
+  },
+  {
+    "id": 263,
+    "turkish": "Onlardan önce okuldayım.",
+    "english": "I am at the school before them."
+  },
+  {
+    "id": 264,
+    "turkish": "Okulumdan sonra onlarlayım.",
+    "english": "I am with them after my school."
+  },
+  {
+    "id": 265,
+    "turkish": "Senin yüzünden buradayım.",
+    "english": "I am here because of you."
+  },
+  {
+    "id": 266,
+    "turkish": "Onlar yüzünden okulumdayım.",
+    "english": "I am at my school because of them."
+  },
+  {
+    "id": 267,
+    "turkish": "Bizim yüzümüzden mutsuzlar.",
+    "english": "They are unhappy because of us."
+  },
+  {
+    "id": 268,
+    "turkish": "Sizin yüzünüzden sinirliyim.",
+    "english": "I am angry because of you."
+  },
+  {
+    "id": 269,
+    "turkish": "Onun yüzünden E oradayım.",
+    "english": "I am there because of him."
+  },
+  {
+    "id": 270,
+    "turkish": "Bizim hakkımızda konuşuyorlar.",
+    "english": "They talk about us."
+  },
+  {
+    "id": 271,
+    "turkish": "Sizin hakkınızda konuşuyoruz.",
+    "english": "We talk about you."
+  },
+  {
+    "id": 272,
+    "turkish": "Benimkiler hakkında konuşuyorsun.",
+    "english": "You talk about mine."
+  },
+  {
+    "id": 273,
+    "turkish": "Okulum hakkında konuşuyorlar.",
+    "english": "They talk about my school."
+  },
+  {
+    "id": 274,
+    "turkish": "Geleceğimiz hakkında konuşmak istiyoruz.",
+    "english": "We want to talk about our future."
+  },
+  {
+    "id": 275,
+    "turkish": "Geleceğim hakkında konuşmak istiyorum.",
+    "english": "I want to talk about my future."
+  },
+  {
+    "id": 276,
+    "turkish": "Senin geleceğin hakkında konuşuyorlar.",
+    "english": "They talk about your future."
+  },
+  {
+    "id": 277,
+    "turkish": "Bizimkiler burada.",
+    "english": "Ours are here."
+  },
+  {
+    "id": 278,
+    "turkish": "Onlarınkiler orada.",
+    "english": "Theirs are there."
+  },
+  {
+    "id": 279,
+    "turkish": "Evimizin çiçekleri, bahçede.",
+    "english": "The flowers of our house are in the garden."
+  },
+  {
+    "id": 280,
+    "turkish": "Annemin arkadaşları bizimle.",
+    "english": "The friends of my mother are with us."
+  },
+  {
+    "id": 281,
+    "turkish": "Arkadaşımın köpeği burada değil.",
+    "english": "The dog of my friend isn’t here."
+  }
+]

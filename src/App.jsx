@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import vocabularyData from './data/vocabulary_extracted_all.json'
 import phrasePracticeData from './data/practice_phrases_extracted_all.json'
+import prepositionPlusExercisesData from './data/preposition_plus_exercises.json'
 import './App.css'
 
 const SINGULAR_FRAMES = ['a', 'the', 'this', 'that', 'my', 'your']
@@ -20,16 +21,46 @@ const PREPOSITIONS = [
   'ON',
   'AT',
 ]
+const SUBJECT_PRONOUNS = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
+const OBJECT_PRONOUNS = ['me', 'you', 'him', 'her', 'it', 'us', 'you', 'them']
+const POSSESSIVE_ADJECTIVES = ['my', 'your', 'his', 'her', 'its', 'our', 'your', 'their']
+const POSSESSIVE_PRONOUNS = ['mine', 'yours', 'his', 'hers', 'its', 'ours', 'yours', 'theirs']
+const PREPOSITION_PACK_FILTERS = [
+  { key: 'all', label: 'Tümü' },
+  { key: 'to', label: 'TO' },
+  { key: 'for', label: 'FOR' },
+  { key: 'from', label: 'FROM' },
+  { key: 'with', label: 'WITH' },
+  { key: 'without', label: 'WITHOUT' },
+  { key: 'after', label: 'AFTER' },
+  { key: 'before', label: 'BEFORE' },
+  { key: 'about', label: 'ABOUT' },
+  { key: 'becauseOf', label: 'BECAUSE OF' },
+  { key: 'in', label: 'IN' },
+  { key: 'on', label: 'ON' },
+  { key: 'at', label: 'AT' },
+  { key: 'mixed', label: 'CÜMLE' },
+]
 const MODE_LABELS = {
   vocabulary: 'Kelime Çalışması',
   drill: 'Ağız Alıştırma',
   translation: 'Türkçe → İngilizce Yazma',
+  pronounDrill: 'Zamir Kalıp Alıştırma',
+  prepositionPack: 'Edat + Cümle Alıştırmaları',
 }
-const STUDY_MODES = ['vocabulary', 'drill', 'translation']
+const STUDY_MODES = ['vocabulary', 'drill', 'translation', 'pronounDrill', 'prepositionPack']
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'profile']
 const MODE_SET = new Set(MODES)
 const STATS_STORAGE_KEY = 'engpractice-stats-v1'
+const VOCAB_MEMORY_STORAGE_KEY = 'engpractice-vocab-memory-v1'
+const TRANSLATION_SMART_STORAGE_KEY = 'engpractice-translation-smart-v1'
+const MEMORY_FILTER_LABELS = {
+  all: 'Tümü',
+  new: 'Yeni',
+  learning: 'Çalışılacak',
+  mastered: 'Öğrendim',
+}
 const EMPTY_ACTIONS = Object.freeze({
   next: 0,
   prev: 0,
@@ -43,11 +74,15 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   vocabulary: 0,
   drill: 0,
   translation: 0,
+  pronounDrill: 0,
+  prepositionPack: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
   drill: 0,
   translation: 0,
+  pronounDrill: 0,
+  prepositionPack: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -162,6 +197,8 @@ function normalizeModeSeconds(value) {
     vocabulary: toSafeNumber(source.vocabulary),
     drill: toSafeNumber(source.drill),
     translation: toSafeNumber(source.translation),
+    pronounDrill: toSafeNumber(source.pronounDrill),
+    prepositionPack: toSafeNumber(source.prepositionPack),
   }
 }
 
@@ -171,6 +208,8 @@ function normalizeModeVisits(value) {
     vocabulary: toSafeNumber(source.vocabulary),
     drill: toSafeNumber(source.drill),
     translation: toSafeNumber(source.translation),
+    pronounDrill: toSafeNumber(source.pronounDrill),
+    prepositionPack: toSafeNumber(source.prepositionPack),
   }
 }
 
@@ -270,6 +309,372 @@ function loadStoredStats() {
     return normalizeProfileStats(JSON.parse(raw))
   } catch {
     return createEmptyProfileStats()
+  }
+}
+
+function createVocabularyWordId(item, fallbackIndex) {
+  const english = normalizeAnswer(item.english).replace(/\s+/g, '-')
+  const turkish = String(item.turkish ?? '').toLowerCase().replace(/\s+/g, '-')
+  const page = item.source_page ?? fallbackIndex + 1
+  return `${page}-${english}-${turkish}`
+}
+
+function createPhrasePracticeId(item, fallbackIndex) {
+  const sourceId = Number.isFinite(Number(item.id)) ? Number(item.id) : fallbackIndex + 1
+  const english = normalizeAnswer(item.english).replace(/\s+/g, '-')
+  return `phrase-${sourceId}-${english.slice(0, 50)}`
+}
+
+function normalizeMemoryStatus(value) {
+  if (value === 'learning' || value === 'mastered') {
+    return value
+  }
+  return 'new'
+}
+
+function loadVocabularyMemory() {
+  if (typeof window === 'undefined') {
+    return {}
+  }
+
+  try {
+    const raw = window.localStorage.getItem(VOCAB_MEMORY_STORAGE_KEY)
+    if (!raw) {
+      return {}
+    }
+    const parsed = JSON.parse(raw)
+    if (!parsed || typeof parsed !== 'object') {
+      return {}
+    }
+
+    const normalized = {}
+    Object.entries(parsed).forEach(([wordId, value]) => {
+      if (!value || typeof value !== 'object') {
+        return
+      }
+      normalized[wordId] = {
+        status: normalizeMemoryStatus(value.status),
+        lastReviewedAt: typeof value.lastReviewedAt === 'string' ? value.lastReviewedAt : '',
+      }
+    })
+    return normalized
+  } catch {
+    return {}
+  }
+}
+
+function useVocabularyMemory() {
+  const [memoryMap, setMemoryMap] = useState(() => loadVocabularyMemory())
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+    window.localStorage.setItem(VOCAB_MEMORY_STORAGE_KEY, JSON.stringify(memoryMap))
+  }, [memoryMap])
+
+  const getStatus = useCallback(
+    (wordId) => {
+      return memoryMap[wordId]?.status ?? 'new'
+    },
+    [memoryMap],
+  )
+
+  const setStatus = useCallback((wordId, nextStatus) => {
+    const normalizedStatus = normalizeMemoryStatus(nextStatus)
+    const nowIso = new Date().toISOString()
+
+    setMemoryMap((prev) => {
+      if (normalizedStatus === 'new') {
+        const next = { ...prev }
+        delete next[wordId]
+        return next
+      }
+
+      return {
+        ...prev,
+        [wordId]: {
+          status: normalizedStatus,
+          lastReviewedAt: nowIso,
+        },
+      }
+    })
+  }, [])
+
+  const resetAll = useCallback(() => {
+    setMemoryMap({})
+  }, [])
+
+  return {
+    memoryMap,
+    getStatus,
+    setStatus,
+    resetAll,
+  }
+}
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value))
+}
+
+function createEmptyTranslationSmartState() {
+  return {
+    enabled: false,
+    statsById: {},
+  }
+}
+
+function createEmptyTranslationSmartEntry() {
+  return {
+    attemptCount: 0,
+    wrongCount: 0,
+    revealCount: 0,
+    totalResponseMs: 0,
+    lastSeenAt: '',
+  }
+}
+
+function normalizeTranslationSmartEntry(value) {
+  const source = value && typeof value === 'object' ? value : {}
+  return {
+    attemptCount: toSafeNumber(source.attemptCount),
+    wrongCount: toSafeNumber(source.wrongCount),
+    revealCount: toSafeNumber(source.revealCount),
+    totalResponseMs: toSafeNumber(source.totalResponseMs),
+    lastSeenAt: typeof source.lastSeenAt === 'string' ? source.lastSeenAt : '',
+  }
+}
+
+function normalizeTranslationSmartMap(value) {
+  const source = value && typeof value === 'object' ? value : {}
+  const normalized = {}
+
+  Object.entries(source).forEach(([phraseId, entry]) => {
+    if (!phraseId) {
+      return
+    }
+    normalized[phraseId] = normalizeTranslationSmartEntry(entry)
+  })
+
+  return normalized
+}
+
+function normalizeTranslationSmartState(raw) {
+  if (!raw || typeof raw !== 'object') {
+    return createEmptyTranslationSmartState()
+  }
+
+  return {
+    enabled: Boolean(raw.enabled),
+    statsById: normalizeTranslationSmartMap(raw.statsById),
+  }
+}
+
+function loadTranslationSmartState() {
+  if (typeof window === 'undefined') {
+    return createEmptyTranslationSmartState()
+  }
+
+  try {
+    const raw = window.localStorage.getItem(TRANSLATION_SMART_STORAGE_KEY)
+    if (!raw) {
+      return createEmptyTranslationSmartState()
+    }
+    return normalizeTranslationSmartState(JSON.parse(raw))
+  } catch {
+    return createEmptyTranslationSmartState()
+  }
+}
+
+function summarizeTranslationDifficulty(entry) {
+  const attemptCount = toSafeNumber(entry?.attemptCount)
+  if (attemptCount <= 0) {
+    return {
+      score: 0,
+      attemptCount: 0,
+      avgResponseSeconds: 0,
+      wrongPerAttempt: 0,
+      revealRate: 0,
+    }
+  }
+
+  const safeAttempts = Math.max(1, attemptCount)
+  const avgResponseSeconds = toSafeNumber(entry.totalResponseMs) / 1000 / safeAttempts
+  const wrongPerAttempt = toSafeNumber(entry.wrongCount) / safeAttempts
+  const revealRate = toSafeNumber(entry.revealCount) / safeAttempts
+
+  const responseRatio = clamp((avgResponseSeconds - 2) / 18, 0, 1)
+  const wrongRatio = clamp(wrongPerAttempt / 2, 0, 1)
+  const revealRatio = clamp(revealRate, 0, 1)
+
+  return {
+    score: Math.round((responseRatio * 0.34 + wrongRatio * 0.41 + revealRatio * 0.25) * 100),
+    attemptCount,
+    avgResponseSeconds,
+    wrongPerAttempt,
+    revealRate,
+  }
+}
+
+function formatResponseSeconds(seconds) {
+  const safeSeconds = Math.max(0, Number(seconds) || 0)
+  if (safeSeconds < 10) {
+    return `${safeSeconds.toFixed(1)} sn`
+  }
+  return `${Math.round(safeSeconds)} sn`
+}
+
+function getNowTimestamp() {
+  return new Date().getTime()
+}
+
+function useTranslationSmart(translationItems) {
+  const [smartState, setSmartState] = useState(() => loadTranslationSmartState())
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+    window.localStorage.setItem(TRANSLATION_SMART_STORAGE_KEY, JSON.stringify(smartState))
+  }, [smartState])
+
+  const setEnabled = useCallback((nextValue) => {
+    setSmartState((prev) => ({
+      ...prev,
+      enabled: Boolean(nextValue),
+    }))
+  }, [])
+
+  const recordAttempt = useCallback(({ phraseId, responseMs, wrongCount, revealUsed }) => {
+    if (!phraseId) {
+      return
+    }
+
+    const safeResponseMs = Math.min(120000, Math.round(toSafeNumber(responseMs)))
+    const safeWrongCount = Math.round(toSafeNumber(wrongCount))
+    const revealIncrement = revealUsed ? 1 : 0
+    const nowIso = new Date().toISOString()
+
+    setSmartState((prev) => {
+      const previousEntry = prev.statsById[phraseId] ?? createEmptyTranslationSmartEntry()
+      return {
+        ...prev,
+        statsById: {
+          ...prev.statsById,
+          [phraseId]: {
+            attemptCount: previousEntry.attemptCount + 1,
+            wrongCount: previousEntry.wrongCount + safeWrongCount,
+            revealCount: previousEntry.revealCount + revealIncrement,
+            totalResponseMs: previousEntry.totalResponseMs + safeResponseMs,
+            lastSeenAt: nowIso,
+          },
+        },
+      }
+    })
+  }, [])
+
+  const getSummaryById = useCallback(
+    (phraseId) => {
+      return summarizeTranslationDifficulty(smartState.statsById[phraseId])
+    },
+    [smartState.statsById],
+  )
+
+  const pickNextPhraseId = useCallback(
+    ({ excludeId, recentIds = [] } = {}) => {
+      if (translationItems.length === 0) {
+        return null
+      }
+
+      const preferredItems = translationItems.filter((item) => item.practiceId !== excludeId)
+      const candidates = preferredItems.length > 0 ? preferredItems : translationItems
+      const recentSet = new Set(recentIds.slice(-3))
+
+      let totalWeight = 0
+      const weighted = candidates.map((item) => {
+        const entry = smartState.statsById[item.practiceId]
+        const summary = summarizeTranslationDifficulty(entry)
+        let weight = 1
+
+        if (!entry || summary.attemptCount === 0) {
+          weight += 0.9
+        } else {
+          weight += summary.score / 16
+        }
+
+        if (recentSet.has(item.practiceId)) {
+          weight *= 0.35
+        }
+
+        const safeWeight = Math.max(0.12, weight)
+        totalWeight += safeWeight
+        return { phraseId: item.practiceId, weight: safeWeight }
+      })
+
+      let pick = Math.random() * totalWeight
+      for (let i = 0; i < weighted.length; i += 1) {
+        pick -= weighted[i].weight
+        if (pick <= 0) {
+          return weighted[i].phraseId
+        }
+      }
+      return weighted[weighted.length - 1]?.phraseId ?? null
+    },
+    [translationItems, smartState.statsById],
+  )
+
+  const hardestPhrases = useMemo(() => {
+    return translationItems
+      .map((item) => {
+        const entry = smartState.statsById[item.practiceId]
+        const summary = summarizeTranslationDifficulty(entry)
+        if (summary.attemptCount === 0) {
+          return null
+        }
+        return {
+          ...item,
+          score: summary.score,
+          attemptCount: summary.attemptCount,
+          avgResponseSeconds: summary.avgResponseSeconds,
+          wrongPerAttempt: summary.wrongPerAttempt,
+          revealRate: summary.revealRate,
+        }
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.score - a.score || b.attemptCount - a.attemptCount || a.turkish.localeCompare(b.turkish))
+      .slice(0, 12)
+  }, [translationItems, smartState.statsById])
+
+  return {
+    enabled: smartState.enabled,
+    setEnabled,
+    recordAttempt,
+    getSummaryById,
+    pickNextPhraseId,
+    hardestPhrases,
+  }
+}
+
+function getSpeechRecognitionConstructor() {
+  if (typeof window === 'undefined') {
+    return null
+  }
+  return window.SpeechRecognition || window.webkitSpeechRecognition || null
+}
+
+function getSpeechRecognitionErrorMessage(errorCode) {
+  switch (errorCode) {
+    case 'no-speech':
+      return 'Ses algılanamadı. Mikrofonu açıp tekrar dene.'
+    case 'audio-capture':
+      return 'Mikrofon bulunamadı veya erişilemiyor.'
+    case 'not-allowed':
+    case 'service-not-allowed':
+      return 'Mikrofon izni verilmedi. Tarayıcı ayarından izin ver.'
+    case 'network':
+      return 'Ses tanıma sırasında ağ hatası oluştu.'
+    default:
+      return 'Sesli cevap alınamadı. Tekrar deneyebilirsin.'
   }
 }
 
@@ -488,17 +893,26 @@ function useShuffledDeck(items) {
   const [index, setIndex] = useState(0)
 
   function goNext() {
+    if (deck.length === 0) {
+      return
+    }
     setIndex((prev) => (prev + 1) % deck.length)
   }
 
   function goPrev() {
+    if (deck.length === 0) {
+      return
+    }
     setIndex((prev) => (prev - 1 + deck.length) % deck.length)
   }
 
-  function reshuffle() {
-    const nextDeck = shuffleArray(items)
-    setDeck(nextDeck)
+  function resetWithItems(nextItems = items) {
+    setDeck(shuffleArray(nextItems))
     setIndex(0)
+  }
+
+  function reshuffle() {
+    resetWithItems(items)
   }
 
   return {
@@ -509,7 +923,65 @@ function useShuffledDeck(items) {
     goNext,
     goPrev,
     reshuffle,
+    resetWithItems,
   }
+}
+
+function createInitialSmartQueue(items) {
+  if (!items.length) {
+    return { history: [], cursor: 0 }
+  }
+  const firstIndex = Math.floor(Math.random() * items.length)
+  return {
+    history: [items[firstIndex].practiceId],
+    cursor: 0,
+  }
+}
+
+function detectPrepositionCategory(englishRaw) {
+  const normalized = normalizeAnswer(englishRaw)
+  if (!normalized) {
+    return 'mixed'
+  }
+
+  if (normalized === 'because of' || normalized.startsWith('because of ')) {
+    return 'becauseOf'
+  }
+  if (normalized === 'without' || normalized.startsWith('without ')) {
+    return 'without'
+  }
+  if (normalized === 'before' || normalized.startsWith('before ')) {
+    return 'before'
+  }
+  if (normalized === 'after' || normalized.startsWith('after ')) {
+    return 'after'
+  }
+  if (normalized === 'about' || normalized.startsWith('about ')) {
+    return 'about'
+  }
+  if (normalized === 'with' || normalized.startsWith('with ')) {
+    return 'with'
+  }
+  if (normalized === 'from' || normalized.startsWith('from ')) {
+    return 'from'
+  }
+  if (normalized === 'for' || normalized.startsWith('for ')) {
+    return 'for'
+  }
+  if (normalized === 'to' || normalized.startsWith('to ')) {
+    return 'to'
+  }
+  if (normalized === 'in' || normalized.startsWith('in ')) {
+    return 'in'
+  }
+  if (normalized === 'on' || normalized.startsWith('on ')) {
+    return 'on'
+  }
+  if (normalized === 'at' || normalized.startsWith('at ')) {
+    return 'at'
+  }
+
+  return 'mixed'
 }
 
 function normalizePracticeWord(english) {
@@ -628,6 +1100,24 @@ function HomePage({ onSelect }) {
           <p>Türkçe ifadeyi gör, İngilizce karşılığını yaz ve anında doğru/yanlış kontrolü al.</p>
         </button>
 
+        <button type="button" className="mode-card" onClick={() => onSelect('pronounDrill')}>
+          <p className="mode-index">4. Çalışma</p>
+          <h2>Zamir Kalıp Alıştırma</h2>
+          <p>
+            Edat + zamir tablolarını sabit tekrar et, sadece isim kısmını random değiştirerek
+            kalıpları oturt.
+          </p>
+        </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('prepositionPack')}>
+          <p className="mode-index">5. Çalışma</p>
+          <h2>Edat + Cümle Alıştırmaları</h2>
+          <p>
+            Verdiğin kapsamlı listeyi kart kart çalış: önce Türkçe ifadeyi gör, sonra İngilizce
+            karşılığını aç.
+          </p>
+        </button>
+
         <button type="button" className="mode-card profile-card-button" onClick={() => onSelect('profile')}>
           <p className="mode-index">Profil</p>
           <h2>İstatistiklerim</h2>
@@ -653,71 +1143,513 @@ function HeaderBar({ title, subtitle, onBack }) {
 }
 
 function VocabularyStudy({ onBack, onAction }) {
-  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(vocabularyData)
+  const vocabularyItems = useMemo(() => {
+    return vocabularyData.map((item, index) => ({
+      ...item,
+      id: createVocabularyWordId(item, index),
+    }))
+  }, [])
+
+  const vocabularyById = useMemo(() => {
+    const map = new Map()
+    vocabularyItems.forEach((item) => {
+      map.set(item.id, item)
+    })
+    return map
+  }, [vocabularyItems])
+
+  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(vocabularyItems)
+  const { memoryMap, setStatus, resetAll } = useVocabularyMemory()
+
+  const [studyView, setStudyView] = useState('classic')
+  const [memoryPanel, setMemoryPanel] = useState('cards')
+  const [memoryFilter, setMemoryFilter] = useState('all')
+  const [memoryQueue, setMemoryQueue] = useState(() => shuffleArray(vocabularyItems.map((item) => item.id)))
+  const [memoryHistory, setMemoryHistory] = useState([])
+  const [reviewSearch, setReviewSearch] = useState('')
+  const [dragX, setDragX] = useState(0)
+
+  const dragStartRef = useRef(null)
+  const dragOffsetRef = useRef(0)
+
+  function getWordStatus(wordId) {
+    return memoryMap[wordId]?.status ?? 'new'
+  }
+
+  function matchesMemoryFilter(status, filter) {
+    if (filter === 'new') {
+      return status === 'new'
+    }
+    if (filter === 'learning') {
+      return status === 'learning'
+    }
+    if (filter === 'mastered') {
+      return status === 'mastered'
+    }
+    return true
+  }
+
+  function buildQueue(filter = memoryFilter) {
+    return shuffleArray(
+      vocabularyItems
+        .filter((item) => matchesMemoryFilter(getWordStatus(item.id), filter))
+        .map((item) => item.id),
+    )
+  }
+
+  function resetMemoryQueue(filter = memoryFilter) {
+    setMemoryQueue(buildQueue(filter))
+    setDragX(0)
+    dragOffsetRef.current = 0
+  }
+
+  function handleMemoryFilterChange(nextFilter) {
+    setMemoryFilter(nextFilter)
+    resetMemoryQueue(nextFilter)
+  }
+
+  const memoryCounts = vocabularyItems.reduce(
+    (counts, item) => {
+      counts[getWordStatus(item.id)] += 1
+      return counts
+    },
+    { new: 0, learning: 0, mastered: 0 },
+  )
+
+  const filteredQueue = memoryQueue.filter((wordId) =>
+    matchesMemoryFilter(getWordStatus(wordId), memoryFilter),
+  )
+
+  const memoryCurrentWord = filteredQueue.length > 0 ? vocabularyById.get(filteredQueue[0]) : null
+
+  const learningWords = vocabularyItems.filter((item) => getWordStatus(item.id) === 'learning')
+
+  const query = reviewSearch.trim().toLowerCase()
+  const filteredLearningWords = query
+    ? learningWords.filter((item) => {
+        return (
+          item.english.toLowerCase().includes(query) ||
+          item.turkish.toLowerCase().includes(query) ||
+          item.pronunciation_tr.toLowerCase().includes(query)
+        )
+      })
+    : learningWords
+
+  function handleMemorySwipe(nextStatus) {
+    if (!memoryCurrentWord) {
+      return
+    }
+
+    const wordId = memoryCurrentWord.id
+    const previousStatus = getWordStatus(wordId)
+
+    setStatus(wordId, nextStatus)
+    setMemoryHistory((prev) =>
+      [{ wordId, previousStatus, nextStatus }, ...prev].slice(0, 60),
+    )
+
+    setMemoryQueue((prevQueue) => {
+      const withoutCurrent = prevQueue.filter((id) => id !== wordId)
+      const shouldRequeue =
+        (nextStatus === 'learning' && memoryFilter !== 'new') ||
+        (nextStatus === 'mastered' && memoryFilter === 'mastered')
+      return shouldRequeue ? [...withoutCurrent, wordId] : withoutCurrent
+    })
+
+    setDragX(0)
+    dragOffsetRef.current = 0
+
+    if (nextStatus === 'mastered') {
+      onAction('next', 'vocabulary')
+    } else {
+      onAction('prev', 'vocabulary')
+    }
+  }
+
+  function undoMemorySwipe() {
+    if (memoryHistory.length === 0) {
+      return
+    }
+
+    const [lastAction, ...rest] = memoryHistory
+    setMemoryHistory(rest)
+    setStatus(lastAction.wordId, lastAction.previousStatus)
+    setMemoryQueue((prevQueue) => [lastAction.wordId, ...prevQueue.filter((id) => id !== lastAction.wordId)])
+    setDragX(0)
+    dragOffsetRef.current = 0
+  }
+
+  function startLearningPractice(focusWordId) {
+    const learningIds = vocabularyItems
+      .filter((item) => getWordStatus(item.id) === 'learning')
+      .map((item) => item.id)
+
+    if (learningIds.length === 0) {
+      return
+    }
+
+    const orderedQueue = focusWordId
+      ? [focusWordId, ...shuffleArray(learningIds.filter((wordId) => wordId !== focusWordId))]
+      : shuffleArray(learningIds)
+
+    setStudyView('memory')
+    setMemoryPanel('cards')
+    setMemoryFilter('learning')
+    setMemoryQueue(orderedQueue)
+    setDragX(0)
+    dragOffsetRef.current = 0
+  }
+
+  function resetMemoryProgress() {
+    const confirmed = window.confirm(
+      'Ezberleme modundaki tüm kaydırma verilerini sıfırlamak istediğine emin misin?',
+    )
+    if (!confirmed) {
+      return
+    }
+
+    resetAll()
+    setMemoryFilter('all')
+    setMemoryQueue(shuffleArray(vocabularyItems.map((item) => item.id)))
+    setMemoryHistory([])
+    setReviewSearch('')
+    setDragX(0)
+    dragOffsetRef.current = 0
+  }
+
+  function handleCardPointerDown(event) {
+    if (!memoryCurrentWord) {
+      return
+    }
+    dragStartRef.current = event.clientX
+    dragOffsetRef.current = 0
+    if (event.currentTarget.setPointerCapture) {
+      event.currentTarget.setPointerCapture(event.pointerId)
+    }
+  }
+
+  function handleCardPointerMove(event) {
+    if (dragStartRef.current === null) {
+      return
+    }
+    const nextOffset = event.clientX - dragStartRef.current
+    dragOffsetRef.current = nextOffset
+    setDragX(nextOffset)
+  }
+
+  function finalizeCardSwipe(event) {
+    if (dragStartRef.current === null) {
+      return
+    }
+
+    if (event.currentTarget.releasePointerCapture) {
+      try {
+        event.currentTarget.releasePointerCapture(event.pointerId)
+      } catch {
+        // ignore
+      }
+    }
+
+    dragStartRef.current = null
+    const offset = dragOffsetRef.current
+
+    if (offset > 120) {
+      handleMemorySwipe('mastered')
+      return
+    }
+    if (offset < -120) {
+      handleMemorySwipe('learning')
+      return
+    }
+
+    setDragX(0)
+    dragOffsetRef.current = 0
+  }
 
   return (
     <section className="study-shell">
       <HeaderBar
         title="Kelime Çalışması"
-        subtitle="Rastgele gelen kelimeyi incele ve tekrar et."
+        subtitle="Klasik kart veya kaydırmalı ezberleme modunu kullan."
         onBack={onBack}
       />
 
-      <article className="word-card">
-        <p className="label">English</p>
-        <h2 className="english-word">{current.english}</h2>
-
-        <div className="divider" />
-
-        <div className="detail">
-          <p className="label">Türkçe Telaffuz</p>
-          <p className="value pronunciation">{current.pronunciation_tr}</p>
-        </div>
-
-        <div className="detail">
-          <p className="label">Türkçe Karşılık</p>
-          <p className="value meaning">{current.turkish}</p>
-        </div>
-
-        <p className="page-info">Kaynak sayfa: {current.source_page}</p>
-      </article>
-
-      <div className="controls">
+      <div className="study-mode-toggle">
         <button
           type="button"
-          className="nav-btn"
-          onClick={() => {
-            goPrev()
-            onAction('prev', 'vocabulary')
-          }}
+          className={`study-toggle-btn ${studyView === 'classic' ? 'active' : ''}`}
+          onClick={() => setStudyView('classic')}
         >
-          ← Geri
+          Klasik Mod
         </button>
-        <span className="counter">
-          {index + 1} / {total}
-        </span>
         <button
           type="button"
-          className="nav-btn"
+          className={`study-toggle-btn ${studyView === 'memory' ? 'active' : ''}`}
           onClick={() => {
-            goNext()
-            onAction('next', 'vocabulary')
+            setStudyView('memory')
+            setMemoryPanel('cards')
+            if (memoryQueue.length === 0) {
+              resetMemoryQueue(memoryFilter)
+            }
           }}
         >
-          İleri →
+          Ezberleme Modu
         </button>
       </div>
 
-      <button
-        type="button"
-        className="shuffle-btn"
-        onClick={() => {
-          reshuffle()
-          onAction('shuffle', 'vocabulary')
-        }}
-      >
-        Yeni Rastgele Sıra
-      </button>
+      {studyView === 'classic' && (
+        <>
+          <article className="word-card">
+            <p className="label">English</p>
+            <h2 className="english-word">{current.english}</h2>
+
+            <div className="divider" />
+
+            <div className="detail">
+              <p className="label">Türkçe Telaffuz</p>
+              <p className="value pronunciation">{current.pronunciation_tr}</p>
+            </div>
+
+            <div className="detail">
+              <p className="label">Türkçe Karşılık</p>
+              <p className="value meaning">{current.turkish}</p>
+            </div>
+
+            <p className="page-info">Kaynak sayfa: {current.source_page}</p>
+          </article>
+
+          <div className="controls">
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={() => {
+                goPrev()
+                onAction('prev', 'vocabulary')
+              }}
+            >
+              ← Geri
+            </button>
+            <span className="counter">
+              {index + 1} / {total}
+            </span>
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={() => {
+                goNext()
+                onAction('next', 'vocabulary')
+              }}
+            >
+              İleri →
+            </button>
+          </div>
+
+          <button
+            type="button"
+            className="shuffle-btn"
+            onClick={() => {
+              reshuffle()
+              onAction('shuffle', 'vocabulary')
+            }}
+          >
+            Yeni Rastgele Sıra
+          </button>
+        </>
+      )}
+
+      {studyView === 'memory' && (
+        <div className="memory-shell">
+          <article className="memory-summary-card">
+            <div className="memory-counter-row">
+              <span className="memory-counter new">Yeni: {memoryCounts.new}</span>
+              <span className="memory-counter learning">Çalışılacak: {memoryCounts.learning}</span>
+              <span className="memory-counter mastered">Öğrendim: {memoryCounts.mastered}</span>
+            </div>
+
+            <div className="memory-panel-toggle">
+              <button
+                type="button"
+                className={`memory-mini-btn ${memoryPanel === 'cards' ? 'active' : ''}`}
+                onClick={() => setMemoryPanel('cards')}
+              >
+                Kart Çalışması
+              </button>
+              <button
+                type="button"
+                className={`memory-mini-btn ${memoryPanel === 'review' ? 'active' : ''}`}
+                onClick={() => setMemoryPanel('review')}
+              >
+                Çalışmak İstediklerim
+              </button>
+            </div>
+
+            <div className="memory-filter-row">
+              {Object.entries(MEMORY_FILTER_LABELS).map(([filterKey, label]) => (
+                <button
+                  key={filterKey}
+                  type="button"
+                  className={`memory-filter-btn ${memoryFilter === filterKey ? 'active' : ''}`}
+                  onClick={() => handleMemoryFilterChange(filterKey)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </article>
+
+          {memoryPanel === 'cards' && (
+            <>
+              <div className="memory-controls-row">
+                <p className="memory-queue-info">Sıradaki kart: {filteredQueue.length}</p>
+                <div className="memory-controls-actions">
+                  <button type="button" className="memory-mini-btn" onClick={() => resetMemoryQueue(memoryFilter)}>
+                    Yeni Kart Sırası
+                  </button>
+                  <button
+                    type="button"
+                    className="memory-mini-btn"
+                    onClick={undoMemorySwipe}
+                    disabled={memoryHistory.length === 0}
+                  >
+                    Son Kararı Geri Al
+                  </button>
+                </div>
+              </div>
+
+              {memoryCurrentWord ? (
+                <article
+                  className={`memory-card ${dragX > 40 ? 'right' : dragX < -40 ? 'left' : ''}`}
+                  style={{ transform: `translateX(${dragX}px) rotate(${dragX / 28}deg)` }}
+                  onPointerDown={handleCardPointerDown}
+                  onPointerMove={handleCardPointerMove}
+                  onPointerUp={finalizeCardSwipe}
+                  onPointerCancel={finalizeCardSwipe}
+                >
+                  <p className="memory-swipe-hint">Sola kaydır: Çalışmak İstiyorum • Sağa kaydır: Öğrendim</p>
+                  <p className="label">English</p>
+                  <h2 className="english-word">{memoryCurrentWord.english}</h2>
+                  <div className="divider" />
+
+                  <div className="detail">
+                    <p className="label">Türkçe Telaffuz</p>
+                    <p className="value pronunciation">{memoryCurrentWord.pronunciation_tr}</p>
+                  </div>
+                  <div className="detail">
+                    <p className="label">Türkçe Karşılık</p>
+                    <p className="value meaning">{memoryCurrentWord.turkish}</p>
+                  </div>
+
+                  <div className="memory-card-actions">
+                    <button
+                      type="button"
+                      className="memory-decision-btn left"
+                      onClick={() => handleMemorySwipe('learning')}
+                    >
+                      ← Çalışmak İstiyorum
+                    </button>
+                    <button
+                      type="button"
+                      className="memory-decision-btn right"
+                      onClick={() => handleMemorySwipe('mastered')}
+                    >
+                      Öğrendim →
+                    </button>
+                  </div>
+                </article>
+              ) : (
+                <article className="memory-empty-card">
+                  <h3>Bu filtre için kart kalmadı.</h3>
+                  <p>Filtreyi değiştir, yeni sıra üret veya çalışmak istediklerini tekrar başlat.</p>
+                  <div className="memory-controls-actions">
+                    <button type="button" className="memory-mini-btn" onClick={() => handleMemoryFilterChange('all')}>
+                      Tüm Kartlara Dön
+                    </button>
+                    <button
+                      type="button"
+                      className="memory-mini-btn"
+                      onClick={() => startLearningPractice()}
+                      disabled={learningWords.length === 0}
+                    >
+                      Çalışılacakları Çalış
+                    </button>
+                  </div>
+                </article>
+              )}
+            </>
+          )}
+
+          {memoryPanel === 'review' && (
+            <article className="memory-review-card">
+              <div className="memory-review-head">
+                <div>
+                  <h3>Çalışmak İstediklerim ({learningWords.length})</h3>
+                  <p>Sola kaydırdığın kelimeler burada. İstersen sadece bunları tekrar çalış.</p>
+                </div>
+                <button
+                  type="button"
+                  className="memory-mini-btn active"
+                  onClick={() => startLearningPractice()}
+                  disabled={learningWords.length === 0}
+                >
+                  Bu Listeyi Kartta Çalış
+                </button>
+              </div>
+
+              <input
+                type="text"
+                className="profile-input memory-search-input"
+                placeholder="Kelime ara..."
+                value={reviewSearch}
+                onChange={(event) => setReviewSearch(event.target.value)}
+              />
+
+              {filteredLearningWords.length === 0 ? (
+                <p className="profile-note">Henüz çalışılacak kelime yok veya aramaya uygun sonuç bulunamadı.</p>
+              ) : (
+                <ul className="memory-review-list">
+                  {filteredLearningWords.map((item) => (
+                    <li key={item.id} className="memory-review-item">
+                      <div className="memory-review-main">
+                        <p className="memory-review-word">{item.english}</p>
+                        <p className="memory-review-meta">
+                          {item.pronunciation_tr} • {item.turkish}
+                        </p>
+                      </div>
+                      <div className="memory-review-actions">
+                        <button
+                          type="button"
+                          className="memory-mini-btn"
+                          onClick={() => startLearningPractice(item.id)}
+                        >
+                          Kartta Aç
+                        </button>
+                        <button
+                          type="button"
+                          className="memory-mini-btn success"
+                          onClick={() => setStatus(item.id, 'mastered')}
+                        >
+                          Öğrendim
+                        </button>
+                        <button
+                          type="button"
+                          className="memory-mini-btn"
+                          onClick={() => setStatus(item.id, 'new')}
+                        >
+                          Listeden Çıkar
+                        </button>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <button type="button" className="danger-btn" onClick={resetMemoryProgress}>
+                Ezberleme Verisini Sıfırla
+              </button>
+            </article>
+          )}
+        </div>
+      )}
     </section>
   )
 }
@@ -825,13 +1757,230 @@ function PhraseDrillStudy({ onBack, onAction }) {
   )
 }
 
-function TurkishToEnglishStudy({ onBack, onAction }) {
-  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(phrasePracticeData)
+function PronounDrillStudy({ onBack, onAction }) {
+  const nounPool = useMemo(() => {
+    const seen = new Set()
+    const words = []
+
+    vocabularyData.forEach((item) => {
+      const baseWord = normalizePracticeWord(item.english)
+        .toLowerCase()
+        .replace(/[^a-z0-9' -]/g, '')
+        .trim()
+
+      if (!baseWord || seen.has(baseWord)) {
+        return
+      }
+
+      seen.add(baseWord)
+      words.push(baseWord)
+    })
+
+    return words.length > 0 ? words : ['car']
+  }, [])
+
+  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(nounPool)
+  const [selectedPreposition, setSelectedPreposition] = useState(PREPOSITIONS[0])
+
+  const randomWord = current || 'car'
+
+  return (
+    <section className="study-shell">
+      <HeaderBar
+        title="Zamir Kalıp Alıştırma"
+        subtitle="Edat + zamir tablolarını sabit tekrar et, ismi random değiştirerek pratiği artır."
+        onBack={onBack}
+      />
+
+      <div className="pronoun-grid">
+        <article className="drill-column">
+          <p className="column-title">Edatlar</p>
+          <ul className="prep-list">
+            {PREPOSITIONS.map((item) => (
+              <li key={item}>
+                <button
+                  type="button"
+                  className={`prep-btn ${selectedPreposition === item ? 'active' : ''}`}
+                  onClick={() => setSelectedPreposition(item)}
+                >
+                  {item}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">1. Sıra · Zamir · İşi Yapan</p>
+          <ul className="phrase-list">
+            {SUBJECT_PRONOUNS.map((item, indexKey) => (
+              <li key={`${item}-${indexKey}`}>
+                <span className="word">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">2. Sıra · Zamir · Başına İş Gelen</p>
+          <ul className="phrase-list">
+            {OBJECT_PRONOUNS.map((item, indexKey) => (
+              <li key={`${item}-${indexKey}`}>
+                <span className="word">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">3. Sıra · Sıfat · Sahibiyet</p>
+          <ul className="phrase-list">
+            {POSSESSIVE_ADJECTIVES.map((item, indexKey) => (
+              <li key={`${item}-${indexKey}`}>
+                <span className="word">{item} {randomWord}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">4. Sıra · Zamir · Sahibiyet</p>
+          <ul className="phrase-list">
+            {POSSESSIVE_PRONOUNS.map((item, indexKey) => (
+              <li key={`${item}-${indexKey}`}>
+                <span className="word">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      </div>
+
+      <article className="word-card pronoun-focus-card">
+        <p className="label">Rastgele İsim</p>
+        <h2 className="english-word">{randomWord}</h2>
+        <p className="selected-preposition">Seçili edat: {selectedPreposition}</p>
+
+        <div className="controls compact">
+          <button
+            type="button"
+            className="nav-btn"
+            onClick={() => {
+              goPrev()
+              onAction('prev', 'pronounDrill')
+            }}
+          >
+            ← Geri
+          </button>
+          <span className="counter">
+            {index + 1} / {total}
+          </span>
+          <button
+            type="button"
+            className="nav-btn"
+            onClick={() => {
+              goNext()
+              onAction('next', 'pronounDrill')
+            }}
+          >
+            İleri →
+          </button>
+        </div>
+
+        <button
+          type="button"
+          className="shuffle-btn"
+          onClick={() => {
+            reshuffle()
+            onAction('shuffle', 'pronounDrill')
+          }}
+        >
+          Yeni Rastgele Sıra
+        </button>
+      </article>
+    </section>
+  )
+}
+
+function TurkishToEnglishStudy({ onBack, onAction, translationItems, translationSmart }) {
+  const { current: classicCurrent, total: classicTotal, index: classicIndex, goNext: goClassicNext, goPrev: goClassicPrev, reshuffle: reshuffleClassic } =
+    useShuffledDeck(translationItems)
+  const translationById = useMemo(() => {
+    const map = new Map()
+    translationItems.forEach((item) => {
+      map.set(item.practiceId, item)
+    })
+    return map
+  }, [translationItems])
+
+  const [smartQueue, setSmartQueue] = useState(() => createInitialSmartQueue(translationItems))
   const [answer, setAnswer] = useState('')
   const [result, setResult] = useState(null)
   const [revealAnswer, setRevealAnswer] = useState(false)
   const [isAutoAdvancing, setIsAutoAdvancing] = useState(false)
+  const [isListening, setIsListening] = useState(false)
+  const [voiceStatus, setVoiceStatus] = useState('')
+
   const autoNextTimerRef = useRef(null)
+  const recognitionRef = useRef(null)
+  const transcriptRef = useRef('')
+  const skipVoiceEvaluationRef = useRef(false)
+  const questionMetricsRef = useRef({
+    startedAt: 0,
+    checkCount: 0,
+    wrongChecks: 0,
+    revealUsed: false,
+    finalized: false,
+  })
+
+  const speechRecognitionSupported = Boolean(getSpeechRecognitionConstructor())
+  const speechSynthesisSupported = typeof window !== 'undefined' && 'speechSynthesis' in window
+  const smartEnabled = translationSmart.enabled
+
+  const smartCurrentId = smartQueue.history[smartQueue.cursor]
+  const smartCurrent = translationById.get(smartCurrentId) ?? translationItems[0]
+  const current = smartEnabled ? smartCurrent : classicCurrent
+  const total = smartEnabled ? translationItems.length : classicTotal
+  const counterLabel = smartEnabled ? `Soru ${smartQueue.cursor + 1}` : `${classicIndex + 1} / ${total}`
+  const currentSummary = translationSmart.getSummaryById(current?.practiceId)
+  const difficultyLevel =
+    currentSummary.score >= 70 ? 'high' : currentSummary.score >= 40 ? 'medium' : 'low'
+
+  useEffect(() => {
+    setSmartQueue(createInitialSmartQueue(translationItems))
+  }, [translationItems])
+
+  useEffect(() => {
+    questionMetricsRef.current = {
+      startedAt: getNowTimestamp(),
+      checkCount: 0,
+      wrongChecks: 0,
+      revealUsed: false,
+      finalized: false,
+    }
+  }, [current?.practiceId])
+
+  function stopSpeaking() {
+    if (!speechSynthesisSupported) {
+      return
+    }
+    window.speechSynthesis.cancel()
+  }
+
+  function stopListening(skipEvaluation = false) {
+    if (!recognitionRef.current) {
+      setIsListening(false)
+      return
+    }
+
+    skipVoiceEvaluationRef.current = skipEvaluation
+    try {
+      recognitionRef.current.stop()
+    } catch {
+      recognitionRef.current = null
+      setIsListening(false)
+      skipVoiceEvaluationRef.current = false
+    }
+  }
 
   function clearAutoNextTimer() {
     if (autoNextTimerRef.current) {
@@ -841,11 +1990,117 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
     setIsAutoAdvancing(false)
   }
 
-  useEffect(() => {
-    return () => {
-      clearAutoNextTimer()
+  function resetResult() {
+    stopListening(true)
+    stopSpeaking()
+    clearAutoNextTimer()
+    setAnswer('')
+    setResult(null)
+    setRevealAnswer(false)
+    setVoiceStatus('')
+  }
+
+  function recordCurrentSmartAttemptIfNeeded({ force = false, responseMs } = {}) {
+    if (!smartEnabled || !current?.practiceId) {
+      return
     }
-  }, [])
+
+    const metrics = questionMetricsRef.current
+    if (metrics.finalized) {
+      return
+    }
+
+    const hasInteraction = metrics.checkCount > 0 || metrics.wrongChecks > 0 || metrics.revealUsed
+    if (!force && !hasInteraction) {
+      return
+    }
+
+    const elapsedMs = Math.max(0, Math.round(responseMs ?? getNowTimestamp() - metrics.startedAt))
+    translationSmart.recordAttempt({
+      phraseId: current.practiceId,
+      responseMs: elapsedMs,
+      wrongCount: metrics.wrongChecks,
+      revealUsed: metrics.revealUsed,
+    })
+    metrics.finalized = true
+  }
+
+  function goNextInSmartQueue() {
+    setSmartQueue((prev) => {
+      if (prev.history.length === 0) {
+        return createInitialSmartQueue(translationItems)
+      }
+
+      if (prev.cursor < prev.history.length - 1) {
+        return {
+          ...prev,
+          cursor: prev.cursor + 1,
+        }
+      }
+
+      const currentId = prev.history[prev.cursor]
+      const recentIds = prev.history.slice(Math.max(0, prev.cursor - 4), prev.cursor + 1)
+      const pickedId = translationSmart.pickNextPhraseId({
+        excludeId: currentId,
+        recentIds,
+      })
+      const nextId = pickedId ?? currentId
+
+      return {
+        history: [...prev.history, nextId],
+        cursor: prev.cursor + 1,
+      }
+    })
+  }
+
+  function goPrevInSmartQueue() {
+    setSmartQueue((prev) => {
+      if (prev.cursor <= 0) {
+        return prev
+      }
+      return {
+        ...prev,
+        cursor: prev.cursor - 1,
+      }
+    })
+  }
+
+  function reshuffleSmartQueue() {
+    setSmartQueue(createInitialSmartQueue(translationItems))
+  }
+
+  function goNextWithReset() {
+    recordCurrentSmartAttemptIfNeeded()
+    resetResult()
+    if (smartEnabled) {
+      goNextInSmartQueue()
+    } else {
+      goClassicNext()
+    }
+    onAction('next', 'translation')
+  }
+
+  function goPrevWithReset() {
+    recordCurrentSmartAttemptIfNeeded()
+    resetResult()
+    if (smartEnabled) {
+      goPrevInSmartQueue()
+    } else {
+      goClassicPrev()
+    }
+    onAction('prev', 'translation')
+  }
+
+  function reshuffleWithReset() {
+    recordCurrentSmartAttemptIfNeeded()
+    resetResult()
+    if (smartEnabled) {
+      reshuffleSmartQueue()
+    } else {
+      reshuffleClassic()
+    }
+    onAction('shuffle', 'translation')
+  }
 
   function scheduleAutoNext() {
     clearAutoNextTimer()
@@ -856,50 +2111,45 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
     }, 2000)
   }
 
-  function resetResult() {
-    clearAutoNextTimer()
-    setAnswer('')
-    setResult(null)
-    setRevealAnswer(false)
-  }
+  useEffect(() => {
+    return () => {
+      stopListening(true)
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel()
+      }
+      clearAutoNextTimer()
+    }
+  }, [])
 
-  function goNextWithReset() {
-    resetResult()
-    goNext()
-    onAction('next', 'translation')
-  }
-
-  function goPrevWithReset() {
-    resetResult()
-    goPrev()
-    onAction('prev', 'translation')
-  }
-
-  function reshuffleWithReset() {
-    resetResult()
-    reshuffle()
-    onAction('shuffle', 'translation')
-  }
-
-  function checkAnswer() {
-    if (!normalizeAnswer(answer)) {
+  function checkAnswerWithValue(nextAnswer) {
+    if (!normalizeAnswer(nextAnswer)) {
       setResult(null)
       setRevealAnswer(false)
       clearAutoNextTimer()
       return
     }
 
+    questionMetricsRef.current.checkCount += 1
     onAction('checks', 'translation')
-    const analysis = analyzeAnswer(answer, current.english)
+    const analysis = analyzeAnswer(nextAnswer, current.english)
     setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
     if (analysis.isMatch) {
+      recordCurrentSmartAttemptIfNeeded({
+        force: true,
+        responseMs: getNowTimestamp() - questionMetricsRef.current.startedAt,
+      })
       onAction('correct', 'translation')
       setRevealAnswer(false)
       scheduleAutoNext()
     } else {
+      questionMetricsRef.current.wrongChecks += 1
       onAction('wrong', 'translation')
       clearAutoNextTimer()
     }
+  }
+
+  function checkAnswer() {
+    checkAnswerWithValue(answer)
   }
 
   function handleAnswerChange(nextValue) {
@@ -920,6 +2170,10 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
     setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
     if (analysis.isMatch) {
       if (result?.type !== 'correct') {
+        recordCurrentSmartAttemptIfNeeded({
+          force: true,
+          responseMs: getNowTimestamp() - questionMetricsRef.current.startedAt,
+        })
         onAction('correct', 'translation')
       }
       setRevealAnswer(false)
@@ -927,6 +2181,139 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
     } else {
       clearAutoNextTimer()
     }
+  }
+
+  function startListening() {
+    if (!speechRecognitionSupported) {
+      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
+      return
+    }
+    if (isAutoAdvancing || isListening) {
+      return
+    }
+
+    const SpeechRecognition = getSpeechRecognitionConstructor()
+    if (!SpeechRecognition) {
+      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
+      return
+    }
+
+    transcriptRef.current = ''
+    skipVoiceEvaluationRef.current = false
+
+    const recognition = new SpeechRecognition()
+    recognition.lang = 'en-US'
+    recognition.interimResults = true
+    recognition.maxAlternatives = 1
+    recognition.continuous = false
+
+    recognition.onstart = () => {
+      setIsListening(true)
+      setVoiceStatus('Dinleniyor... İngilizce cevabı sesli söyle.')
+    }
+
+    recognition.onresult = (event) => {
+      const transcript = Array.from(event.results)
+        .map((resultItem) => resultItem[0]?.transcript ?? '')
+        .join(' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+
+      transcriptRef.current = transcript
+      setAnswer(transcript)
+    }
+
+    recognition.onerror = (event) => {
+      setVoiceStatus(getSpeechRecognitionErrorMessage(event.error))
+      setIsListening(false)
+    }
+
+    recognition.onend = () => {
+      const transcript = transcriptRef.current.trim()
+      const skipEvaluation = skipVoiceEvaluationRef.current
+
+      recognitionRef.current = null
+      setIsListening(false)
+      transcriptRef.current = ''
+      skipVoiceEvaluationRef.current = false
+
+      if (skipEvaluation) {
+        return
+      }
+
+      if (!transcript) {
+        setVoiceStatus('Ses algılanamadı. Tekrar dene.')
+        return
+      }
+
+      setVoiceStatus('')
+      checkAnswerWithValue(transcript)
+    }
+
+    recognitionRef.current = recognition
+    try {
+      recognition.start()
+    } catch {
+      recognitionRef.current = null
+      setIsListening(false)
+      setVoiceStatus('Mikrofon başlatılamadı. Tarayıcı iznini kontrol et.')
+    }
+  }
+
+  function toggleListening() {
+    if (isListening) {
+      stopListening(false)
+      return
+    }
+    startListening()
+  }
+
+  function playCorrectAnswerAudio() {
+    if (!speechSynthesisSupported) {
+      setVoiceStatus('Tarayıcı sesli oynatma özelliğini desteklemiyor.')
+      return
+    }
+
+    stopSpeaking()
+    const utterance = new SpeechSynthesisUtterance(current.english)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.9
+    utterance.pitch = 1
+    utterance.onstart = () => {
+      setVoiceStatus('Doğru cevap sesli oynatılıyor...')
+    }
+    utterance.onend = () => {
+      setVoiceStatus('')
+    }
+    utterance.onerror = () => {
+      setVoiceStatus('Sesli oynatma sırasında hata oluştu.')
+    }
+    window.speechSynthesis.speak(utterance)
+  }
+
+  function toggleSmartMode() {
+    if (smartEnabled) {
+      recordCurrentSmartAttemptIfNeeded()
+    } else if (current?.practiceId) {
+      setSmartQueue({
+        history: [current.practiceId],
+        cursor: 0,
+      })
+    }
+    resetResult()
+    translationSmart.setEnabled(!smartEnabled)
+  }
+
+  if (!current) {
+    return (
+      <section className="study-shell">
+        <HeaderBar
+          title="Türkçe → İngilizce Yazma"
+          subtitle="Çalışma listesi yüklenemedi."
+          onBack={onBack}
+        />
+      </section>
+    )
   }
 
   return (
@@ -937,9 +2324,33 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
         onBack={onBack}
       />
 
+      <div className="translation-smart-row">
+        <button
+          type="button"
+          className={`study-toggle-btn ${smartEnabled ? 'active' : ''}`}
+          onClick={toggleSmartMode}
+        >
+          Akıllı Tekrar: {smartEnabled ? 'Açık' : 'Kapalı'}
+        </button>
+        <p className="translation-smart-note">
+          Açıkken cevaplama süresi, hata sayısı ve “cevabı göster” kullanımına göre zorlandığın
+          çeviriler daha sık gelir.
+        </p>
+      </div>
+
       <article className="word-card qa-card">
         <p className="label">Türkçe İfade</p>
         <h2 className="english-word">{current.turkish}</h2>
+
+        <div className="translation-insight-row">
+          <span className={`difficulty-pill ${difficultyLevel}`}>Zorluk: {currentSummary.score}/100</span>
+          <span className="translation-insight-meta">
+            Deneme: {currentSummary.attemptCount} • Ortalama süre:{' '}
+            {formatResponseSeconds(currentSummary.avgResponseSeconds)} • Hata/deneme:{' '}
+            {currentSummary.wrongPerAttempt.toFixed(2)} • Cevabı göster: %
+            {Math.round(currentSummary.revealRate * 100)}
+          </span>
+        </div>
 
         <div className="divider" />
 
@@ -981,6 +2392,440 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
           Cevabı Kontrol Et
         </button>
 
+        <div className="voice-actions">
+          <button
+            type="button"
+            className={`voice-btn ${isListening ? 'listening' : ''}`}
+            onClick={toggleListening}
+            disabled={isAutoAdvancing || !speechRecognitionSupported}
+          >
+            {isListening ? 'Dinlemeyi Durdur' : 'Mikrofonla Cevapla'}
+          </button>
+          <button
+            type="button"
+            className="voice-btn secondary"
+            onClick={playCorrectAnswerAudio}
+            disabled={isAutoAdvancing || !speechSynthesisSupported}
+          >
+            Doğru Cevabı Sesli Dinle
+          </button>
+        </div>
+
+        {voiceStatus && <p className="voice-status">{voiceStatus}</p>}
+
+        {result?.type === 'correct' && (
+          <p className="feedback success loading">
+            <span className="spinner" aria-hidden="true" />
+            Doğru. Sonraki soru hazırlanıyor...
+          </p>
+        )}
+
+        {result?.type === 'wrong' && !revealAnswer && (
+          <button
+            type="button"
+            className="reveal-btn"
+            onClick={() => {
+              questionMetricsRef.current.revealUsed = true
+              setRevealAnswer(true)
+              onAction('reveal', 'translation')
+            }}
+            disabled={isAutoAdvancing}
+          >
+            Cevabı Göster
+          </button>
+        )}
+
+        {revealAnswer && <p className="feedback neutral">Doğru cevap: {current.english}</p>}
+
+        <p className="page-info">Kaynak sayfa: {current.source_page}</p>
+      </article>
+
+      <div className="controls">
+        <button type="button" className="nav-btn" onClick={goPrevWithReset} disabled={isAutoAdvancing}>
+          ← Geri
+        </button>
+        <span className="counter">{counterLabel}</span>
+        <button type="button" className="nav-btn" onClick={goNextWithReset} disabled={isAutoAdvancing}>
+          İleri →
+        </button>
+      </div>
+
+      <button type="button" className="shuffle-btn" onClick={reshuffleWithReset} disabled={isAutoAdvancing}>
+        Yeni Rastgele Sıra
+      </button>
+    </section>
+  )
+}
+
+function PrepositionPackStudy({ onBack, onAction }) {
+  const prepositionItems = useMemo(() => {
+    return prepositionPlusExercisesData.map((item) => ({
+      ...item,
+      category: detectPrepositionCategory(item.english),
+    }))
+  }, [])
+  const [answer, setAnswer] = useState('')
+  const [result, setResult] = useState(null)
+  const [revealAnswer, setRevealAnswer] = useState(false)
+  const [isAutoAdvancing, setIsAutoAdvancing] = useState(false)
+  const [isListening, setIsListening] = useState(false)
+  const [voiceStatus, setVoiceStatus] = useState('')
+  const autoNextTimerRef = useRef(null)
+  const recognitionRef = useRef(null)
+  const transcriptRef = useRef('')
+  const skipVoiceEvaluationRef = useRef(false)
+
+  const speechRecognitionSupported = Boolean(getSpeechRecognitionConstructor())
+  const speechSynthesisSupported = typeof window !== 'undefined' && 'speechSynthesis' in window
+
+  const categoryCounts = useMemo(() => {
+    const counts = { all: prepositionItems.length }
+    PREPOSITION_PACK_FILTERS.forEach((filter) => {
+      if (filter.key !== 'all') {
+        counts[filter.key] = 0
+      }
+    })
+    prepositionItems.forEach((item) => {
+      counts[item.category] = (counts[item.category] ?? 0) + 1
+    })
+    return counts
+  }, [prepositionItems])
+
+  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(prepositionItems)
+  const counterLabel = `${index + 1} / ${total}`
+
+  function stopSpeaking() {
+    if (!speechSynthesisSupported) {
+      return
+    }
+    window.speechSynthesis.cancel()
+  }
+
+  function stopListening(skipEvaluation = false) {
+    if (!recognitionRef.current) {
+      setIsListening(false)
+      return
+    }
+
+    skipVoiceEvaluationRef.current = skipEvaluation
+    try {
+      recognitionRef.current.stop()
+    } catch {
+      recognitionRef.current = null
+      setIsListening(false)
+      skipVoiceEvaluationRef.current = false
+    }
+  }
+
+  function clearAutoNextTimer() {
+    if (autoNextTimerRef.current) {
+      clearTimeout(autoNextTimerRef.current)
+      autoNextTimerRef.current = null
+    }
+    setIsAutoAdvancing(false)
+  }
+
+  function resetInteraction() {
+    stopListening(true)
+    stopSpeaking()
+    clearAutoNextTimer()
+    setAnswer('')
+    setResult(null)
+    setRevealAnswer(false)
+    setVoiceStatus('')
+  }
+
+  useEffect(() => {
+    return () => {
+      stopListening(true)
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel()
+      }
+      clearAutoNextTimer()
+    }
+  }, [])
+
+  function scheduleAutoNext() {
+    clearAutoNextTimer()
+    setIsAutoAdvancing(true)
+    autoNextTimerRef.current = setTimeout(() => {
+      autoNextTimerRef.current = null
+      goNextWithReset()
+    }, 2000)
+  }
+
+  function goNextWithReset() {
+    resetInteraction()
+    goNext()
+    onAction('next', 'prepositionPack')
+  }
+
+  function goPrevWithReset() {
+    resetInteraction()
+    goPrev()
+    onAction('prev', 'prepositionPack')
+  }
+
+  function reshuffleWithReset() {
+    resetInteraction()
+    reshuffle()
+    onAction('shuffle', 'prepositionPack')
+  }
+
+  function checkAnswerWithValue(nextAnswer) {
+    if (!current) {
+      return
+    }
+
+    if (!normalizeAnswer(nextAnswer)) {
+      setResult(null)
+      setRevealAnswer(false)
+      clearAutoNextTimer()
+      return
+    }
+
+    onAction('checks', 'prepositionPack')
+    const analysis = analyzeAnswer(nextAnswer, current.english)
+    setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
+
+    if (analysis.isMatch) {
+      onAction('correct', 'prepositionPack')
+      setRevealAnswer(false)
+      scheduleAutoNext()
+    } else {
+      onAction('wrong', 'prepositionPack')
+      clearAutoNextTimer()
+    }
+  }
+
+  function checkAnswer() {
+    checkAnswerWithValue(answer)
+  }
+
+  function handleAnswerChange(nextValue) {
+    setAnswer(nextValue)
+
+    if (!result) {
+      return
+    }
+
+    if (!normalizeAnswer(nextValue)) {
+      setResult(null)
+      setRevealAnswer(false)
+      clearAutoNextTimer()
+      return
+    }
+
+    const analysis = analyzeAnswer(nextValue, current.english)
+    setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
+    if (analysis.isMatch) {
+      if (result?.type !== 'correct') {
+        onAction('correct', 'prepositionPack')
+      }
+      setRevealAnswer(false)
+      scheduleAutoNext()
+    } else {
+      clearAutoNextTimer()
+    }
+  }
+
+  function startListening() {
+    if (!speechRecognitionSupported) {
+      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
+      return
+    }
+    if (isAutoAdvancing || isListening || !current) {
+      return
+    }
+
+    const SpeechRecognition = getSpeechRecognitionConstructor()
+    if (!SpeechRecognition) {
+      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
+      return
+    }
+
+    transcriptRef.current = ''
+    skipVoiceEvaluationRef.current = false
+
+    const recognition = new SpeechRecognition()
+    recognition.lang = 'en-US'
+    recognition.interimResults = true
+    recognition.maxAlternatives = 1
+    recognition.continuous = false
+
+    recognition.onstart = () => {
+      setIsListening(true)
+      setVoiceStatus('Dinleniyor... İngilizce cevabı sesli söyle.')
+    }
+
+    recognition.onresult = (event) => {
+      const transcript = Array.from(event.results)
+        .map((resultItem) => resultItem[0]?.transcript ?? '')
+        .join(' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+
+      transcriptRef.current = transcript
+      setAnswer(transcript)
+    }
+
+    recognition.onerror = (event) => {
+      setVoiceStatus(getSpeechRecognitionErrorMessage(event.error))
+      setIsListening(false)
+    }
+
+    recognition.onend = () => {
+      const transcript = transcriptRef.current.trim()
+      const skipEvaluation = skipVoiceEvaluationRef.current
+
+      recognitionRef.current = null
+      setIsListening(false)
+      transcriptRef.current = ''
+      skipVoiceEvaluationRef.current = false
+
+      if (skipEvaluation) {
+        return
+      }
+
+      if (!transcript) {
+        setVoiceStatus('Ses algılanamadı. Tekrar dene.')
+        return
+      }
+
+      setVoiceStatus('')
+      checkAnswerWithValue(transcript)
+    }
+
+    recognitionRef.current = recognition
+    try {
+      recognition.start()
+    } catch {
+      recognitionRef.current = null
+      setIsListening(false)
+      setVoiceStatus('Mikrofon başlatılamadı. Tarayıcı iznini kontrol et.')
+    }
+  }
+
+  function toggleListening() {
+    if (isListening) {
+      stopListening(false)
+      return
+    }
+    startListening()
+  }
+
+  function playCorrectAnswerAudio() {
+    if (!speechSynthesisSupported || !current) {
+      setVoiceStatus('Tarayıcı sesli oynatma özelliğini desteklemiyor.')
+      return
+    }
+
+    stopSpeaking()
+    const utterance = new SpeechSynthesisUtterance(current.english)
+    utterance.lang = 'en-US'
+    utterance.rate = 0.9
+    utterance.pitch = 1
+    utterance.onstart = () => {
+      setVoiceStatus('Doğru cevap sesli oynatılıyor...')
+    }
+    utterance.onend = () => {
+      setVoiceStatus('')
+    }
+    utterance.onerror = () => {
+      setVoiceStatus('Sesli oynatma sırasında hata oluştu.')
+    }
+    window.speechSynthesis.speak(utterance)
+  }
+
+  if (!current && total === 0) {
+    return (
+      <section className="study-shell">
+        <HeaderBar
+          title="Edat + Cümle Alıştırmaları"
+          subtitle="Yazma + ses modunda tüm listeyle çalış."
+          onBack={onBack}
+        />
+        <article className="memory-empty-card">
+          <h3>Alıştırma listesi boş görünüyor.</h3>
+          <p>Veri dosyasını kontrol edip tekrar deneyebilirsin.</p>
+        </article>
+      </section>
+    )
+  }
+
+  return (
+    <section className="study-shell">
+      <HeaderBar
+        title="Edat + Cümle Alıştırmaları"
+        subtitle={`Yazma + ses modunda tüm listeyle pratik yap. Toplam: ${categoryCounts.all}`}
+        onBack={onBack}
+      />
+
+      <article className="word-card qa-card">
+        <p className="label">Türkçe İfade</p>
+        <h2 className="english-word">{current.turkish}</h2>
+
+        <div className="divider" />
+
+        <label className="label" htmlFor="preposition-answer-input">
+          İngilizce Karşılık
+        </label>
+        <div
+          className={`answer-shell ${
+            result?.type === 'correct' ? 'success' : result?.type === 'wrong' ? 'error' : ''
+          }`}
+        >
+          {result?.type === 'wrong' && (
+            <div className="answer-overlay" aria-hidden="true">
+              {result.analysis.segments.map((seg, idx) => (
+                <span key={`${seg.char}-${idx}`} className={`analysis-char ${seg.status}`}>
+                  {seg.char === ' ' ? '\u00A0' : seg.char}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <input
+            id="preposition-answer-input"
+            className="answer-input"
+            type="text"
+            value={answer}
+            disabled={isAutoAdvancing}
+            onChange={(event) => handleAnswerChange(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                checkAnswer()
+              }
+            }}
+            placeholder="Cevabı buraya yaz..."
+          />
+        </div>
+
+        <button type="button" className="check-btn" onClick={checkAnswer} disabled={isAutoAdvancing}>
+          Cevabı Kontrol Et
+        </button>
+
+        <div className="voice-actions">
+          <button
+            type="button"
+            className={`voice-btn ${isListening ? 'listening' : ''}`}
+            onClick={toggleListening}
+            disabled={isAutoAdvancing || !speechRecognitionSupported}
+          >
+            {isListening ? 'Dinlemeyi Durdur' : 'Mikrofonla Cevapla'}
+          </button>
+          <button
+            type="button"
+            className="voice-btn secondary"
+            onClick={playCorrectAnswerAudio}
+            disabled={isAutoAdvancing || !speechSynthesisSupported}
+          >
+            Doğru Cevabı Sesli Dinle
+          </button>
+        </div>
+
+        {voiceStatus && <p className="voice-status">{voiceStatus}</p>}
+
         {result?.type === 'correct' && (
           <p className="feedback success loading">
             <span className="spinner" aria-hidden="true" />
@@ -994,7 +2839,7 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
             className="reveal-btn"
             onClick={() => {
               setRevealAnswer(true)
-              onAction('reveal', 'translation')
+              onAction('reveal', 'prepositionPack')
             }}
             disabled={isAutoAdvancing}
           >
@@ -1002,20 +2847,14 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
           </button>
         )}
 
-        {revealAnswer && (
-          <p className="feedback neutral">Doğru cevap: {current.english}</p>
-        )}
-
-        <p className="page-info">Kaynak sayfa: {current.source_page}</p>
+        {revealAnswer && <p className="feedback neutral">Doğru cevap: {current.english}</p>}
       </article>
 
       <div className="controls">
         <button type="button" className="nav-btn" onClick={goPrevWithReset} disabled={isAutoAdvancing}>
           ← Geri
         </button>
-        <span className="counter">
-          {index + 1} / {total}
-        </span>
+        <span className="counter">{counterLabel}</span>
         <button type="button" className="nav-btn" onClick={goNextWithReset} disabled={isAutoAdvancing}>
           İleri →
         </button>
@@ -1028,7 +2867,7 @@ function TurkishToEnglishStudy({ onBack, onAction }) {
   )
 }
 
-function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats }) {
+function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats, hardestTranslations }) {
   const todayKey = getDateKey()
   const today = stats.daily[todayKey] ?? createDailyStats()
   const recentDateKeys = getLastDateKeys(14)
@@ -1145,6 +2984,45 @@ function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats }) {
 
       <article className="profile-card">
         <div className="section-head">
+          <h2>En Çok Zorlandığın Çeviriler</h2>
+          <p>Akıllı çeviri skoruna göre daha fazla tekrar edilmesi gereken ifadeler.</p>
+        </div>
+        {hardestTranslations.length === 0 ? (
+          <p className="profile-note">Henüz akıllı çeviri verisi oluşmadı. Translation modunda birkaç deneme yap.</p>
+        ) : (
+          <div className="daily-table-wrap">
+            <table className="daily-table difficult-table">
+              <thead>
+                <tr>
+                  <th>Türkçe</th>
+                  <th>İngilizce</th>
+                  <th>Zorluk</th>
+                  <th>Ortalama Süre</th>
+                  <th>Hata/Deneme</th>
+                  <th>Cevabı Göster</th>
+                </tr>
+              </thead>
+              <tbody>
+                {hardestTranslations.map((item) => (
+                  <tr key={item.practiceId}>
+                    <td>{item.turkish}</td>
+                    <td>{item.english}</td>
+                    <td>
+                      <span className="difficulty-pill table">{item.score}/100</span>
+                    </td>
+                    <td>{formatResponseSeconds(item.avgResponseSeconds)}</td>
+                    <td>{item.wrongPerAttempt.toFixed(2)}</td>
+                    <td>%{Math.round(item.revealRate * 100)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </article>
+
+      <article className="profile-card">
+        <div className="section-head">
           <h2>Son 14 Gün</h2>
           <p>Gün bazında çalışma süresi, seans ve doğruluk durumu.</p>
         </div>
@@ -1199,6 +3077,13 @@ function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats }) {
 
 function App() {
   const [mode, setMode] = useState(() => getModeFromUrl())
+  const translationItems = useMemo(() => {
+    return phrasePracticeData.map((item, index) => ({
+      ...item,
+      practiceId: createPhrasePracticeId(item, index),
+    }))
+  }, [])
+  const translationSmart = useTranslationSmart(translationItems)
   const { stats, trackAction, updateProfileName, resetStats } = useProfileStats(mode)
 
   useEffect(() => {
@@ -1265,13 +3150,23 @@ function App() {
         {mode === 'home' && <HomePage onSelect={navigateMode} />}
         {mode === 'vocabulary' && <VocabularyStudy onBack={goBack} onAction={trackAction} />}
         {mode === 'drill' && <PhraseDrillStudy onBack={goBack} onAction={trackAction} />}
-        {mode === 'translation' && <TurkishToEnglishStudy onBack={goBack} onAction={trackAction} />}
+        {mode === 'translation' && (
+          <TurkishToEnglishStudy
+            onBack={goBack}
+            onAction={trackAction}
+            translationItems={translationItems}
+            translationSmart={translationSmart}
+          />
+        )}
+        {mode === 'pronounDrill' && <PronounDrillStudy onBack={goBack} onAction={trackAction} />}
+        {mode === 'prepositionPack' && <PrepositionPackStudy onBack={goBack} onAction={trackAction} />}
         {mode === 'profile' && (
           <ProfilePage
             onBack={goBack}
             stats={stats}
             onProfileNameChange={updateProfileName}
             onResetStats={resetStats}
+            hardestTranslations={translationSmart.hardestPhrases}
           />
         )}
       </div>

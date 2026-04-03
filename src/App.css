@@ -244,6 +244,10 @@
   min-width: 540px;
 }
 
+.difficult-table {
+  min-width: 760px;
+}
+
 .daily-table th,
 .daily-table td {
   text-align: left;
@@ -429,9 +433,308 @@
   transform: translateY(-1px);
 }
 
+.study-mode-toggle {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.study-toggle-btn {
+  border: 1px solid #bfd2e8;
+  border-radius: 10px;
+  background: #edf4ff;
+  color: #244363;
+  padding: 9px 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.study-toggle-btn.active {
+  background: linear-gradient(135deg, #0f7ab0, #1758a2);
+  color: #f2fbff;
+  border-color: #0f6290;
+}
+
+.memory-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.memory-summary-card,
+.memory-card,
+.memory-empty-card,
+.memory-review-card {
+  border: 1px solid #d6e3f4;
+  background: linear-gradient(146deg, #ffffff, #f4f8ff);
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 16px 32px rgba(38, 68, 100, 0.14);
+}
+
+.memory-counter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.memory-counter {
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  border: 1px solid transparent;
+}
+
+.memory-counter.new {
+  background: #eef4ff;
+  color: #3a5f88;
+  border-color: #c8d8ef;
+}
+
+.memory-counter.learning {
+  background: #fff3df;
+  color: #8a591b;
+  border-color: #efce99;
+}
+
+.memory-counter.mastered {
+  background: #e7f8ef;
+  color: #1d6d4e;
+  border-color: #9fd6be;
+}
+
+.memory-panel-toggle,
+.memory-filter-row,
+.memory-controls-actions,
+.memory-review-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.memory-mini-btn,
+.memory-filter-btn {
+  border: 1px solid #bfd2e8;
+  border-radius: 10px;
+  background: #edf4ff;
+  color: #244363;
+  padding: 8px 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.memory-mini-btn.active,
+.memory-filter-btn.active {
+  background: linear-gradient(135deg, #0f7ab0, #1758a2);
+  color: #f2fbff;
+  border-color: #0f6290;
+}
+
+.memory-mini-btn.success {
+  background: #e7f8ef;
+  border-color: #9fd6be;
+  color: #1d6d4e;
+}
+
+.memory-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.memory-queue-info {
+  margin: 0;
+  color: #4a6583;
+  font-weight: 700;
+}
+
+.memory-card {
+  cursor: grab;
+  user-select: none;
+  transition: transform 140ms ease;
+}
+
+.memory-card.right {
+  border-color: #8dc6ae;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 16px 32px rgba(29, 110, 80, 0.18);
+}
+
+.memory-card.left {
+  border-color: #e0b486;
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 16px 32px rgba(140, 87, 29, 0.18);
+}
+
+.memory-swipe-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #567191;
+  font-weight: 700;
+}
+
+.memory-card-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.memory-decision-btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.memory-decision-btn.left {
+  color: #74440a;
+  background: linear-gradient(140deg, #ffd9a5, #f7bf7f);
+}
+
+.memory-decision-btn.right {
+  color: #ecf8ff;
+  background: linear-gradient(135deg, #1178a8, #14569b);
+}
+
+.memory-empty-card h3 {
+  margin: 0;
+  color: #1f3551;
+}
+
+.memory-empty-card p {
+  margin: 8px 0 0;
+  color: #5a718b;
+}
+
+.memory-review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.memory-review-head h3 {
+  margin: 0;
+  color: #1f3551;
+}
+
+.memory-review-head p {
+  margin: 6px 0 0;
+  color: #59718b;
+}
+
+.memory-search-input {
+  margin-top: 12px;
+}
+
+.memory-review-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.memory-review-item {
+  border: 1px solid #d3e0ef;
+  border-radius: 12px;
+  background: #f8fbff;
+  padding: 12px;
+}
+
+.memory-review-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.memory-review-word {
+  margin: 0;
+  color: #16304d;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.memory-review-meta {
+  margin: 0;
+  color: #5d7691;
+}
+
 .qa-card {
   display: flex;
   flex-direction: column;
+}
+
+.translation-smart-row {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.translation-smart-note {
+  margin: 0;
+  color: #4f6884;
+  font-size: 0.9rem;
+}
+
+.translation-insight-row {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.translation-insight-meta {
+  margin: 0;
+  color: #516a86;
+  font-size: 0.9rem;
+}
+
+.difficulty-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  border: 1px solid transparent;
+}
+
+.difficulty-pill.low {
+  background: #eaf6ff;
+  color: #24557d;
+  border-color: #b9d8f2;
+}
+
+.difficulty-pill.medium {
+  background: #fff3df;
+  color: #8a591b;
+  border-color: #efce99;
+}
+
+.difficulty-pill.high {
+  background: #ffe7e7;
+  color: #8f2828;
+  border-color: #efb2b2;
+}
+
+.difficulty-pill.table {
+  background: #edf4ff;
+  color: #234f79;
+  border-color: #c3d8ef;
 }
 
 .answer-shell {
@@ -507,10 +810,50 @@
   box-shadow: 0 10px 18px rgba(22, 116, 98, 0.26);
 }
 
+.voice-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.voice-btn {
+  border: 1px solid #b8cce4;
+  border-radius: 10px;
+  background: #eaf2fd;
+  color: #1f3b5c;
+  padding: 9px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.voice-btn.secondary {
+  background: #eef4ff;
+  border-color: #c8d8ee;
+  color: #305179;
+}
+
+.voice-btn.listening {
+  background: linear-gradient(135deg, #ba3d3d, #922e2e);
+  border-color: #852626;
+  color: #fff6f6;
+}
+
+.voice-status {
+  margin: 8px 0 0;
+  color: #446082;
+  font-size: 0.9rem;
+}
+
 .nav-btn:disabled,
 .shuffle-btn:disabled,
 .check-btn:disabled,
-.reveal-btn:disabled {
+.reveal-btn:disabled,
+.voice-btn:disabled,
+.study-toggle-btn:disabled,
+.memory-mini-btn:disabled,
+.memory-filter-btn:disabled,
+.memory-decision-btn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
   transform: none;
@@ -579,9 +922,64 @@
   cursor: pointer;
 }
 
+.preposition-answer {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.preposition-answer-placeholder {
+  margin: 10px 0 0;
+  border: 1px dashed #c8d8eb;
+  background: #f6faff;
+  border-radius: 10px;
+  padding: 12px;
+  color: #5a7491;
+  font-size: 0.95rem;
+}
+
+.preposition-reveal-btn {
+  align-self: flex-start;
+}
+
+.prep-pack-filter-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.prep-pack-filter-btn {
+  border: 1px solid #c7d8ec;
+  border-radius: 999px;
+  background: #eff5ff;
+  color: #2a4c6f;
+  padding: 7px 11px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.prep-pack-filter-btn:hover {
+  transform: translateY(-1px);
+}
+
+.prep-pack-filter-btn.active {
+  background: linear-gradient(135deg, #1078ad, #17579d);
+  color: #eef9ff;
+  border-color: #0f6392;
+}
+
 .drill-grid {
   display: grid;
   grid-template-columns: 0.95fr 1fr 1fr 1.25fr;
+  gap: 12px;
+}
+
+.pronoun-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr 1fr 1fr 1fr;
   gap: 12px;
 }
 
@@ -679,6 +1077,10 @@
   text-transform: uppercase;
 }
 
+.pronoun-focus-card {
+  margin-top: 12px;
+}
+
 @media (max-width: 940px) {
   .mode-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -690,6 +1092,16 @@
 
   .drill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pronoun-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-controls-row,
+  .memory-review-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .topbar {
@@ -720,6 +1132,22 @@
     grid-template-columns: 1fr;
   }
 
+  .study-mode-toggle {
+    flex-direction: column;
+  }
+
+  .translation-smart-row {
+    align-items: stretch;
+  }
+
+  .study-toggle-btn,
+  .memory-filter-btn,
+  .memory-mini-btn,
+  .memory-decision-btn,
+  .prep-pack-filter-btn {
+    width: 100%;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -740,5 +1168,13 @@
 
   .daily-table {
     min-width: 0;
+  }
+
+  .memory-card,
+  .memory-summary-card,
+  .memory-empty-card,
+  .memory-review-card {
+    border-radius: 16px;
+    padding: 14px;
   }
 }

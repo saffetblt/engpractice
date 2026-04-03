@@ -1,0 +1,285 @@
+Bana 				to me 
+Sana				to you
+Ona E 			to him
+Ona K				to her
+Ona C				to it
+Bize				to us
+Size				to you
+Onlara			to them
+Çocuklarıma			to my children
+Arkadaşlarına		to your friends
+Onun annesine E		to his mother
+Onun evine K     		to her house
+Bizim Evimize		to our house
+Sizin Okulunuza		to your school
+Onların köyüne		to their village
+Benimkine			to mine
+Seninkine			to yours
+Onunkine E			to his
+Onunkine K			to hers
+Bizimkine			to ours
+Sizinkine			to yours
+Onlarınkine			to theirs
+Beni				me
+Seni				you
+Onu E				him
+Onu K				her
+Onu C				it
+Bizi				we
+Sizi				you
+Onları				them
+Arkadaşlarımı		my friends
+Senin okulunu		your school
+Onun parasını E 		his money
+Onun gözlerini K		her money
+Onun ayaklarını C 		its feet
+Bizim ülkemizi		our country
+Sizin çocuklarınızı		your children
+Onların dertlerini		their problems
+Benimkini			mine
+Seninkini			yours
+Onunkini E			his
+Onunkini K			hers
+Bizimkini			ours
+Sizinkini			yours
+Onlarınkini			theirs
+Benim için			for me
+Senin için			for you
+Onun için E 			for him
+Onun için K			for her
+Onun için C			for it
+Bizim için			for us
+Sizin için			for you	
+Onlar için			for them
+Evim için			for my house
+Senin Evin için		for your house
+Evi için E			for his house
+Evi için K			for her house
+Evi için C			for its house
+Evimiz için			for our house
+Sizin eviniz için		for your house
+Onların evi için		for their house
+Benimki için			for mine
+Seninkiler için		for yours
+Onunki için E			for his
+Onunki için K			for hers
+Bizimki için			for ours
+Sizinki için			for yours
+Onlarınki için			for theirs
+Benden			from me
+Senden			from you
+Ondan E			from him
+Ondan K			from her
+Bizden			from us
+Sizden			from you
+Onlardan			from them
+Ülkemden			from my country
+Senin bahçenden		from your garden
+Onun arabasından E	from his car
+Onun kedisinden K		from her cat
+Arkadaşlarımızdan		from our friends
+Sizin köyünüzden		from your village
+Onların geleceğinden	from their future
+Benimkinden			from me
+Seninkinden			from yours
+Onunkinden E		from his
+Onunkinden K		from hers
+Onunkinden C		from its
+Bizimkinden			from ours
+Sizinkinden			from yours
+Onlarınkinden		from theirs
+Benimle			with me
+Seninle			with you
+Onunla E			with him
+Onunla K			with her
+Bizimle			with us
+Sizinle				with you
+Onlarla			with them
+Annemle			with my mother
+Senin babanla		with your father
+Onun kızıyla E		with his daughter
+Onun oğluyla K 			with her son
+Dedemizle				with our grandfather
+Sizin akrabalarınızla 		with your relatives
+Onların oturma odasıyla		with their living room
+Benimkiyle				with mine
+Seninkiyle				with yours
+Onunkiyle E				with his
+Onunkiyle K				with hers
+Bizimkiyle				with ours
+Sizinkilerle				with yours
+Onlarınkilerle				with theirs
+Ben olmadan				without me
+Sensiz				without you
+Onsuz E				without him
+Onsuz K				without her
+Bizsiz					without us
+Siz olmadan				without you
+Onlar olmadan			without them
+Arabam olmadan			without my car
+Senin paran olmadan		without your money
+Onun çiçekleri olmadan E		without his flowers
+Onun vakti olmadan K		without her time
+Bizim Evimiz olmadan		without our house
+Sizin geleceğiniz olmadan		without your future
+Onların tatili olmadan		without their holiday
+Benimki olmadan			without mine
+Seninki olmadan			without your
+Onunki olmadan E			without his
+Onunki olmadan K			without hers
+Bizimkiler olmadan			without ours
+Sizinkiler olmadan			without yours
+Onlarınkiler olmadan		without theirs
+Benden sonra			after me 
+Senden sonra			after you
+Ondan önce E			before him
+Ondan sonra K			after her
+Bizden önce				before us
+Sizden sonra				after you
+Onlardan önce			before them
+Ülkemden önce			before my country
+Senin tatilinin ardından		after your holiday
+Onun tatilinin öncesinde E		before his holiday
+Onun kocasından önce K		before her husband
+Toplantımızdan önce		before our meeting
+Sizin tatilinizin ardından		after your holiday
+Onların çocuklarından evvel	before their children
+Benimkinden sonra			after mine
+Seninkinden önce			before yours
+Onunkinden sonra E		after his
+Onunkinden evvel K			before hers
+Bizimkinden önce			before ours
+Sizinkilerden sonra			after yours
+Onlarınkilerden önce		before theirs
+Benim hakkımda			about me
+Senin hakkında			about you
+Onun hakkında E			about him
+Onun hakkında K			about her
+Hakkımızda				about us
+Hakkınızda				about you
+Onların hakkında			about them
+Arabam hakkında			about my car
+Senin sorunların hakkında		about your problems
+Onun çocukları hakkında E	about his children
+Onun ailesi hakkında K		about her family
+Ailemiz hakkında			about our family
+Sizin tatiliniz hakkında		about your holiday
+Onların geleceği hakkında		about their future
+Benimki hakkında			about mine
+Onlarınki hakkında			about theirs
+Bizimki hakkında			about ours
+Benim yüzümden			because of me
+Senin yüzünden			because of you
+Onun yüzünden E			because of him
+Onun yüzünden K			because of her
+Bizim yüzümüzden			because of us
+Sizin yüzünüzden			because of you
+Onlar yüzünden			because of them
+Okulum yüzünden			because of my school
+Arkadaşların yüzünden		because of your friends
+Onun dayısı yüzünden E		because of his uncle
+Onun dedesi yüzünden K		because of her grandfather
+Geçmişimiz yüzünden		because of our past
+Sizin kitaplarınız yüzünden		because of your books
+Onların aileleri yüzünden		because of their families
+Benimkiler yüzünden    		because of mine
+
+Benimki mutlu.			mine is happy
+Benimkiler mutlu.  			mine are happy
+Benimki çok sinirli.			mine is very angry
+Benimkiler çok sinirli.		mine are very angry
+Bizimki yorgun. 			ours is tired
+Benimkiler mutlu. 			mine are happy
+
+Sizinkiler yüzünden			because of yours
+Onunkiler yüzünden E		because of his
+Onlarınkiler yüzünden		because of theirs
+İçimde					in me
+Senin üstünde			on you
+Onun yanında E			at him
+Onun üstünde K			on her
+İçimizde			in us
+Sizin içinizde			in you
+Onların içinde		in them
+Onların üstünde		on them
+Onların yanında		at them
+Benimkinin içinde		in mine
+Seninkinin içinde		in yours
+Onunkinin üstünde E	on his
+Onunkinin yanında K	at hers
+Bizimkilerin içinde		in ours
+Sizinkilerin yanında		at yours
+Onlarınkilerin içinde		in theirs
+
+
+Seninleyim.			I am with you.
+Onunlayım. E		I am with him.
+Onunlalar K.			They are with her.
+Onlar bizimle			They are with us.
+Biz onlarlayız			We are with them.
+Sen bizimlesin.		You are with us.
+O E, onunla K		He is with her.
+O K, onunla E		She is with him.
+Çocuklar benimle.		The children are with me.
+Annem onlarla.		My mother is with them.
+Bu, senin için			This is for you.
+Bunlar senin için.		These are for you.
+Bunlar, senin çocukların için	These are for your children.
+Şunlar, bizim için.			Those are for us.
+Şunlar, arkadaşlarımız için.	Those are for our friends.
+Seninleyim.				I am with you.
+Onunlayım E			I am with him.
+Onunlayım K			I am with her.
+Onunlayım.C			I am with it.
+Onlar Onunla. K  			They are with her.
+Onunlayız E			We are with him.
+Onlarlayız.				We are with them.
+Onlar benimle.			They are with me.
+Ben onlarla değilim.			I am not with them.
+Onlar bizimle değil. 			They are not with us.
+Sen bizden değilsin.			You aren't from us.
+Biz onlardan değiliz.			We aren’t from them.
+Annem onların arkadaşlarıyla.	My mother is with their friends.
+Onların arkadaşları benimle. 	Their friends are with me.
+Onlarınkiler bizimkilerle.		Theirs are with ours.
+Bu, senin için.			This is for you.
+Şu, benim için.			That is for me.
+Onlar bizim için.			They are for us.
+Onlar, biz olmadan ders çalışıyorlar.	They study without us.
+Biz, Onlar olmadan yüzüyoruz. 		We swim without them.
+Sen biz olmadan tatile gidiyorsun.		You go to the holiday without us.
+Bu para, benden.				This money is from me.
+Kitabım onlardan.				My book is from them.
+Sen, onların okulundansın.			You are from their school.
+Bizimkiler gidiyor.				Ours go.
+Sizinkiler yemek yiyor.   			Yours eat.
+Okuldan önce seninleyim.			I am with you before school.
+Senden sonra onunlayım K		I am with her after you.
+Bizimkiler seninle.				Ours are with you.
+Arabam bahçenizde.			My car is in your garden.
+Araban bahçemizde.			Your car is in our garden.
+Param senin cebinde.			My money is in your pocket.
+Senin paran benim cebimde.		Your money is in my pocket.
+Seninki benim cebimde.			Yours is in my pocket.
+Arkadaşlarımız onlarla.			Our friends are with them.
+Senin arkadaşın bizimle.			Your friend is with us.
+Senden sonra buradayım.			I am here after you.
+Onlardan önce okuldayım.			I am at the school before them.
+Okulumdan sonra onlarlayım.		I am with them after my school.	
+Senin yüzünden buradayım. 		I am here because of you.
+Onlar yüzünden okulumdayım.		I am at my school because of them.
+Bizim yüzümüzden mutsuzlar.		They are unhappy because of us.
+Sizin yüzünüzden sinirliyim.		I am angry because of you.
+Onun yüzünden E oradayım. 		I am there because of him.
+Bizim hakkımızda konuşuyorlar.		They talk about us.
+Sizin hakkınızda konuşuyoruz.		We talk about you.
+Benimkiler hakkında konuşuyorsun.	You talk about mine.
+Okulum hakkında konuşuyorlar.		They talk about my school.
+Geleceğimiz hakkında konuşmak istiyoruz. 	We want to talk about our future.
+Geleceğim hakkında konuşmak istiyorum.	I want to talk about my future.
+Senin geleceğin hakkında konuşuyorlar.		They talk about your future.
+Bizimkiler burada. 					Ours are here.
+Onlarınkiler orada.					Theirs are there.
+Evimizin çiçekleri, bahçede.			The flowers of our house are in the garden.
+Annemin arkadaşları bizimle.			The friends of my mother are with us.
+Arkadaşımın köpeği burada değil.			The dog of my friend isn’t here.
