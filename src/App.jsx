@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import vocabularyData from './data/vocabulary_extracted_all.json'
 import phrasePracticeData from './data/practice_phrases_extracted_all.json'
 import prepositionPlusExercisesData from './data/preposition_plus_exercises.json'
+import locationTimeExercisesData from './data/location_time_exercises.json'
 import './App.css'
 
 const SINGULAR_FRAMES = ['a', 'the', 'this', 'that', 'my', 'your']
@@ -25,36 +26,63 @@ const SUBJECT_PRONOUNS = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
 const OBJECT_PRONOUNS = ['me', 'you', 'him', 'her', 'it', 'us', 'you', 'them']
 const POSSESSIVE_ADJECTIVES = ['my', 'your', 'his', 'her', 'its', 'our', 'your', 'their']
 const POSSESSIVE_PRONOUNS = ['mine', 'yours', 'his', 'hers', 'its', 'ours', 'yours', 'theirs']
-const PREPOSITION_PACK_FILTERS = [
-  { key: 'all', label: 'Tümü' },
-  { key: 'to', label: 'TO' },
-  { key: 'for', label: 'FOR' },
-  { key: 'from', label: 'FROM' },
-  { key: 'with', label: 'WITH' },
-  { key: 'without', label: 'WITHOUT' },
-  { key: 'after', label: 'AFTER' },
-  { key: 'before', label: 'BEFORE' },
-  { key: 'about', label: 'ABOUT' },
-  { key: 'becauseOf', label: 'BECAUSE OF' },
-  { key: 'in', label: 'IN' },
-  { key: 'on', label: 'ON' },
-  { key: 'at', label: 'AT' },
-  { key: 'mixed', label: 'CÜMLE' },
-]
+const SPEECH_PROPER_NAME_TOKENS = new Set([
+  'ali',
+  'ayse',
+  'ankara',
+  'antalya',
+  'bodrum',
+  'istanbul',
+  'turkey',
+  'turkiye',
+  'anatolia',
+  'europe',
+  'america',
+  'russia',
+  'italy',
+  'greece',
+  'france',
+  'bayram',
+  'marmaray',
+  'facebook',
+  'instagram',
+  'tiktok',
+])
+const SPEECH_PROPER_NAME_ALIASES = Object.freeze({
+  ayse: ['i shit', 'i she', 'ai she', 'a she', 'aisha', 'aysha', 'asia', 'ay she'],
+  ali: ['allie', 'ally', 'alley', 'elli'],
+  ankara: ['angara', 'ankora', 'an cara'],
+  antalya: ['antalia', 'antalia'],
+  istanbul: ['istanbull', 'is tan bul'],
+  turkiye: ['turkey', 'turkiye'],
+  bodrum: ['bodrumm', 'boardroom'],
+  marmaray: ['marmara'],
+})
 const MODE_LABELS = {
   vocabulary: 'Kelime Çalışması',
   drill: 'Ağız Alıştırma',
   translation: 'Türkçe → İngilizce Yazma',
   pronounDrill: 'Zamir Kalıp Alıştırma',
   prepositionPack: 'Edat + Cümle Alıştırmaları',
+  locationPack: 'Am Is Are Alıştırması',
 }
-const STUDY_MODES = ['vocabulary', 'drill', 'translation', 'pronounDrill', 'prepositionPack']
+const STUDY_MODES = [
+  'vocabulary',
+  'drill',
+  'translation',
+  'pronounDrill',
+  'prepositionPack',
+  'locationPack',
+]
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'profile']
 const MODE_SET = new Set(MODES)
 const STATS_STORAGE_KEY = 'engpractice-stats-v1'
 const VOCAB_MEMORY_STORAGE_KEY = 'engpractice-vocab-memory-v1'
 const TRANSLATION_SMART_STORAGE_KEY = 'engpractice-translation-smart-v1'
+const SPEECH_ASSIST_STORAGE_KEY = 'engpractice-speech-assist-v1'
+const OPENAI_TRANSCRIPT_FIX_MODEL = 'gpt-4.1-mini'
+const AUTO_NEXT_DELAY_MS = 100
 const MEMORY_FILTER_LABELS = {
   all: 'Tümü',
   new: 'Yeni',
@@ -76,6 +104,7 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   translation: 0,
   pronounDrill: 0,
   prepositionPack: 0,
+  locationPack: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
@@ -83,6 +112,7 @@ const EMPTY_MODE_VISITS = Object.freeze({
   translation: 0,
   pronounDrill: 0,
   prepositionPack: 0,
+  locationPack: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -199,6 +229,7 @@ function normalizeModeSeconds(value) {
     translation: toSafeNumber(source.translation),
     pronounDrill: toSafeNumber(source.pronounDrill),
     prepositionPack: toSafeNumber(source.prepositionPack),
+    locationPack: toSafeNumber(source.locationPack),
   }
 }
 
@@ -210,6 +241,7 @@ function normalizeModeVisits(value) {
     translation: toSafeNumber(source.translation),
     pronounDrill: toSafeNumber(source.pronounDrill),
     prepositionPack: toSafeNumber(source.prepositionPack),
+    locationPack: toSafeNumber(source.locationPack),
   }
 }
 
@@ -309,6 +341,82 @@ function loadStoredStats() {
     return normalizeProfileStats(JSON.parse(raw))
   } catch {
     return createEmptyProfileStats()
+  }
+}
+
+function createDefaultSpeechAssistSettings() {
+  return {
+    enabled: false,
+    apiKey: '',
+  }
+}
+
+function resolveOpenAiApiKey(value) {
+  const directValue = typeof value === 'string' ? value.trim() : ''
+  if (directValue) {
+    return directValue
+  }
+  if (typeof import.meta !== 'undefined') {
+    const envValue = String(import.meta.env.VITE_OPENAI_API_KEY ?? '').trim()
+    if (envValue) {
+      return envValue
+    }
+  }
+  return ''
+}
+
+function normalizeSpeechAssistSettings(raw) {
+  const source = raw && typeof raw === 'object' ? raw : {}
+  return {
+    enabled: Boolean(source.enabled),
+    apiKey: typeof source.apiKey === 'string' ? source.apiKey.trim().slice(0, 200) : '',
+  }
+}
+
+function loadSpeechAssistSettings() {
+  if (typeof window === 'undefined') {
+    return createDefaultSpeechAssistSettings()
+  }
+
+  try {
+    const raw = window.localStorage.getItem(SPEECH_ASSIST_STORAGE_KEY)
+    if (!raw) {
+      return createDefaultSpeechAssistSettings()
+    }
+    return normalizeSpeechAssistSettings(JSON.parse(raw))
+  } catch {
+    return createDefaultSpeechAssistSettings()
+  }
+}
+
+function useSpeechAssistSettings() {
+  const [settings, setSettings] = useState(() => loadSpeechAssistSettings())
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+    window.localStorage.setItem(SPEECH_ASSIST_STORAGE_KEY, JSON.stringify(settings))
+  }, [settings])
+
+  const setEnabled = useCallback((nextEnabled) => {
+    setSettings((prev) => ({
+      ...prev,
+      enabled: Boolean(nextEnabled),
+    }))
+  }, [])
+
+  const setApiKey = useCallback((nextApiKey) => {
+    setSettings((prev) => ({
+      ...prev,
+      apiKey: typeof nextApiKey === 'string' ? nextApiKey.trim().slice(0, 200) : '',
+    }))
+  }, [])
+
+  return {
+    ...settings,
+    setEnabled,
+    setApiKey,
   }
 }
 
@@ -938,66 +1046,286 @@ function createInitialSmartQueue(items) {
   }
 }
 
-function detectPrepositionCategory(englishRaw) {
-  const normalized = normalizeAnswer(englishRaw)
-  if (!normalized) {
-    return 'mixed'
-  }
-
-  if (normalized === 'because of' || normalized.startsWith('because of ')) {
-    return 'becauseOf'
-  }
-  if (normalized === 'without' || normalized.startsWith('without ')) {
-    return 'without'
-  }
-  if (normalized === 'before' || normalized.startsWith('before ')) {
-    return 'before'
-  }
-  if (normalized === 'after' || normalized.startsWith('after ')) {
-    return 'after'
-  }
-  if (normalized === 'about' || normalized.startsWith('about ')) {
-    return 'about'
-  }
-  if (normalized === 'with' || normalized.startsWith('with ')) {
-    return 'with'
-  }
-  if (normalized === 'from' || normalized.startsWith('from ')) {
-    return 'from'
-  }
-  if (normalized === 'for' || normalized.startsWith('for ')) {
-    return 'for'
-  }
-  if (normalized === 'to' || normalized.startsWith('to ')) {
-    return 'to'
-  }
-  if (normalized === 'in' || normalized.startsWith('in ')) {
-    return 'in'
-  }
-  if (normalized === 'on' || normalized.startsWith('on ')) {
-    return 'on'
-  }
-  if (normalized === 'at' || normalized.startsWith('at ')) {
-    return 'at'
-  }
-
-  return 'mixed'
-}
-
 function normalizePracticeWord(english) {
   return english.replace(/^THE\s+/i, '').trim()
 }
 
-function normalizeAnswer(value) {
+function canonicalizeBeForms(value) {
   return value
+    .replace(/\bi\s*'\s*m\b/g, 'i am')
+    .replace(/\byou\s*'\s*re\b/g, 'you are')
+    .replace(/\bhe\s*'\s*s\b/g, 'he is')
+    .replace(/\bshe\s*'\s*s\b/g, 'she is')
+    .replace(/\bit\s*'\s*s\b/g, 'it is')
+    .replace(/\bwe\s*'\s*re\b/g, 'we are')
+    .replace(/\bthey\s*'\s*re\b/g, 'they are')
+    .replace(/\baren\s*'\s*t\b/g, 'are not')
+    .replace(/\bis\s*'\s*t\b/g, 'is not')
+}
+
+function normalizeAnswer(value) {
+  const normalizedBase = value
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[ıİ]/g, 'i')
     .toLowerCase()
     .replace(/[’`]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim()
+
+  return canonicalizeBeForms(normalizedBase)
     .replace(/[^a-z0-9' ]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
+}
+
+function levenshteinDistance(a, b) {
+  if (a === b) {
+    return 0
+  }
+
+  const rows = a.length + 1
+  const cols = b.length + 1
+  const dp = Array.from({ length: rows }, () => Array(cols).fill(0))
+
+  for (let i = 0; i < rows; i += 1) {
+    dp[i][0] = i
+  }
+  for (let j = 0; j < cols; j += 1) {
+    dp[0][j] = j
+  }
+
+  for (let i = 1; i < rows; i += 1) {
+    for (let j = 1; j < cols; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost,
+      )
+    }
+  }
+
+  return dp[rows - 1][cols - 1]
+}
+
+function isLikelyProperNameMatch(spokenToken, targetToken) {
+  if (!spokenToken || !targetToken) {
+    return false
+  }
+  if (spokenToken === targetToken) {
+    return true
+  }
+
+  const maxLength = Math.max(spokenToken.length, targetToken.length)
+  if (maxLength < 3) {
+    return false
+  }
+
+  if (
+    (spokenToken.startsWith(targetToken) || targetToken.startsWith(spokenToken)) &&
+    Math.abs(spokenToken.length - targetToken.length) <= 2
+  ) {
+    return true
+  }
+
+  const distance = levenshteinDistance(spokenToken, targetToken)
+  if (maxLength <= 5) {
+    return distance <= 1
+  }
+  if (maxLength <= 9) {
+    return distance <= 2
+  }
+  return distance <= 3
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function correctSpeechTranscriptForExpected(transcriptRaw, expectedRaw) {
+  const normalizedTranscript = normalizeAnswer(transcriptRaw)
+  const normalizedExpected = normalizeAnswer(expectedRaw)
+
+  if (!normalizedTranscript || !normalizedExpected) {
+    return transcriptRaw
+  }
+
+  const expectedTokens = normalizedExpected.split(' ')
+  const targetNameTokens = expectedTokens.filter((token) => SPEECH_PROPER_NAME_TOKENS.has(token))
+  if (targetNameTokens.length === 0) {
+    return transcriptRaw
+  }
+
+  let workingTranscript = normalizedTranscript
+  const uniqueTargetTokens = Array.from(new Set(targetNameTokens))
+
+  uniqueTargetTokens.forEach((targetToken) => {
+    const aliases = SPEECH_PROPER_NAME_ALIASES[targetToken] ?? []
+    aliases.forEach((aliasRaw) => {
+      const normalizedAlias = normalizeAnswer(aliasRaw)
+      if (!normalizedAlias || normalizedAlias === targetToken) {
+        return
+      }
+
+      const aliasPattern = new RegExp(
+        `\\b${normalizedAlias
+          .split(' ')
+          .map((token) => escapeRegExp(token))
+          .join('\\s+')}\\b`,
+        'g',
+      )
+      workingTranscript = workingTranscript.replace(aliasPattern, targetToken)
+    })
+  })
+
+  const transcriptTokens = workingTranscript.split(' ')
+  const correctedTokens = transcriptTokens.map((spokenToken) => {
+    if (targetNameTokens.includes(spokenToken)) {
+      return spokenToken
+    }
+
+    for (let i = 0; i < targetNameTokens.length; i += 1) {
+      const targetToken = targetNameTokens[i]
+      if (isLikelyProperNameMatch(spokenToken, targetToken)) {
+        return targetToken
+      }
+    }
+
+    return spokenToken
+  })
+
+  return correctedTokens.join(' ')
+}
+
+function extractOpenAiResponseText(payload) {
+  if (!payload || typeof payload !== 'object') {
+    return ''
+  }
+
+  if (typeof payload.output_text === 'string') {
+    return payload.output_text
+  }
+
+  const outputItems = Array.isArray(payload.output) ? payload.output : []
+  for (let i = 0; i < outputItems.length; i += 1) {
+    const contentItems = Array.isArray(outputItems[i]?.content) ? outputItems[i].content : []
+    for (let j = 0; j < contentItems.length; j += 1) {
+      const item = contentItems[j]
+      if (item?.type === 'output_text' && typeof item.text === 'string') {
+        return item.text
+      }
+    }
+  }
+
+  return ''
+}
+
+async function refineTranscriptWithOpenAi({ transcriptRaw, expectedRaw, apiKey }) {
+  const resolvedApiKey = resolveOpenAiApiKey(apiKey)
+  if (!resolvedApiKey) {
+    return {
+      transcript: transcriptRaw,
+      error: '',
+      usedOpenAi: false,
+    }
+  }
+
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => {
+    controller.abort()
+  }, 9000)
+
+  try {
+    const response = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${resolvedApiKey}`,
+      },
+      body: JSON.stringify({
+        model: OPENAI_TRANSCRIPT_FIX_MODEL,
+        input: [
+          {
+            role: 'system',
+            content:
+              'You fix noisy speech-to-text output. Return only the corrected English sentence with no explanation.',
+          },
+          {
+            role: 'user',
+            content: `Expected sentence: ${expectedRaw}\nHeard transcript: ${transcriptRaw}\nReturn corrected sentence only.`,
+          },
+        ],
+        max_output_tokens: 80,
+      }),
+      signal: controller.signal,
+    })
+
+    const payload = await response.json().catch(() => null)
+
+    if (!response.ok) {
+      return {
+        transcript: transcriptRaw,
+        error: payload?.error?.message || 'OpenAI isteği başarısız oldu.',
+        usedOpenAi: true,
+      }
+    }
+
+    const candidate = extractOpenAiResponseText(payload).replace(/\s+/g, ' ').trim()
+    if (!candidate) {
+      return {
+        transcript: transcriptRaw,
+        error: 'OpenAI boş yanıt döndürdü.',
+        usedOpenAi: true,
+      }
+    }
+
+    return {
+      transcript: candidate,
+      error: '',
+      usedOpenAi: true,
+    }
+  } catch (error) {
+    if (error?.name === 'AbortError') {
+      return {
+        transcript: transcriptRaw,
+        error: 'OpenAI yanıtı zaman aşımına uğradı.',
+        usedOpenAi: true,
+      }
+    }
+
+    return {
+      transcript: transcriptRaw,
+      error: 'OpenAI düzeltmesi sırasında bağlantı hatası oldu.',
+      usedOpenAi: true,
+    }
+  } finally {
+    clearTimeout(timeoutId)
+  }
+}
+
+async function resolveSpeechTranscript({ transcriptRaw, expectedRaw, speechAssist }) {
+  const locallyCorrected = correctSpeechTranscriptForExpected(transcriptRaw, expectedRaw)
+  if (!speechAssist?.enabled) {
+    return {
+      transcript: locallyCorrected,
+      error: '',
+      usedOpenAi: false,
+    }
+  }
+
+  const refined = await refineTranscriptWithOpenAi({
+    transcriptRaw: locallyCorrected,
+    expectedRaw,
+    apiKey: speechAssist.apiKey,
+  })
+
+  const finalTranscript = correctSpeechTranscriptForExpected(refined.transcript, expectedRaw)
+  return {
+    transcript: finalTranscript || locallyCorrected,
+    error: refined.error,
+    usedOpenAi: refined.usedOpenAi,
+  }
 }
 
 function analyzeAnswer(userRaw, expectedRaw) {
@@ -1113,8 +1441,15 @@ function HomePage({ onSelect }) {
           <p className="mode-index">5. Çalışma</p>
           <h2>Edat + Cümle Alıştırmaları</h2>
           <p>
-            Verdiğin kapsamlı listeyi kart kart çalış: önce Türkçe ifadeyi gör, sonra İngilizce
-            karşılığını aç.
+            Geniş çeviri listesini yazma + ses modunda çalış.
+          </p>
+        </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('locationPack')}>
+          <p className="mode-index">6. Çalışma</p>
+          <h2>Am Is Are Alıştırması</h2>
+          <p>
+            Yeni verdiğin konum/zaman ağırlıklı cümle listesini aynı yazma + ses akışıyla tekrar et.
           </p>
         </button>
 
@@ -1901,7 +2236,7 @@ function PronounDrillStudy({ onBack, onAction }) {
   )
 }
 
-function TurkishToEnglishStudy({ onBack, onAction, translationItems, translationSmart }) {
+function TurkishToEnglishStudy({ onBack, onAction, translationItems, translationSmart, speechAssist }) {
   const { current: classicCurrent, total: classicTotal, index: classicIndex, goNext: goClassicNext, goPrev: goClassicPrev, reshuffle: reshuffleClassic } =
     useShuffledDeck(translationItems)
   const translationById = useMemo(() => {
@@ -2108,7 +2443,7 @@ function TurkishToEnglishStudy({ onBack, onAction, translationItems, translation
     autoNextTimerRef.current = setTimeout(() => {
       autoNextTimerRef.current = null
       goNextWithReset()
-    }, 2000)
+    }, AUTO_NEXT_DELAY_MS)
   }
 
   useEffect(() => {
@@ -2228,9 +2563,10 @@ function TurkishToEnglishStudy({ onBack, onAction, translationItems, translation
       setIsListening(false)
     }
 
-    recognition.onend = () => {
+    recognition.onend = async () => {
       const transcript = transcriptRef.current.trim()
       const skipEvaluation = skipVoiceEvaluationRef.current
+      const expectedAnswer = current.english
 
       recognitionRef.current = null
       setIsListening(false)
@@ -2246,8 +2582,25 @@ function TurkishToEnglishStudy({ onBack, onAction, translationItems, translation
         return
       }
 
-      setVoiceStatus('')
-      checkAnswerWithValue(transcript)
+      if (speechAssist?.enabled) {
+        setVoiceStatus('Ses analizi yapılıyor...')
+      }
+
+      const resolved = await resolveSpeechTranscript({
+        transcriptRaw: transcript,
+        expectedRaw: expectedAnswer,
+        speechAssist,
+      })
+
+      if (resolved.transcript !== transcript) {
+        setAnswer(resolved.transcript)
+      }
+      if (resolved.error) {
+        setVoiceStatus(`Ses düzeltme yedek moda geçti: ${resolved.error}`)
+      } else {
+        setVoiceStatus('')
+      }
+      checkAnswerWithValue(resolved.transcript)
     }
 
     recognitionRef.current = recognition
@@ -2457,42 +2810,58 @@ function TurkishToEnglishStudy({ onBack, onAction, translationItems, translation
   )
 }
 
-function PrepositionPackStudy({ onBack, onAction }) {
-  const prepositionItems = useMemo(() => {
-    return prepositionPlusExercisesData.map((item) => ({
-      ...item,
-      category: detectPrepositionCategory(item.english),
-    }))
-  }, [])
+function SentencePairStudy({
+  onBack,
+  onAction,
+  modeKey,
+  title,
+  subtitle,
+  inputId,
+  items,
+  speechAssist,
+}) {
+  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(items)
   const [answer, setAnswer] = useState('')
   const [result, setResult] = useState(null)
   const [revealAnswer, setRevealAnswer] = useState(false)
   const [isAutoAdvancing, setIsAutoAdvancing] = useState(false)
   const [isListening, setIsListening] = useState(false)
   const [voiceStatus, setVoiceStatus] = useState('')
+  const [continuousMicEnabled, setContinuousMicEnabled] = useState(false)
+
   const autoNextTimerRef = useRef(null)
+  const restartListeningTimerRef = useRef(null)
   const recognitionRef = useRef(null)
   const transcriptRef = useRef('')
   const skipVoiceEvaluationRef = useRef(false)
+  const autoAdvancingRef = useRef(false)
+  const continuousMicRef = useRef(false)
+  const currentPromptRef = useRef('')
+  const startListeningCycleRef = useRef(null)
 
   const speechRecognitionSupported = Boolean(getSpeechRecognitionConstructor())
   const speechSynthesisSupported = typeof window !== 'undefined' && 'speechSynthesis' in window
-
-  const categoryCounts = useMemo(() => {
-    const counts = { all: prepositionItems.length }
-    PREPOSITION_PACK_FILTERS.forEach((filter) => {
-      if (filter.key !== 'all') {
-        counts[filter.key] = 0
-      }
-    })
-    prepositionItems.forEach((item) => {
-      counts[item.category] = (counts[item.category] ?? 0) + 1
-    })
-    return counts
-  }, [prepositionItems])
-
-  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(prepositionItems)
   const counterLabel = `${index + 1} / ${total}`
+
+  useEffect(() => {
+    continuousMicRef.current = continuousMicEnabled
+  }, [continuousMicEnabled])
+
+  useEffect(() => {
+    currentPromptRef.current = current ? `${current.id}-${current.turkish}-${current.english}` : ''
+  }, [current])
+
+  function setAutoAdvance(nextValue) {
+    autoAdvancingRef.current = nextValue
+    setIsAutoAdvancing(nextValue)
+  }
+
+  function clearListeningRestartTimer() {
+    if (restartListeningTimerRef.current) {
+      clearTimeout(restartListeningTimerRef.current)
+      restartListeningTimerRef.current = null
+    }
+  }
 
   function stopSpeaking() {
     if (!speechSynthesisSupported) {
@@ -2502,6 +2871,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
   }
 
   function stopListening(skipEvaluation = false) {
+    clearListeningRestartTimer()
     if (!recognitionRef.current) {
       setIsListening(false)
       return
@@ -2522,7 +2892,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
       clearTimeout(autoNextTimerRef.current)
       autoNextTimerRef.current = null
     }
-    setIsAutoAdvancing(false)
+    setAutoAdvance(false)
   }
 
   function resetInteraction() {
@@ -2535,41 +2905,110 @@ function PrepositionPackStudy({ onBack, onAction }) {
     setVoiceStatus('')
   }
 
+  function scheduleListeningRestart() {
+    clearListeningRestartTimer()
+
+    restartListeningTimerRef.current = setTimeout(() => {
+      restartListeningTimerRef.current = null
+      if (
+        !continuousMicRef.current ||
+        autoAdvancingRef.current ||
+        recognitionRef.current ||
+        !currentPromptRef.current
+      ) {
+        return
+      }
+      startListeningCycleRef.current?.()
+    }, 220)
+  }
+
+  useEffect(() => {
+    if (!continuousMicEnabled || isAutoAdvancing) {
+      return
+    }
+
+    clearListeningRestartTimer()
+    restartListeningTimerRef.current = setTimeout(() => {
+      restartListeningTimerRef.current = null
+      if (
+        !continuousMicRef.current ||
+        autoAdvancingRef.current ||
+        recognitionRef.current ||
+        !currentPromptRef.current
+      ) {
+        return
+      }
+      startListeningCycleRef.current?.()
+    }, 220)
+  }, [continuousMicEnabled, isAutoAdvancing, current?.id, current?.turkish, current?.english])
+
   useEffect(() => {
     return () => {
-      stopListening(true)
+      setContinuousMicEnabled(false)
+      continuousMicRef.current = false
+      autoAdvancingRef.current = false
+      skipVoiceEvaluationRef.current = true
+      if (autoNextTimerRef.current) {
+        clearTimeout(autoNextTimerRef.current)
+        autoNextTimerRef.current = null
+      }
+      if (restartListeningTimerRef.current) {
+        clearTimeout(restartListeningTimerRef.current)
+        restartListeningTimerRef.current = null
+      }
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.stop()
+        } catch {
+          // ignore
+        }
+        recognitionRef.current = null
+      }
       if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
         window.speechSynthesis.cancel()
       }
-      clearAutoNextTimer()
     }
   }, [])
 
   function scheduleAutoNext() {
     clearAutoNextTimer()
-    setIsAutoAdvancing(true)
+    stopListening(true)
+    setAutoAdvance(true)
+
     autoNextTimerRef.current = setTimeout(() => {
       autoNextTimerRef.current = null
       goNextWithReset()
-    }, 2000)
+    }, AUTO_NEXT_DELAY_MS)
   }
 
   function goNextWithReset() {
+    const shouldResumeMic = continuousMicRef.current
     resetInteraction()
     goNext()
-    onAction('next', 'prepositionPack')
+    onAction('next', modeKey)
+    if (shouldResumeMic) {
+      scheduleListeningRestart()
+    }
   }
 
   function goPrevWithReset() {
+    const shouldResumeMic = continuousMicRef.current
     resetInteraction()
     goPrev()
-    onAction('prev', 'prepositionPack')
+    onAction('prev', modeKey)
+    if (shouldResumeMic) {
+      scheduleListeningRestart()
+    }
   }
 
   function reshuffleWithReset() {
+    const shouldResumeMic = continuousMicRef.current
     resetInteraction()
     reshuffle()
-    onAction('shuffle', 'prepositionPack')
+    onAction('shuffle', modeKey)
+    if (shouldResumeMic) {
+      scheduleListeningRestart()
+    }
   }
 
   function checkAnswerWithValue(nextAnswer) {
@@ -2584,16 +3023,16 @@ function PrepositionPackStudy({ onBack, onAction }) {
       return
     }
 
-    onAction('checks', 'prepositionPack')
+    onAction('checks', modeKey)
     const analysis = analyzeAnswer(nextAnswer, current.english)
     setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
 
     if (analysis.isMatch) {
-      onAction('correct', 'prepositionPack')
+      onAction('correct', modeKey)
       setRevealAnswer(false)
       scheduleAutoNext()
     } else {
-      onAction('wrong', 'prepositionPack')
+      onAction('wrong', modeKey)
       clearAutoNextTimer()
     }
   }
@@ -2618,9 +3057,10 @@ function PrepositionPackStudy({ onBack, onAction }) {
 
     const analysis = analyzeAnswer(nextValue, current.english)
     setResult(analysis.isMatch ? { type: 'correct', analysis } : { type: 'wrong', analysis })
+
     if (analysis.isMatch) {
       if (result?.type !== 'correct') {
-        onAction('correct', 'prepositionPack')
+        onAction('correct', modeKey)
       }
       setRevealAnswer(false)
       scheduleAutoNext()
@@ -2629,12 +3069,11 @@ function PrepositionPackStudy({ onBack, onAction }) {
     }
   }
 
-  function startListening() {
-    if (!speechRecognitionSupported) {
-      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
+  function startListeningCycle() {
+    if (!speechRecognitionSupported || !current) {
       return
     }
-    if (isAutoAdvancing || isListening || !current) {
+    if (autoAdvancingRef.current || recognitionRef.current) {
       return
     }
 
@@ -2655,7 +3094,11 @@ function PrepositionPackStudy({ onBack, onAction }) {
 
     recognition.onstart = () => {
       setIsListening(true)
-      setVoiceStatus('Dinleniyor... İngilizce cevabı sesli söyle.')
+      setVoiceStatus(
+        continuousMicRef.current
+          ? 'Mikrofon açık. Sorular geçse de dinleme devam eder.'
+          : 'Dinleniyor... İngilizce cevabı sesli söyle.',
+      )
     }
 
     recognition.onresult = (event) => {
@@ -2672,46 +3115,91 @@ function PrepositionPackStudy({ onBack, onAction }) {
     recognition.onerror = (event) => {
       setVoiceStatus(getSpeechRecognitionErrorMessage(event.error))
       setIsListening(false)
+      recognitionRef.current = null
+
+      const blockedErrors = new Set(['not-allowed', 'service-not-allowed', 'audio-capture'])
+      if (continuousMicRef.current && !blockedErrors.has(event.error)) {
+        scheduleListeningRestart()
+      }
     }
 
-    recognition.onend = () => {
+    recognition.onend = async () => {
       const transcript = transcriptRef.current.trim()
       const skipEvaluation = skipVoiceEvaluationRef.current
+      const expectedAnswer = current.english
 
       recognitionRef.current = null
       setIsListening(false)
       transcriptRef.current = ''
       skipVoiceEvaluationRef.current = false
 
-      if (skipEvaluation) {
-        return
+      if (!skipEvaluation) {
+        if (!transcript) {
+          if (!continuousMicRef.current) {
+            setVoiceStatus('Ses algılanamadı. Tekrar dene.')
+          }
+        } else {
+          if (speechAssist?.enabled) {
+            setVoiceStatus('Ses analizi yapılıyor...')
+          }
+
+          const resolved = await resolveSpeechTranscript({
+            transcriptRaw: transcript,
+            expectedRaw: expectedAnswer,
+            speechAssist,
+          })
+
+          if (resolved.transcript !== transcript) {
+            setAnswer(resolved.transcript)
+          }
+          if (resolved.error) {
+            setVoiceStatus(`Ses düzeltme yedek moda geçti: ${resolved.error}`)
+          } else {
+            setVoiceStatus('')
+          }
+          checkAnswerWithValue(resolved.transcript)
+        }
       }
 
-      if (!transcript) {
-        setVoiceStatus('Ses algılanamadı. Tekrar dene.')
-        return
+      if (continuousMicRef.current && !skipEvaluation && !autoAdvancingRef.current) {
+        scheduleListeningRestart()
       }
-
-      setVoiceStatus('')
-      checkAnswerWithValue(transcript)
     }
 
     recognitionRef.current = recognition
+
     try {
       recognition.start()
     } catch {
       recognitionRef.current = null
       setIsListening(false)
       setVoiceStatus('Mikrofon başlatılamadı. Tarayıcı iznini kontrol et.')
+      setContinuousMicEnabled(false)
+      continuousMicRef.current = false
     }
   }
 
-  function toggleListening() {
-    if (isListening) {
-      stopListening(false)
+  useEffect(() => {
+    startListeningCycleRef.current = startListeningCycle
+  })
+
+  function toggleContinuousListening() {
+    if (!speechRecognitionSupported) {
+      setVoiceStatus('Tarayıcı sesli cevap özelliğini desteklemiyor.')
       return
     }
-    startListening()
+
+    if (continuousMicRef.current) {
+      setContinuousMicEnabled(false)
+      continuousMicRef.current = false
+      stopListening(true)
+      setVoiceStatus('')
+      return
+    }
+
+    setContinuousMicEnabled(true)
+    continuousMicRef.current = true
+    scheduleListeningRestart()
   }
 
   function playCorrectAnswerAudio() {
@@ -2729,7 +3217,11 @@ function PrepositionPackStudy({ onBack, onAction }) {
       setVoiceStatus('Doğru cevap sesli oynatılıyor...')
     }
     utterance.onend = () => {
-      setVoiceStatus('')
+      if (continuousMicRef.current) {
+        setVoiceStatus('Mikrofon açık. Sorular geçse de dinleme devam eder.')
+      } else {
+        setVoiceStatus('')
+      }
     }
     utterance.onerror = () => {
       setVoiceStatus('Sesli oynatma sırasında hata oluştu.')
@@ -2740,11 +3232,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
   if (!current && total === 0) {
     return (
       <section className="study-shell">
-        <HeaderBar
-          title="Edat + Cümle Alıştırmaları"
-          subtitle="Yazma + ses modunda tüm listeyle çalış."
-          onBack={onBack}
-        />
+        <HeaderBar title={title} subtitle={subtitle} onBack={onBack} />
         <article className="memory-empty-card">
           <h3>Alıştırma listesi boş görünüyor.</h3>
           <p>Veri dosyasını kontrol edip tekrar deneyebilirsin.</p>
@@ -2755,11 +3243,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
 
   return (
     <section className="study-shell">
-      <HeaderBar
-        title="Edat + Cümle Alıştırmaları"
-        subtitle={`Yazma + ses modunda tüm listeyle pratik yap. Toplam: ${categoryCounts.all}`}
-        onBack={onBack}
-      />
+      <HeaderBar title={title} subtitle={`${subtitle} Toplam: ${total}`} onBack={onBack} />
 
       <article className="word-card qa-card">
         <p className="label">Türkçe İfade</p>
@@ -2767,7 +3251,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
 
         <div className="divider" />
 
-        <label className="label" htmlFor="preposition-answer-input">
+        <label className="label" htmlFor={inputId}>
           İngilizce Karşılık
         </label>
         <div
@@ -2786,7 +3270,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
           )}
 
           <input
-            id="preposition-answer-input"
+            id={inputId}
             className="answer-input"
             type="text"
             value={answer}
@@ -2808,11 +3292,11 @@ function PrepositionPackStudy({ onBack, onAction }) {
         <div className="voice-actions">
           <button
             type="button"
-            className={`voice-btn ${isListening ? 'listening' : ''}`}
-            onClick={toggleListening}
-            disabled={isAutoAdvancing || !speechRecognitionSupported}
+            className={`voice-btn ${continuousMicEnabled || isListening ? 'listening' : ''}`}
+            onClick={toggleContinuousListening}
+            disabled={!speechRecognitionSupported}
           >
-            {isListening ? 'Dinlemeyi Durdur' : 'Mikrofonla Cevapla'}
+            {continuousMicEnabled ? 'Mikrofonu Kapat' : 'Mikrofonu Açık Tut'}
           </button>
           <button
             type="button"
@@ -2839,7 +3323,7 @@ function PrepositionPackStudy({ onBack, onAction }) {
             className="reveal-btn"
             onClick={() => {
               setRevealAnswer(true)
-              onAction('reveal', 'prepositionPack')
+              onAction('reveal', modeKey)
             }}
             disabled={isAutoAdvancing}
           >
@@ -2867,7 +3351,46 @@ function PrepositionPackStudy({ onBack, onAction }) {
   )
 }
 
-function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats, hardestTranslations }) {
+function PrepositionPackStudy({ onBack, onAction, speechAssist }) {
+  return (
+    <SentencePairStudy
+      onBack={onBack}
+      onAction={onAction}
+      modeKey="prepositionPack"
+      title="Edat + Cümle Alıştırmaları"
+      subtitle="Yazma + ses modunda tüm listeyle pratik yap."
+      inputId="preposition-answer-input"
+      items={prepositionPlusExercisesData}
+      speechAssist={speechAssist}
+    />
+  )
+}
+
+function LocationPackStudy({ onBack, onAction, speechAssist }) {
+  return (
+    <SentencePairStudy
+      onBack={onBack}
+      onAction={onAction}
+      modeKey="locationPack"
+      title="Am Is Are Alıştırması"
+      subtitle="Yazma + ses modunda konum/zaman cümlelerini tekrar et."
+      inputId="location-answer-input"
+      items={locationTimeExercisesData}
+      speechAssist={speechAssist}
+    />
+  )
+}
+
+function ProfilePage({
+  onBack,
+  stats,
+  onProfileNameChange,
+  onResetStats,
+  hardestTranslations,
+  speechAssist,
+  onSpeechAssistEnabledChange,
+  onSpeechAssistApiKeyChange,
+}) {
   const todayKey = getDateKey()
   const today = stats.daily[todayKey] ?? createDailyStats()
   const recentDateKeys = getLastDateKeys(14)
@@ -2886,6 +3409,7 @@ function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats, hardest
   const averageSessionSeconds = totalSessions > 0 ? totalSeconds / totalSessions : 0
   const currentStreak = calculateCurrentStreak(stats.daily)
   const longestStreak = calculateLongestStreak(stats.daily)
+  const hasSpeechAssistKey = Boolean(resolveOpenAiApiKey(speechAssist.apiKey))
 
   return (
     <section className="study-shell profile-shell">
@@ -2908,6 +3432,66 @@ function ProfilePage({ onBack, stats, onProfileNameChange, onResetStats, hardest
           placeholder="Adını yaz..."
         />
         <p className="profile-note">İstatistikler yalnızca bu tarayıcıda saklanır.</p>
+      </article>
+
+      <article className="profile-card">
+        <div className="section-head">
+          <h2>Gelişmiş Ses Düzeltme</h2>
+          <p>
+            Tarayıcı ses tanıma çıktısını OpenAI ile düzeltir. Ayşe, Ankara, Ali gibi özel isimleri
+            daha doğru yakalamak için kullanılabilir.
+          </p>
+        </div>
+
+        <div className="study-mode-toggle">
+          <button
+            type="button"
+            className={`study-toggle-btn ${speechAssist.enabled ? 'active' : ''}`}
+            onClick={() => onSpeechAssistEnabledChange(true)}
+          >
+            OpenAI Düzeltme Açık
+          </button>
+          <button
+            type="button"
+            className={`study-toggle-btn ${!speechAssist.enabled ? 'active' : ''}`}
+            onClick={() => onSpeechAssistEnabledChange(false)}
+          >
+            Kapalı
+          </button>
+        </div>
+
+        <label className="label" htmlFor="openai-api-key">
+          OpenAI API Key
+        </label>
+        <input
+          id="openai-api-key"
+          className="profile-input"
+          type="password"
+          value={speechAssist.apiKey}
+          onChange={(event) => onSpeechAssistApiKeyChange(event.target.value)}
+          placeholder="sk-..."
+          autoComplete="off"
+          spellCheck="false"
+        />
+
+        <div className="profile-inline-actions">
+          <button
+            type="button"
+            className="voice-btn secondary"
+            onClick={() => onSpeechAssistApiKeyChange('')}
+          >
+            Anahtarı Temizle
+          </button>
+        </div>
+
+        <p className="profile-note">
+          Bu özellik OpenAI API kullandığı için ücretlidir. Maliyet kullanım miktarına göre oluşur.
+        </p>
+        {speechAssist.enabled && !hasSpeechAssistKey && (
+          <p className="profile-note warning">
+            Açık kullanmak için API key girmen gerekiyor. Key yoksa sistem mevcut ücretsiz tanıma ile devam eder.
+          </p>
+        )}
       </article>
 
       <div className="stats-grid">
@@ -3084,6 +3668,7 @@ function App() {
     }))
   }, [])
   const translationSmart = useTranslationSmart(translationItems)
+  const speechAssist = useSpeechAssistSettings()
   const { stats, trackAction, updateProfileName, resetStats } = useProfileStats(mode)
 
   useEffect(() => {
@@ -3156,10 +3741,16 @@ function App() {
             onAction={trackAction}
             translationItems={translationItems}
             translationSmart={translationSmart}
+            speechAssist={speechAssist}
           />
         )}
         {mode === 'pronounDrill' && <PronounDrillStudy onBack={goBack} onAction={trackAction} />}
-        {mode === 'prepositionPack' && <PrepositionPackStudy onBack={goBack} onAction={trackAction} />}
+        {mode === 'prepositionPack' && (
+          <PrepositionPackStudy onBack={goBack} onAction={trackAction} speechAssist={speechAssist} />
+        )}
+        {mode === 'locationPack' && (
+          <LocationPackStudy onBack={goBack} onAction={trackAction} speechAssist={speechAssist} />
+        )}
         {mode === 'profile' && (
           <ProfilePage
             onBack={goBack}
@@ -3167,6 +3758,9 @@ function App() {
             onProfileNameChange={updateProfileName}
             onResetStats={resetStats}
             hardestTranslations={translationSmart.hardestPhrases}
+            speechAssist={speechAssist}
+            onSpeechAssistEnabledChange={speechAssist.setEnabled}
+            onSpeechAssistApiKeyChange={speechAssist.setApiKey}
           />
         )}
       </div>

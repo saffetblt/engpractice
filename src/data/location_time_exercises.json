@@ -1,0 +1,1592 @@
+[
+  {
+    "turkish": "Okuldayım.",
+    "english": "I’m at the school",
+    "id": 1
+  },
+  {
+    "turkish": "Işteyim.",
+    "english": "I’m at work",
+    "id": 2
+  },
+  {
+    "turkish": "Ofisteyim.",
+    "english": "I’m at the office",
+    "id": 3
+  },
+  {
+    "turkish": "Evdeyim.",
+    "english": "I’m at home",
+    "id": 4
+  },
+  {
+    "turkish": "Okuldasın.",
+    "english": "You are at the school",
+    "id": 5
+  },
+  {
+    "turkish": "Hastanedeler.",
+    "english": "They are at the hospital",
+    "id": 6
+  },
+  {
+    "turkish": "O otobüs durağında.",
+    "english": "He is at the bus stop",
+    "id": 7
+  },
+  {
+    "turkish": "Marmaray'dayım.",
+    "english": "I’m on Marmaray",
+    "id": 8
+  },
+  {
+    "turkish": "Metrodasın.",
+    "english": "You are in the subway",
+    "id": 9
+  },
+  {
+    "turkish": "Havaalanındayız.",
+    "english": "We are at the airport",
+    "id": 10
+  },
+  {
+    "turkish": "Sokaktayım.",
+    "english": "I’m on the street",
+    "id": 11
+  },
+  {
+    "turkish": "Arabalar caddede.",
+    "english": "The cars are on the street",
+    "id": 12
+  },
+  {
+    "turkish": "Yoldalar.",
+    "english": "They are on the road",
+    "id": 13
+  },
+  {
+    "turkish": "Sen Evindesin.",
+    "english": "You are in your house",
+    "id": 14
+  },
+  {
+    "turkish": "Evimdeyim.",
+    "english": "I am in my house",
+    "id": 15
+  },
+  {
+    "turkish": "Ali evinde.",
+    "english": "Ali is in his home.",
+    "id": 16
+  },
+  {
+    "turkish": "Ayşe okulunda.",
+    "english": "Ayşe is in her school.",
+    "id": 17
+  },
+  {
+    "turkish": "Biz İşimizdeyiz.",
+    "english": "We are at our work.",
+    "id": 18
+  },
+  {
+    "turkish": "Onlar bizim işimizdeler.",
+    "english": "They are in our work.",
+    "id": 19
+  },
+  {
+    "turkish": "Senin Ofisindeyim.",
+    "english": "I am at your office.",
+    "id": 20
+  },
+  {
+    "turkish": "Okulumuzdalar.",
+    "english": "They are at our school.",
+    "id": 21
+  },
+  {
+    "turkish": "Onlar Bu hastanedeler.",
+    "english": "They are at this hospital.",
+    "id": 22
+  },
+  {
+    "turkish": "Şu okuldasın.",
+    "english": "You are at that school.",
+    "id": 23
+  },
+  {
+    "turkish": "Onlar için okuldayım.",
+    "english": "I am at the school for them.",
+    "id": 24
+  },
+  {
+    "turkish": "Bir evdeyim.",
+    "english": "I am at a house.",
+    "id": 25
+  },
+  {
+    "turkish": "Hayatımdaki insanlar önemlidir.",
+    "english": "The people in my life are important.",
+    "id": 26
+  },
+  {
+    "turkish": "Kitaplardaki hikayeler ilginçtir.",
+    "english": "The stories in the books are interesting",
+    "id": 27
+  },
+  {
+    "turkish": "Şarkıdaki sözler ilginç.",
+    "english": "The words in the song are interesting.",
+    "id": 28
+  },
+  {
+    "turkish": "Yağmurdaki otobüs, çok eski.",
+    "english": "The bus in the rain is very old.",
+    "id": 29
+  },
+  {
+    "turkish": "Fırtınadayım.",
+    "english": "I am in the storm.",
+    "id": 30
+  },
+  {
+    "turkish": "pazartesi günkü toplantı için hazırım.",
+    "english": "I am ready for the meeting on monday.",
+    "id": 31
+  },
+  {
+    "turkish": "salı günü ankara'dasın",
+    "english": "You are in Ankara on Tuesday.",
+    "id": 32
+  },
+  {
+    "turkish": "çarşamba günü onlarlayım.",
+    "english": "I am with them on Wednesday.",
+    "id": 33
+  },
+  {
+    "turkish": "perşembe günü evdeyim",
+    "english": "I am at home on Thursday.",
+    "id": 34
+  },
+  {
+    "turkish": "cuma öğledensonra seninleler.",
+    "english": "They are with you on Friday afternoon.",
+    "id": 35
+  },
+  {
+    "turkish": "cumartesi akşamı bir partidesiniz.",
+    "english": "You are at a party on Saturday evening.",
+    "id": 36
+  },
+  {
+    "turkish": "pazar sabahı kahvaltıdayız.",
+    "english": "We are at the breakfast on Sunday morning.",
+    "id": 37
+  },
+  {
+    "turkish": "ilkbaharda mutluyum",
+    "english": "I’m happy in the spring.",
+    "id": 38
+  },
+  {
+    "turkish": "sonbaharda hüzünlüsün.",
+    "english": "You are sad in the autumn.",
+    "id": 39
+  },
+  {
+    "turkish": "yazları antalyadayız",
+    "english": "We are in Antalya in the summers.",
+    "id": 40
+  },
+  {
+    "turkish": "kışları evdesiniz.",
+    "english": "You are at home in the winters.",
+    "id": 41
+  },
+  {
+    "turkish": "ocak ayında ailemleyim",
+    "english": "We are with my family in January.",
+    "id": 42
+  },
+  {
+    "turkish": "Şubat ayında senin köyündeyiz.",
+    "english": "We are at your village in February.",
+    "id": 43
+  },
+  {
+    "turkish": "mart ayında çocuklarımlayım.",
+    "english": "I’m with my children in March.",
+    "id": 44
+  },
+  {
+    "turkish": "Ali Nisan’da senin köyünde.",
+    "english": "Ali is at your village in April.",
+    "id": 45
+  },
+  {
+    "turkish": "Ayşe Haziran’da tatilde.",
+    "english": "Ayşe is on holiday in June.",
+    "id": 46
+  },
+  {
+    "turkish": "Siz Temmuz'da ofistesiniz.",
+    "english": "You are at the office in July.",
+    "id": 47
+  },
+  {
+    "turkish": "Okuldan arkadaşlarım eylülde Bodrum'da.",
+    "english": "My friends from the school are in Bodrum in September.",
+    "id": 48
+  },
+  {
+    "turkish": "Ekimde Ankara’dayım.",
+    "english": "I am in Ankara in October.",
+    "id": 49
+  },
+  {
+    "turkish": "Kasımda Avrupa'dalar.",
+    "english": "They are in Europe in November.",
+    "id": 50
+  },
+  {
+    "turkish": "aralıkta yorgunum",
+    "english": "I’m tired in December.",
+    "id": 51
+  },
+  {
+    "turkish": "doğum günümde mutluyum",
+    "english": "I’m happy on my birthday.",
+    "id": 52
+  },
+  {
+    "turkish": "senin doğum gününde buradayım.",
+    "english": "I’m here on your birthday.",
+    "id": 53
+  },
+  {
+    "turkish": "arkadaşlarımla tatildeyim",
+    "english": "I’m on holiday with my friends.",
+    "id": 54
+  },
+  {
+    "turkish": "yılbaşında sizinleyim.",
+    "english": "I’m with you on the new year.",
+    "id": 55
+  },
+  {
+    "turkish": "yeni yılda buradalar.",
+    "english": "They are here in the new year.",
+    "id": 56
+  },
+  {
+    "turkish": "Ailem bayramda tatilde.",
+    "english": "My family is on holiday on Bayram.",
+    "id": 57
+  },
+  {
+    "turkish": "Kızım sabahları sinirlidir.",
+    "english": "My daughter is angry in the mornings.",
+    "id": 58
+  },
+  {
+    "turkish": "Patronum öğlenleyin toplantıda.",
+    "english": "My boss is in the meeting at noon.",
+    "id": 59
+  },
+  {
+    "turkish": "Öğleden sonra seninleyiz.",
+    "english": "We are with you in the afternoon.",
+    "id": 60
+  },
+  {
+    "turkish": "akşamleyin bir partideyim",
+    "english": "I’m at a party in the evening.",
+    "id": 61
+  },
+  {
+    "turkish": "Öğrenciler öğlenleyin burada.",
+    "english": "The students are here at noon.",
+    "id": 62
+  },
+  {
+    "turkish": "şu anda meşgulüm.",
+    "english": "I’m busy at the moment.",
+    "id": 63
+  },
+  {
+    "turkish": "hafta sonunda oradayım",
+    "english": "I’m there on the weekend.",
+    "id": 64
+  },
+  {
+    "turkish": "haftanın sonunda senleyim",
+    "english": "I’m with you at the end of the week.",
+    "id": 65
+  },
+  {
+    "turkish": "yılın başında ankara'dalar.",
+    "english": "They are in Ankara at the beginning of the year.",
+    "id": 66
+  },
+  {
+    "turkish": "günün sonunda yorgunum",
+    "english": "I’m tired at the end of the day.",
+    "id": 67
+  },
+  {
+    "turkish": "Doğum günüm için heyecanlıyım.",
+    "english": "I am excited for my birthday.",
+    "id": 68
+  },
+  {
+    "turkish": "Partinin sonundaki sürpriz senin için.",
+    "english": "The surprise at the end of the party is for you.",
+    "id": 69
+  },
+  {
+    "turkish": "toplantıdayım",
+    "english": "I’m at the meeting.",
+    "id": 70
+  },
+  {
+    "turkish": "arkadaşlarımla trendeyim",
+    "english": "I’m on the train with my friends.",
+    "id": 71
+  },
+  {
+    "turkish": "insanlarla otobüsteyim",
+    "english": "I’m on the bus with the people.",
+    "id": 72
+  },
+  {
+    "turkish": "3 adamla uçaktayım.",
+    "english": "I’m on the plane with three men.",
+    "id": 73
+  },
+  {
+    "turkish": "köpeğimle arabadayım",
+    "english": "I’m in the car with my dog.",
+    "id": 74
+  },
+  {
+    "turkish": "Bisikletteyim",
+    "english": "I’m on the bike.",
+    "id": 75
+  },
+  {
+    "turkish": "üniversiteden arkadaşımla taksideyim",
+    "english": "I’m in the taxi with my friends from the university.",
+    "id": 76
+  },
+  {
+    "turkish": "Yarın köydeyim",
+    "english": "I’m in the village tomorrow.",
+    "id": 77
+  },
+  {
+    "turkish": "köylerdeki yollar çok kötü",
+    "english": "The roads in the villages are very bad.",
+    "id": 78
+  },
+  {
+    "turkish": "almanya'daki insanlar mutlu",
+    "english": "The people in Germany are happy.",
+    "id": 79
+  },
+  {
+    "turkish": "amerika'daki insanlar şaşkın",
+    "english": "The people in America are surprised.",
+    "id": 80
+  },
+  {
+    "turkish": "rusya'daki insanlar endişeli worried",
+    "english": "The people in Russia are worried.",
+    "id": 81
+  },
+  {
+    "turkish": "italya'daki insanlar çılgın",
+    "english": "The people in Italy are crazy.",
+    "id": 82
+  },
+  {
+    "turkish": "yunanistan'daki insanlar tembel",
+    "english": "The people in Greece are lazy.",
+    "id": 83
+  },
+  {
+    "turkish": "fransa'daki insanlar zengin",
+    "english": "The people in France are rich.",
+    "id": 84
+  },
+  {
+    "turkish": "istanbul'daki insanlar yorgun",
+    "english": "The people in Istanbul are tired.",
+    "id": 85
+  },
+  {
+    "turkish": "Anadoludaki insanlar güçlü",
+    "english": "The people in Anatolia are strong.",
+    "id": 86
+  },
+  {
+    "turkish": "Bahçedeki elmalar kırmızı",
+    "english": "The apples in the garden are red.",
+    "id": 87
+  },
+  {
+    "turkish": "Gelecekteyim.",
+    "english": "I’m in the future.",
+    "id": 88
+  },
+  {
+    "turkish": "Geçmişteyiz.",
+    "english": "We are in the past.",
+    "id": 89
+  },
+  {
+    "turkish": "Bilgisayardayım",
+    "english": "I’m on the PC.",
+    "id": 90
+  },
+  {
+    "turkish": "amcam televizyonda",
+    "english": "My uncle is on TV.",
+    "id": 91
+  },
+  {
+    "turkish": "teyzem radyoda",
+    "english": "My aunt is on the radio.",
+    "id": 92
+  },
+  {
+    "turkish": "internetteler.",
+    "english": "They are on the internet.",
+    "id": 93
+  },
+  {
+    "turkish": "facebook'tayım.",
+    "english": "I’m on Facebook.",
+    "id": 94
+  },
+  {
+    "turkish": "instagram dayım",
+    "english": "I’m on Instagram.",
+    "id": 95
+  },
+  {
+    "turkish": "Ali tiktok da.",
+    "english": "Ali is on Tik Tok.",
+    "id": 96
+  },
+  {
+    "turkish": "telefondayım",
+    "english": "I’m on the phone",
+    "id": 97
+  },
+  {
+    "turkish": "banyodaki halı çok çirkin.",
+    "english": "The carpet in the bathroom is very ugly.",
+    "id": 98
+  },
+  {
+    "turkish": "sınıftaki masa çok eski",
+    "english": "The table in the class is very old.",
+    "id": 99
+  },
+  {
+    "turkish": "sinemadaki insanlar heyecanlı",
+    "english": "The people in the cinema are excited.",
+    "id": 100
+  },
+  {
+    "turkish": "Saat birde oradayım",
+    "english": "I’m there at one o’clock.",
+    "id": 101
+  },
+  {
+    "turkish": "Saat ikide evdeyim",
+    "english": "I’m at home at two o’clock.",
+    "id": 102
+  },
+  {
+    "turkish": "saat üçte ofisteyiz",
+    "english": "We are at the office at three o’clock.",
+    "id": 103
+  },
+  {
+    "turkish": "saat dörtte hastanedeyim",
+    "english": "I’m at the hospital at four o’clock.",
+    "id": 104
+  },
+  {
+    "turkish": "saat 6 da ormandayım",
+    "english": "I’m in the forest at six o’clock.",
+    "id": 105
+  },
+  {
+    "turkish": "saat yedide evimdeyim",
+    "english": "I’m at my home at seven o’clock.",
+    "id": 106
+  },
+  {
+    "turkish": "saat sekizde salondayım",
+    "english": "I’m in the living room at eight o’clock.",
+    "id": 107
+  },
+  {
+    "turkish": "saat dokuzda yataktayım",
+    "english": "I’m in bed at nine o’clock.",
+    "id": 108
+  },
+  {
+    "turkish": "saat 10 da buradalar.",
+    "english": "They are here at ten o’clock.",
+    "id": 109
+  },
+  {
+    "turkish": "saat 11de oradasınız",
+    "english": "You are there at eleven o’clock.",
+    "id": 110
+  },
+  {
+    "turkish": "Arkadaşlarım saat 12 de ofiste.",
+    "english": "My friends are at the office at twelve o’clock.",
+    "id": 111
+  },
+  {
+    "turkish": "Annem öğlenleyin arkadaşlarıyla beraber.",
+    "english": "My mother is with her friends at noon.",
+    "id": 112
+  },
+  {
+    "turkish": "Geceleyin odamdayım",
+    "english": "I’m in my room at night.",
+    "id": 113
+  },
+  {
+    "turkish": "şu anda meşgulüm",
+    "english": "I’m busy right now.",
+    "id": 114
+  },
+  {
+    "turkish": "hafta sonunda oradayım",
+    "english": "I’m there on the weekend.",
+    "id": 115
+  },
+  {
+    "turkish": "yılın başında seninleyim",
+    "english": "I’m with you at the beginning of the year.",
+    "id": 116
+  },
+  {
+    "turkish": "günün sonunda evimdeyim",
+    "english": "I’m at home at the end of the day.",
+    "id": 117
+  },
+  {
+    "turkish": "O Cumartesi günü Ankara'da.",
+    "english": "He is in Ankara on Saturday.",
+    "id": 118
+  },
+  {
+    "turkish": "pazar günü tatildeyim",
+    "english": "I’m on holiday on Sunday.",
+    "id": 119
+  },
+  {
+    "turkish": "doğum günümde onlarlayım",
+    "english": "I’m with them on my birthday.",
+    "id": 120
+  },
+  {
+    "turkish": "tatilde arkadaşlarımlayım",
+    "english": "I’m with my friends on holiday.",
+    "id": 121
+  },
+  {
+    "turkish": "Eylül ayında hazırım",
+    "english": "I’m ready in September.",
+    "id": 122
+  },
+  {
+    "turkish": "İlkbaharda hazırım",
+    "english": "I’m ready in the spring.",
+    "id": 123
+  },
+  {
+    "turkish": "Yazın buradalarz",
+    "english": "We are here in the summer.",
+    "id": 124
+  },
+  {
+    "turkish": "Sonbaharda oradasınız",
+    "english": "You are there in the autumn.",
+    "id": 125
+  },
+  {
+    "turkish": "Kışın oradayım",
+    "english": "I’m there in the winter.",
+    "id": 126
+  },
+  {
+    "turkish": "Bir dakika içinde Oradayım",
+    "english": "I’m there in a minute.",
+    "id": 127
+  },
+  {
+    "turkish": "5 dakika içinde hazırım",
+    "english": "I’m ready in five minutes.",
+    "id": 128
+  },
+  {
+    "turkish": "5 dakikada oradayım",
+    "english": "I’m there in five minutes.",
+    "id": 129
+  },
+  {
+    "turkish": "bir saatte buradayım.",
+    "english": "I’m here in an hour.",
+    "id": 130
+  },
+  {
+    "turkish": "bir gün içinde Seninleyim",
+    "english": "I’m with you in a day.",
+    "id": 131
+  },
+  {
+    "turkish": "2 gün içinde ankara'dayız",
+    "english": "We are in Ankara in two days.",
+    "id": 132
+  },
+  {
+    "turkish": "3 gün içinde Amerika’dasınız",
+    "english": "You are in Amerika in three days.",
+    "id": 133
+  },
+  {
+    "turkish": "Dükkandalar",
+    "english": "They are in the shop.",
+    "id": 134
+  },
+  {
+    "turkish": "Kafedeler",
+    "english": "They are in the cafe.",
+    "id": 135
+  },
+  {
+    "turkish": "Restorandayız",
+    "english": "We are at the restaurant.",
+    "id": 136
+  },
+  {
+    "turkish": "Ofiste değilsin.",
+    "english": "You aren’t at the office.",
+    "id": 137
+  },
+  {
+    "turkish": "Oradalar",
+    "english": "They are there.",
+    "id": 138
+  },
+  {
+    "turkish": "Koltuktayım",
+    "english": "I’m in the armchair.",
+    "id": 139
+  },
+  {
+    "turkish": "Sandalyedeyim",
+    "english": "I’m on the chair.",
+    "id": 140
+  },
+  {
+    "turkish": "Masadayım.",
+    "english": "I’m at the table.",
+    "id": 141
+  },
+  {
+    "turkish": "Bilgisayardayım",
+    "english": "I’m on the PC.",
+    "id": 142
+  },
+  {
+    "turkish": "Tabaktaki et, lezzetli.",
+    "english": "The meat on the plate is delicious.",
+    "id": 143
+  },
+  {
+    "turkish": "bardaktaki su soğuk",
+    "english": "The water in the glass is cold.",
+    "id": 144
+  },
+  {
+    "turkish": "bu tabaktaki yemek iyi",
+    "english": "The food on this plate is good.",
+    "id": 145
+  },
+  {
+    "turkish": "çorbadaki sinek çirkin",
+    "english": "The fly in the soup is ugly.",
+    "id": 146
+  },
+  {
+    "turkish": "bu şişedeki bira soğuk",
+    "english": "The beer in this bottle is cold.",
+    "id": 147
+  },
+  {
+    "turkish": "bu kasedeki çorba sıcak",
+    "english": "The soup in this bowl is hot.",
+    "id": 148
+  },
+  {
+    "turkish": "çorbam soğuk",
+    "english": "My soup is cold.",
+    "id": 149
+  },
+  {
+    "turkish": "bardağım dolu",
+    "english": "My glass is full.",
+    "id": 150
+  },
+  {
+    "turkish": "senin tabağın boş",
+    "english": "Your plate is empty.",
+    "id": 151
+  },
+  {
+    "turkish": "hikayeler hüzünlü",
+    "english": "The stories are sad.",
+    "id": 152
+  },
+  {
+    "turkish": "kahvedeki insanlar hüzünlü",
+    "english": "The people in the cafe are sad.",
+    "id": 153
+  },
+  {
+    "turkish": "çayım iyi",
+    "english": "My tea is good.",
+    "id": 154
+  },
+  {
+    "turkish": "çayım soğuk",
+    "english": "My tea is cold.",
+    "id": 155
+  },
+  {
+    "turkish": "portakal suyum kötü",
+    "english": "My orange juice is bad.",
+    "id": 156
+  },
+  {
+    "turkish": "çorbam sıcak değil",
+    "english": "My soup isn’t hot.",
+    "id": 157
+  },
+  {
+    "turkish": "kalbim yorgun",
+    "english": "My heart is tired.",
+    "id": 158
+  },
+  {
+    "turkish": "aklım meşgul",
+    "english": "My mind is busy.",
+    "id": 159
+  },
+  {
+    "turkish": "yüreğim boş",
+    "english": "My heart is empty.",
+    "id": 160
+  },
+  {
+    "turkish": "Senin çamaşır makinen eski",
+    "english": "Your laundry machine is old.",
+    "id": 161
+  },
+  {
+    "turkish": "bulaşık makinesindeki bulaşıklar temiz",
+    "english": "The dishes in the dish washer are clean.",
+    "id": 162
+  },
+  {
+    "turkish": "fırındaki yemek muhteşem",
+    "english": "The food in the oven is wonderful.",
+    "id": 163
+  },
+  {
+    "turkish": "ocaktaki çorba sıcak",
+    "english": "The soup on the stove is hot",
+    "id": 164
+  },
+  {
+    "turkish": "buzdolabındaki meyveler taze",
+    "english": "The fruits in the fridge are fresh.",
+    "id": 165
+  },
+  {
+    "turkish": "mutfaktaki lamba bozuk",
+    "english": "The lamp in the kitchen is broken.",
+    "id": 166
+  },
+  {
+    "turkish": "Kahvaltıdaki Peynir lezzetli",
+    "english": "The cheese in the breakfast is delicious.",
+    "id": 167
+  },
+  {
+    "turkish": "Gemideki insanlar zengin",
+    "english": "The people on the ship are rich.",
+    "id": 168
+  },
+  {
+    "turkish": "Sandaldaki adam fakir.",
+    "english": "The man on the boat is poor.",
+    "id": 169
+  },
+  {
+    "turkish": "Köprüdeki insanlar sarhoş.",
+    "english": "The people on the bridge are drunk.",
+    "id": 170
+  },
+  {
+    "turkish": "Nehirdeki çocuklar mutlu.",
+    "english": "The children in the river are happy.",
+    "id": 171
+  },
+  {
+    "turkish": "Denizdeki insanlar üşüyor.",
+    "english": "The people in the sea are cold.",
+    "id": 172
+  },
+  {
+    "turkish": "pazar sabahı Buradayım",
+    "english": "I’m here on Sunday morning.",
+    "id": 173
+  },
+  {
+    "turkish": "cuma öğleden sonra otobüsteyim",
+    "english": "I’m on the bus on Friday afternoon.",
+    "id": 174
+  },
+  {
+    "turkish": "cumartesi akşamı televizyondayız",
+    "english": "We are on TV on Saturday evening.",
+    "id": 175
+  },
+  {
+    "turkish": "perşembe öğlen meşgulüm",
+    "english": "I’m busy on Thursday noon.",
+    "id": 176
+  },
+  {
+    "turkish": "pazar gecesi meşgul değilim",
+    "english": "I am not busy on Sunday evening.",
+    "id": 177
+  },
+  {
+    "turkish": "çarşamba akşamı hazırım",
+    "english": "I’m ready on Wednesday evening.",
+    "id": 178
+  },
+  {
+    "turkish": "cuma sabahı yorgunum",
+    "english": "I’m tired on Friday morning.",
+    "id": 179
+  },
+  {
+    "turkish": "cumartesi gecesi heyecanlıyım",
+    "english": "I'm excited on Saturday night.",
+    "id": 180
+  },
+  {
+    "turkish": "pazartesi sabahı açım",
+    "english": "I’m hungry on Monday morning.",
+    "id": 181
+  },
+  {
+    "turkish": "Toplantıda değiller",
+    "english": "They aren’t at the meeting.",
+    "id": 182
+  },
+  {
+    "turkish": "Kapıdayım.",
+    "english": "I’m at the door.",
+    "id": 183
+  },
+  {
+    "turkish": "Kapımdalar.",
+    "english": "They are at my door.",
+    "id": 184
+  },
+  {
+    "turkish": "Penceremdeki kedi mutlu.",
+    "english": "The cat at my window is happy.",
+    "id": 185
+  },
+  {
+    "turkish": "Zemindeki renk kötü",
+    "english": "The color on the floor is bad.",
+    "id": 186
+  },
+  {
+    "turkish": "Duvardaki resimler eski.",
+    "english": "The pictures on the wall are old.",
+    "id": 187
+  },
+  {
+    "turkish": "Masadaki bardak boş.",
+    "english": "The glass on the table is empty.",
+    "id": 188
+  },
+  {
+    "turkish": "Sandalyedeki çocuk benim.",
+    "english": "The child on the chair is mine.",
+    "id": 189
+  },
+  {
+    "turkish": "Yataktaki kitap senin.",
+    "english": "The book on the bad is yours.",
+    "id": 190
+  },
+  {
+    "turkish": "Halıdaki leke kötü.",
+    "english": "The stain on the carpet is bad.",
+    "id": 191
+  },
+  {
+    "turkish": "Ormandaki kuşlar özgür.",
+    "english": "The birds in the forest are free.",
+    "id": 192
+  },
+  {
+    "turkish": "Ağaçlardaki yapraklar yeşil.",
+    "english": "The leaves on the trees are green.",
+    "id": 193
+  },
+  {
+    "turkish": "Pantolonum eski.",
+    "english": "My pants are old.",
+    "id": 194
+  },
+  {
+    "turkish": "Şortum yeni.",
+    "english": "My shorts are new.",
+    "id": 195
+  },
+  {
+    "turkish": "Çoraplarım kirli.",
+    "english": "My socks are dirty.",
+    "id": 196
+  },
+  {
+    "turkish": "Kotum pahalı.",
+    "english": "My jeans are expensive.",
+    "id": 197
+  },
+  {
+    "turkish": "Hava Yağmurlu",
+    "english": "It’s rainy.",
+    "id": 198
+  },
+  {
+    "turkish": "Hava Karlı",
+    "english": "It’s snowy.",
+    "id": 199
+  },
+  {
+    "turkish": "Güneşli SUNNY",
+    "english": "It’s sunny.",
+    "id": 200
+  },
+  {
+    "turkish": "Sisli FOGGY",
+    "english": "It’s foggy.",
+    "id": 201
+  },
+  {
+    "turkish": "Hava Soğuk",
+    "english": "It’s cold.",
+    "id": 202
+  },
+  {
+    "turkish": "Hava Sıcak",
+    "english": "It’s hot.",
+    "id": 203
+  },
+  {
+    "turkish": "Hava Bulutlu",
+    "english": "It’s cloudy",
+    "id": 204
+  },
+  {
+    "turkish": "Meşgul",
+    "english": "It’s busy.",
+    "id": 205
+  },
+  {
+    "turkish": "Yoğun",
+    "english": "It’s busy.",
+    "id": 206
+  },
+  {
+    "turkish": "Yorgun",
+    "english": "It’s tired.",
+    "id": 207
+  },
+  {
+    "turkish": "Pahalı",
+    "english": "It’s expensive.",
+    "id": 208
+  },
+  {
+    "turkish": "Rüzgarlı",
+    "english": "It’s windy.",
+    "id": 209
+  },
+  {
+    "turkish": "Kirliler.",
+    "english": "They are dirty.",
+    "id": 210
+  },
+  {
+    "turkish": "Yorgunlar",
+    "english": "They are tired.",
+    "id": 211
+  },
+  {
+    "turkish": "hazır değiller",
+    "english": "They aren’t ready.",
+    "id": 212
+  },
+  {
+    "turkish": "hazırlar.",
+    "english": "They are ready.",
+    "id": 213
+  },
+  {
+    "turkish": "Yeşil",
+    "english": "It’s green.",
+    "id": 214
+  },
+  {
+    "turkish": "kırmızı",
+    "english": "It’s red.",
+    "id": 215
+  },
+  {
+    "turkish": "sarı",
+    "english": "It’s yellow.",
+    "id": 216
+  },
+  {
+    "turkish": "Zor",
+    "english": "It’s hard.",
+    "id": 217
+  },
+  {
+    "turkish": "Kolay",
+    "english": "It’s easy",
+    "id": 218
+  },
+  {
+    "turkish": "Onunlayım. E",
+    "english": "I’m with him.",
+    "id": 219
+  },
+  {
+    "turkish": "Onunlalar K",
+    "english": "They are with her.",
+    "id": 220
+  },
+  {
+    "turkish": "Onlar bizimle",
+    "english": "They are with us.",
+    "id": 221
+  },
+  {
+    "turkish": "Biz onlarlayız",
+    "english": "We are with them.",
+    "id": 222
+  },
+  {
+    "turkish": "Sen bizimlesin.",
+    "english": "You are with us.",
+    "id": 223
+  },
+  {
+    "turkish": "O E, onunla K",
+    "english": "He is with her.",
+    "id": 224
+  },
+  {
+    "turkish": "O K, onunla E",
+    "english": "She is with him.",
+    "id": 225
+  },
+  {
+    "turkish": "Çocuklar benimle.",
+    "english": "The children with me.",
+    "id": 226
+  },
+  {
+    "turkish": "Annem onlarla.",
+    "english": "My mother is with them.",
+    "id": 227
+  },
+  {
+    "turkish": "Bu, senin için",
+    "english": "This is for you.",
+    "id": 228
+  },
+  {
+    "turkish": "Bunlar senin için.",
+    "english": "These are for you.",
+    "id": 229
+  },
+  {
+    "turkish": "Bunlar senin çocukların için",
+    "english": "These are for your children.",
+    "id": 230
+  },
+  {
+    "turkish": "Şunlar bizim için.",
+    "english": "Those are for us.",
+    "id": 231
+  },
+  {
+    "turkish": "Şunlar arkadaşlarımız için.",
+    "english": "Those are for our friends.",
+    "id": 232
+  },
+  {
+    "turkish": "Seninleyim.",
+    "english": "I’m with you.",
+    "id": 233
+  },
+  {
+    "turkish": "Onunlayım E",
+    "english": "I’m with him.",
+    "id": 234
+  },
+  {
+    "turkish": "Onunlayım K",
+    "english": "I’m with her.",
+    "id": 235
+  },
+  {
+    "turkish": "Onunlayım. C",
+    "english": "I’m with it.",
+    "id": 236
+  },
+  {
+    "turkish": "Onunlalar K",
+    "english": "They are with her.",
+    "id": 237
+  },
+  {
+    "turkish": "Onunlayız E",
+    "english": "We are with him.",
+    "id": 238
+  },
+  {
+    "turkish": "Onlarlayız.",
+    "english": "We are with them.",
+    "id": 239
+  },
+  {
+    "turkish": "Onlar benimle.",
+    "english": "They are with me.",
+    "id": 240
+  },
+  {
+    "turkish": "Ben onlarla değilim.",
+    "english": "I’m not with them.",
+    "id": 241
+  },
+  {
+    "turkish": "Onlar bizimle değil.",
+    "english": "They are not with us.",
+    "id": 242
+  },
+  {
+    "turkish": "Sen bizden değilsin.",
+    "english": "You are not from us",
+    "id": 243
+  },
+  {
+    "turkish": "Biz onlardan değiliz.",
+    "english": "We are not from them.",
+    "id": 244
+  },
+  {
+    "turkish": "Annem onların arkadaşlarıyla.",
+    "english": "My mother is with their friends.",
+    "id": 245
+  },
+  {
+    "turkish": "Onların arkadaşları benimle.",
+    "english": "Their friends are with me.",
+    "id": 246
+  },
+  {
+    "turkish": "Onlarınkiler bizimkilerle.",
+    "english": "Theirs are with ours.",
+    "id": 247
+  },
+  {
+    "turkish": "Bu, senin için.",
+    "english": "This is for you.",
+    "id": 248
+  },
+  {
+    "turkish": "Şu, benim için.",
+    "english": "That is for me.",
+    "id": 249
+  },
+  {
+    "turkish": "Onlar bizim için.",
+    "english": "They are for us.",
+    "id": 250
+  },
+  {
+    "turkish": "Bu para benden.",
+    "english": "This money is from me.",
+    "id": 251
+  },
+  {
+    "turkish": "Kitabım onlardan.",
+    "english": "My book is from them.",
+    "id": 252
+  },
+  {
+    "turkish": "Sen, onların okulundansın.",
+    "english": "You are from their school.",
+    "id": 253
+  },
+  {
+    "turkish": "Okuldan önce seninleyim.",
+    "english": "I’m with you before school.",
+    "id": 254
+  },
+  {
+    "turkish": "Senden sonra onunlayım K",
+    "english": "I’m with her after you.",
+    "id": 255
+  },
+  {
+    "turkish": "Bizimkiler seninle.",
+    "english": "Ours are with you.",
+    "id": 256
+  },
+  {
+    "turkish": "Arabam bahçenizde.",
+    "english": "My car is in your garden.",
+    "id": 257
+  },
+  {
+    "turkish": "Araban bahçemizde.",
+    "english": "Your car is in our garden",
+    "id": 258
+  },
+  {
+    "turkish": "Param senin cebinde.",
+    "english": "My money is in your pocket.",
+    "id": 259
+  },
+  {
+    "turkish": "Senin paran benim cebimde.",
+    "english": "Your money is in my pocket.",
+    "id": 260
+  },
+  {
+    "turkish": "Seninki benim cebimde.",
+    "english": "Yours is in my pocket.",
+    "id": 261
+  },
+  {
+    "turkish": "Arkadaşlarımız onlarla.",
+    "english": "Our friends are with them.",
+    "id": 262
+  },
+  {
+    "turkish": "Senin arkadaşın bizimle.",
+    "english": "Your friend is with us.",
+    "id": 263
+  },
+  {
+    "turkish": "Senden sonra buradayım.",
+    "english": "I’m here after you.",
+    "id": 264
+  },
+  {
+    "turkish": "Onlardan önce okuldayım.",
+    "english": "I’m at the school before them.",
+    "id": 265
+  },
+  {
+    "turkish": "Okulumdan sonra onlarlayım.",
+    "english": "I’m with them after my school.",
+    "id": 266
+  },
+  {
+    "turkish": "Senin yüzünden buradayım.",
+    "english": "I’m here because of you.",
+    "id": 267
+  },
+  {
+    "turkish": "Onlar yüzünden okulumdayım.",
+    "english": "I’m at my school because of them.",
+    "id": 268
+  },
+  {
+    "turkish": "Bizim yüzümüzden mutsuzlar.",
+    "english": "They are sad because of us.",
+    "id": 269
+  },
+  {
+    "turkish": "Sizin yüzünüzden sinirliyim.",
+    "english": "I’m angry because of you.",
+    "id": 270
+  },
+  {
+    "turkish": "Onun yüzünden E oradayım.",
+    "english": "I’m there because of him.",
+    "id": 271
+  },
+  {
+    "turkish": "Bizimkiler burada.",
+    "english": "Ours are here.",
+    "id": 272
+  },
+  {
+    "turkish": "Onlarınkiler orada.",
+    "english": "Theirs are there.",
+    "id": 273
+  },
+  {
+    "turkish": "Evdeyim.",
+    "english": "I’m at home.",
+    "id": 274
+  },
+  {
+    "turkish": "Evdesin.",
+    "english": "You are at home.",
+    "id": 275
+  },
+  {
+    "turkish": "O evde E",
+    "english": "He is at home.",
+    "id": 276
+  },
+  {
+    "turkish": "O okulda K",
+    "english": "She is at the school.",
+    "id": 277
+  },
+  {
+    "turkish": "O bahçede.",
+    "english": "It’s in the garden.",
+    "id": 278
+  },
+  {
+    "turkish": "Biz buradayız.",
+    "english": "We are here.",
+    "id": 279
+  },
+  {
+    "turkish": "Siz oradasınız.",
+    "english": "You are there.",
+    "id": 280
+  },
+  {
+    "turkish": "Onlar benimle.",
+    "english": "They are with me.",
+    "id": 281
+  },
+  {
+    "turkish": "Çocuklar okulda.",
+    "english": "The children are at the school.",
+    "id": 282
+  },
+  {
+    "turkish": "Annem seninle.",
+    "english": "My mother is with you.",
+    "id": 283
+  },
+  {
+    "turkish": "Okuldaki çocuklar mutlu.",
+    "english": "The children in the school are happy.",
+    "id": 284
+  },
+  {
+    "turkish": "Türkiyedeki insanlar yorgun.",
+    "english": "The people in Turkey are tired.",
+    "id": 285
+  },
+  {
+    "turkish": "Okulun bahçesi büyük.",
+    "english": "The garden of the school is big.",
+    "id": 286
+  },
+  {
+    "turkish": "Annemin arkadaşları yaşlı.",
+    "english": "The friends of my mother are old.",
+    "id": 287
+  },
+  {
+    "turkish": "Masadaki su soğuk.",
+    "english": "The water on the table is cold.",
+    "id": 288
+  },
+  {
+    "turkish": "Ali bizim için burada.",
+    "english": "Ali is here for us.",
+    "id": 289
+  },
+  {
+    "turkish": "Arkadaşlarım için Ankaradayım.",
+    "english": "I’m in Ankara for my friends.",
+    "id": 290
+  },
+  {
+    "turkish": "Okul için trendeler.",
+    "english": "They are on the train for the school.",
+    "id": 291
+  },
+  {
+    "turkish": "Kedi, salondaki halının üstünde.",
+    "english": "The cat is on the carpet in the living room.",
+    "id": 292
+  },
+  {
+    "turkish": "Kızgınım.",
+    "english": "I’m angry.",
+    "id": 293
+  },
+  {
+    "turkish": "Kızgınsın.",
+    "english": "You are angry.",
+    "id": 294
+  },
+  {
+    "turkish": "Ali aç.",
+    "english": "Ali is hungry.",
+    "id": 295
+  },
+  {
+    "turkish": "Ayşe Türkiye’den.",
+    "english": "Ayşe is from Turkey.",
+    "id": 296
+  },
+  {
+    "turkish": "Senin kedin salonda.",
+    "english": "Your cat is in the living room.",
+    "id": 297
+  },
+  {
+    "turkish": "Arabamız sokağın sonunda.",
+    "english": "Our car is at the end of the street.",
+    "id": 298
+  },
+  {
+    "turkish": "Ocak ayında İstanbul’dasınız.",
+    "english": "You are in İstanbul in January.",
+    "id": 299
+  },
+  {
+    "turkish": "Okuldan sonra evdeyim.",
+    "english": "I’m at home after the school.",
+    "id": 300
+  },
+  {
+    "turkish": "Bu araba, senin için.",
+    "english": "This car is for you.",
+    "id": 301
+  },
+  {
+    "turkish": "Benim ülkem güçlü.",
+    "english": "My country is strong.",
+    "id": 302
+  },
+  {
+    "turkish": "Baban Salı günü ofiste.",
+    "english": "Your father is at the office on Tuesday.",
+    "id": 303
+  },
+  {
+    "turkish": "Televizyondaki insanlar zengin.",
+    "english": "The people on TV are rich.",
+    "id": 304
+  },
+  {
+    "turkish": "Denizdeki insanlar mutlu.",
+    "english": "The people in the sea are happy.",
+    "id": 305
+  },
+  {
+    "turkish": "Ben Cuma akşamı senin için hazırım.",
+    "english": "I’m ready for you on Friday evening.",
+    "id": 306
+  },
+  {
+    "turkish": "Bizim şehrimiz güzel.",
+    "english": "Our city is good.",
+    "id": 307
+  },
+  {
+    "turkish": "Yazın Ağustos ayında ailemle beraber Antalyadayım.",
+    "english": "I’m in Antalya with my family in August in the summer.",
+    "id": 308
+  },
+  {
+    "turkish": "Haftasonu kızkardeşimle beraber restorandayız.",
+    "english": "We are at the restaurant with my sister on the weekend.",
+    "id": 309
+  },
+  {
+    "turkish": "Evdeki köpek, bir kediyle beraber mutfakta.",
+    "english": "The dog in the house is with a cat in the kitchen.",
+    "id": 310
+  },
+  {
+    "turkish": "Kalbimdeki kadın, benimle.",
+    "english": "The woman in my heart is with me.",
+    "id": 311
+  },
+  {
+    "turkish": "Ofisten arkadaşlarım bir parti için işten sonra bir restoranda.",
+    "english": "My friends from the office are at a restaurant after work for a party.",
+    "id": 312
+  },
+  {
+    "turkish": "Babamın ailesi, Bayram için köyde.",
+    "english": "The family of my father is in the village for Bayram.",
+    "id": 313
+  },
+  {
+    "turkish": "Arkadaşımın gözlükleri burada.",
+    "english": "The glasses of my friend are here.",
+    "id": 314
+  },
+  {
+    "turkish": "İyiyim.",
+    "english": "I’m fine.",
+    "id": 315
+  },
+  {
+    "turkish": "Meşguller.",
+    "english": "They are busy.",
+    "id": 316
+  },
+  {
+    "turkish": "Bugün meşgulüm.",
+    "english": "I’m busy today.",
+    "id": 317
+  },
+  {
+    "turkish": "Bahçedeki elmalar kırmızı.",
+    "english": "The apples in the garden are red.",
+    "id": 318
+  }
+]

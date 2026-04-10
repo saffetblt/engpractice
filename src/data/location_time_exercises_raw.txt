@@ -1,0 +1,332 @@
+Okuldayım. 			I’m at the school
+Işteyim.			I’m at work
+Ofisteyim.			I’m at the office
+Evdeyim.			I’m at home
+Okuldasın.			You are at the school
+Hastanedeler. 		They are at the hospital
+O otobüs durağında.  	He is at the bus stop
+Marmaray'dayım.		I’m on Marmaray
+Metrodasın. 			You are in the subway
+Havaalanındayız. 		We are at the airport
+Sokaktayım. 			I’m on the street
+Arabalar caddede.   	The cars are on the street
+Yoldalar. 	 		They are on the road
+Sen Evindesin. 		You are in your house
+Evimdeyim.			I am in my house	
+I am not in my house.
+Am I in my house?
+
+Ali evinde.			Ali is in his home.
+Ayşe okulunda.		Ayşe is in her school.
+Biz İşimizdeyiz.		We are at our work.
+Onlar bizim işimizdeler. 	They are in our work.
+Senin Ofisindeyim.		I am at your office.
+Okulumuzdalar. 		They are at our school.
+Onlar Bu hastanedeler.	They are at this hospital.
+Şu okuldasın. 		You are at that school.
+Onlar için okuldayım.	I am at the school for them.
+Bir evdeyim.			I am at a house.
+Hayatımdaki insanlar önemlidir.   	The people in my life are important.
+Kitaplardaki hikayeler ilginçtir.  	The stories in the books are interesting		
+Şarkıdaki sözler ilginç. 		The words in the song are interesting	Yağmurdaki otobüs, çok eski	The bus in the rain is very old.
+Fırtınadayım.	I am in the storm.                 		
+pazartesi günkü toplantı için hazırım.	I am ready for the meeting on monday.
+salı günü ankara'dasın			You are in Ankara on Tuesday.
+çarşamba günü onlarlayım. 		I am with them on Wednesday.
+perşembe günü evdeyim			I am at home on Thursday.
+cuma öğledensonra seninleler. 		They are with you on Friday afternoon.
+cumartesi akşamı bir partidesiniz.		You are at a party on Saturday evening.
+pazar sabahı kahvaltıdayız.		We are at the breakfast on Sunday morning.
+ilkbaharda mutluyum			I’m happy in the spring. 
+sonbaharda hüzünlüsün. 			You are sad in the autumn.
+yazları antalyadayız				We are in Antalya in the summers.
+kışları evdesiniz.				You are at home in the winters.
+ocak ayında ailemleyim			We are with my family in January.
+Şubat ayında senin köyündeyiz.		We are at your village in February.
+mart ayında çocuklarımlayım.		I’m with my children in March.
+Ali Nisan’da senin köyünde.		Ali is at your village in April.
+Ayşe Haziran’da tatilde.			Ayşe is on holiday in June.
+Siz Temmuz'da ofistesiniz.			You are at the office in July.
+Okuldan arkadaşlarım eylülde Bodrum'da.	My friends from the school are in Bodrum in September.
+Ekimde Ankara’dayım.				I am in Ankara in October.
+Kasımda Avrupa'dalar. 	 			They are in Europe in November.
+aralıkta yorgunum 					I’m tired in December.
+doğum günümde mutluyum			I’m happy on my birthday.
+senin doğum gününde buradayım.		I’m here on your birthday.
+arkadaşlarımla tatildeyim				I’m on holiday with my friends.
+yılbaşında sizinleyim.				I’m with you on the new year.
+yeni yılda buradalar.					They are here in the new year.
+
+20.
+Ailem bayramda tatilde.  			My family is on holiday on Bayram.
+Kızım sabahları sinirlidir. 			My daughter is angry in the mornings.
+Patronum öğlenleyin toplantıda.			My boss is in the meeting at noon.
+Öğleden sonra seninleyiz.				We are with you in the afternoon.
+akşamleyin bir partideyim				I’m at a party in the evening.
+Öğrenciler öğlenleyin burada.			The students are here at noon.
+şu anda meşgulüm.					I’m busy at the moment.		
+hafta sonunda oradayım 				I’m there on the weekend.		
+haftanın sonunda senleyim				I’m with you at the end of the week.
+yılın başında ankara'dalar.				They are in Ankara at the beginning of the year.
+günün sonunda yorgunum				I’m tired at the end of the day.
+Doğum günüm için heyecanlıyım. 		I am excited for my birthday.
+Partinin sonundaki sürpriz senin için. 		The surprise at the end of the party is for you.
+toplantıdayım					I’m at the meeting.
+arkadaşlarımla trendeyim				I’m on the train with my friends.
+insanlarla otobüsteyim				I’m on the bus with the people.
+3 adamla uçaktayım.				I’m on the plane with three men.
+köpeğimle arabadayım				I’m in the car with my dog.
+Bisikletteyim						I’m on the bike.
+üniversiteden arkadaşımla taksideyim		I’m in the taxi with my friends from the university.
+Yarın köydeyim					I’m in the village tomorrow.
+köylerdeki yollar çok kötü				The roads in the villages are very bad.
+almanya'daki insanlar mutlu			The people in Germany are happy.
+amerika'daki insanlar şaşkın			The people in America are surprised.
+rusya'daki insanlar endişeli worried 		The people in Russia are worried.
+italya'daki insanlar çılgın				The people in Italy are crazy.
+yunanistan'daki insanlar tembel 			The people in Greece are lazy.
+fransa'daki insanlar zengin 			The people in France are rich.
+istanbul'daki insanlar yorgun			The people in Istanbul are tired.
+Anadoludaki insanlar güçlü				The people in Anatolia are strong.
+Bahçedeki elmalar kırmızı				The apples in the garden are red.
+Gelecekteyim.					I’m in the future.
+Geçmişteyiz.						We are in the past.
+Bilgisayardayım					I’m on the PC.
+amcam televizyonda				My uncle is on TV.
+teyzem radyoda					My aunt is on the radio.
+internetteler.						They are on the internet.
+facebook'tayım.					I’m on Facebook.
+instagram dayım					I’m on Instagram.
+Ali tiktok da.					Ali is on Tik Tok.
+telefondayım					I’m on the phone
+banyodaki halı çok çirkin.  			The carpet in the bathroom is very ugly.  
+sınıftaki masa çok eski			The table in the class is very old.
+sinemadaki insanlar heyecanlı 	 	The people in the cinema are excited.
+Saat birde oradayım			I’m there at one o’clock.
+Saat ikide evdeyim				I’m at home at two o’clock.
+saat üçte ofisteyiz 				We are at the office at three o’clock.
+saat dörtte hastanedeyim			I’m at the hospital at four o’clock.
+saat 6 da ormandayım			I’m in the forest at six o’clock.
+saat yedide evimdeyim			I’m at my home at seven o’clock.
+saat sekizde salondayım			I’m in the living room at eight o’clock.
+saat dokuzda yataktayım			I’m in bed at nine o’clock.
+saat 10 da buradalar.			They are here at ten o’clock.
+saat 11de oradasınız 			You are there at eleven o’clock.
+Arkadaşlarım saat 12 de ofiste.		My friends are at the office at twelve o’clock.
+Annem öğlenleyin arkadaşlarıyla beraber.	My mother is with her friends at noon.
+Geceleyin odamdayım			I’m in my room at night.
+şu anda meşgulüm 				I’m busy right now.
+hafta sonunda oradayım			I’m there on the weekend.
+yılın başında seninleyim			I’m  with you at the beginning of the year.
+günün sonunda evimdeyim			I’m at home at the end of the day.
+O Cumartesi günü Ankara'da.		He is in Ankara on Saturday.
+pazar günü tatildeyim			I’m on holiday on Sunday.
+doğum günümde onlarlayım		I’m with them on my birthday.
+tatilde arkadaşlarımlayım			I’m with my friends on holiday.
+Eylül ayında hazırım			I’m ready in September.
+İlkbaharda hazırım				I’m ready in the spring.
+Yazın buradalarz 				We are here in the summer.
+Sonbaharda oradasınız			You are there in the autumn.
+Kışın oradayım				I’m there in the winter.
+Bir dakika içinde Oradayım			I’m there in a minute.
+5 dakika içinde hazırım			I’m ready in five minutes.
+5 dakikada oradayım			I’m there in five minutes.
+bir saatte buradayım. 			I’m here in an hour.
+bir gün içinde Seninleyim			I’m with you in a day.
+2 gün içinde ankara'dayız			We are in Ankara in two days.
+3 gün içinde Amerika’dasınız 		You are in Amerika in three days.
+Dükkandalar 					They are in the shop.
+Kafedeler					They are in the cafe.
+Restorandayız				We are at the restaurant.
+Ofiste değilsin.				You aren’t at the office.
+Oradalar 					They are there.
+Koltuktayım					I’m in the armchair.
+Sandalyedeyim				I’m on the chair.
+Masadayım.					I’m at the table.
+Bilgisayardayım				I’m on the PC.
+Tabaktaki et, lezzetli. 		 	The meat on the plate is delicious.
+bardaktaki su soğuk				The water in the glass is cold.
+bu tabaktaki yemek iyi 			The food on the plate is good.
+çorbadaki sinek çirkin 			The fly in the soup is ugly.
+bu şişedeki bira soğuk 	 		The beer in this bottle is cold.
+bu kasedeki çorba sıcak 			The soup in this bowl is hot.
+çorbam soğuk				My soup is cold.
+bardağım dolu 				My glass is full.
+senin tabağın boş 				Your plate is empty.
+hikayeler hüzünlü 				The stories are sad.
+kahvedeki insanlar hüzünlü		The people in the cafe are sad.
+çayım iyi					My tea is good.
+çayım soğuk					My tea is cold.
+portakal suyum kötü				My orange juice is bad.
+çorbam sıcak değil				My soup isn’t bad.
+kalbim yorgun 				My heart is tired.
+aklım meşgul 				My mind is busy.
+yüreğim boş 					My heart is empty.
+Senin çamaşır makinen eski		Your laundry machine is old.
+bulaşık makinesindeki bulaşıklar temiz 	The dishes in the dish washer are clean.
+fırındaki yemek muhteşem 		The food in the oven is wonderful.
+ocaktaki çorba sıcak 	 		The soup on the stove is hot
+buzdolabındaki meyveler taze 		The fruits in the fridge are fresh.
+mutfaktaki lamba bozuk 		 	The lamp in the kitchen is broken.
+Kahvaltıdaki Peynir lezzetli 	 	The cheese in the breakfast is delicious.
+Gemideki insanlar zengin			The people on the ship are rich.
+Sandaldaki adam fakir. 		 	The man on the boat is poor.
+Köprüdeki insanlar sarhoş. 		The people on the bridge are drunk.
+Nehirdeki çocuklar mutlu.			The children in the river are happy.
+Denizdeki insanlar üşüyor. 			The people in the sea are cold.
+
+----   
+
+pazar sabahı Buradayım			I’m here on Sunday morning.
+cuma öğleden sonra otobüsteyim		I’m on the bus on Friday afternoon.
+cumartesi akşamı televizyondayız		We are on TV on Saturday evening.
+perşembe öğlen meşgulüm		I’m busy on Thursday noon.
+pazar gecesi meşgul değilim		I am not busy on Sunday evening.
+çarşamba akşamı hazırım			I’m ready on Wednesday evening.
+cuma sabahı yorgunum			I’m tired on Friday morning.
+cumartesi gecesi heyecanlıyım 	 	I'm excited on Saturday night.
+pazartesi sabahı açım 			I’m hungry on Monday morning.
+Toplantıda değiller				They aren’t at the meeting.
+Kapıdayım.					I’m at the door.
+Kapımdalar.					They are at my door.
+Penceremdeki kedi mutlu.			The cat at my window is happy.
+Zemindeki renk kötü 			The color on the floor is bad.
+Duvardaki resimler eski.			The pictures on the wall are old.
+Masadaki bardak boş. 			The glass on the table is empty.
+Sandalyedeki çocuk benim.		The child on the chair is mine.
+Yataktaki kitap senin.			The book on the bad is yours.
+Halıdaki leke kötü.  			The stain on the carpet is bad.
+Ormandaki kuşlar özgür. 			The birds in the forest are free.
+Ağaçlardaki yapraklar yeşil. 		The leaves on the trees are green.
+Pantolonum eski. 				My pants are old.
+Şortum yeni. 					My shorts are new.	
+Çoraplarım kirli. 				My socks are dirty.
+Kotum pahalı.				My jeans are expensive.
+
+
+
+
+Hava Yağmurlu 			 	It’s rainy.
+Hava Karlı 	 				It’s snowy.
+Güneşli SUNNY				It’s sunny.
+Sisli  FOGGY				It’s foggy.
+Hava Soğuk					It’s cold.
+Hava Sıcak					It’s hot.
+Hava Bulutlu 					It’s cloudy
+Meşgul 					It’s busy.
+Yoğun 					It’s busy.
+Yorgun					It’s tired.
+Pahalı						It’s expensive.
+Rüzgarlı 					It’s windy.
+Kirliler. 					They are dirty.
+Yorgunlar					They are tired.
+hazır değiller					They aren’t ready.
+hazırlar.					They are ready.
+Yeşil 					It’s green.
+kırmızı						It’s red.
+sarı						It’s yellow.
+Zor 					It’s hard.
+Kolay 					It’s easy
+
+
+	
+Onunlayım. E				I’m with him.
+Onunlalar K					They are with her.
+Onlar bizimle					They are with us.
+Biz onlarlayız					We are with them.
+Sen bizimlesin.				You are with us.
+O E, onunla K				He is with her.
+O K, onunla E				She is with him.
+Çocuklar benimle.				The children with me.
+Annem onlarla.				My mother is with them.
+Bu, senin için					This is for you.
+Bunlar senin için.				These are for you.
+Bunlar senin çocukların için		These are for your children.
+Şunlar bizim için.				Those are for us.
+Şunlar arkadaşlarımız için.			Those are for our friends.
+Seninleyim.					I’m with you.
+Onunlayım E					I’m with him.
+Onunlayım K				I’m with her.
+Onunlayım. C			I’m with it.
+Onunlalar K				They are with her.
+Onunlayız E				We are with him.
+Onlarlayız.				We are with them.
+Onlar benimle.			They are with me.
+Ben onlarla değilim.			I’m not with them.
+Onlar bizimle değil.			They are not with us.
+Sen bizden değilsin.			You are not from us
+Biz onlardan değiliz.			We are not from them.
+Annem onların arkadaşlarıyla.	My mother is with their friends.
+Onların arkadaşları benimle.	Their friends are with me.
+Onlarınkiler bizimkilerle.		Theirs are with ours.
+Bu, senin için.			This is for you.
+Şu, benim için.			That is for me.
+Onlar bizim için.			They are for us.
+Bu para benden.			This money is from me.
+Kitabım onlardan.			My book is from them.
+Sen, onların okulundansın.		You are from their school.
+Okuldan önce seninleyim. 		I’m with you before school.
+Senden sonra onunlayım K	I’m with her after you.
+Bizimkiler seninle.			Ours are with you.
+Arabam bahçenizde.		My car is in your garden.
+Araban bahçemizde.		Your car is in our garden
+Param senin cebinde.		My money is in your pocket.
+Senin paran benim cebimde. 	Your money is in my pocket.
+Seninki benim cebimde.  		Yours is in my pocket.
+Arkadaşlarımız onlarla.		Our friends are with them.
+Senin arkadaşın bizimle.		Your friend is with us.
+Senden sonra buradayım.		I’m here after you.
+Onlardan önce okuldayım.		I’m at the school before them.
+Okulumdan sonra onlarlayım.	I’m with them after my school.
+Senin yüzünden buradayım.	I’m here because of you.
+Onlar yüzünden okulumdayım.	I’m at my school because of them.
+Bizim yüzümüzden mutsuzlar.	They are sad because of us.
+Sizin yüzünüzden sinirliyim.	I’m angry because of you.
+Onun yüzünden E oradayım.	I’m there because of him.
+Bizimkiler burada.			Ours are here.
+Onlarınkiler orada.			Theirs are there.
+Evdeyim.				I’m at home.
+Evdesin.				You are at home.
+O evde E				He is at home.
+O okulda K				She is at the school.
+O bahçede.				It’s in the garden.
+Biz buradayız.			We are here.
+Siz oradasınız.			You are there.
+Onlar benimle.			They are with me.
+Çocuklar okulda.			The children are at the school.
+Annem seninle.			My mother is with you.
+Okuldaki çocuklar mutlu.		The children in the school are happy.
+Türkiyedeki insanlar yorgun.		The people in Turkey are tired.
+Okulun bahçesi büyük.			The garden of the school is big.
+Annemin arkadaşları yaşlı.			The friends of my mother are old.
+Masadaki su soğuk.				The water on the table is cold.
+Ali bizim için burada.			Ali is here for us.
+Arkadaşlarım için Ankaradayım.		I’m in Ankara for my friends.
+Okul için trendeler.				They are on the train for the school.
+Kedi, salondaki halının üstünde.		The cat is on the carpet in the living room.
+Kızgınım.					I’m angry.
+Kızgınsın.					You are angry.
+Ali aç.						Ali is hungary.
+Ayşe Türkiye’den.				Ayşe is from Turkey.
+Senin kedin salonda.			Your cat is in the living room.
+Arabamız sokağın sonunda.		Our car is at the end of the street.
+Ocak ayında İstanbul’dasınız.		You are in İstanbul in January.
+Okuldan sonra evdeyim.			I’m at home after the school.
+Bu araba, senin için.			This car is for you.
+Benim ülkem güçlü. 			My country is strong.
+Baban Salı günü ofiste.			Your father is at the office on Tuesday.
+Televizyondaki insanlar zengin.		The people on TV are rich.
+Denizdeki insanlar mutlu.			The people in the sea are happy.
+Ben Cuma akşamı senin için hazırım.	I’m ready for you on Friday evening.
+Bizim şehrimiz güzel.			Our city is good.
+Yazın Ağustos ayında ailemle beraber Antalyadayım.	I’m in Antalya with my family in August in the summer.
+Haftasonu kızkardeşimle beraber restorandayız.	We are at the restaurant with my sister on the weekend.
+Evdeki köpek, bir kediyle beraber mutfakta.		The dog in the house is with a cat in the kitchen.
+Kalbimdeki kadın, benimle.					The woman in my heart is with me.
+Ofisten arkadaşlarım bir parti için işten sonra bir restoranda.		My friends from the office are at a restaurant after work for a party. 
+Babamın ailesi, Bayram için köyde.		The family of my father is in the village for Bayram.
+Arkadaşımın gözlükleri burada.			The glasses of my friend are here.
+İyiyim. 				I’m fine.
+Meşguller.				They are busy.
+Bugün meşgulüm.			I’m busy today.
+Bahçedeki elmalar kırmızı.		The apples in the garden are red.

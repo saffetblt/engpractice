@@ -141,6 +141,14 @@
   font-size: 0.9rem;
 }
 
+.profile-note.warning {
+  color: #8d4f0d;
+}
+
+.profile-inline-actions {
+  margin-top: 10px;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
