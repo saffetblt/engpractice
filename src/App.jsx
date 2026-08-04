@@ -94,6 +94,7 @@ const STUDY_MODES = [
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'profile']
 const MODE_SET = new Set(MODES)
+const MODE_LOOKUP = new Map(MODES.map((mode) => [mode.toLowerCase(), mode]))
 const STATS_STORAGE_KEY = 'engpractice-stats-v1'
 const VOCAB_MEMORY_STORAGE_KEY = 'engpractice-vocab-memory-v1'
 const TRANSLATION_SMART_STORAGE_KEY = 'engpractice-translation-smart-v1'
@@ -808,7 +809,10 @@ function getSpeechRecognitionErrorMessage(errorCode) {
 }
 
 function normalizeMode(mode) {
-  return MODE_SET.has(mode) ? mode : 'home'
+  if (MODE_SET.has(mode)) {
+    return mode
+  }
+  return MODE_LOOKUP.get(String(mode).toLowerCase()) ?? 'home'
 }
 
 function modeToHash(mode) {
