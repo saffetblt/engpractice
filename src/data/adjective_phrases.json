@@ -249,7 +249,7 @@
     "superlative": "oldest",
     "phrases": {
       "base": "an old phone",
-      "very": "an very old phone",
+      "very": "a very old phone",
       "comparative": "an older phone",
       "superlative": "the oldest phone"
     },
@@ -281,7 +281,7 @@
     "superlative": "oldest",
     "phrases": {
       "base": "an old teacher",
-      "very": "an very old teacher",
+      "very": "a very old teacher",
       "comparative": "an older teacher",
       "superlative": "the oldest teacher"
     },
@@ -313,7 +313,7 @@
     "superlative": "most expensive",
     "phrases": {
       "base": "an expensive watch",
-      "very": "an very expensive watch",
+      "very": "a very expensive watch",
       "comparative": "a more expensive watch",
       "superlative": "the most expensive watch"
     },
@@ -393,7 +393,7 @@
     "superlative": "ugliest",
     "phrases": {
       "base": "an ugly building",
-      "very": "an very ugly building",
+      "very": "a very ugly building",
       "comparative": "an uglier building",
       "superlative": "the ugliest building"
     },
@@ -457,7 +457,7 @@
     "superlative": "easiest",
     "phrases": {
       "base": "an easy question",
-      "very": "an very easy question",
+      "very": "a very easy question",
       "comparative": "an easier question",
       "superlative": "the easiest question"
     },
@@ -617,7 +617,7 @@
     "superlative": "most incorrect",
     "phrases": {
       "base": "an incorrect answer",
-      "very": "an very incorrect answer",
+      "very": "a very incorrect answer",
       "comparative": "a more incorrect answer",
       "superlative": "the most incorrect answer"
     },
@@ -841,7 +841,7 @@
     "superlative": "most intelligent",
     "phrases": {
       "base": "an intelligent scientist",
-      "very": "an very intelligent scientist",
+      "very": "a very intelligent scientist",
       "comparative": "a more intelligent scientist",
       "superlative": "the most intelligent scientist"
     },
@@ -873,7 +873,7 @@
     "superlative": "earliest",
     "phrases": {
       "base": "an early morning",
-      "very": "an very early morning",
+      "very": "a very early morning",
       "comparative": "an earlier morning",
       "superlative": "the earliest morning"
     },
@@ -905,7 +905,7 @@
     "superlative": "emptiest",
     "phrases": {
       "base": "an empty bottle",
-      "very": "an very empty bottle",
+      "very": "a very empty bottle",
       "comparative": "an emptier bottle",
       "superlative": "the emptiest bottle"
     },
@@ -953,7 +953,7 @@
     "superlative": "most open",
     "phrases": {
       "base": "an open window",
-      "very": "an very open window",
+      "very": "a very open window",
       "comparative": "a more open window",
       "superlative": "the most open window"
     },
@@ -1033,7 +1033,7 @@
     "superlative": "most awful",
     "phrases": {
       "base": "an awful smell",
-      "very": "an very awful smell",
+      "very": "a very awful smell",
       "comparative": "a more awful smell",
       "superlative": "the most awful smell"
     },
@@ -1109,13 +1109,13 @@
     "adjective": "ill",
     "turkish": "hasta",
     "noun": "patient",
-    "comparative": "iller",
-    "superlative": "illest",
+    "comparative": "more ill",
+    "superlative": "most ill",
     "phrases": {
       "base": "an ill patient",
-      "very": "an very ill patient",
-      "comparative": "an iller patient",
-      "superlative": "the illest patient"
+      "very": "a very ill patient",
+      "comparative": "a more ill patient",
+      "superlative": "the most ill patient"
     },
     "note": ""
   },
@@ -1241,7 +1241,7 @@
     "superlative": "most important",
     "phrases": {
       "base": "an important meeting",
-      "very": "an very important meeting",
+      "very": "a very important meeting",
       "comparative": "a more important meeting",
       "superlative": "the most important meeting"
     },
@@ -1257,7 +1257,7 @@
     "superlative": "most unimportant",
     "phrases": {
       "base": "an unimportant detail",
-      "very": "an very unimportant detail",
+      "very": "a very unimportant detail",
       "comparative": "a more unimportant detail",
       "superlative": "the most unimportant detail"
     },
@@ -1289,7 +1289,7 @@
     "superlative": "most uncomfortable",
     "phrases": {
       "base": "an uncomfortable bed",
-      "very": "an very uncomfortable bed",
+      "very": "a very uncomfortable bed",
       "comparative": "a more uncomfortable bed",
       "superlative": "the most uncomfortable bed"
     },
@@ -1321,7 +1321,7 @@
     "superlative": "most alive",
     "phrases": {
       "base": "an alive plant",
-      "very": "an very alive plant",
+      "very": "a very alive plant",
       "comparative": "a more alive plant",
       "superlative": "the most alive plant"
     },
@@ -1369,7 +1369,7 @@
     "superlative": "most interesting",
     "phrases": {
       "base": "an interesting story",
-      "very": "an very interesting story",
+      "very": "a very interesting story",
       "comparative": "a more interesting story",
       "superlative": "the most interesting story"
     },
@@ -1417,7 +1417,7 @@
     "superlative": "most exciting",
     "phrases": {
       "base": "an exciting trip",
-      "very": "an very exciting trip",
+      "very": "a very exciting trip",
       "comparative": "a more exciting trip",
       "superlative": "the most exciting trip"
     },
@@ -1433,7 +1433,7 @@
     "superlative": "most ordinary",
     "phrases": {
       "base": "an ordinary day",
-      "very": "an very ordinary day",
+      "very": "a very ordinary day",
       "comparative": "a more ordinary day",
       "superlative": "the most ordinary day"
     },
@@ -1497,7 +1497,7 @@
     "superlative": "most experienced",
     "phrases": {
       "base": "an experienced teacher",
-      "very": "an very experienced teacher",
+      "very": "a very experienced teacher",
       "comparative": "a more experienced teacher",
       "superlative": "the most experienced teacher"
     },
@@ -1513,7 +1513,7 @@
     "superlative": "most inexperienced",
     "phrases": {
       "base": "an inexperienced worker",
-      "very": "an very inexperienced worker",
+      "very": "a very inexperienced worker",
       "comparative": "a more inexperienced worker",
       "superlative": "the most inexperienced worker"
     },
@@ -1609,7 +1609,7 @@
     "superlative": "unhappiest",
     "phrases": {
       "base": "an unhappy employee",
-      "very": "an very unhappy employee",
+      "very": "a very unhappy employee",
       "comparative": "an unhappier employee",
       "superlative": "the unhappiest employee"
     },
@@ -1669,13 +1669,13 @@
     "adjective": "bored",
     "turkish": "sikilmis",
     "noun": "student",
-    "comparative": "boreder",
-    "superlative": "boredest",
+    "comparative": "more bored",
+    "superlative": "most bored",
     "phrases": {
       "base": "a bored student",
       "very": "a very bored student",
-      "comparative": "a boreder student",
-      "superlative": "the boredest student"
+      "comparative": "a more bored student",
+      "superlative": "the most bored student"
     },
     "note": ""
   },
@@ -1685,13 +1685,13 @@
     "adjective": "excited",
     "turkish": "heyecanli",
     "noun": "crowd",
-    "comparative": "exciteder",
-    "superlative": "excitedest",
+    "comparative": "more excited",
+    "superlative": "most excited",
     "phrases": {
       "base": "an excited crowd",
-      "very": "an very excited crowd",
-      "comparative": "an exciteder crowd",
-      "superlative": "the excitedest crowd"
+      "very": "a very excited crowd",
+      "comparative": "a more excited crowd",
+      "superlative": "the most excited crowd"
     },
     "note": ""
   },
@@ -1737,7 +1737,7 @@
     "superlative": "angriest",
     "phrases": {
       "base": "an angry customer",
-      "very": "an very angry customer",
+      "very": "a very angry customer",
       "comparative": "an angrier customer",
       "superlative": "the angriest customer"
     },
@@ -1765,13 +1765,13 @@
     "adjective": "tired",
     "turkish": "yorgun, bitkin, yorulmus",
     "noun": "worker",
-    "comparative": "tireder",
-    "superlative": "tiredest",
+    "comparative": "more tired",
+    "superlative": "most tired",
     "phrases": {
       "base": "a tired worker",
       "very": "a very tired worker",
-      "comparative": "a tireder worker",
-      "superlative": "the tiredest worker"
+      "comparative": "a more tired worker",
+      "superlative": "the most tired worker"
     },
     "note": ""
   },
@@ -1801,7 +1801,7 @@
     "superlative": "excellentest",
     "phrases": {
       "base": "an excellent result",
-      "very": "an very excellent result",
+      "very": "a very excellent result",
       "comparative": "an excellenter result",
       "superlative": "the excellentest result"
     },
@@ -2089,7 +2089,7 @@
     "superlative": "most orange",
     "phrases": {
       "base": "an orange ball",
-      "very": "an very orange ball",
+      "very": "a very orange ball",
       "comparative": "a more orange ball",
       "superlative": "the most orange ball"
     },
