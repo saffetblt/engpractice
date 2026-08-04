@@ -2363,7 +2363,10 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
 
         <article className="drill-column adjective-focus">
           <p className="label">Seçili Sıfat</p>
-          <h2 className="english-word">{current.adjective}</h2>
+          <div className="adjective-title-row">
+            <h2 className="english-word">{current.adjective}</h2>
+            {current.isIrregular && <span className="irregular-badge">Düzensiz</span>}
+          </div>
           <p className="value meaning">{current.turkish}</p>
           <p className="selected-preposition">Seçili kalıp: {selectedModifier.label}</p>
 
@@ -2398,6 +2401,7 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
                       >
                         <span>{item.adjective}</span>
                         <small>{item.turkish}</small>
+                        {item.isIrregular && <em>Düzensiz</em>}
                       </button>
                     </li>
                   ))

@@ -13,7 +13,8 @@
       "comparative": "a more huge building",
       "superlative": "the most huge building"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-002-big",
@@ -29,7 +30,8 @@
       "comparative": "a bigger house",
       "superlative": "the biggest house"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-003-small",
@@ -45,7 +47,8 @@
       "comparative": "a smaller room",
       "superlative": "the smallest room"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-004-little",
@@ -61,7 +64,8 @@
       "comparative": "a smaller child",
       "superlative": "the smallest child"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-005-tiny",
@@ -77,7 +81,8 @@
       "comparative": "a tinier insect",
       "superlative": "the tiniest insect"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-006-short",
@@ -93,7 +98,8 @@
       "comparative": "a shorter story",
       "superlative": "the shortest story"
     },
-    "note": "short length"
+    "note": "short length",
+    "isIrregular": false
   },
   {
     "id": "adj-007-long",
@@ -109,7 +115,8 @@
       "comparative": "a longer road",
       "superlative": "the longest road"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-008-tall",
@@ -125,7 +132,8 @@
       "comparative": "a taller building",
       "superlative": "the tallest building"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-009-short",
@@ -141,7 +149,8 @@
       "comparative": "a shorter man",
       "superlative": "the shortest man"
     },
-    "note": "short height"
+    "note": "short height",
+    "isIrregular": false
   },
   {
     "id": "adj-010-fat",
@@ -157,7 +166,8 @@
       "comparative": "a fatter cat",
       "superlative": "the fattest cat"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-011-chubby",
@@ -173,7 +183,8 @@
       "comparative": "a chubbier baby",
       "superlative": "the chubbiest baby"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-012-fit",
@@ -189,7 +200,8 @@
       "comparative": "a fitter athlete",
       "superlative": "the fittest athlete"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-013-slim",
@@ -205,7 +217,8 @@
       "comparative": "a slimer woman",
       "superlative": "the slimest woman"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-014-thin",
@@ -221,7 +234,8 @@
       "comparative": "a thinner person",
       "superlative": "the thinnest person"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-015-new",
@@ -237,7 +251,8 @@
       "comparative": "a newer car",
       "superlative": "the newest car"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-016-old",
@@ -253,7 +268,8 @@
       "comparative": "an older phone",
       "superlative": "the oldest phone"
     },
-    "note": "old object"
+    "note": "old object",
+    "isIrregular": false
   },
   {
     "id": "adj-017-young",
@@ -269,7 +285,8 @@
       "comparative": "a younger student",
       "superlative": "the youngest student"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-018-old",
@@ -285,7 +302,8 @@
       "comparative": "an older teacher",
       "superlative": "the oldest teacher"
     },
-    "note": "old age"
+    "note": "old age",
+    "isIrregular": false
   },
   {
     "id": "adj-019-cheap",
@@ -301,7 +319,8 @@
       "comparative": "a cheaper ticket",
       "superlative": "the cheapest ticket"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-020-expensive",
@@ -317,7 +336,8 @@
       "comparative": "a more expensive watch",
       "superlative": "the most expensive watch"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-021-free",
@@ -333,7 +353,8 @@
       "comparative": "a more free course",
       "superlative": "the most free course"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-022-cold",
@@ -349,7 +370,8 @@
       "comparative": "a colder drink",
       "superlative": "the coldest drink"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-023-warm",
@@ -365,7 +387,8 @@
       "comparative": "a warmer blanket",
       "superlative": "the warmest blanket"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-024-hot",
@@ -381,7 +404,8 @@
       "comparative": "a hotter soup",
       "superlative": "the hottest soup"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-025-ugly",
@@ -397,7 +421,8 @@
       "comparative": "an uglier building",
       "superlative": "the ugliest building"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-026-beautiful",
@@ -413,7 +438,8 @@
       "comparative": "a more beautiful garden",
       "superlative": "the most beautiful garden"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-027-pretty",
@@ -429,7 +455,8 @@
       "comparative": "a prettier dress",
       "superlative": "the prettiest dress"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-028-cute",
@@ -445,7 +472,8 @@
       "comparative": "a cuter puppy",
       "superlative": "the cutest puppy"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-029-easy",
@@ -461,7 +489,8 @@
       "comparative": "an easier question",
       "superlative": "the easiest question"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-030-simple",
@@ -477,7 +506,8 @@
       "comparative": "a simpler plan",
       "superlative": "the simplest plan"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-031-difficult",
@@ -493,7 +523,8 @@
       "comparative": "a more difficult exam",
       "superlative": "the most difficult exam"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-032-hard",
@@ -509,7 +540,8 @@
       "comparative": "a harder problem",
       "superlative": "the hardest problem"
     },
-    "note": "hard difficulty"
+    "note": "hard difficulty",
+    "isIrregular": false
   },
   {
     "id": "adj-033-left",
@@ -525,7 +557,8 @@
       "comparative": "a more left position",
       "superlative": "the leftmost position"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-034-right",
@@ -541,7 +574,8 @@
       "comparative": "a more right position",
       "superlative": "the rightmost position"
     },
-    "note": "right side"
+    "note": "right side",
+    "isIrregular": false
   },
   {
     "id": "adj-035-right",
@@ -557,7 +591,8 @@
       "comparative": "a more right answer",
       "superlative": "the rightmost answer"
     },
-    "note": "right correct"
+    "note": "right correct",
+    "isIrregular": false
   },
   {
     "id": "adj-036-correct",
@@ -573,7 +608,8 @@
       "comparative": "a more correct answer",
       "superlative": "the most correct answer"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-037-true",
@@ -589,7 +625,8 @@
       "comparative": "a more true story",
       "superlative": "the most true story"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-038-wrong",
@@ -605,7 +642,8 @@
       "comparative": "a wronger answer",
       "superlative": "the wrongest answer"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-039-incorrect",
@@ -621,7 +659,8 @@
       "comparative": "a more incorrect answer",
       "superlative": "the most incorrect answer"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-040-false",
@@ -637,7 +676,8 @@
       "comparative": "a more false statement",
       "superlative": "the most false statement"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-041-light",
@@ -653,7 +693,8 @@
       "comparative": "a lighter bag",
       "superlative": "the lightest bag"
     },
-    "note": "light weight"
+    "note": "light weight",
+    "isIrregular": false
   },
   {
     "id": "adj-042-heavy",
@@ -669,7 +710,8 @@
       "comparative": "a heavier box",
       "superlative": "the heaviest box"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-043-soft",
@@ -685,7 +727,8 @@
       "comparative": "a softer pillow",
       "superlative": "the softest pillow"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-044-hard",
@@ -701,7 +744,8 @@
       "comparative": "a harder stone",
       "superlative": "the hardest stone"
     },
-    "note": "hard texture"
+    "note": "hard texture",
+    "isIrregular": false
   },
   {
     "id": "adj-045-weak",
@@ -717,7 +761,8 @@
       "comparative": "a weaker signal",
       "superlative": "the weakest signal"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-046-strong",
@@ -733,7 +778,8 @@
       "comparative": "a stronger man",
       "superlative": "the strongest man"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-047-poor",
@@ -749,7 +795,8 @@
       "comparative": "a poorer family",
       "superlative": "the poorest family"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-048-rich",
@@ -765,7 +812,8 @@
       "comparative": "a richer businessman",
       "superlative": "the richest businessman"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-049-stupid",
@@ -781,7 +829,8 @@
       "comparative": "a more stupid mistake",
       "superlative": "the most stupid mistake"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-050-silly",
@@ -797,7 +846,8 @@
       "comparative": "a sillier joke",
       "superlative": "the silliest joke"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-051-dumb",
@@ -813,7 +863,8 @@
       "comparative": "a dumber idea",
       "superlative": "the dumbest idea"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-052-clever",
@@ -829,7 +880,8 @@
       "comparative": "a more clever student",
       "superlative": "the most clever student"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-053-intelligent",
@@ -845,7 +897,8 @@
       "comparative": "a more intelligent scientist",
       "superlative": "the most intelligent scientist"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-054-smart",
@@ -861,7 +914,8 @@
       "comparative": "a smarter student",
       "superlative": "the smartest student"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-055-early",
@@ -877,7 +931,8 @@
       "comparative": "an earlier morning",
       "superlative": "the earliest morning"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-056-late",
@@ -893,7 +948,8 @@
       "comparative": "a later train",
       "superlative": "the latest train"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-057-empty",
@@ -909,7 +965,8 @@
       "comparative": "an emptier bottle",
       "superlative": "the emptiest bottle"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-058-full",
@@ -925,7 +982,8 @@
       "comparative": "a fuller glass",
       "superlative": "the fullest glass"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-059-closed",
@@ -941,7 +999,8 @@
       "comparative": "a more closed door",
       "superlative": "the most closed door"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-060-open",
@@ -957,7 +1016,8 @@
       "comparative": "a more open window",
       "superlative": "the most open window"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-061-fantastic",
@@ -973,7 +1033,8 @@
       "comparative": "a more fantastic movie",
       "superlative": "the most fantastic movie"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-062-great",
@@ -989,7 +1050,8 @@
       "comparative": "a greater idea",
       "superlative": "the greatest idea"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-063-good",
@@ -1005,7 +1067,9 @@
       "comparative": "a better book",
       "superlative": "the best book"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "good"
   },
   {
     "id": "adj-064-bad",
@@ -1021,7 +1085,9 @@
       "comparative": "a worse habit",
       "superlative": "the worst habit"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "bad"
   },
   {
     "id": "adj-065-awful",
@@ -1037,7 +1103,8 @@
       "comparative": "a more awful smell",
       "superlative": "the most awful smell"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-066-close",
@@ -1053,7 +1120,8 @@
       "comparative": "a closer friend",
       "superlative": "the closest friend"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-067-far",
@@ -1061,15 +1129,17 @@
     "adjective": "far",
     "turkish": "uzak, uzaktaki",
     "noun": "village",
-    "comparative": "farther",
-    "superlative": "farthest",
+    "comparative": "further",
+    "superlative": "furthest",
     "phrases": {
       "base": "a far village",
       "very": "a very far village",
-      "comparative": "a farther village",
-      "superlative": "the farthest village"
+      "comparative": "a further village",
+      "superlative": "the furthest village"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "far"
   },
   {
     "id": "adj-068-low",
@@ -1085,7 +1155,8 @@
       "comparative": "a lower price",
       "superlative": "the lowest price"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-069-high",
@@ -1101,7 +1172,8 @@
       "comparative": "a higher mountain",
       "superlative": "the highest mountain"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-070-ill",
@@ -1117,7 +1189,8 @@
       "comparative": "a more ill patient",
       "superlative": "the most ill patient"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-071-sick",
@@ -1133,7 +1206,8 @@
       "comparative": "a sicker child",
       "superlative": "the sickest child"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-072-healthy",
@@ -1149,7 +1223,8 @@
       "comparative": "a healthier meal",
       "superlative": "the healthiest meal"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-073-safe",
@@ -1165,7 +1240,8 @@
       "comparative": "a safer road",
       "superlative": "the safest road"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-074-dangerous",
@@ -1181,7 +1257,8 @@
       "comparative": "a more dangerous animal",
       "superlative": "the most dangerous animal"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-075-clean",
@@ -1197,7 +1274,8 @@
       "comparative": "a cleaner room",
       "superlative": "the cleanest room"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-076-tidy",
@@ -1213,7 +1291,8 @@
       "comparative": "a tidier desk",
       "superlative": "the tidiest desk"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-077-dirty",
@@ -1229,7 +1308,8 @@
       "comparative": "a dirtier shirt",
       "superlative": "the dirtiest shirt"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-078-important",
@@ -1245,7 +1325,8 @@
       "comparative": "a more important meeting",
       "superlative": "the most important meeting"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-079-unimportant",
@@ -1261,7 +1342,8 @@
       "comparative": "a more unimportant detail",
       "superlative": "the most unimportant detail"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-080-comfortable",
@@ -1277,7 +1359,8 @@
       "comparative": "a more comfortable chair",
       "superlative": "the most comfortable chair"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-081-uncomfortable",
@@ -1293,7 +1376,8 @@
       "comparative": "a more uncomfortable bed",
       "superlative": "the most uncomfortable bed"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-082-dead",
@@ -1309,7 +1393,8 @@
       "comparative": "a more dead battery",
       "superlative": "the most dead battery"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-083-alive",
@@ -1325,7 +1410,8 @@
       "comparative": "a more alive plant",
       "superlative": "the most alive plant"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-084-boring",
@@ -1341,7 +1427,8 @@
       "comparative": "a more boring lesson",
       "superlative": "the most boring lesson"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-085-weird",
@@ -1357,7 +1444,8 @@
       "comparative": "a more weird noise",
       "superlative": "the most weird noise"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-086-interesting",
@@ -1373,7 +1461,8 @@
       "comparative": "a more interesting story",
       "superlative": "the most interesting story"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-087-fun",
@@ -1389,7 +1478,8 @@
       "comparative": "a more fun game",
       "superlative": "the most fun game"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-088-funny",
@@ -1405,7 +1495,8 @@
       "comparative": "a funnier joke",
       "superlative": "the funniest joke"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-089-exciting",
@@ -1421,7 +1512,8 @@
       "comparative": "a more exciting trip",
       "superlative": "the most exciting trip"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-090-ordinary",
@@ -1437,7 +1529,8 @@
       "comparative": "a more ordinary day",
       "superlative": "the most ordinary day"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-091-special",
@@ -1453,7 +1546,8 @@
       "comparative": "a more special gift",
       "superlative": "the most special gift"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-092-careful",
@@ -1469,7 +1563,8 @@
       "comparative": "a more careful driver",
       "superlative": "the most careful driver"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-093-careless",
@@ -1485,7 +1580,8 @@
       "comparative": "a more careless mistake",
       "superlative": "the most careless mistake"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-094-experienced",
@@ -1501,7 +1597,8 @@
       "comparative": "a more experienced teacher",
       "superlative": "the most experienced teacher"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-095-inexperienced",
@@ -1517,7 +1614,8 @@
       "comparative": "a more inexperienced worker",
       "superlative": "the most inexperienced worker"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-096-fake",
@@ -1533,7 +1631,8 @@
       "comparative": "a more fake passport",
       "superlative": "the most fake passport"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-097-real",
@@ -1549,7 +1648,8 @@
       "comparative": "a more real diamond",
       "superlative": "the most real diamond"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-098-local",
@@ -1565,7 +1665,8 @@
       "comparative": "a more local market",
       "superlative": "the most local market"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-099-national",
@@ -1581,7 +1682,8 @@
       "comparative": "a more national team",
       "superlative": "the most national team"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-100-happy",
@@ -1597,7 +1699,8 @@
       "comparative": "a happier child",
       "superlative": "the happiest child"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-101-unhappy",
@@ -1613,7 +1716,8 @@
       "comparative": "an unhappier employee",
       "superlative": "the unhappiest employee"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-102-sad",
@@ -1629,7 +1733,8 @@
       "comparative": "a sadder song",
       "superlative": "the saddest song"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-103-lazy",
@@ -1645,7 +1750,8 @@
       "comparative": "a lazier student",
       "superlative": "the laziest student"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-104-busy",
@@ -1661,7 +1767,8 @@
       "comparative": "a busier street",
       "superlative": "the busiest street"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-105-bored",
@@ -1677,7 +1784,8 @@
       "comparative": "a more bored student",
       "superlative": "the most bored student"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-106-excited",
@@ -1693,7 +1801,8 @@
       "comparative": "a more excited crowd",
       "superlative": "the most excited crowd"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-107-hungry",
@@ -1709,7 +1818,8 @@
       "comparative": "a hungrier dog",
       "superlative": "the hungriest dog"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-108-thirsty",
@@ -1725,7 +1835,8 @@
       "comparative": "a thirstier traveler",
       "superlative": "the thirstiest traveler"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-109-angry",
@@ -1741,7 +1852,8 @@
       "comparative": "an angrier customer",
       "superlative": "the angriest customer"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-110-calm",
@@ -1757,7 +1869,8 @@
       "comparative": "a calmer sea",
       "superlative": "the calmest sea"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-111-tired",
@@ -1773,7 +1886,8 @@
       "comparative": "a more tired worker",
       "superlative": "the most tired worker"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-112-fresh",
@@ -1789,7 +1903,8 @@
       "comparative": "a fresher bread",
       "superlative": "the freshest bread"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-113-excellent",
@@ -1805,7 +1920,8 @@
       "comparative": "an excellenter result",
       "superlative": "the excellentest result"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-114-perfect",
@@ -1821,7 +1937,8 @@
       "comparative": "a perfecter plan",
       "superlative": "the perfectest plan"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-115-personal",
@@ -1837,7 +1954,8 @@
       "comparative": "a more personal question",
       "superlative": "the most personal question"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-116-public",
@@ -1853,7 +1971,8 @@
       "comparative": "a more public park",
       "superlative": "the most public park"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-117-a-lot-of",
@@ -1869,7 +1988,9 @@
       "comparative": "more people",
       "superlative": "the most people"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "a lot of"
   },
   {
     "id": "adj-118-much",
@@ -1885,7 +2006,9 @@
       "comparative": "more water",
       "superlative": "the most water"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "much"
   },
   {
     "id": "adj-119-many",
@@ -1901,7 +2024,9 @@
       "comparative": "more books",
       "superlative": "the most books"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "many"
   },
   {
     "id": "adj-120-some",
@@ -1909,15 +2034,17 @@
     "adjective": "some",
     "turkish": "biraz, az, birkaç",
     "noun": "tea",
-    "comparative": "more",
-    "superlative": "most",
+    "comparative": "less",
+    "superlative": "least",
     "phrases": {
       "base": "some tea",
       "very": "quite some tea",
-      "comparative": "more tea",
-      "superlative": "the most tea"
+      "comparative": "less tea",
+      "superlative": "the least tea"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "some"
   },
   {
     "id": "adj-121-a-little",
@@ -1933,7 +2060,9 @@
       "comparative": "less sugar",
       "superlative": "the least sugar"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": true,
+    "irregularGroup": "a little"
   },
   {
     "id": "adj-122-a-few",
@@ -1949,7 +2078,8 @@
       "comparative": "fewer friends",
       "superlative": "the fewest friends"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-123-any",
@@ -1965,7 +2095,8 @@
       "comparative": "more chances",
       "superlative": "the most chances"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-124-white",
@@ -1981,7 +2112,8 @@
       "comparative": "a whiter shirt",
       "superlative": "the whitest shirt"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-125-black",
@@ -1997,7 +2129,8 @@
       "comparative": "a blacker car",
       "superlative": "the blackest car"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-126-blue",
@@ -2013,7 +2146,8 @@
       "comparative": "a bluer sky",
       "superlative": "the bluest sky"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-127-green",
@@ -2029,7 +2163,8 @@
       "comparative": "a greener tree",
       "superlative": "the greenest tree"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-128-red",
@@ -2045,7 +2180,8 @@
       "comparative": "a redder apple",
       "superlative": "the reddest apple"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-129-yellow",
@@ -2061,7 +2197,8 @@
       "comparative": "a yellower flower",
       "superlative": "the yellowest flower"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-130-pink",
@@ -2077,7 +2214,8 @@
       "comparative": "a pinker dress",
       "superlative": "the pinkest dress"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-131-orange",
@@ -2093,7 +2231,8 @@
       "comparative": "a more orange ball",
       "superlative": "the most orange ball"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-132-grey",
@@ -2109,7 +2248,8 @@
       "comparative": "a greyer cloud",
       "superlative": "the greyest cloud"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-133-purple",
@@ -2125,7 +2265,8 @@
       "comparative": "a more purple bag",
       "superlative": "the most purple bag"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-134-brown",
@@ -2141,7 +2282,8 @@
       "comparative": "a browner table",
       "superlative": "the brownest table"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-135-dark",
@@ -2157,7 +2299,8 @@
       "comparative": "a darker room",
       "superlative": "the darkest room"
     },
-    "note": ""
+    "note": "",
+    "isIrregular": false
   },
   {
     "id": "adj-136-light",
@@ -2173,6 +2316,7 @@
       "comparative": "a lighter color",
       "superlative": "the lightest color"
     },
-    "note": "light color"
+    "note": "light color",
+    "isIrregular": false
   }
 ]
