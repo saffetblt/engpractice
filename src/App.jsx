@@ -23,6 +23,20 @@ const PREPOSITIONS = [
   'ON',
   'AT',
 ]
+const SPATIAL_PREPOSITIONS = [
+  'IN FRONT OF',
+  'BEHIND',
+  'ON THE LEFT OF',
+  'ON THE RIGHT OF',
+  'ON',
+  'UNDER',
+  'ABOVE',
+  'BELOW',
+  'BESIDE',
+  'NEAR',
+  'BETWEEN',
+  'AMONG',
+]
 const SUBJECT_PRONOUNS = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
 const OBJECT_PRONOUNS = ['me', 'you', 'him', 'her', 'it', 'us', 'you', 'them']
 const POSSESSIVE_ADJECTIVES = ['my', 'your', 'his', 'her', 'its', 'our', 'your', 'their']
@@ -1021,13 +1035,6 @@ function useShuffledDeck(items) {
     setIndex((prev) => (prev - 1 + deck.length) % deck.length)
   }
 
-  function goToIndex(nextIndex) {
-    if (deck.length === 0) {
-      return
-    }
-    setIndex(clamp(nextIndex, 0, deck.length - 1))
-  }
-
   function resetWithItems(nextItems = items) {
     setDeck(shuffleArray(nextItems))
     setIndex(0)
@@ -1044,7 +1051,6 @@ function useShuffledDeck(items) {
     total: deck.length,
     goNext,
     goPrev,
-    goToIndex,
     reshuffle,
     resetWithItems,
   }
@@ -2260,9 +2266,9 @@ function PronounDrillStudy({ onBack, onAction }) {
 }
 
 function AdjectivePhraseStudy({ onBack, onAction }) {
-  const { deck, current, total, index, goNext, goPrev, goToIndex, reshuffle } =
-    useShuffledDeck(adjectivePhrasesData)
+  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(adjectivePhrasesData)
   const [selectedPreposition, setSelectedPreposition] = useState(PREPOSITIONS[0])
+  const [selectedSpatialPreposition, setSelectedSpatialPreposition] = useState(SPATIAL_PREPOSITIONS[0])
 
   if (!current) {
     return (
@@ -2287,7 +2293,7 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
     <section className="study-shell">
       <HeaderBar
         title="Sıfat Tamlamaları"
-        subtitle="Edat + sıfat + isim kalıplarını daha/en halleriyle birlikte tekrar et."
+        subtitle="Edat + konum + sıfat + isim kalıplarını daha/en halleriyle birlikte tekrar et."
         onBack={onBack}
       />
 
@@ -2309,11 +2315,30 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           </ul>
         </article>
 
+        <article className="drill-column">
+          <p className="column-title">Konumlar</p>
+          <ul className="prep-list">
+            {SPATIAL_PREPOSITIONS.map((item) => (
+              <li key={item}>
+                <button
+                  type="button"
+                  className={`prep-btn ${selectedSpatialPreposition === item ? 'active' : ''}`}
+                  onClick={() => setSelectedSpatialPreposition(item)}
+                >
+                  {item}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </article>
+
         <article className="drill-column adjective-focus">
           <p className="label">Seçili Sıfat</p>
           <h2 className="english-word">{current.adjective}</h2>
           <p className="value meaning">{current.turkish}</p>
-          <p className="selected-preposition">Seçili edat: {selectedPreposition}</p>
+          <p className="selected-preposition">
+            Seçili edatlar: {selectedPreposition} · {selectedSpatialPreposition}
+          </p>
 
           <ul className="adjective-phrase-list">
             {phraseRows.map((row) => (
@@ -2366,27 +2391,6 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           >
             Yeni Rastgele Sıra
           </button>
-        </article>
-
-        <article className="drill-column">
-          <p className="column-title">Sıfatlar</p>
-          <ul className="adjective-list">
-            {deck.map((item, itemIndex) => (
-              <li key={item.id}>
-                <button
-                  type="button"
-                  className={`adjective-btn ${item.id === current.id ? 'active' : ''}`}
-                  onClick={() => {
-                    goToIndex(itemIndex)
-                    onAction('next', 'adjectivePhrases')
-                  }}
-                >
-                  <span>{item.adjective}</span>
-                  <small>{item.turkish}</small>
-                </button>
-              </li>
-            ))}
-          </ul>
         </article>
       </div>
     </section>
