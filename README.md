@@ -7,6 +7,10 @@ English speaking and vocabulary practice app built with React + Vite.
 1. Vocabulary study (random word cards)
 2. Oral drill (prepositions + singular/plural frames + random word)
 3. Turkish to English typing practice with instant validation
+4. Pronoun pattern drill
+5. Preposition sentence practice
+6. Am/is/are sentence practice
+7. Adjective phrase practice
 
 ## Local Development
 

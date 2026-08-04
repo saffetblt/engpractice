@@ -3,6 +3,7 @@ import vocabularyData from './data/vocabulary_extracted_all.json'
 import phrasePracticeData from './data/practice_phrases_extracted_all.json'
 import prepositionPlusExercisesData from './data/preposition_plus_exercises.json'
 import locationTimeExercisesData from './data/location_time_exercises.json'
+import adjectivePhrasesData from './data/adjective_phrases.json'
 import './App.css'
 
 const SINGULAR_FRAMES = ['a', 'the', 'this', 'that', 'my', 'your']
@@ -65,6 +66,7 @@ const MODE_LABELS = {
   pronounDrill: 'Zamir Kalıp Alıştırma',
   prepositionPack: 'Edat + Cümle Alıştırmaları',
   locationPack: 'Am Is Are Alıştırması',
+  adjectivePhrases: 'Sıfat Tamlamaları',
 }
 const STUDY_MODES = [
   'vocabulary',
@@ -73,6 +75,7 @@ const STUDY_MODES = [
   'pronounDrill',
   'prepositionPack',
   'locationPack',
+  'adjectivePhrases',
 ]
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'profile']
@@ -105,6 +108,7 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   pronounDrill: 0,
   prepositionPack: 0,
   locationPack: 0,
+  adjectivePhrases: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
@@ -113,6 +117,7 @@ const EMPTY_MODE_VISITS = Object.freeze({
   pronounDrill: 0,
   prepositionPack: 0,
   locationPack: 0,
+  adjectivePhrases: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -230,6 +235,7 @@ function normalizeModeSeconds(value) {
     pronounDrill: toSafeNumber(source.pronounDrill),
     prepositionPack: toSafeNumber(source.prepositionPack),
     locationPack: toSafeNumber(source.locationPack),
+    adjectivePhrases: toSafeNumber(source.adjectivePhrases),
   }
 }
 
@@ -242,6 +248,7 @@ function normalizeModeVisits(value) {
     pronounDrill: toSafeNumber(source.pronounDrill),
     prepositionPack: toSafeNumber(source.prepositionPack),
     locationPack: toSafeNumber(source.locationPack),
+    adjectivePhrases: toSafeNumber(source.adjectivePhrases),
   }
 }
 
@@ -1014,6 +1021,13 @@ function useShuffledDeck(items) {
     setIndex((prev) => (prev - 1 + deck.length) % deck.length)
   }
 
+  function goToIndex(nextIndex) {
+    if (deck.length === 0) {
+      return
+    }
+    setIndex(clamp(nextIndex, 0, deck.length - 1))
+  }
+
   function resetWithItems(nextItems = items) {
     setDeck(shuffleArray(nextItems))
     setIndex(0)
@@ -1030,6 +1044,7 @@ function useShuffledDeck(items) {
     total: deck.length,
     goNext,
     goPrev,
+    goToIndex,
     reshuffle,
     resetWithItems,
   }
@@ -1450,6 +1465,14 @@ function HomePage({ onSelect }) {
           <h2>Am Is Are Alıştırması</h2>
           <p>
             Yeni verdiğin konum/zaman ağırlıklı cümle listesini aynı yazma + ses akışıyla tekrar et.
+          </p>
+        </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('adjectivePhrases')}>
+          <p className="mode-index">7. Çalışma</p>
+          <h2>Sıfat Tamlamaları</h2>
+          <p>
+            Edatları, sıfatları ve daha/en kalıplarını seçili isimlerle birlikte sesli tekrar et.
           </p>
         </button>
 
@@ -2232,6 +2255,140 @@ function PronounDrillStudy({ onBack, onAction }) {
           Yeni Rastgele Sıra
         </button>
       </article>
+    </section>
+  )
+}
+
+function AdjectivePhraseStudy({ onBack, onAction }) {
+  const { deck, current, total, index, goNext, goPrev, goToIndex, reshuffle } =
+    useShuffledDeck(adjectivePhrasesData)
+  const [selectedPreposition, setSelectedPreposition] = useState(PREPOSITIONS[0])
+
+  if (!current) {
+    return (
+      <section className="study-shell">
+        <HeaderBar
+          title="Sıfat Tamlamaları"
+          subtitle="Sıfat listesi yüklenemedi."
+          onBack={onBack}
+        />
+      </section>
+    )
+  }
+
+  const phraseRows = [
+    { label: 'Temel', text: current.phrases.base },
+    { label: 'Çok', text: current.phrases.very },
+    { label: 'Daha', text: current.phrases.comparative },
+    { label: 'En', text: current.phrases.superlative },
+  ]
+
+  return (
+    <section className="study-shell">
+      <HeaderBar
+        title="Sıfat Tamlamaları"
+        subtitle="Edat + sıfat + isim kalıplarını daha/en halleriyle birlikte tekrar et."
+        onBack={onBack}
+      />
+
+      <div className="adjective-grid">
+        <article className="drill-column">
+          <p className="column-title">Edatlar</p>
+          <ul className="prep-list">
+            {PREPOSITIONS.map((item) => (
+              <li key={item}>
+                <button
+                  type="button"
+                  className={`prep-btn ${selectedPreposition === item ? 'active' : ''}`}
+                  onClick={() => setSelectedPreposition(item)}
+                >
+                  {item}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column adjective-focus">
+          <p className="label">Seçili Sıfat</p>
+          <h2 className="english-word">{current.adjective}</h2>
+          <p className="value meaning">{current.turkish}</p>
+          <p className="selected-preposition">Seçili edat: {selectedPreposition}</p>
+
+          <ul className="adjective-phrase-list">
+            {phraseRows.map((row) => (
+              <li key={row.label}>
+                <span className="frame">{row.label}</span>
+                <span className="word">{row.text}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="adjective-meta-row">
+            <span>İsim: {current.noun}</span>
+            <span>Daha: {current.comparative}</span>
+            <span>En: {current.superlative}</span>
+          </div>
+
+          <div className="controls compact">
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={() => {
+                goPrev()
+                onAction('prev', 'adjectivePhrases')
+              }}
+            >
+              ← Geri
+            </button>
+            <span className="counter">
+              {index + 1} / {total}
+            </span>
+            <button
+              type="button"
+              className="nav-btn"
+              onClick={() => {
+                goNext()
+                onAction('next', 'adjectivePhrases')
+              }}
+            >
+              İleri →
+            </button>
+          </div>
+
+          <button
+            type="button"
+            className="shuffle-btn"
+            onClick={() => {
+              reshuffle()
+              onAction('shuffle', 'adjectivePhrases')
+            }}
+          >
+            Yeni Rastgele Sıra
+          </button>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">Sıfatlar</p>
+          <ul className="adjective-list">
+            {deck.map((item, itemIndex) => (
+              <li key={item.id}>
+                <button
+                  type="button"
+                  className={`adjective-btn ${item.id === current.id ? 'active' : ''}`}
+                  onClick={() => {
+                    goToIndex(itemIndex)
+                    onAction('next', 'adjectivePhrases')
+                  }}
+                >
+                  <span>{item.adjective}</span>
+                  <small>{item.turkish}</small>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </article>
+      </div>
     </section>
   )
 }
@@ -3750,6 +3907,9 @@ function App() {
         )}
         {mode === 'locationPack' && (
           <LocationPackStudy onBack={goBack} onAction={trackAction} speechAssist={speechAssist} />
+        )}
+        {mode === 'adjectivePhrases' && (
+          <AdjectivePhraseStudy onBack={goBack} onAction={trackAction} />
         )}
         {mode === 'profile' && (
           <ProfilePage

@@ -1,0 +1,2178 @@
+[
+  {
+    "id": "adj-001-huge",
+    "source_page": 2,
+    "adjective": "huge",
+    "turkish": "iri, devasa, cok buyuk",
+    "noun": "building",
+    "comparative": "more huge",
+    "superlative": "most huge",
+    "phrases": {
+      "base": "a huge building",
+      "very": "a very huge building",
+      "comparative": "a more huge building",
+      "superlative": "the most huge building"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-002-big",
+    "source_page": 2,
+    "adjective": "big",
+    "turkish": "buyuk",
+    "noun": "house",
+    "comparative": "bigger",
+    "superlative": "biggest",
+    "phrases": {
+      "base": "a big house",
+      "very": "a very big house",
+      "comparative": "a bigger house",
+      "superlative": "the biggest house"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-003-small",
+    "source_page": 2,
+    "adjective": "small",
+    "turkish": "kucuk",
+    "noun": "room",
+    "comparative": "smaller",
+    "superlative": "smallest",
+    "phrases": {
+      "base": "a small room",
+      "very": "a very small room",
+      "comparative": "a smaller room",
+      "superlative": "the smallest room"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-004-little",
+    "source_page": 2,
+    "adjective": "little",
+    "turkish": "minik",
+    "noun": "child",
+    "comparative": "smaller",
+    "superlative": "smallest",
+    "phrases": {
+      "base": "a little child",
+      "very": "a very little child",
+      "comparative": "a smaller child",
+      "superlative": "the smallest child"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-005-tiny",
+    "source_page": 2,
+    "adjective": "tiny",
+    "turkish": "minnacik, kucucuk",
+    "noun": "insect",
+    "comparative": "tinier",
+    "superlative": "tiniest",
+    "phrases": {
+      "base": "a tiny insect",
+      "very": "a very tiny insect",
+      "comparative": "a tinier insect",
+      "superlative": "the tiniest insect"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-006-short",
+    "source_page": 3,
+    "adjective": "short",
+    "turkish": "kisa",
+    "noun": "story",
+    "comparative": "shorter",
+    "superlative": "shortest",
+    "phrases": {
+      "base": "a short story",
+      "very": "a very short story",
+      "comparative": "a shorter story",
+      "superlative": "the shortest story"
+    },
+    "note": "short length"
+  },
+  {
+    "id": "adj-007-long",
+    "source_page": 3,
+    "adjective": "long",
+    "turkish": "uzun",
+    "noun": "road",
+    "comparative": "longer",
+    "superlative": "longest",
+    "phrases": {
+      "base": "a long road",
+      "very": "a very long road",
+      "comparative": "a longer road",
+      "superlative": "the longest road"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-008-tall",
+    "source_page": 3,
+    "adjective": "tall",
+    "turkish": "uzun",
+    "noun": "building",
+    "comparative": "taller",
+    "superlative": "tallest",
+    "phrases": {
+      "base": "a tall building",
+      "very": "a very tall building",
+      "comparative": "a taller building",
+      "superlative": "the tallest building"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-009-short",
+    "source_page": 3,
+    "adjective": "short",
+    "turkish": "kisa",
+    "noun": "man",
+    "comparative": "shorter",
+    "superlative": "shortest",
+    "phrases": {
+      "base": "a short man",
+      "very": "a very short man",
+      "comparative": "a shorter man",
+      "superlative": "the shortest man"
+    },
+    "note": "short height"
+  },
+  {
+    "id": "adj-010-fat",
+    "source_page": 4,
+    "adjective": "fat",
+    "turkish": "sisman",
+    "noun": "cat",
+    "comparative": "fatter",
+    "superlative": "fattest",
+    "phrases": {
+      "base": "a fat cat",
+      "very": "a very fat cat",
+      "comparative": "a fatter cat",
+      "superlative": "the fattest cat"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-011-chubby",
+    "source_page": 4,
+    "adjective": "chubby",
+    "turkish": "etine dolgun",
+    "noun": "baby",
+    "comparative": "chubbier",
+    "superlative": "chubbiest",
+    "phrases": {
+      "base": "a chubby baby",
+      "very": "a very chubby baby",
+      "comparative": "a chubbier baby",
+      "superlative": "the chubbiest baby"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-012-fit",
+    "source_page": 4,
+    "adjective": "fit",
+    "turkish": "formunda",
+    "noun": "athlete",
+    "comparative": "fitter",
+    "superlative": "fittest",
+    "phrases": {
+      "base": "a fit athlete",
+      "very": "a very fit athlete",
+      "comparative": "a fitter athlete",
+      "superlative": "the fittest athlete"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-013-slim",
+    "source_page": 4,
+    "adjective": "slim",
+    "turkish": "zayifca",
+    "noun": "woman",
+    "comparative": "slimer",
+    "superlative": "slimest",
+    "phrases": {
+      "base": "a slim woman",
+      "very": "a very slim woman",
+      "comparative": "a slimer woman",
+      "superlative": "the slimest woman"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-014-thin",
+    "source_page": 4,
+    "adjective": "thin",
+    "turkish": "zayif",
+    "noun": "person",
+    "comparative": "thinner",
+    "superlative": "thinnest",
+    "phrases": {
+      "base": "a thin person",
+      "very": "a very thin person",
+      "comparative": "a thinner person",
+      "superlative": "the thinnest person"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-015-new",
+    "source_page": 5,
+    "adjective": "new",
+    "turkish": "yeni",
+    "noun": "car",
+    "comparative": "newer",
+    "superlative": "newest",
+    "phrases": {
+      "base": "a new car",
+      "very": "a very new car",
+      "comparative": "a newer car",
+      "superlative": "the newest car"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-016-old",
+    "source_page": 5,
+    "adjective": "old",
+    "turkish": "eski",
+    "noun": "phone",
+    "comparative": "older",
+    "superlative": "oldest",
+    "phrases": {
+      "base": "an old phone",
+      "very": "an very old phone",
+      "comparative": "an older phone",
+      "superlative": "the oldest phone"
+    },
+    "note": "old object"
+  },
+  {
+    "id": "adj-017-young",
+    "source_page": 5,
+    "adjective": "young",
+    "turkish": "genc",
+    "noun": "student",
+    "comparative": "younger",
+    "superlative": "youngest",
+    "phrases": {
+      "base": "a young student",
+      "very": "a very young student",
+      "comparative": "a younger student",
+      "superlative": "the youngest student"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-018-old",
+    "source_page": 5,
+    "adjective": "old",
+    "turkish": "yasli",
+    "noun": "teacher",
+    "comparative": "older",
+    "superlative": "oldest",
+    "phrases": {
+      "base": "an old teacher",
+      "very": "an very old teacher",
+      "comparative": "an older teacher",
+      "superlative": "the oldest teacher"
+    },
+    "note": "old age"
+  },
+  {
+    "id": "adj-019-cheap",
+    "source_page": 6,
+    "adjective": "cheap",
+    "turkish": "ucuz",
+    "noun": "ticket",
+    "comparative": "cheaper",
+    "superlative": "cheapest",
+    "phrases": {
+      "base": "a cheap ticket",
+      "very": "a very cheap ticket",
+      "comparative": "a cheaper ticket",
+      "superlative": "the cheapest ticket"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-020-expensive",
+    "source_page": 6,
+    "adjective": "expensive",
+    "turkish": "pahali",
+    "noun": "watch",
+    "comparative": "more expensive",
+    "superlative": "most expensive",
+    "phrases": {
+      "base": "an expensive watch",
+      "very": "an very expensive watch",
+      "comparative": "a more expensive watch",
+      "superlative": "the most expensive watch"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-021-free",
+    "source_page": 6,
+    "adjective": "free",
+    "turkish": "bedava, ucretsiz",
+    "noun": "course",
+    "comparative": "more free",
+    "superlative": "most free",
+    "phrases": {
+      "base": "a free course",
+      "very": "a very free course",
+      "comparative": "a more free course",
+      "superlative": "the most free course"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-022-cold",
+    "source_page": 7,
+    "adjective": "cold",
+    "turkish": "soguk",
+    "noun": "drink",
+    "comparative": "colder",
+    "superlative": "coldest",
+    "phrases": {
+      "base": "a cold drink",
+      "very": "a very cold drink",
+      "comparative": "a colder drink",
+      "superlative": "the coldest drink"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-023-warm",
+    "source_page": 7,
+    "adjective": "warm",
+    "turkish": "ilik",
+    "noun": "blanket",
+    "comparative": "warmer",
+    "superlative": "warmest",
+    "phrases": {
+      "base": "a warm blanket",
+      "very": "a very warm blanket",
+      "comparative": "a warmer blanket",
+      "superlative": "the warmest blanket"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-024-hot",
+    "source_page": 7,
+    "adjective": "hot",
+    "turkish": "sicak",
+    "noun": "soup",
+    "comparative": "hotter",
+    "superlative": "hottest",
+    "phrases": {
+      "base": "a hot soup",
+      "very": "a very hot soup",
+      "comparative": "a hotter soup",
+      "superlative": "the hottest soup"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-025-ugly",
+    "source_page": 8,
+    "adjective": "ugly",
+    "turkish": "cirkin",
+    "noun": "building",
+    "comparative": "uglier",
+    "superlative": "ugliest",
+    "phrases": {
+      "base": "an ugly building",
+      "very": "an very ugly building",
+      "comparative": "an uglier building",
+      "superlative": "the ugliest building"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-026-beautiful",
+    "source_page": 8,
+    "adjective": "beautiful",
+    "turkish": "guzel",
+    "noun": "garden",
+    "comparative": "more beautiful",
+    "superlative": "most beautiful",
+    "phrases": {
+      "base": "a beautiful garden",
+      "very": "a very beautiful garden",
+      "comparative": "a more beautiful garden",
+      "superlative": "the most beautiful garden"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-027-pretty",
+    "source_page": 8,
+    "adjective": "pretty",
+    "turkish": "tatli, sevimli",
+    "noun": "dress",
+    "comparative": "prettier",
+    "superlative": "prettiest",
+    "phrases": {
+      "base": "a pretty dress",
+      "very": "a very pretty dress",
+      "comparative": "a prettier dress",
+      "superlative": "the prettiest dress"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-028-cute",
+    "source_page": 8,
+    "adjective": "cute",
+    "turkish": "tatli, sevimli",
+    "noun": "puppy",
+    "comparative": "cuter",
+    "superlative": "cutest",
+    "phrases": {
+      "base": "a cute puppy",
+      "very": "a very cute puppy",
+      "comparative": "a cuter puppy",
+      "superlative": "the cutest puppy"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-029-easy",
+    "source_page": 9,
+    "adjective": "easy",
+    "turkish": "kolay, basit",
+    "noun": "question",
+    "comparative": "easier",
+    "superlative": "easiest",
+    "phrases": {
+      "base": "an easy question",
+      "very": "an very easy question",
+      "comparative": "an easier question",
+      "superlative": "the easiest question"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-030-simple",
+    "source_page": 9,
+    "adjective": "simple",
+    "turkish": "kolay, basit",
+    "noun": "plan",
+    "comparative": "simpler",
+    "superlative": "simplest",
+    "phrases": {
+      "base": "a simple plan",
+      "very": "a very simple plan",
+      "comparative": "a simpler plan",
+      "superlative": "the simplest plan"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-031-difficult",
+    "source_page": 9,
+    "adjective": "difficult",
+    "turkish": "zor, guc",
+    "noun": "exam",
+    "comparative": "more difficult",
+    "superlative": "most difficult",
+    "phrases": {
+      "base": "a difficult exam",
+      "very": "a very difficult exam",
+      "comparative": "a more difficult exam",
+      "superlative": "the most difficult exam"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-032-hard",
+    "source_page": 9,
+    "adjective": "hard",
+    "turkish": "zor, guc",
+    "noun": "problem",
+    "comparative": "harder",
+    "superlative": "hardest",
+    "phrases": {
+      "base": "a hard problem",
+      "very": "a very hard problem",
+      "comparative": "a harder problem",
+      "superlative": "the hardest problem"
+    },
+    "note": "hard difficulty"
+  },
+  {
+    "id": "adj-033-left",
+    "source_page": 10,
+    "adjective": "left",
+    "turkish": "sol",
+    "noun": "position",
+    "comparative": "more left",
+    "superlative": "leftmost",
+    "phrases": {
+      "base": "a left position",
+      "very": "a very left position",
+      "comparative": "a more left position",
+      "superlative": "the leftmost position"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-034-right",
+    "source_page": 10,
+    "adjective": "right",
+    "turkish": "sag",
+    "noun": "position",
+    "comparative": "more right",
+    "superlative": "rightmost",
+    "phrases": {
+      "base": "a right position",
+      "very": "a very right position",
+      "comparative": "a more right position",
+      "superlative": "the rightmost position"
+    },
+    "note": "right side"
+  },
+  {
+    "id": "adj-035-right",
+    "source_page": 11,
+    "adjective": "right",
+    "turkish": "dogru, hakli",
+    "noun": "answer",
+    "comparative": "more right",
+    "superlative": "rightmost",
+    "phrases": {
+      "base": "a right answer",
+      "very": "a very right answer",
+      "comparative": "a more right answer",
+      "superlative": "the rightmost answer"
+    },
+    "note": "right correct"
+  },
+  {
+    "id": "adj-036-correct",
+    "source_page": 11,
+    "adjective": "correct",
+    "turkish": "dogru",
+    "noun": "answer",
+    "comparative": "more correct",
+    "superlative": "most correct",
+    "phrases": {
+      "base": "a correct answer",
+      "very": "a very correct answer",
+      "comparative": "a more correct answer",
+      "superlative": "the most correct answer"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-037-true",
+    "source_page": 11,
+    "adjective": "true",
+    "turkish": "dogru, gercek",
+    "noun": "story",
+    "comparative": "more true",
+    "superlative": "most true",
+    "phrases": {
+      "base": "a true story",
+      "very": "a very true story",
+      "comparative": "a more true story",
+      "superlative": "the most true story"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-038-wrong",
+    "source_page": 11,
+    "adjective": "wrong",
+    "turkish": "yanlis, haksiz",
+    "noun": "answer",
+    "comparative": "wronger",
+    "superlative": "wrongest",
+    "phrases": {
+      "base": "a wrong answer",
+      "very": "a very wrong answer",
+      "comparative": "a wronger answer",
+      "superlative": "the wrongest answer"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-039-incorrect",
+    "source_page": 11,
+    "adjective": "incorrect",
+    "turkish": "yanlis",
+    "noun": "answer",
+    "comparative": "more incorrect",
+    "superlative": "most incorrect",
+    "phrases": {
+      "base": "an incorrect answer",
+      "very": "an very incorrect answer",
+      "comparative": "a more incorrect answer",
+      "superlative": "the most incorrect answer"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-040-false",
+    "source_page": 11,
+    "adjective": "false",
+    "turkish": "yalan, yanlis, gercek disi",
+    "noun": "statement",
+    "comparative": "more false",
+    "superlative": "most false",
+    "phrases": {
+      "base": "a false statement",
+      "very": "a very false statement",
+      "comparative": "a more false statement",
+      "superlative": "the most false statement"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-041-light",
+    "source_page": 12,
+    "adjective": "light",
+    "turkish": "hafif, agir olmayan",
+    "noun": "bag",
+    "comparative": "lighter",
+    "superlative": "lightest",
+    "phrases": {
+      "base": "a light bag",
+      "very": "a very light bag",
+      "comparative": "a lighter bag",
+      "superlative": "the lightest bag"
+    },
+    "note": "light weight"
+  },
+  {
+    "id": "adj-042-heavy",
+    "source_page": 12,
+    "adjective": "heavy",
+    "turkish": "agir",
+    "noun": "box",
+    "comparative": "heavier",
+    "superlative": "heaviest",
+    "phrases": {
+      "base": "a heavy box",
+      "very": "a very heavy box",
+      "comparative": "a heavier box",
+      "superlative": "the heaviest box"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-043-soft",
+    "source_page": 13,
+    "adjective": "soft",
+    "turkish": "yumusak, sert olmayan",
+    "noun": "pillow",
+    "comparative": "softer",
+    "superlative": "softest",
+    "phrases": {
+      "base": "a soft pillow",
+      "very": "a very soft pillow",
+      "comparative": "a softer pillow",
+      "superlative": "the softest pillow"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-044-hard",
+    "source_page": 13,
+    "adjective": "hard",
+    "turkish": "sert, yumusak olmayan",
+    "noun": "stone",
+    "comparative": "harder",
+    "superlative": "hardest",
+    "phrases": {
+      "base": "a hard stone",
+      "very": "a very hard stone",
+      "comparative": "a harder stone",
+      "superlative": "the hardest stone"
+    },
+    "note": "hard texture"
+  },
+  {
+    "id": "adj-045-weak",
+    "source_page": 14,
+    "adjective": "weak",
+    "turkish": "gucsuz, celimsiz, zayif",
+    "noun": "signal",
+    "comparative": "weaker",
+    "superlative": "weakest",
+    "phrases": {
+      "base": "a weak signal",
+      "very": "a very weak signal",
+      "comparative": "a weaker signal",
+      "superlative": "the weakest signal"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-046-strong",
+    "source_page": 14,
+    "adjective": "strong",
+    "turkish": "guclu, kuvvetli",
+    "noun": "man",
+    "comparative": "stronger",
+    "superlative": "strongest",
+    "phrases": {
+      "base": "a strong man",
+      "very": "a very strong man",
+      "comparative": "a stronger man",
+      "superlative": "the strongest man"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-047-poor",
+    "source_page": 14,
+    "adjective": "poor",
+    "turkish": "fakir, parasiz, gariban",
+    "noun": "family",
+    "comparative": "poorer",
+    "superlative": "poorest",
+    "phrases": {
+      "base": "a poor family",
+      "very": "a very poor family",
+      "comparative": "a poorer family",
+      "superlative": "the poorest family"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-048-rich",
+    "source_page": 14,
+    "adjective": "rich",
+    "turkish": "zengin, parali, varlikli",
+    "noun": "businessman",
+    "comparative": "richer",
+    "superlative": "richest",
+    "phrases": {
+      "base": "a rich businessman",
+      "very": "a very rich businessman",
+      "comparative": "a richer businessman",
+      "superlative": "the richest businessman"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-049-stupid",
+    "source_page": 15,
+    "adjective": "stupid",
+    "turkish": "aptal, salak, sapsal",
+    "noun": "mistake",
+    "comparative": "more stupid",
+    "superlative": "most stupid",
+    "phrases": {
+      "base": "a stupid mistake",
+      "very": "a very stupid mistake",
+      "comparative": "a more stupid mistake",
+      "superlative": "the most stupid mistake"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-050-silly",
+    "source_page": 15,
+    "adjective": "silly",
+    "turkish": "aptal, salak, sapsal",
+    "noun": "joke",
+    "comparative": "sillier",
+    "superlative": "silliest",
+    "phrases": {
+      "base": "a silly joke",
+      "very": "a very silly joke",
+      "comparative": "a sillier joke",
+      "superlative": "the silliest joke"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-051-dumb",
+    "source_page": 15,
+    "adjective": "dumb",
+    "turkish": "aptal, salak, sapsal",
+    "noun": "idea",
+    "comparative": "dumber",
+    "superlative": "dumbest",
+    "phrases": {
+      "base": "a dumb idea",
+      "very": "a very dumb idea",
+      "comparative": "a dumber idea",
+      "superlative": "the dumbest idea"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-052-clever",
+    "source_page": 15,
+    "adjective": "clever",
+    "turkish": "akilli, zeki, bilgili",
+    "noun": "student",
+    "comparative": "more clever",
+    "superlative": "most clever",
+    "phrases": {
+      "base": "a clever student",
+      "very": "a very clever student",
+      "comparative": "a more clever student",
+      "superlative": "the most clever student"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-053-intelligent",
+    "source_page": 15,
+    "adjective": "intelligent",
+    "turkish": "akilli, zeki, bilgili",
+    "noun": "scientist",
+    "comparative": "more intelligent",
+    "superlative": "most intelligent",
+    "phrases": {
+      "base": "an intelligent scientist",
+      "very": "an very intelligent scientist",
+      "comparative": "a more intelligent scientist",
+      "superlative": "the most intelligent scientist"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-054-smart",
+    "source_page": 15,
+    "adjective": "smart",
+    "turkish": "akilli, zeki, bilgili",
+    "noun": "student",
+    "comparative": "smarter",
+    "superlative": "smartest",
+    "phrases": {
+      "base": "a smart student",
+      "very": "a very smart student",
+      "comparative": "a smarter student",
+      "superlative": "the smartest student"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-055-early",
+    "source_page": 16,
+    "adjective": "early",
+    "turkish": "erken, erkenci",
+    "noun": "morning",
+    "comparative": "earlier",
+    "superlative": "earliest",
+    "phrases": {
+      "base": "an early morning",
+      "very": "an very early morning",
+      "comparative": "an earlier morning",
+      "superlative": "the earliest morning"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-056-late",
+    "source_page": 16,
+    "adjective": "late",
+    "turkish": "gec, gec kalan",
+    "noun": "train",
+    "comparative": "later",
+    "superlative": "latest",
+    "phrases": {
+      "base": "a late train",
+      "very": "a very late train",
+      "comparative": "a later train",
+      "superlative": "the latest train"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-057-empty",
+    "source_page": 17,
+    "adjective": "empty",
+    "turkish": "bos",
+    "noun": "bottle",
+    "comparative": "emptier",
+    "superlative": "emptiest",
+    "phrases": {
+      "base": "an empty bottle",
+      "very": "an very empty bottle",
+      "comparative": "an emptier bottle",
+      "superlative": "the emptiest bottle"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-058-full",
+    "source_page": 17,
+    "adjective": "full",
+    "turkish": "dolu",
+    "noun": "glass",
+    "comparative": "fuller",
+    "superlative": "fullest",
+    "phrases": {
+      "base": "a full glass",
+      "very": "a very full glass",
+      "comparative": "a fuller glass",
+      "superlative": "the fullest glass"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-059-closed",
+    "source_page": 18,
+    "adjective": "closed",
+    "turkish": "kapali",
+    "noun": "door",
+    "comparative": "more closed",
+    "superlative": "most closed",
+    "phrases": {
+      "base": "a closed door",
+      "very": "a very closed door",
+      "comparative": "a more closed door",
+      "superlative": "the most closed door"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-060-open",
+    "source_page": 18,
+    "adjective": "open",
+    "turkish": "acik",
+    "noun": "window",
+    "comparative": "more open",
+    "superlative": "most open",
+    "phrases": {
+      "base": "an open window",
+      "very": "an very open window",
+      "comparative": "a more open window",
+      "superlative": "the most open window"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-061-fantastic",
+    "source_page": 19,
+    "adjective": "fantastic",
+    "turkish": "harika, sahane, super, olaganustu",
+    "noun": "movie",
+    "comparative": "more fantastic",
+    "superlative": "most fantastic",
+    "phrases": {
+      "base": "a fantastic movie",
+      "very": "a very fantastic movie",
+      "comparative": "a more fantastic movie",
+      "superlative": "the most fantastic movie"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-062-great",
+    "source_page": 19,
+    "adjective": "great",
+    "turkish": "cok iyi, cok guzel, cok keyifli",
+    "noun": "idea",
+    "comparative": "greater",
+    "superlative": "greatest",
+    "phrases": {
+      "base": "a great idea",
+      "very": "a very great idea",
+      "comparative": "a greater idea",
+      "superlative": "the greatest idea"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-063-good",
+    "source_page": 19,
+    "adjective": "good",
+    "turkish": "iyi, keyifli, faydali",
+    "noun": "book",
+    "comparative": "better",
+    "superlative": "best",
+    "phrases": {
+      "base": "a good book",
+      "very": "a very good book",
+      "comparative": "a better book",
+      "superlative": "the best book"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-064-bad",
+    "source_page": 20,
+    "adjective": "bad",
+    "turkish": "kotu, fena, zararli",
+    "noun": "habit",
+    "comparative": "worse",
+    "superlative": "worst",
+    "phrases": {
+      "base": "a bad habit",
+      "very": "a very bad habit",
+      "comparative": "a worse habit",
+      "superlative": "the worst habit"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-065-awful",
+    "source_page": 20,
+    "adjective": "awful",
+    "turkish": "cok kotu, rezalet, rezil, cok fena",
+    "noun": "smell",
+    "comparative": "more awful",
+    "superlative": "most awful",
+    "phrases": {
+      "base": "an awful smell",
+      "very": "an very awful smell",
+      "comparative": "a more awful smell",
+      "superlative": "the most awful smell"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-066-close",
+    "source_page": 21,
+    "adjective": "close",
+    "turkish": "yakin, yakindaki",
+    "noun": "friend",
+    "comparative": "closer",
+    "superlative": "closest",
+    "phrases": {
+      "base": "a close friend",
+      "very": "a very close friend",
+      "comparative": "a closer friend",
+      "superlative": "the closest friend"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-067-far",
+    "source_page": 21,
+    "adjective": "far",
+    "turkish": "uzak, uzaktaki",
+    "noun": "village",
+    "comparative": "farther",
+    "superlative": "farthest",
+    "phrases": {
+      "base": "a far village",
+      "very": "a very far village",
+      "comparative": "a farther village",
+      "superlative": "the farthest village"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-068-low",
+    "source_page": 22,
+    "adjective": "low",
+    "turkish": "alcak, dusuk",
+    "noun": "price",
+    "comparative": "lower",
+    "superlative": "lowest",
+    "phrases": {
+      "base": "a low price",
+      "very": "a very low price",
+      "comparative": "a lower price",
+      "superlative": "the lowest price"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-069-high",
+    "source_page": 22,
+    "adjective": "high",
+    "turkish": "yuksek, uzun",
+    "noun": "mountain",
+    "comparative": "higher",
+    "superlative": "highest",
+    "phrases": {
+      "base": "a high mountain",
+      "very": "a very high mountain",
+      "comparative": "a higher mountain",
+      "superlative": "the highest mountain"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-070-ill",
+    "source_page": 23,
+    "adjective": "ill",
+    "turkish": "hasta",
+    "noun": "patient",
+    "comparative": "iller",
+    "superlative": "illest",
+    "phrases": {
+      "base": "an ill patient",
+      "very": "an very ill patient",
+      "comparative": "an iller patient",
+      "superlative": "the illest patient"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-071-sick",
+    "source_page": 23,
+    "adjective": "sick",
+    "turkish": "cok hasta",
+    "noun": "child",
+    "comparative": "sicker",
+    "superlative": "sickest",
+    "phrases": {
+      "base": "a sick child",
+      "very": "a very sick child",
+      "comparative": "a sicker child",
+      "superlative": "the sickest child"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-072-healthy",
+    "source_page": 23,
+    "adjective": "healthy",
+    "turkish": "saglikli",
+    "noun": "meal",
+    "comparative": "healthier",
+    "superlative": "healthiest",
+    "phrases": {
+      "base": "a healthy meal",
+      "very": "a very healthy meal",
+      "comparative": "a healthier meal",
+      "superlative": "the healthiest meal"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-073-safe",
+    "source_page": 24,
+    "adjective": "safe",
+    "turkish": "guvenli",
+    "noun": "road",
+    "comparative": "safer",
+    "superlative": "safest",
+    "phrases": {
+      "base": "a safe road",
+      "very": "a very safe road",
+      "comparative": "a safer road",
+      "superlative": "the safest road"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-074-dangerous",
+    "source_page": 24,
+    "adjective": "dangerous",
+    "turkish": "tehlikeli",
+    "noun": "animal",
+    "comparative": "more dangerous",
+    "superlative": "most dangerous",
+    "phrases": {
+      "base": "a dangerous animal",
+      "very": "a very dangerous animal",
+      "comparative": "a more dangerous animal",
+      "superlative": "the most dangerous animal"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-075-clean",
+    "source_page": 25,
+    "adjective": "clean",
+    "turkish": "temiz, pak",
+    "noun": "room",
+    "comparative": "cleaner",
+    "superlative": "cleanest",
+    "phrases": {
+      "base": "a clean room",
+      "very": "a very clean room",
+      "comparative": "a cleaner room",
+      "superlative": "the cleanest room"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-076-tidy",
+    "source_page": 25,
+    "adjective": "tidy",
+    "turkish": "duzenli, tertipli",
+    "noun": "desk",
+    "comparative": "tidier",
+    "superlative": "tidiest",
+    "phrases": {
+      "base": "a tidy desk",
+      "very": "a very tidy desk",
+      "comparative": "a tidier desk",
+      "superlative": "the tidiest desk"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-077-dirty",
+    "source_page": 25,
+    "adjective": "dirty",
+    "turkish": "pis, kirli",
+    "noun": "shirt",
+    "comparative": "dirtier",
+    "superlative": "dirtiest",
+    "phrases": {
+      "base": "a dirty shirt",
+      "very": "a very dirty shirt",
+      "comparative": "a dirtier shirt",
+      "superlative": "the dirtiest shirt"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-078-important",
+    "source_page": 26,
+    "adjective": "important",
+    "turkish": "onemli",
+    "noun": "meeting",
+    "comparative": "more important",
+    "superlative": "most important",
+    "phrases": {
+      "base": "an important meeting",
+      "very": "an very important meeting",
+      "comparative": "a more important meeting",
+      "superlative": "the most important meeting"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-079-unimportant",
+    "source_page": 26,
+    "adjective": "unimportant",
+    "turkish": "onemsiz",
+    "noun": "detail",
+    "comparative": "more unimportant",
+    "superlative": "most unimportant",
+    "phrases": {
+      "base": "an unimportant detail",
+      "very": "an very unimportant detail",
+      "comparative": "a more unimportant detail",
+      "superlative": "the most unimportant detail"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-080-comfortable",
+    "source_page": 26,
+    "adjective": "comfortable",
+    "turkish": "rahat, konforlu",
+    "noun": "chair",
+    "comparative": "more comfortable",
+    "superlative": "most comfortable",
+    "phrases": {
+      "base": "a comfortable chair",
+      "very": "a very comfortable chair",
+      "comparative": "a more comfortable chair",
+      "superlative": "the most comfortable chair"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-081-uncomfortable",
+    "source_page": 26,
+    "adjective": "uncomfortable",
+    "turkish": "rahatsiz, konforsuz",
+    "noun": "bed",
+    "comparative": "more uncomfortable",
+    "superlative": "most uncomfortable",
+    "phrases": {
+      "base": "an uncomfortable bed",
+      "very": "an very uncomfortable bed",
+      "comparative": "a more uncomfortable bed",
+      "superlative": "the most uncomfortable bed"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-082-dead",
+    "source_page": 27,
+    "adjective": "dead",
+    "turkish": "olu, olmus",
+    "noun": "battery",
+    "comparative": "more dead",
+    "superlative": "most dead",
+    "phrases": {
+      "base": "a dead battery",
+      "very": "a very dead battery",
+      "comparative": "a more dead battery",
+      "superlative": "the most dead battery"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-083-alive",
+    "source_page": 27,
+    "adjective": "alive",
+    "turkish": "canli, diri, hayatta",
+    "noun": "plant",
+    "comparative": "more alive",
+    "superlative": "most alive",
+    "phrases": {
+      "base": "an alive plant",
+      "very": "an very alive plant",
+      "comparative": "a more alive plant",
+      "superlative": "the most alive plant"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-084-boring",
+    "source_page": 28,
+    "adjective": "boring",
+    "turkish": "sikici, keyifsiz, miskin",
+    "noun": "lesson",
+    "comparative": "more boring",
+    "superlative": "most boring",
+    "phrases": {
+      "base": "a boring lesson",
+      "very": "a very boring lesson",
+      "comparative": "a more boring lesson",
+      "superlative": "the most boring lesson"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-085-weird",
+    "source_page": 28,
+    "adjective": "weird",
+    "turkish": "acaip, garip, degisik",
+    "noun": "noise",
+    "comparative": "more weird",
+    "superlative": "most weird",
+    "phrases": {
+      "base": "a weird noise",
+      "very": "a very weird noise",
+      "comparative": "a more weird noise",
+      "superlative": "the most weird noise"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-086-interesting",
+    "source_page": 29,
+    "adjective": "interesting",
+    "turkish": "ilginc, ilgi cekici",
+    "noun": "story",
+    "comparative": "more interesting",
+    "superlative": "most interesting",
+    "phrases": {
+      "base": "an interesting story",
+      "very": "an very interesting story",
+      "comparative": "a more interesting story",
+      "superlative": "the most interesting story"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-087-fun",
+    "source_page": 29,
+    "adjective": "fun",
+    "turkish": "keyifli, eglenceli",
+    "noun": "game",
+    "comparative": "more fun",
+    "superlative": "most fun",
+    "phrases": {
+      "base": "a fun game",
+      "very": "a very fun game",
+      "comparative": "a more fun game",
+      "superlative": "the most fun game"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-088-funny",
+    "source_page": 29,
+    "adjective": "funny",
+    "turkish": "komik, gulunc",
+    "noun": "joke",
+    "comparative": "funnier",
+    "superlative": "funniest",
+    "phrases": {
+      "base": "a funny joke",
+      "very": "a very funny joke",
+      "comparative": "a funnier joke",
+      "superlative": "the funniest joke"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-089-exciting",
+    "source_page": 29,
+    "adjective": "exciting",
+    "turkish": "heyecanli, heyecan verici",
+    "noun": "trip",
+    "comparative": "more exciting",
+    "superlative": "most exciting",
+    "phrases": {
+      "base": "an exciting trip",
+      "very": "an very exciting trip",
+      "comparative": "a more exciting trip",
+      "superlative": "the most exciting trip"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-090-ordinary",
+    "source_page": 30,
+    "adjective": "ordinary",
+    "turkish": "siradan",
+    "noun": "day",
+    "comparative": "more ordinary",
+    "superlative": "most ordinary",
+    "phrases": {
+      "base": "an ordinary day",
+      "very": "an very ordinary day",
+      "comparative": "a more ordinary day",
+      "superlative": "the most ordinary day"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-091-special",
+    "source_page": 30,
+    "adjective": "special",
+    "turkish": "ozel",
+    "noun": "gift",
+    "comparative": "more special",
+    "superlative": "most special",
+    "phrases": {
+      "base": "a special gift",
+      "very": "a very special gift",
+      "comparative": "a more special gift",
+      "superlative": "the most special gift"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-092-careful",
+    "source_page": 31,
+    "adjective": "careful",
+    "turkish": "dikkatli, ilgili",
+    "noun": "driver",
+    "comparative": "more careful",
+    "superlative": "most careful",
+    "phrases": {
+      "base": "a careful driver",
+      "very": "a very careful driver",
+      "comparative": "a more careful driver",
+      "superlative": "the most careful driver"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-093-careless",
+    "source_page": 31,
+    "adjective": "careless",
+    "turkish": "dikkatsiz, ilgisiz",
+    "noun": "mistake",
+    "comparative": "more careless",
+    "superlative": "most careless",
+    "phrases": {
+      "base": "a careless mistake",
+      "very": "a very careless mistake",
+      "comparative": "a more careless mistake",
+      "superlative": "the most careless mistake"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-094-experienced",
+    "source_page": 32,
+    "adjective": "experienced",
+    "turkish": "tecrubeli, isinin ehli",
+    "noun": "teacher",
+    "comparative": "more experienced",
+    "superlative": "most experienced",
+    "phrases": {
+      "base": "an experienced teacher",
+      "very": "an very experienced teacher",
+      "comparative": "a more experienced teacher",
+      "superlative": "the most experienced teacher"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-095-inexperienced",
+    "source_page": 32,
+    "adjective": "inexperienced",
+    "turkish": "tecrubesiz, toy",
+    "noun": "worker",
+    "comparative": "more inexperienced",
+    "superlative": "most inexperienced",
+    "phrases": {
+      "base": "an inexperienced worker",
+      "very": "an very inexperienced worker",
+      "comparative": "a more inexperienced worker",
+      "superlative": "the most inexperienced worker"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-096-fake",
+    "source_page": 33,
+    "adjective": "fake",
+    "turkish": "sahte, gercek olmayan, orijinal olmayan",
+    "noun": "passport",
+    "comparative": "more fake",
+    "superlative": "most fake",
+    "phrases": {
+      "base": "a fake passport",
+      "very": "a very fake passport",
+      "comparative": "a more fake passport",
+      "superlative": "the most fake passport"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-097-real",
+    "source_page": 33,
+    "adjective": "real",
+    "turkish": "gercek, sahte olmayan, orijinal",
+    "noun": "diamond",
+    "comparative": "more real",
+    "superlative": "most real",
+    "phrases": {
+      "base": "a real diamond",
+      "very": "a very real diamond",
+      "comparative": "a more real diamond",
+      "superlative": "the most real diamond"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-098-local",
+    "source_page": 34,
+    "adjective": "local",
+    "turkish": "yerel, otantik, bolgesel",
+    "noun": "market",
+    "comparative": "more local",
+    "superlative": "most local",
+    "phrases": {
+      "base": "a local market",
+      "very": "a very local market",
+      "comparative": "a more local market",
+      "superlative": "the most local market"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-099-national",
+    "source_page": 34,
+    "adjective": "national",
+    "turkish": "ulusal, ulke capinda",
+    "noun": "team",
+    "comparative": "more national",
+    "superlative": "most national",
+    "phrases": {
+      "base": "a national team",
+      "very": "a very national team",
+      "comparative": "a more national team",
+      "superlative": "the most national team"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-100-happy",
+    "source_page": 35,
+    "adjective": "happy",
+    "turkish": "mutlu, neseli",
+    "noun": "child",
+    "comparative": "happier",
+    "superlative": "happiest",
+    "phrases": {
+      "base": "a happy child",
+      "very": "a very happy child",
+      "comparative": "a happier child",
+      "superlative": "the happiest child"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-101-unhappy",
+    "source_page": 35,
+    "adjective": "unhappy",
+    "turkish": "mutsuz, nesesiz",
+    "noun": "employee",
+    "comparative": "unhappier",
+    "superlative": "unhappiest",
+    "phrases": {
+      "base": "an unhappy employee",
+      "very": "an very unhappy employee",
+      "comparative": "an unhappier employee",
+      "superlative": "the unhappiest employee"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-102-sad",
+    "source_page": 35,
+    "adjective": "sad",
+    "turkish": "mutsuz, nesesiz",
+    "noun": "song",
+    "comparative": "sadder",
+    "superlative": "saddest",
+    "phrases": {
+      "base": "a sad song",
+      "very": "a very sad song",
+      "comparative": "a sadder song",
+      "superlative": "the saddest song"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-103-lazy",
+    "source_page": 36,
+    "adjective": "lazy",
+    "turkish": "tembel",
+    "noun": "student",
+    "comparative": "lazier",
+    "superlative": "laziest",
+    "phrases": {
+      "base": "a lazy student",
+      "very": "a very lazy student",
+      "comparative": "a lazier student",
+      "superlative": "the laziest student"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-104-busy",
+    "source_page": 36,
+    "adjective": "busy",
+    "turkish": "mesgul, yogun",
+    "noun": "street",
+    "comparative": "busier",
+    "superlative": "busiest",
+    "phrases": {
+      "base": "a busy street",
+      "very": "a very busy street",
+      "comparative": "a busier street",
+      "superlative": "the busiest street"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-105-bored",
+    "source_page": 37,
+    "adjective": "bored",
+    "turkish": "sikilmis",
+    "noun": "student",
+    "comparative": "boreder",
+    "superlative": "boredest",
+    "phrases": {
+      "base": "a bored student",
+      "very": "a very bored student",
+      "comparative": "a boreder student",
+      "superlative": "the boredest student"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-106-excited",
+    "source_page": 37,
+    "adjective": "excited",
+    "turkish": "heyecanli",
+    "noun": "crowd",
+    "comparative": "exciteder",
+    "superlative": "excitedest",
+    "phrases": {
+      "base": "an excited crowd",
+      "very": "an very excited crowd",
+      "comparative": "an exciteder crowd",
+      "superlative": "the excitedest crowd"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-107-hungry",
+    "source_page": 38,
+    "adjective": "hungry",
+    "turkish": "ac, acikmis",
+    "noun": "dog",
+    "comparative": "hungrier",
+    "superlative": "hungriest",
+    "phrases": {
+      "base": "a hungry dog",
+      "very": "a very hungry dog",
+      "comparative": "a hungrier dog",
+      "superlative": "the hungriest dog"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-108-thirsty",
+    "source_page": 38,
+    "adjective": "thirsty",
+    "turkish": "susamis",
+    "noun": "traveler",
+    "comparative": "thirstier",
+    "superlative": "thirstiest",
+    "phrases": {
+      "base": "a thirsty traveler",
+      "very": "a very thirsty traveler",
+      "comparative": "a thirstier traveler",
+      "superlative": "the thirstiest traveler"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-109-angry",
+    "source_page": 39,
+    "adjective": "angry",
+    "turkish": "sinirli, ofkeli, kizgin",
+    "noun": "customer",
+    "comparative": "angrier",
+    "superlative": "angriest",
+    "phrases": {
+      "base": "an angry customer",
+      "very": "an very angry customer",
+      "comparative": "an angrier customer",
+      "superlative": "the angriest customer"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-110-calm",
+    "source_page": 39,
+    "adjective": "calm",
+    "turkish": "sakin, huzurlu, dingin",
+    "noun": "sea",
+    "comparative": "calmer",
+    "superlative": "calmest",
+    "phrases": {
+      "base": "a calm sea",
+      "very": "a very calm sea",
+      "comparative": "a calmer sea",
+      "superlative": "the calmest sea"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-111-tired",
+    "source_page": 40,
+    "adjective": "tired",
+    "turkish": "yorgun, bitkin, yorulmus",
+    "noun": "worker",
+    "comparative": "tireder",
+    "superlative": "tiredest",
+    "phrases": {
+      "base": "a tired worker",
+      "very": "a very tired worker",
+      "comparative": "a tireder worker",
+      "superlative": "the tiredest worker"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-112-fresh",
+    "source_page": 40,
+    "adjective": "fresh",
+    "turkish": "taze, tazelenmis, dinc",
+    "noun": "bread",
+    "comparative": "fresher",
+    "superlative": "freshest",
+    "phrases": {
+      "base": "a fresh bread",
+      "very": "a very fresh bread",
+      "comparative": "a fresher bread",
+      "superlative": "the freshest bread"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-113-excellent",
+    "source_page": 41,
+    "adjective": "excellent",
+    "turkish": "mukemmel, sahane",
+    "noun": "result",
+    "comparative": "excellenter",
+    "superlative": "excellentest",
+    "phrases": {
+      "base": "an excellent result",
+      "very": "an very excellent result",
+      "comparative": "an excellenter result",
+      "superlative": "the excellentest result"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-114-perfect",
+    "source_page": 41,
+    "adjective": "perfect",
+    "turkish": "kusursuz, olaganustu",
+    "noun": "plan",
+    "comparative": "perfecter",
+    "superlative": "perfectest",
+    "phrases": {
+      "base": "a perfect plan",
+      "very": "a very perfect plan",
+      "comparative": "a perfecter plan",
+      "superlative": "the perfectest plan"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-115-personal",
+    "source_page": 42,
+    "adjective": "personal",
+    "turkish": "kisisel, bireysel",
+    "noun": "question",
+    "comparative": "more personal",
+    "superlative": "most personal",
+    "phrases": {
+      "base": "a personal question",
+      "very": "a very personal question",
+      "comparative": "a more personal question",
+      "superlative": "the most personal question"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-116-public",
+    "source_page": 42,
+    "adjective": "public",
+    "turkish": "umumi, halka acik",
+    "noun": "park",
+    "comparative": "more public",
+    "superlative": "most public",
+    "phrases": {
+      "base": "a public park",
+      "very": "a very public park",
+      "comparative": "a more public park",
+      "superlative": "the most public park"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-117-a-lot-of",
+    "source_page": 43,
+    "adjective": "a lot of",
+    "turkish": "cok, bir suru, bir cok",
+    "noun": "people",
+    "comparative": "more",
+    "superlative": "most",
+    "phrases": {
+      "base": "a lot of people",
+      "very": "a very large number of people",
+      "comparative": "more people",
+      "superlative": "the most people"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-118-much",
+    "source_page": 43,
+    "adjective": "much",
+    "turkish": "cok, bir suru, bir cok",
+    "noun": "water",
+    "comparative": "more",
+    "superlative": "most",
+    "phrases": {
+      "base": "much water",
+      "very": "very much water",
+      "comparative": "more water",
+      "superlative": "the most water"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-119-many",
+    "source_page": 43,
+    "adjective": "many",
+    "turkish": "cok, bir suru, bir cok",
+    "noun": "books",
+    "comparative": "more",
+    "superlative": "most",
+    "phrases": {
+      "base": "many books",
+      "very": "very many books",
+      "comparative": "more books",
+      "superlative": "the most books"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-120-some",
+    "source_page": 43,
+    "adjective": "some",
+    "turkish": "biraz, az, birkac",
+    "noun": "tea",
+    "comparative": "more",
+    "superlative": "most",
+    "phrases": {
+      "base": "some tea",
+      "very": "quite some tea",
+      "comparative": "more tea",
+      "superlative": "the most tea"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-121-a-little",
+    "source_page": 43,
+    "adjective": "a little",
+    "turkish": "biraz, az, birkac",
+    "noun": "sugar",
+    "comparative": "less",
+    "superlative": "least",
+    "phrases": {
+      "base": "a little sugar",
+      "very": "very little sugar",
+      "comparative": "less sugar",
+      "superlative": "the least sugar"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-122-a-few",
+    "source_page": 43,
+    "adjective": "a few",
+    "turkish": "biraz, az, birkac",
+    "noun": "friends",
+    "comparative": "fewer",
+    "superlative": "fewest",
+    "phrases": {
+      "base": "a few friends",
+      "very": "very few friends",
+      "comparative": "fewer friends",
+      "superlative": "the fewest friends"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-123-any",
+    "source_page": 43,
+    "adjective": "any",
+    "turkish": "hic",
+    "noun": "chance",
+    "comparative": "more",
+    "superlative": "most",
+    "phrases": {
+      "base": "any chance",
+      "very": "any real chance",
+      "comparative": "more chances",
+      "superlative": "the most chances"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-124-white",
+    "source_page": 44,
+    "adjective": "white",
+    "turkish": "beyaz",
+    "noun": "shirt",
+    "comparative": "whiter",
+    "superlative": "whitest",
+    "phrases": {
+      "base": "a white shirt",
+      "very": "a very white shirt",
+      "comparative": "a whiter shirt",
+      "superlative": "the whitest shirt"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-125-black",
+    "source_page": 44,
+    "adjective": "black",
+    "turkish": "siyah",
+    "noun": "car",
+    "comparative": "blacker",
+    "superlative": "blackest",
+    "phrases": {
+      "base": "a black car",
+      "very": "a very black car",
+      "comparative": "a blacker car",
+      "superlative": "the blackest car"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-126-blue",
+    "source_page": 44,
+    "adjective": "blue",
+    "turkish": "mavi",
+    "noun": "sky",
+    "comparative": "bluer",
+    "superlative": "bluest",
+    "phrases": {
+      "base": "a blue sky",
+      "very": "a very blue sky",
+      "comparative": "a bluer sky",
+      "superlative": "the bluest sky"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-127-green",
+    "source_page": 44,
+    "adjective": "green",
+    "turkish": "yesil",
+    "noun": "tree",
+    "comparative": "greener",
+    "superlative": "greenest",
+    "phrases": {
+      "base": "a green tree",
+      "very": "a very green tree",
+      "comparative": "a greener tree",
+      "superlative": "the greenest tree"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-128-red",
+    "source_page": 44,
+    "adjective": "red",
+    "turkish": "kirmizi",
+    "noun": "apple",
+    "comparative": "redder",
+    "superlative": "reddest",
+    "phrases": {
+      "base": "a red apple",
+      "very": "a very red apple",
+      "comparative": "a redder apple",
+      "superlative": "the reddest apple"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-129-yellow",
+    "source_page": 44,
+    "adjective": "yellow",
+    "turkish": "sari",
+    "noun": "flower",
+    "comparative": "yellower",
+    "superlative": "yellowest",
+    "phrases": {
+      "base": "a yellow flower",
+      "very": "a very yellow flower",
+      "comparative": "a yellower flower",
+      "superlative": "the yellowest flower"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-130-pink",
+    "source_page": 45,
+    "adjective": "pink",
+    "turkish": "pembe",
+    "noun": "dress",
+    "comparative": "pinker",
+    "superlative": "pinkest",
+    "phrases": {
+      "base": "a pink dress",
+      "very": "a very pink dress",
+      "comparative": "a pinker dress",
+      "superlative": "the pinkest dress"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-131-orange",
+    "source_page": 45,
+    "adjective": "orange",
+    "turkish": "portakal rengi",
+    "noun": "ball",
+    "comparative": "more orange",
+    "superlative": "most orange",
+    "phrases": {
+      "base": "an orange ball",
+      "very": "an very orange ball",
+      "comparative": "a more orange ball",
+      "superlative": "the most orange ball"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-132-grey",
+    "source_page": 45,
+    "adjective": "grey",
+    "turkish": "gri",
+    "noun": "cloud",
+    "comparative": "greyer",
+    "superlative": "greyest",
+    "phrases": {
+      "base": "a grey cloud",
+      "very": "a very grey cloud",
+      "comparative": "a greyer cloud",
+      "superlative": "the greyest cloud"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-133-purple",
+    "source_page": 45,
+    "adjective": "purple",
+    "turkish": "mor",
+    "noun": "bag",
+    "comparative": "more purple",
+    "superlative": "most purple",
+    "phrases": {
+      "base": "a purple bag",
+      "very": "a very purple bag",
+      "comparative": "a more purple bag",
+      "superlative": "the most purple bag"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-134-brown",
+    "source_page": 45,
+    "adjective": "brown",
+    "turkish": "kahverengi",
+    "noun": "table",
+    "comparative": "browner",
+    "superlative": "brownest",
+    "phrases": {
+      "base": "a brown table",
+      "very": "a very brown table",
+      "comparative": "a browner table",
+      "superlative": "the brownest table"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-135-dark",
+    "source_page": 45,
+    "adjective": "dark",
+    "turkish": "koyu",
+    "noun": "room",
+    "comparative": "darker",
+    "superlative": "darkest",
+    "phrases": {
+      "base": "a dark room",
+      "very": "a very dark room",
+      "comparative": "a darker room",
+      "superlative": "the darkest room"
+    },
+    "note": ""
+  },
+  {
+    "id": "adj-136-light",
+    "source_page": 45,
+    "adjective": "light",
+    "turkish": "acik",
+    "noun": "color",
+    "comparative": "lighter",
+    "superlative": "lightest",
+    "phrases": {
+      "base": "a light color",
+      "very": "a very light color",
+      "comparative": "a lighter color",
+      "superlative": "the lightest color"
+    },
+    "note": "light color"
+  }
+]
