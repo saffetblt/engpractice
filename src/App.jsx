@@ -1035,6 +1035,13 @@ function useShuffledDeck(items) {
     setIndex((prev) => (prev - 1 + deck.length) % deck.length)
   }
 
+  function goToIndex(nextIndex) {
+    if (deck.length === 0) {
+      return
+    }
+    setIndex(clamp(nextIndex, 0, deck.length - 1))
+  }
+
   function resetWithItems(nextItems = items) {
     setDeck(shuffleArray(nextItems))
     setIndex(0)
@@ -1051,6 +1058,7 @@ function useShuffledDeck(items) {
     total: deck.length,
     goNext,
     goPrev,
+    goToIndex,
     reshuffle,
     resetWithItems,
   }
@@ -2266,9 +2274,24 @@ function PronounDrillStudy({ onBack, onAction }) {
 }
 
 function AdjectivePhraseStudy({ onBack, onAction }) {
-  const { current, total, index, goNext, goPrev, reshuffle } = useShuffledDeck(adjectivePhrasesData)
-  const [selectedPreposition, setSelectedPreposition] = useState(PREPOSITIONS[0])
-  const [selectedSpatialPreposition, setSelectedSpatialPreposition] = useState(SPATIAL_PREPOSITIONS[0])
+  const { deck, current, total, index, goNext, goPrev, goToIndex, reshuffle } =
+    useShuffledDeck(adjectivePhrasesData)
+  const [selectedModifier, setSelectedModifier] = useState({
+    group: 'preposition',
+    label: PREPOSITIONS[0],
+  })
+  const [adjectiveSearch, setAdjectiveSearch] = useState('')
+  const selectedModifierKey = `${selectedModifier.group}:${selectedModifier.label}`
+  const normalizedAdjectiveSearch = normalizeAnswer(adjectiveSearch)
+  const adjectiveSearchMatches = normalizedAdjectiveSearch
+    ? deck
+        .map((item, deckIndex) => ({ item, deckIndex }))
+        .filter(({ item }) => {
+          const searchable = normalizeAnswer(`${item.adjective} ${item.turkish} ${item.noun}`)
+          return searchable.includes(normalizedAdjectiveSearch)
+        })
+        .slice(0, 12)
+    : []
 
   if (!current) {
     return (
@@ -2305,8 +2328,10 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
               <li key={item}>
                 <button
                   type="button"
-                  className={`prep-btn ${selectedPreposition === item ? 'active' : ''}`}
-                  onClick={() => setSelectedPreposition(item)}
+                  className={`prep-btn ${
+                    selectedModifierKey === `preposition:${item}` ? 'active' : ''
+                  }`}
+                  onClick={() => setSelectedModifier({ group: 'preposition', label: item })}
                 >
                   {item}
                 </button>
@@ -2322,8 +2347,8 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
               <li key={item}>
                 <button
                   type="button"
-                  className={`prep-btn ${selectedSpatialPreposition === item ? 'active' : ''}`}
-                  onClick={() => setSelectedSpatialPreposition(item)}
+                  className={`prep-btn ${selectedModifierKey === `spatial:${item}` ? 'active' : ''}`}
+                  onClick={() => setSelectedModifier({ group: 'spatial', label: item })}
                 >
                   {item}
                 </button>
@@ -2336,9 +2361,46 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           <p className="label">Seçili Sıfat</p>
           <h2 className="english-word">{current.adjective}</h2>
           <p className="value meaning">{current.turkish}</p>
-          <p className="selected-preposition">
-            Seçili edatlar: {selectedPreposition} · {selectedSpatialPreposition}
-          </p>
+          <p className="selected-preposition">Seçili kalıp: {selectedModifier.label}</p>
+
+          <div className="adjective-search-panel">
+            <label className="label" htmlFor="adjective-search">
+              Sıfat Ara
+            </label>
+            <input
+              id="adjective-search"
+              className="adjective-search-input"
+              type="search"
+              value={adjectiveSearch}
+              onChange={(event) => setAdjectiveSearch(event.target.value)}
+              placeholder="strong, tired, mutlu..."
+            />
+
+            {adjectiveSearch.trim() && (
+              <ul className="adjective-search-list">
+                {adjectiveSearchMatches.length === 0 ? (
+                  <li className="adjective-search-empty">Sonuç yok</li>
+                ) : (
+                  adjectiveSearchMatches.map(({ item, deckIndex }) => (
+                    <li key={item.id}>
+                      <button
+                        type="button"
+                        className={`adjective-result-btn ${item.id === current.id ? 'active' : ''}`}
+                        onClick={() => {
+                          goToIndex(deckIndex)
+                          setAdjectiveSearch('')
+                          onAction('next', 'adjectivePhrases')
+                        }}
+                      >
+                        <span>{item.adjective}</span>
+                        <small>{item.turkish}</small>
+                      </button>
+                    </li>
+                  ))
+                )}
+              </ul>
+            )}
+          </div>
 
           <ul className="adjective-phrase-list">
             {phraseRows.map((row) => (
