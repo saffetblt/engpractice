@@ -2321,7 +2321,7 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
       />
 
       <div className="adjective-grid">
-        <article className="drill-column">
+        <article className="drill-column adjective-prep-column">
           <p className="column-title">Edatlar</p>
           <ul className="prep-list">
             {PREPOSITIONS.map((item) => (
@@ -2340,7 +2340,7 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           </ul>
         </article>
 
-        <article className="drill-column">
+        <article className="drill-column adjective-spatial-column">
           <p className="column-title">Konumlar</p>
           <ul className="prep-list">
             {SPATIAL_PREPOSITIONS.map((item) => (
