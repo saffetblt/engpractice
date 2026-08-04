@@ -54,18 +54,19 @@
     "id": "adj-004-little",
     "source_page": 2,
     "adjective": "little",
-    "turkish": "minik",
-    "noun": "child",
-    "comparative": "smaller",
-    "superlative": "smallest",
+    "turkish": "az, biraz",
+    "noun": "water",
+    "comparative": "less",
+    "superlative": "least",
     "phrases": {
-      "base": "a little child",
-      "very": "a very little child",
-      "comparative": "a smaller child",
-      "superlative": "the smallest child"
+      "base": "little water",
+      "very": "very little water",
+      "comparative": "less water",
+      "superlative": "the least water"
     },
-    "note": "",
-    "isIrregular": false
+    "note": "quantity",
+    "isIrregular": true,
+    "irregularGroup": "little"
   },
   {
     "id": "adj-005-tiny",
@@ -1984,7 +1985,7 @@
     "superlative": "most",
     "phrases": {
       "base": "a lot of people",
-      "very": "a very large number of people",
+      "very": "very many people",
       "comparative": "more people",
       "superlative": "the most people"
     },
@@ -2038,7 +2039,7 @@
     "superlative": "least",
     "phrases": {
       "base": "some tea",
-      "very": "quite some tea",
+      "very": "very little tea",
       "comparative": "less tea",
       "superlative": "the least tea"
     },
