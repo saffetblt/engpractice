@@ -1046,8 +1046,8 @@ function useShuffledDeck(items) {
     setIndex(clamp(nextIndex, 0, deck.length - 1))
   }
 
-  function resetWithItems(nextItems = items) {
-    setDeck(shuffleArray(nextItems))
+  function resetWithItems(nextItems = items, { shuffle = true } = {}) {
+    setDeck(shuffle ? shuffleArray(nextItems) : [...nextItems])
     setIndex(0)
   }
 
@@ -2278,13 +2278,14 @@ function PronounDrillStudy({ onBack, onAction }) {
 }
 
 function AdjectivePhraseStudy({ onBack, onAction }) {
-  const { deck, current, total, index, goNext, goPrev, goToIndex, reshuffle } =
+  const { deck, current, total, index, goNext, goPrev, goToIndex, reshuffle, resetWithItems } =
     useShuffledDeck(adjectivePhrasesData)
   const [selectedModifier, setSelectedModifier] = useState({
     group: 'preposition',
     label: PREPOSITIONS[0],
   })
   const [adjectiveSearch, setAdjectiveSearch] = useState('')
+  const [adjectiveOrderMode, setAdjectiveOrderMode] = useState('random')
   const selectedModifierKey = `${selectedModifier.group}:${selectedModifier.label}`
   const normalizedAdjectiveSearch = normalizeAnswer(adjectiveSearch)
   const adjectiveSearchMatches = normalizedAdjectiveSearch
@@ -2315,6 +2316,22 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
     { label: 'Daha', text: current.phrases.comparative },
     { label: 'En', text: current.phrases.superlative },
   ]
+
+  function selectAdjectiveOrderMode(nextMode) {
+    setAdjectiveOrderMode(nextMode)
+    setAdjectiveSearch('')
+    resetWithItems(adjectivePhrasesData, { shuffle: nextMode === 'random' })
+    onAction('shuffle', 'adjectivePhrases')
+  }
+
+  function resetAdjectiveDeck() {
+    if (adjectiveOrderMode === 'grouped') {
+      resetWithItems(adjectivePhrasesData, { shuffle: false })
+    } else {
+      reshuffle()
+    }
+    onAction('shuffle', 'adjectivePhrases')
+  }
 
   return (
     <section className="study-shell">
@@ -2369,6 +2386,23 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           </div>
           <p className="value meaning">{current.turkish}</p>
           <p className="selected-preposition">Seçili kalıp: {selectedModifier.label}</p>
+
+          <div className="adjective-order-toggle" aria-label="Sıfat sırası">
+            <button
+              type="button"
+              className={`adjective-order-btn ${adjectiveOrderMode === 'random' ? 'active' : ''}`}
+              onClick={() => selectAdjectiveOrderMode('random')}
+            >
+              Rastgele
+            </button>
+            <button
+              type="button"
+              className={`adjective-order-btn ${adjectiveOrderMode === 'grouped' ? 'active' : ''}`}
+              onClick={() => selectAdjectiveOrderMode('grouped')}
+            >
+              Gruplu
+            </button>
+          </div>
 
           <div className="adjective-search-panel">
             <label className="label" htmlFor="adjective-search">
@@ -2454,12 +2488,9 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           <button
             type="button"
             className="shuffle-btn"
-            onClick={() => {
-              reshuffle()
-              onAction('shuffle', 'adjectivePhrases')
-            }}
+            onClick={resetAdjectiveDeck}
           >
-            Yeni Rastgele Sıra
+            {adjectiveOrderMode === 'grouped' ? 'Gruplu Sırayı Baştan Başlat' : 'Yeni Rastgele Sıra'}
           </button>
         </article>
       </div>
