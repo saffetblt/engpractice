@@ -1276,18 +1276,16 @@ function buildCanCouldSubjects(verb) {
   return [...CAN_COULD_BASE_SUBJECTS, ...verb.subjects]
 }
 
-function buildCanCouldPatterns(verb) {
+function buildCanCouldPatternGroups(verb) {
   return [
-    'can',
-    "can't",
-    'can?',
-    verb.questions[0],
-    verb.questions[1],
-    'could',
-    "couldn't",
-    'could?',
-    verb.questions[2],
-    verb.questions[3],
+    {
+      title: 'can',
+      rows: ['can', "can't", 'can?', verb.questions[0], verb.questions[1]],
+    },
+    {
+      title: 'could',
+      rows: ['could', "couldn't", 'could?', verb.questions[2], verb.questions[3]],
+    },
   ]
 }
 
@@ -2771,7 +2769,7 @@ function CanCouldModalStudy({ onBack, onAction }) {
   }
 
   const subjectRows = buildCanCouldSubjects(currentVerb)
-  const patternRows = buildCanCouldPatterns(currentVerb)
+  const patternGroups = buildCanCouldPatternGroups(currentVerb)
 
   function selectVerb(nextIndex) {
     setVerbIndex(clamp(nextIndex, 0, total - 1))
@@ -2803,7 +2801,7 @@ function CanCouldModalStudy({ onBack, onAction }) {
 
       <div className="modal-practice-grid">
         <article className="drill-column">
-          <p className="column-title">1. Sıra: Özne</p>
+          <p className="column-title">Özne</p>
           <ul className="phrase-list modal-subject-list">
             {subjectRows.map((subject, subjectIndex) => (
               <li key={`${subject}-${subjectIndex}`}>
@@ -2814,18 +2812,25 @@ function CanCouldModalStudy({ onBack, onAction }) {
         </article>
 
         <article className="drill-column">
-          <p className="column-title">2. Sıra: Can / Could</p>
-          <ul className="phrase-list modal-pattern-list">
-            {patternRows.map((row) => (
-              <li key={row}>
-                <span className="word">{row}</span>
-              </li>
+          <p className="column-title">Modal</p>
+          <div className="modal-pattern-groups">
+            {patternGroups.map((group) => (
+              <div className="modal-pattern-box" key={group.title}>
+                <p className="modal-pattern-title">{group.title}</p>
+                <ul className="phrase-list modal-pattern-list">
+                  {group.rows.map((row) => (
+                    <li key={row}>
+                      <span className="word">{row}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </article>
 
         <article className="drill-column focus modal-verb-column">
-          <p className="label">3. Sıra: Fiil</p>
+          <p className="label">Fiil</p>
           <h2 className="english-word">{currentVerb.base}</h2>
           <p className="value meaning">{currentVerb.turkish}</p>
           {currentVerb.pronunciation && (
@@ -2866,7 +2871,7 @@ function CanCouldModalStudy({ onBack, onAction }) {
         </article>
 
         <article className="drill-column modal-example-column">
-          <p className="column-title">4. Sıra: Nesne</p>
+          <p className="column-title">Nesne</p>
           <ul className="phrase-list modal-example-list">
             {currentVerb.objects.map((object) => (
               <li key={object}>

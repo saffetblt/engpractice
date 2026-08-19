@@ -1307,6 +1307,33 @@
   line-height: 1.35;
 }
 
+.modal-pattern-groups {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-pattern-box {
+  border: 1px solid #d4dfed;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, #f4f8ff);
+  padding: 12px;
+}
+
+.modal-pattern-title {
+  margin: 0;
+  color: #1f3a5b;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.modal-pattern-box .phrase-list {
+  margin-top: 10px;
+}
+
 .modal-note {
   margin: 10px 0 0;
   border: 1px solid #d3e1f0;
