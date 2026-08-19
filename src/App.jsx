@@ -81,6 +81,7 @@ const MODE_LABELS = {
   prepositionPack: 'Edat + Cümle Alıştırmaları',
   locationPack: 'Am Is Are Alıştırması',
   adjectivePhrases: 'Sıfat Tamlamaları',
+  canCouldModal: 'Can Could Modalı',
 }
 const STUDY_MODES = [
   'vocabulary',
@@ -90,9 +91,10 @@ const STUDY_MODES = [
   'prepositionPack',
   'locationPack',
   'adjectivePhrases',
+  'canCouldModal',
 ]
 const STUDY_MODE_SET = new Set(STUDY_MODES)
-const MODES = ['home', ...STUDY_MODES, 'profile']
+const MODES = ['home', ...STUDY_MODES, 'modals', 'profile']
 const MODE_SET = new Set(MODES)
 const MODE_LOOKUP = new Map(MODES.map((mode) => [mode.toLowerCase(), mode]))
 const STATS_STORAGE_KEY = 'engpractice-stats-v1'
@@ -124,6 +126,7 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   prepositionPack: 0,
   locationPack: 0,
   adjectivePhrases: 0,
+  canCouldModal: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
@@ -133,6 +136,7 @@ const EMPTY_MODE_VISITS = Object.freeze({
   prepositionPack: 0,
   locationPack: 0,
   adjectivePhrases: 0,
+  canCouldModal: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -251,6 +255,7 @@ function normalizeModeSeconds(value) {
     prepositionPack: toSafeNumber(source.prepositionPack),
     locationPack: toSafeNumber(source.locationPack),
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
+    canCouldModal: toSafeNumber(source.canCouldModal),
   }
 }
 
@@ -264,6 +269,7 @@ function normalizeModeVisits(value) {
     prepositionPack: toSafeNumber(source.prepositionPack),
     locationPack: toSafeNumber(source.locationPack),
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
+    canCouldModal: toSafeNumber(source.canCouldModal),
   }
 }
 
@@ -1068,6 +1074,200 @@ function useShuffledDeck(items) {
   }
 }
 
+const CAN_COULD_SUBJECTS = Object.freeze([
+  { label: 'I', note: 'işi yapan' },
+  { label: 'You', note: 'işi yapan' },
+  { label: 'He', note: 'işi yapan' },
+  { label: 'She', note: 'işi yapan' },
+  { label: 'It', note: 'işi yapan' },
+  { label: 'You', note: 'çoğul / resmi' },
+  { label: 'We', note: 'işi yapan' },
+  { label: 'They', note: 'işi yapan' },
+  { label: 'my sister', note: 'karmaşık tekil özne' },
+  { label: 'the children in Turkey', note: 'karmaşık çoğul özne' },
+])
+
+const CAN_COULD_VERBS = Object.freeze([
+  {
+    base: 'sell',
+    turkish: 'satmak',
+    examples: [
+      'I can sell my old phone.',
+      "My sister can't sell her car.",
+      'Can you sell these books?',
+      'Why can the children in Turkey sell fresh fruit?',
+      'Where could they sell their house?',
+      "What couldn't he sell?",
+    ],
+  },
+  {
+    base: 'pay',
+    turkish: 'ödemek',
+    examples: [
+      'I can pay the bill.',
+      "My sister can't pay the rent.",
+      'Can you pay for the tickets?',
+      'Why can the children in Turkey pay this price?',
+      'Where could they pay the teacher?',
+      "What couldn't he pay?",
+    ],
+  },
+  {
+    base: 'rent',
+    turkish: 'kiralamak',
+    examples: [
+      'We can rent a house.',
+      "My sister can't rent a car.",
+      'Can you rent this office?',
+      'Why can the children in Turkey rent a room?',
+      'Where could they rent bikes?',
+      "What couldn't he rent?",
+    ],
+  },
+  {
+    base: 'start',
+    turkish: 'başlamak, başlatmak',
+    examples: [
+      'I can start the lesson.',
+      "My sister can't start the car.",
+      'Can you start a new job?',
+      'Why can the children in Turkey start a club?',
+      'Where could they start the meeting?',
+      "What couldn't he start?",
+    ],
+  },
+  {
+    base: 'begin',
+    turkish: 'başlamak, başlatmak',
+    pronunciation: 'bi-gin',
+    examples: [
+      'I can begin the story.',
+      "My sister can't begin the class.",
+      'Can you begin the game?',
+      'Why can the children in Turkey begin a new project?',
+      'Where could they begin the meeting?',
+      "What couldn't he begin?",
+    ],
+  },
+  {
+    base: 'end',
+    turkish: 'bitirmek, sona erdirmek, sonlandırmak',
+    examples: [
+      'I can end the meeting.',
+      "My sister can't end the conversation.",
+      'Can you end the lesson?',
+      'Why can the children in Turkey end the game?',
+      'Where could they end the argument?',
+      "What couldn't he end?",
+    ],
+  },
+  {
+    base: 'finish',
+    turkish: 'bitirmek, sona erdirmek, sonlandırmak',
+    examples: [
+      'I can finish the homework.',
+      "My sister can't finish the report.",
+      'Can you finish this book?',
+      'Why can the children in Turkey finish the project?',
+      'Where could they finish the meal?',
+      "What couldn't he finish?",
+    ],
+  },
+  {
+    base: 'continue',
+    turkish: 'devam etmek, sürdürmek',
+    examples: [
+      'I can continue the lesson.',
+      "My sister can't continue the work.",
+      'Can you continue the story?',
+      'Why can the children in Turkey continue the journey?',
+      'Where could they continue the meeting?',
+      "What couldn't he continue?",
+    ],
+  },
+  {
+    base: 'see',
+    turkish: 'görmek',
+    examples: [
+      'He can see you.',
+      "My sister can't see the sea.",
+      'Can you see her teacher?',
+      'Why can the children in Turkey see the stars?',
+      'Where could they see a doctor?',
+      "What couldn't he see?",
+    ],
+  },
+  {
+    base: 'hear',
+    turkish: 'duymak',
+    examples: [
+      'I can hear you.',
+      "My sister can't hear the music.",
+      'Can you hear a strange noise?',
+      'Why can the children in Turkey hear the birds?',
+      'Where could they hear her voice?',
+      "What couldn't he hear?",
+    ],
+  },
+  {
+    base: 'smell',
+    turkish: 'koklamak',
+    pronunciation: 'si-mel',
+    examples: [
+      'I can smell the flowers.',
+      "My sister can't smell the soup.",
+      'Can you smell fresh bread?',
+      'Why can the children in Turkey smell smoke?',
+      'Where could they smell the perfume?',
+      "What couldn't he smell?",
+    ],
+  },
+  {
+    base: 'touch',
+    turkish: 'dokunmak',
+    examples: [
+      'He can touch his nose.',
+      "My sister can't touch the hot pan.",
+      'Can you touch the screen?',
+      'Why can the children in Turkey touch the wall?',
+      'Where could they touch the stone?',
+      "What couldn't he touch?",
+    ],
+  },
+  {
+    base: 'feel',
+    turkish: 'hissetmek',
+    examples: [
+      'I can feel better.',
+      "My sister can't feel the cold wind.",
+      'Can you feel safe?',
+      'Why can the children in Turkey feel happy?',
+      'Where could they feel a sharp pain?',
+      "What couldn't he feel?",
+    ],
+  },
+])
+
+function buildCanCouldPatterns(baseVerb) {
+  return [
+    { label: 'can', text: `subject can ${baseVerb} object` },
+    { label: "can't", text: `subject can't ${baseVerb} object` },
+    { label: 'can ?', text: `Can subject ${baseVerb} object?` },
+    { label: 'why can ?', text: `Why can subject ${baseVerb} object?` },
+    { label: 'where can ?', text: `Where can subject ${baseVerb} object?` },
+    { label: "why can't ?", text: `Why can't subject ${baseVerb} object?` },
+    { label: "who can't ?", text: `Who can't ${baseVerb} object?` },
+    { label: "what can't ?", text: `What can't subject ${baseVerb}?` },
+    { label: 'could', text: `subject could ${baseVerb} object` },
+    { label: "couldn't", text: `subject couldn't ${baseVerb} object` },
+    { label: 'could ?', text: `Could subject ${baseVerb} object?` },
+    { label: 'why could ?', text: `Why could subject ${baseVerb} object?` },
+    { label: 'where could ?', text: `Where could subject ${baseVerb} object?` },
+    { label: "why couldn't ?", text: `Why couldn't subject ${baseVerb} object?` },
+    { label: "what couldn't ?", text: `What couldn't subject ${baseVerb}?` },
+  ]
+}
+
 function createInitialSmartQueue(items) {
   if (!items.length) {
     return { history: [], cursor: 0 }
@@ -1491,6 +1691,15 @@ function HomePage({ onSelect }) {
           <h2>Sıfat Tamlamaları</h2>
           <p>
             Edatları, sıfatları ve daha/en kalıplarını seçili isimlerle birlikte sesli tekrar et.
+          </p>
+        </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('modals')}>
+          <p className="mode-index">8. Çalışma</p>
+          <h2>Modallar</h2>
+          <p>
+            Can, could ve devamında eklenecek modal kalıplarını ayrı alt çalışmalar halinde tekrar
+            et.
           </p>
         </button>
 
@@ -2492,6 +2701,159 @@ function AdjectivePhraseStudy({ onBack, onAction }) {
           >
             {adjectiveOrderMode === 'grouped' ? 'Gruplu Sırayı Baştan Başlat' : 'Yeni Rastgele Sıra'}
           </button>
+        </article>
+      </div>
+    </section>
+  )
+}
+
+function ModalsHub({ onBack, onSelect }) {
+  return (
+    <section className="study-shell">
+      <HeaderBar
+        title="Modallar"
+        subtitle="Modal fiil alıştırmalarını seç ve ayrı çalışma ekranında tekrar et."
+        onBack={onBack}
+      />
+
+      <div className="mode-grid nested-mode-grid">
+        <button type="button" className="mode-card" onClick={() => onSelect('canCouldModal')}>
+          <p className="mode-index">8.1 Alt Çalışma</p>
+          <h2>Can Could Modalı</h2>
+          <p>
+            Özne, can/could kalıpları, fiil ve uyumlu nesne örneklerini aynı tabloda sesli tekrar
+            et.
+          </p>
+        </button>
+      </div>
+    </section>
+  )
+}
+
+function CanCouldModalStudy({ onBack, onAction }) {
+  const [verbIndex, setVerbIndex] = useState(0)
+  const total = CAN_COULD_VERBS.length
+  const currentVerb = CAN_COULD_VERBS[verbIndex]
+
+  if (!currentVerb) {
+    return (
+      <section className="study-shell">
+        <HeaderBar
+          title="Can Could Modalı"
+          subtitle="Fiil listesi yüklenemedi."
+          onBack={onBack}
+        />
+      </section>
+    )
+  }
+
+  const patternRows = buildCanCouldPatterns(currentVerb.base)
+
+  function selectVerb(nextIndex) {
+    setVerbIndex(clamp(nextIndex, 0, total - 1))
+    onAction('next', 'canCouldModal')
+  }
+
+  function goNextVerb() {
+    setVerbIndex((prev) => (prev + 1) % total)
+    onAction('next', 'canCouldModal')
+  }
+
+  function goPrevVerb() {
+    setVerbIndex((prev) => (prev - 1 + total) % total)
+    onAction('prev', 'canCouldModal')
+  }
+
+  function resetVerbOrder() {
+    setVerbIndex(0)
+    onAction('shuffle', 'canCouldModal')
+  }
+
+  return (
+    <section className="study-shell">
+      <HeaderBar
+        title="Can Could Modalı"
+        subtitle="Sol iki sütun sabit kalır; ileri dedikçe fiil ve ona bağlı örnekler sırayla değişir."
+        onBack={onBack}
+      />
+
+      <div className="modal-practice-grid">
+        <article className="drill-column">
+          <p className="column-title">1. Sıra: Özne</p>
+          <ul className="phrase-list modal-subject-list">
+            {CAN_COULD_SUBJECTS.map((subject, subjectIndex) => (
+              <li key={`${subject.label}-${subjectIndex}`}>
+                <span className="frame">{subjectIndex + 1}. Özne</span>
+                <span className="word">{subject.label}</span>
+                <small>{subject.note}</small>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column">
+          <p className="column-title">2. Sıra: Can / Could</p>
+          <ul className="phrase-list modal-pattern-list">
+            {patternRows.map((row) => (
+              <li key={row.label}>
+                <span className="frame">{row.label}</span>
+                <span className="word">{row.text}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="drill-column focus modal-verb-column">
+          <p className="label">3. Sıra: Fiil</p>
+          <h2 className="english-word">{currentVerb.base}</h2>
+          <p className="value meaning">{currentVerb.turkish}</p>
+          {currentVerb.pronunciation && (
+            <p className="selected-preposition">Okunuş: {currentVerb.pronunciation}</p>
+          )}
+          <p className="modal-note">Can/could sonrasında fiil yalın halde kullanılır.</p>
+
+          <ul className="modal-verb-list">
+            {CAN_COULD_VERBS.map((verb, nextIndex) => (
+              <li key={verb.base}>
+                <button
+                  type="button"
+                  className={`modal-verb-btn ${verb.base === currentVerb.base ? 'active' : ''}`}
+                  onClick={() => selectVerb(nextIndex)}
+                >
+                  <span>{verb.base}</span>
+                  <small>{verb.turkish}</small>
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          <div className="controls compact">
+            <button type="button" className="nav-btn" onClick={goPrevVerb}>
+              ← Geri
+            </button>
+            <span className="counter">
+              {verbIndex + 1} / {total}
+            </span>
+            <button type="button" className="nav-btn" onClick={goNextVerb}>
+              İleri →
+            </button>
+          </div>
+
+          <button type="button" className="shuffle-btn" onClick={resetVerbOrder}>
+            Fiil Sırasını Baştan Başlat
+          </button>
+        </article>
+
+        <article className="drill-column modal-example-column">
+          <p className="column-title">4. Sıra: Nesne + Örnek</p>
+          <ul className="phrase-list modal-example-list">
+            {currentVerb.examples.map((example, exampleIndex) => (
+              <li key={example}>
+                <span className="frame">{exampleIndex + 1}. Örnek</span>
+                <span className="word">{example}</span>
+              </li>
+            ))}
+          </ul>
         </article>
       </div>
     </section>
@@ -4015,6 +4377,10 @@ function App() {
         )}
         {mode === 'adjectivePhrases' && (
           <AdjectivePhraseStudy onBack={goBack} onAction={trackAction} />
+        )}
+        {mode === 'modals' && <ModalsHub onBack={goBack} onSelect={navigateMode} />}
+        {mode === 'canCouldModal' && (
+          <CanCouldModalStudy onBack={goBack} onAction={trackAction} />
         )}
         {mode === 'profile' && (
           <ProfilePage

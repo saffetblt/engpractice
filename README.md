@@ -11,6 +11,8 @@ English speaking and vocabulary practice app built with React + Vite.
 5. Preposition sentence practice
 6. Am/is/are sentence practice
 7. Adjective phrase practice
+8. Modal practice
+   - Can/could modal table practice
 
 ## Local Development
 

@@ -1282,6 +1282,95 @@
   font-weight: 800;
 }
 
+.nested-mode-grid {
+  max-width: 420px;
+  grid-template-columns: 1fr;
+}
+
+.modal-practice-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.25fr 1.05fr 1.45fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.modal-subject-list small,
+.modal-verb-btn small {
+  color: #67809a;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.modal-pattern-list .word,
+.modal-example-list .word {
+  line-height: 1.35;
+}
+
+.modal-note {
+  margin: 10px 0 0;
+  border: 1px solid #d3e1f0;
+  border-radius: 12px;
+  background: #f6fbff;
+  color: #375a7f;
+  padding: 10px 11px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.modal-verb-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 340px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.modal-verb-btn {
+  width: 100%;
+  border: 1px solid #d4dfed;
+  border-radius: 12px;
+  background: #f8fbff;
+  color: #243e5d;
+  padding: 9px 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.modal-verb-btn:hover {
+  transform: translateY(-1px);
+}
+
+.modal-verb-btn span {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.modal-verb-btn.active {
+  border-color: #0f6fa1;
+  background: linear-gradient(135deg, #0f7cb3, #185ba8);
+  color: #eef9ff;
+  box-shadow: 0 8px 16px rgba(22, 92, 152, 0.22);
+}
+
+.modal-verb-btn.active small {
+  color: #dcefff;
+}
+
+.modal-example-column {
+  background: linear-gradient(145deg, #ffffff, #fff7eb);
+}
+
 @media (max-width: 940px) {
   .mode-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1303,6 +1392,23 @@
     grid-template-columns: minmax(108px, 0.76fr) minmax(0, 1.24fr);
     gap: 10px;
     align-items: stretch;
+  }
+
+  .modal-practice-grid {
+    grid-template-columns: minmax(128px, 0.8fr) minmax(0, 1.2fr);
+    gap: 10px;
+  }
+
+  .modal-verb-column,
+  .modal-example-column {
+    grid-column: 1 / -1;
+  }
+
+  .modal-verb-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: none;
+    padding-right: 0;
   }
 
   .adjective-prep-column {
@@ -1410,6 +1516,14 @@
   .adjective-grid .prep-btn {
     padding: 7px 5px;
     font-size: 0.62rem;
+  }
+
+  .modal-practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-verb-list {
+    grid-template-columns: 1fr;
   }
 
   .adjective-focus .english-word {
