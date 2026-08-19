@@ -1074,197 +1074,220 @@ function useShuffledDeck(items) {
   }
 }
 
-const CAN_COULD_SUBJECTS = Object.freeze([
-  { label: 'I', note: 'işi yapan' },
-  { label: 'You', note: 'işi yapan' },
-  { label: 'He', note: 'işi yapan' },
-  { label: 'She', note: 'işi yapan' },
-  { label: 'It', note: 'işi yapan' },
-  { label: 'You', note: 'çoğul / resmi' },
-  { label: 'We', note: 'işi yapan' },
-  { label: 'They', note: 'işi yapan' },
-  { label: 'my sister', note: 'karmaşık tekil özne' },
-  { label: 'the children in Turkey', note: 'karmaşık çoğul özne' },
+const CAN_COULD_BASE_SUBJECTS = Object.freeze([
+  'I',
+  'You',
+  'He',
+  'She',
+  'It',
+  'You',
+  'We',
+  'They',
 ])
 
 const CAN_COULD_VERBS = Object.freeze([
   {
     base: 'sell',
     turkish: 'satmak',
-    examples: [
-      'I can sell my old phone.',
-      "My sister can't sell her car.",
-      'Can you sell these books?',
-      'Why can the children in Turkey sell fresh fruit?',
-      'Where could they sell their house?',
-      "What couldn't he sell?",
+    subjects: ['the shop owner', 'the students at the market'],
+    questions: ['Where can?', "Why can't?", 'When could?', "What couldn't?"],
+    objects: [
+      'my old phone',
+      'fresh fruit',
+      'these books',
+      'a used car',
+      'their house',
+      'handmade bags',
     ],
   },
   {
     base: 'pay',
     turkish: 'ödemek',
-    examples: [
-      'I can pay the bill.',
-      "My sister can't pay the rent.",
-      'Can you pay for the tickets?',
-      'Why can the children in Turkey pay this price?',
-      'Where could they pay the teacher?',
-      "What couldn't he pay?",
+    subjects: ['the customer at the desk', 'the families in the city'],
+    questions: ['How can?', "Why can't?", 'When could?', "How much couldn't?"],
+    objects: [
+      'the bill',
+      'the rent',
+      'for the tickets',
+      'this price',
+      'the teacher',
+      'the tax',
     ],
   },
   {
     base: 'rent',
     turkish: 'kiralamak',
-    examples: [
-      'We can rent a house.',
-      "My sister can't rent a car.",
-      'Can you rent this office?',
-      'Why can the children in Turkey rent a room?',
-      'Where could they rent bikes?',
-      "What couldn't he rent?",
+    subjects: ['the tourist near the station', 'the workers from the factory'],
+    questions: ['Where can?', "Why can't?", 'How long could?', "What couldn't?"],
+    objects: [
+      'a house',
+      'a car',
+      'this office',
+      'a small room',
+      'two bikes',
+      'a hotel room',
     ],
   },
   {
     base: 'start',
     turkish: 'başlamak, başlatmak',
-    examples: [
-      'I can start the lesson.',
-      "My sister can't start the car.",
-      'Can you start a new job?',
-      'Why can the children in Turkey start a club?',
-      'Where could they start the meeting?',
-      "What couldn't he start?",
+    subjects: ['the new teacher', 'the players on the field'],
+    questions: ['When can?', "Why can't?", 'How could?', "What couldn't?"],
+    objects: [
+      'the lesson',
+      'the car',
+      'a new job',
+      'a small club',
+      'the meeting',
+      'this project',
     ],
   },
   {
     base: 'begin',
     turkish: 'başlamak, başlatmak',
     pronunciation: 'bi-gin',
-    examples: [
-      'I can begin the story.',
-      "My sister can't begin the class.",
-      'Can you begin the game?',
-      'Why can the children in Turkey begin a new project?',
-      'Where could they begin the meeting?',
-      "What couldn't he begin?",
+    subjects: ['the speaker on stage', 'the guests in the hall'],
+    questions: ['When can?', "Why can't?", 'How could?', "What couldn't?"],
+    objects: [
+      'the story',
+      'the class',
+      'the game',
+      'a new project',
+      'the meeting',
+      'the ceremony',
     ],
   },
   {
     base: 'end',
     turkish: 'bitirmek, sona erdirmek, sonlandırmak',
-    examples: [
-      'I can end the meeting.',
-      "My sister can't end the conversation.",
-      'Can you end the lesson?',
-      'Why can the children in Turkey end the game?',
-      'Where could they end the argument?',
-      "What couldn't he end?",
+    subjects: ['the manager in the office', 'the teams in the final'],
+    questions: ['When can?', "Why can't?", 'How could?', "What couldn't?"],
+    objects: [
+      'the meeting',
+      'the conversation',
+      'the lesson',
+      'the game',
+      'the argument',
+      'this problem',
     ],
   },
   {
     base: 'finish',
     turkish: 'bitirmek, sona erdirmek, sonlandırmak',
-    examples: [
-      'I can finish the homework.',
-      "My sister can't finish the report.",
-      'Can you finish this book?',
-      'Why can the children in Turkey finish the project?',
-      'Where could they finish the meal?',
-      "What couldn't he finish?",
+    subjects: ['the writer at the cafe', 'the engineers in the office'],
+    questions: ['When can?', "Why can't?", 'How fast could?', "What couldn't?"],
+    objects: [
+      'the homework',
+      'the report',
+      'this book',
+      'the project',
+      'the meal',
+      'the design',
     ],
   },
   {
     base: 'continue',
     turkish: 'devam etmek, sürdürmek',
-    examples: [
-      'I can continue the lesson.',
-      "My sister can't continue the work.",
-      'Can you continue the story?',
-      'Why can the children in Turkey continue the journey?',
-      'Where could they continue the meeting?',
-      "What couldn't he continue?",
+    subjects: ['the driver on the road', 'the musicians on stage'],
+    questions: ['How can?', "Why can't?", 'How long could?', "What couldn't?"],
+    objects: [
+      'the lesson',
+      'the work',
+      'the story',
+      'the journey',
+      'the meeting',
+      'the song',
     ],
   },
   {
     base: 'see',
     turkish: 'görmek',
-    examples: [
-      'He can see you.',
-      "My sister can't see the sea.",
-      'Can you see her teacher?',
-      'Why can the children in Turkey see the stars?',
-      'Where could they see a doctor?',
-      "What couldn't he see?",
+    subjects: ['the little boy near the window', 'the people on the balcony'],
+    questions: ['What can?', "Why can't?", 'Where could?', "Who couldn't?"],
+    objects: [
+      'you',
+      'the sea',
+      'her teacher',
+      'the stars',
+      'a doctor',
+      'the new building',
     ],
   },
   {
     base: 'hear',
     turkish: 'duymak',
-    examples: [
-      'I can hear you.',
-      "My sister can't hear the music.",
-      'Can you hear a strange noise?',
-      'Why can the children in Turkey hear the birds?',
-      'Where could they hear her voice?',
-      "What couldn't he hear?",
+    subjects: ['the old man in the room', 'the children in the classroom'],
+    questions: ['What can?', "Why can't?", 'Where could?', "Who couldn't?"],
+    objects: [
+      'you',
+      'the music',
+      'a strange noise',
+      'the birds',
+      'her voice',
+      'the alarm',
     ],
   },
   {
     base: 'smell',
     turkish: 'koklamak',
     pronunciation: 'si-mel',
-    examples: [
-      'I can smell the flowers.',
-      "My sister can't smell the soup.",
-      'Can you smell fresh bread?',
-      'Why can the children in Turkey smell smoke?',
-      'Where could they smell the perfume?',
-      "What couldn't he smell?",
+    subjects: ['the chef in the kitchen', 'the dogs in the garden'],
+    questions: ['What can?', "Why can't?", 'Where could?', "What couldn't?"],
+    objects: [
+      'the flowers',
+      'the soup',
+      'fresh bread',
+      'smoke',
+      'the perfume',
+      'the coffee',
     ],
   },
   {
     base: 'touch',
     turkish: 'dokunmak',
-    examples: [
-      'He can touch his nose.',
-      "My sister can't touch the hot pan.",
-      'Can you touch the screen?',
-      'Why can the children in Turkey touch the wall?',
-      'Where could they touch the stone?',
-      "What couldn't he touch?",
+    subjects: ['the nurse in the hospital', 'the visitors in the museum'],
+    questions: ['What can?', "Why can't?", 'Where could?', "What couldn't?"],
+    objects: [
+      'his nose',
+      'the hot pan',
+      'the screen',
+      'the wall',
+      'the stone',
+      'my hand',
     ],
   },
   {
     base: 'feel',
     turkish: 'hissetmek',
-    examples: [
-      'I can feel better.',
-      "My sister can't feel the cold wind.",
-      'Can you feel safe?',
-      'Why can the children in Turkey feel happy?',
-      'Where could they feel a sharp pain?',
-      "What couldn't he feel?",
+    subjects: ['the patient in the clinic', 'the runners after the race'],
+    questions: ['How can?', "Why can't?", 'When could?', "What couldn't?"],
+    objects: [
+      'better',
+      'the cold wind',
+      'safe',
+      'happy',
+      'a sharp pain',
+      'the pressure',
     ],
   },
 ])
 
-function buildCanCouldPatterns(baseVerb) {
+function buildCanCouldSubjects(verb) {
+  return [...CAN_COULD_BASE_SUBJECTS, ...verb.subjects]
+}
+
+function buildCanCouldPatterns(verb) {
   return [
-    { label: 'can', text: `subject can ${baseVerb} object` },
-    { label: "can't", text: `subject can't ${baseVerb} object` },
-    { label: 'can ?', text: `Can subject ${baseVerb} object?` },
-    { label: 'why can ?', text: `Why can subject ${baseVerb} object?` },
-    { label: 'where can ?', text: `Where can subject ${baseVerb} object?` },
-    { label: "why can't ?", text: `Why can't subject ${baseVerb} object?` },
-    { label: "who can't ?", text: `Who can't ${baseVerb} object?` },
-    { label: "what can't ?", text: `What can't subject ${baseVerb}?` },
-    { label: 'could', text: `subject could ${baseVerb} object` },
-    { label: "couldn't", text: `subject couldn't ${baseVerb} object` },
-    { label: 'could ?', text: `Could subject ${baseVerb} object?` },
-    { label: 'why could ?', text: `Why could subject ${baseVerb} object?` },
-    { label: 'where could ?', text: `Where could subject ${baseVerb} object?` },
-    { label: "why couldn't ?", text: `Why couldn't subject ${baseVerb} object?` },
-    { label: "what couldn't ?", text: `What couldn't subject ${baseVerb}?` },
+    'can',
+    "can't",
+    'can?',
+    verb.questions[0],
+    verb.questions[1],
+    'could',
+    "couldn't",
+    'could?',
+    verb.questions[2],
+    verb.questions[3],
   ]
 }
 
@@ -2747,7 +2770,8 @@ function CanCouldModalStudy({ onBack, onAction }) {
     )
   }
 
-  const patternRows = buildCanCouldPatterns(currentVerb.base)
+  const subjectRows = buildCanCouldSubjects(currentVerb)
+  const patternRows = buildCanCouldPatterns(currentVerb)
 
   function selectVerb(nextIndex) {
     setVerbIndex(clamp(nextIndex, 0, total - 1))
@@ -2773,7 +2797,7 @@ function CanCouldModalStudy({ onBack, onAction }) {
     <section className="study-shell">
       <HeaderBar
         title="Can Could Modalı"
-        subtitle="Sol iki sütun sabit kalır; ileri dedikçe fiil ve ona bağlı örnekler sırayla değişir."
+        subtitle="İleri dedikçe fiil, karmaşık özneler, soru kalıpları ve nesneler birlikte değişir."
         onBack={onBack}
       />
 
@@ -2781,11 +2805,9 @@ function CanCouldModalStudy({ onBack, onAction }) {
         <article className="drill-column">
           <p className="column-title">1. Sıra: Özne</p>
           <ul className="phrase-list modal-subject-list">
-            {CAN_COULD_SUBJECTS.map((subject, subjectIndex) => (
-              <li key={`${subject.label}-${subjectIndex}`}>
-                <span className="frame">{subjectIndex + 1}. Özne</span>
-                <span className="word">{subject.label}</span>
-                <small>{subject.note}</small>
+            {subjectRows.map((subject, subjectIndex) => (
+              <li key={`${subject}-${subjectIndex}`}>
+                <span className="word">{subject}</span>
               </li>
             ))}
           </ul>
@@ -2795,9 +2817,8 @@ function CanCouldModalStudy({ onBack, onAction }) {
           <p className="column-title">2. Sıra: Can / Could</p>
           <ul className="phrase-list modal-pattern-list">
             {patternRows.map((row) => (
-              <li key={row.label}>
-                <span className="frame">{row.label}</span>
-                <span className="word">{row.text}</span>
+              <li key={row}>
+                <span className="word">{row}</span>
               </li>
             ))}
           </ul>
@@ -2845,12 +2866,11 @@ function CanCouldModalStudy({ onBack, onAction }) {
         </article>
 
         <article className="drill-column modal-example-column">
-          <p className="column-title">4. Sıra: Nesne + Örnek</p>
+          <p className="column-title">4. Sıra: Nesne</p>
           <ul className="phrase-list modal-example-list">
-            {currentVerb.examples.map((example, exampleIndex) => (
-              <li key={example}>
-                <span className="frame">{exampleIndex + 1}. Örnek</span>
-                <span className="word">{example}</span>
+            {currentVerb.objects.map((object) => (
+              <li key={object}>
+                <span className="word">{object}</span>
               </li>
             ))}
           </ul>
