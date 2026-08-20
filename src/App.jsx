@@ -1301,7 +1301,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     turkish: 'ayrılmak / terk etmek / bırakmak',
     pronunciation: 'liiv',
     subjects: ['the tired employee', 'the passengers at the gate'],
-    questions: ['When may?', 'Why may not?', 'How early might?', 'Which place might not?'],
+    questions: ['When may?', 'Why may not?'],
     objects: [
       'the office',
       'the city',
@@ -1316,7 +1316,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     turkish: 'varmak',
     pronunciation: 'e-rayv',
     subjects: ['the morning train', 'the guests from London'],
-    questions: ['When may?', 'Where may not?', 'How late might?', 'Which station might not?'],
+    questions: ['When may?', 'Where may not?'],
     objects: [
       'at the airport',
       'in Ankara',
@@ -1331,7 +1331,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     turkish: 'tırmanmak',
     pronunciation: 'kı-laymb',
     subjects: ['the brave climber', 'the kids in the park'],
-    questions: ['How high may?', 'Why may not?', 'Which mountain might?', 'How fast might not?'],
+    questions: ['How high may?', 'Why may not?'],
     objects: [
       'the mountain',
       'the tree',
@@ -1345,7 +1345,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'use',
     turkish: 'kullanmak',
     subjects: ['the new assistant', 'the workers in the lab'],
-    questions: ['How may?', 'Why may not?', 'Which tool might?', 'How often might not?'],
+    questions: ['How may?', 'Why may not?'],
     objects: [
       'the user guide',
       'the computer',
@@ -1359,7 +1359,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'drive',
     turkish: 'araç kullanmak / sürmek',
     subjects: ['the bus driver', 'the tourists on the coast road'],
-    questions: ['Where may?', 'Why may not?', 'How fast might?', 'Which car might not?'],
+    questions: ['Where may?', 'Why may not?'],
     objects: [
       'a car',
       'the bus',
@@ -1373,7 +1373,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'ride',
     turkish: 'at / motor / bisiklet vb. binmek',
     subjects: ['the young rider', 'the children near the beach'],
-    questions: ['Where may?', 'Why may not?', 'How long might?', 'Which bike might not?'],
+    questions: ['Where may?', 'Why may not?'],
     objects: [
       'a bike',
       'a horse',
@@ -1387,7 +1387,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'meet',
     turkish: 'buluşmak / karşılaşmak / tanışmak / toplanmak / bir araya gelmek',
     subjects: ['the sales team', 'the people in the square'],
-    questions: ['Who may?', 'Where may not?', 'When might?', 'Which group might not?'],
+    questions: ['Who may?', 'Where may not?'],
     objects: [
       'them',
       'Ayse at the bazaar',
@@ -1401,7 +1401,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'show',
     turkish: 'göstermek',
     subjects: ['the museum guide', 'the designers in the studio'],
-    questions: ['What may?', 'Why may not?', 'Who might?', 'Which file might not?'],
+    questions: ['What may?', 'Why may not?'],
     objects: [
       'the map',
       'the new design',
@@ -1415,7 +1415,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'stay',
     turkish: 'kalmak',
     subjects: ['the foreign student', 'the doctors at the hospital'],
-    questions: ['Where may?', 'Why may not?', 'How long might?', 'Which hotel might not?'],
+    questions: ['Where may?', 'Why may not?'],
     objects: [
       'at home',
       'in this hotel',
@@ -1429,7 +1429,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'join',
     turkish: 'katılmak',
     subjects: ['the new player', 'the neighbors on our street'],
-    questions: ['Which team may?', 'Why may not?', 'When might?', 'Which meeting might not?'],
+    questions: ['Which team may?', 'Why may not?'],
     objects: [
       'the team',
       'the meeting',
@@ -1443,7 +1443,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     base: 'enter',
     turkish: 'içeri girmek',
     subjects: ['the security officer', 'the students after lunch'],
-    questions: ['Which room may?', 'Why may not?', 'When might?', 'Which building might not?'],
+    questions: ['Which room may?', 'Why may not?'],
     objects: [
       'the room',
       'the building',
@@ -1458,7 +1458,7 @@ const MAY_MIGHT_VERBS = Object.freeze([
     turkish: 'dışarı çıkmak',
     usageNote: 'OF kullan: get out of the house, get out of the car.',
     subjects: ['the cat under the table', 'the children in the school bus'],
-    questions: ['Which place may?', 'Why may not?', 'When might?', 'Which vehicle might not?'],
+    questions: ['Which place may?', 'Why may not?'],
     objects: [
       'the house',
       'the car',
@@ -1478,7 +1478,7 @@ function buildMayMightPatternGroups(verb) {
     },
     {
       title: 'might',
-      rows: ['might', 'might not', 'might?', verb.questions[2], verb.questions[3]],
+      rows: ['might'],
     },
   ]
 }
