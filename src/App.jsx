@@ -82,6 +82,7 @@ const MODE_LABELS = {
   locationPack: 'Am Is Are Alıştırması',
   adjectivePhrases: 'Sıfat Tamlamaları',
   canCouldModal: 'Can Could Modalı',
+  mayMightModal: 'May Might Modalı',
 }
 const STUDY_MODES = [
   'vocabulary',
@@ -92,6 +93,7 @@ const STUDY_MODES = [
   'locationPack',
   'adjectivePhrases',
   'canCouldModal',
+  'mayMightModal',
 ]
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'modals', 'profile']
@@ -127,6 +129,7 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   locationPack: 0,
   adjectivePhrases: 0,
   canCouldModal: 0,
+  mayMightModal: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
@@ -137,6 +140,7 @@ const EMPTY_MODE_VISITS = Object.freeze({
   locationPack: 0,
   adjectivePhrases: 0,
   canCouldModal: 0,
+  mayMightModal: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -256,6 +260,7 @@ function normalizeModeSeconds(value) {
     locationPack: toSafeNumber(source.locationPack),
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
     canCouldModal: toSafeNumber(source.canCouldModal),
+    mayMightModal: toSafeNumber(source.mayMightModal),
   }
 }
 
@@ -270,6 +275,7 @@ function normalizeModeVisits(value) {
     locationPack: toSafeNumber(source.locationPack),
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
     canCouldModal: toSafeNumber(source.canCouldModal),
+    mayMightModal: toSafeNumber(source.mayMightModal),
   }
 }
 
@@ -1074,7 +1080,7 @@ function useShuffledDeck(items) {
   }
 }
 
-const CAN_COULD_BASE_SUBJECTS = Object.freeze([
+const MODAL_BASE_SUBJECTS = Object.freeze([
   'I',
   'You',
   'He',
@@ -1272,8 +1278,8 @@ const CAN_COULD_VERBS = Object.freeze([
   },
 ])
 
-function buildCanCouldSubjects(verb) {
-  return [...CAN_COULD_BASE_SUBJECTS, ...verb.subjects]
+function buildModalSubjects(verb) {
+  return [...MODAL_BASE_SUBJECTS, ...verb.subjects]
 }
 
 function buildCanCouldPatternGroups(verb) {
@@ -1285,6 +1291,194 @@ function buildCanCouldPatternGroups(verb) {
     {
       title: 'could',
       rows: ['could', "couldn't", 'could?', verb.questions[2], verb.questions[3]],
+    },
+  ]
+}
+
+const MAY_MIGHT_VERBS = Object.freeze([
+  {
+    base: 'leave',
+    turkish: 'ayrılmak / terk etmek / bırakmak',
+    pronunciation: 'liiv',
+    subjects: ['the tired employee', 'the passengers at the gate'],
+    questions: ['When may?', 'Why may not?', 'How early might?', 'Which place might not?'],
+    objects: [
+      'the office',
+      'the city',
+      'the meeting',
+      'the hotel',
+      'the team',
+      'early',
+    ],
+  },
+  {
+    base: 'arrive',
+    turkish: 'varmak',
+    pronunciation: 'e-rayv',
+    subjects: ['the morning train', 'the guests from London'],
+    questions: ['When may?', 'Where may not?', 'How late might?', 'Which station might not?'],
+    objects: [
+      'at the airport',
+      'in Ankara',
+      'at the hotel',
+      'home',
+      'before noon',
+      'late',
+    ],
+  },
+  {
+    base: 'climb',
+    turkish: 'tırmanmak',
+    pronunciation: 'kı-laymb',
+    subjects: ['the brave climber', 'the kids in the park'],
+    questions: ['How high may?', 'Why may not?', 'Which mountain might?', 'How fast might not?'],
+    objects: [
+      'the mountain',
+      'the tree',
+      'the wall',
+      'the stairs',
+      'the ladder',
+      'the hill',
+    ],
+  },
+  {
+    base: 'use',
+    turkish: 'kullanmak',
+    subjects: ['the new assistant', 'the workers in the lab'],
+    questions: ['How may?', 'Why may not?', 'Which tool might?', 'How often might not?'],
+    objects: [
+      'the user guide',
+      'the computer',
+      'our mind',
+      'people',
+      'his power',
+      'the money',
+    ],
+  },
+  {
+    base: 'drive',
+    turkish: 'araç kullanmak / sürmek',
+    subjects: ['the bus driver', 'the tourists on the coast road'],
+    questions: ['Where may?', 'Why may not?', 'How fast might?', 'Which car might not?'],
+    objects: [
+      'a car',
+      'the bus',
+      'a truck',
+      'to the village',
+      'on this road',
+      'the new van',
+    ],
+  },
+  {
+    base: 'ride',
+    turkish: 'at / motor / bisiklet vb. binmek',
+    subjects: ['the young rider', 'the children near the beach'],
+    questions: ['Where may?', 'Why may not?', 'How long might?', 'Which bike might not?'],
+    objects: [
+      'a bike',
+      'a horse',
+      'a motorcycle',
+      'the bus',
+      'the scooter',
+      'along the river',
+    ],
+  },
+  {
+    base: 'meet',
+    turkish: 'buluşmak / karşılaşmak / tanışmak / toplanmak / bir araya gelmek',
+    subjects: ['the sales team', 'the people in the square'],
+    questions: ['Who may?', 'Where may not?', 'When might?', 'Which group might not?'],
+    objects: [
+      'them',
+      'Ayse at the bazaar',
+      'my girlfriend in Sinop',
+      'in the office',
+      'in Taksim on the first of May',
+      'after work',
+    ],
+  },
+  {
+    base: 'show',
+    turkish: 'göstermek',
+    subjects: ['the museum guide', 'the designers in the studio'],
+    questions: ['What may?', 'Why may not?', 'Who might?', 'Which file might not?'],
+    objects: [
+      'the map',
+      'the new design',
+      'her passport',
+      'the answer',
+      'the photos',
+      'the way',
+    ],
+  },
+  {
+    base: 'stay',
+    turkish: 'kalmak',
+    subjects: ['the foreign student', 'the doctors at the hospital'],
+    questions: ['Where may?', 'Why may not?', 'How long might?', 'Which hotel might not?'],
+    objects: [
+      'at home',
+      'in this hotel',
+      'with us',
+      'there',
+      'for two days',
+      'after the meeting',
+    ],
+  },
+  {
+    base: 'join',
+    turkish: 'katılmak',
+    subjects: ['the new player', 'the neighbors on our street'],
+    questions: ['Which team may?', 'Why may not?', 'When might?', 'Which meeting might not?'],
+    objects: [
+      'the team',
+      'the meeting',
+      'the class',
+      'us',
+      'the party',
+      'the project',
+    ],
+  },
+  {
+    base: 'enter',
+    turkish: 'içeri girmek',
+    subjects: ['the security officer', 'the students after lunch'],
+    questions: ['Which room may?', 'Why may not?', 'When might?', 'Which building might not?'],
+    objects: [
+      'the room',
+      'the building',
+      'the classroom',
+      'the garden',
+      'the office',
+      'the hospital',
+    ],
+  },
+  {
+    base: 'get out of',
+    turkish: 'dışarı çıkmak',
+    usageNote: 'OF kullan: get out of the house, get out of the car.',
+    subjects: ['the cat under the table', 'the children in the school bus'],
+    questions: ['Which place may?', 'Why may not?', 'When might?', 'Which vehicle might not?'],
+    objects: [
+      'the house',
+      'the car',
+      'the room',
+      'the taxi',
+      'the bus',
+      'the shop',
+    ],
+  },
+])
+
+function buildMayMightPatternGroups(verb) {
+  return [
+    {
+      title: 'may',
+      rows: ['may', 'may not', 'may?', verb.questions[0], verb.questions[1]],
+    },
+    {
+      title: 'might',
+      rows: ['might', 'might not', 'might?', verb.questions[2], verb.questions[3]],
     },
   ]
 }
@@ -2746,56 +2940,74 @@ function ModalsHub({ onBack, onSelect }) {
             et.
           </p>
         </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('mayMightModal')}>
+          <p className="mode-index">8.2 Alt Çalışma</p>
+          <h2>May Might Modalı</h2>
+          <p>
+            May/might kalıplarını fiile özel karmaşık özneler, soru kalıpları ve nesnelerle çalış.
+          </p>
+        </button>
       </div>
     </section>
   )
 }
 
-function CanCouldModalStudy({ onBack, onAction }) {
+function ModalTableStudy({
+  title,
+  subtitle,
+  emptySubtitle,
+  verbs,
+  modeKey,
+  modalNote,
+  buildPatternGroups,
+  onBack,
+  onAction,
+}) {
   const [verbIndex, setVerbIndex] = useState(0)
-  const total = CAN_COULD_VERBS.length
-  const currentVerb = CAN_COULD_VERBS[verbIndex]
+  const total = verbs.length
+  const currentVerb = verbs[verbIndex]
 
   if (!currentVerb) {
     return (
       <section className="study-shell">
         <HeaderBar
-          title="Can Could Modalı"
-          subtitle="Fiil listesi yüklenemedi."
+          title={title}
+          subtitle={emptySubtitle}
           onBack={onBack}
         />
       </section>
     )
   }
 
-  const subjectRows = buildCanCouldSubjects(currentVerb)
-  const patternGroups = buildCanCouldPatternGroups(currentVerb)
+  const subjectRows = buildModalSubjects(currentVerb)
+  const patternGroups = buildPatternGroups(currentVerb)
 
   function selectVerb(nextIndex) {
     setVerbIndex(clamp(nextIndex, 0, total - 1))
-    onAction('next', 'canCouldModal')
+    onAction('next', modeKey)
   }
 
   function goNextVerb() {
     setVerbIndex((prev) => (prev + 1) % total)
-    onAction('next', 'canCouldModal')
+    onAction('next', modeKey)
   }
 
   function goPrevVerb() {
     setVerbIndex((prev) => (prev - 1 + total) % total)
-    onAction('prev', 'canCouldModal')
+    onAction('prev', modeKey)
   }
 
   function resetVerbOrder() {
     setVerbIndex(0)
-    onAction('shuffle', 'canCouldModal')
+    onAction('shuffle', modeKey)
   }
 
   return (
     <section className="study-shell">
       <HeaderBar
-        title="Can Could Modalı"
-        subtitle="İleri dedikçe fiil, karmaşık özneler, soru kalıpları ve nesneler birlikte değişir."
+        title={title}
+        subtitle={subtitle}
         onBack={onBack}
       />
 
@@ -2836,10 +3048,11 @@ function CanCouldModalStudy({ onBack, onAction }) {
           {currentVerb.pronunciation && (
             <p className="selected-preposition">Okunuş: {currentVerb.pronunciation}</p>
           )}
-          <p className="modal-note">Can/could sonrasında fiil yalın halde kullanılır.</p>
+          <p className="modal-note">{modalNote}</p>
+          {currentVerb.usageNote && <p className="modal-note secondary">{currentVerb.usageNote}</p>}
 
           <ul className="modal-verb-list">
-            {CAN_COULD_VERBS.map((verb, nextIndex) => (
+            {verbs.map((verb, nextIndex) => (
               <li key={verb.base}>
                 <button
                   type="button"
@@ -2882,6 +3095,38 @@ function CanCouldModalStudy({ onBack, onAction }) {
         </article>
       </div>
     </section>
+  )
+}
+
+function CanCouldModalStudy({ onBack, onAction }) {
+  return (
+    <ModalTableStudy
+      title="Can Could Modalı"
+      subtitle="İleri dedikçe fiil, karmaşık özneler, soru kalıpları ve nesneler birlikte değişir."
+      emptySubtitle="Fiil listesi yüklenemedi."
+      verbs={CAN_COULD_VERBS}
+      modeKey="canCouldModal"
+      modalNote="Can/could sonrasında fiil yalın halde kullanılır."
+      buildPatternGroups={buildCanCouldPatternGroups}
+      onBack={onBack}
+      onAction={onAction}
+    />
+  )
+}
+
+function MayMightModalStudy({ onBack, onAction }) {
+  return (
+    <ModalTableStudy
+      title="May Might Modalı"
+      subtitle="May/might ile olasılık ve izin kalıplarını fiile özel özneler ve nesnelerle tekrar et."
+      emptySubtitle="May/might fiil listesi yüklenemedi."
+      verbs={MAY_MIGHT_VERBS}
+      modeKey="mayMightModal"
+      modalNote="May/might sonrasında fiil yalın halde kullanılır."
+      buildPatternGroups={buildMayMightPatternGroups}
+      onBack={onBack}
+      onAction={onAction}
+    />
   )
 }
 
@@ -4406,6 +4651,9 @@ function App() {
         {mode === 'modals' && <ModalsHub onBack={goBack} onSelect={navigateMode} />}
         {mode === 'canCouldModal' && (
           <CanCouldModalStudy onBack={goBack} onAction={trackAction} />
+        )}
+        {mode === 'mayMightModal' && (
+          <MayMightModalStudy onBack={goBack} onAction={trackAction} />
         )}
         {mode === 'profile' && (
           <ProfilePage

@@ -1346,6 +1346,12 @@
   line-height: 1.35;
 }
 
+.modal-note.secondary {
+  border-color: #edd9b7;
+  background: #fff8ea;
+  color: #755323;
+}
+
 .modal-verb-list {
   list-style: none;
   margin: 14px 0 0;
