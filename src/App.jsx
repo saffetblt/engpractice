@@ -83,6 +83,7 @@ const MODE_LABELS = {
   adjectivePhrases: 'Sıfat Tamlamaları',
   canCouldModal: 'Can Could Modalı',
   mayMightModal: 'May Might Modalı',
+  mustHaveToModal: 'Must Have To Modalı',
 }
 const STUDY_MODES = [
   'vocabulary',
@@ -94,6 +95,7 @@ const STUDY_MODES = [
   'adjectivePhrases',
   'canCouldModal',
   'mayMightModal',
+  'mustHaveToModal',
 ]
 const STUDY_MODE_SET = new Set(STUDY_MODES)
 const MODES = ['home', ...STUDY_MODES, 'modals', 'profile']
@@ -130,6 +132,7 @@ const EMPTY_MODE_SECONDS = Object.freeze({
   adjectivePhrases: 0,
   canCouldModal: 0,
   mayMightModal: 0,
+  mustHaveToModal: 0,
 })
 const EMPTY_MODE_VISITS = Object.freeze({
   vocabulary: 0,
@@ -141,6 +144,7 @@ const EMPTY_MODE_VISITS = Object.freeze({
   adjectivePhrases: 0,
   canCouldModal: 0,
   mayMightModal: 0,
+  mustHaveToModal: 0,
 })
 
 function getDateKey(date = new Date()) {
@@ -261,6 +265,7 @@ function normalizeModeSeconds(value) {
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
     canCouldModal: toSafeNumber(source.canCouldModal),
     mayMightModal: toSafeNumber(source.mayMightModal),
+    mustHaveToModal: toSafeNumber(source.mustHaveToModal),
   }
 }
 
@@ -276,6 +281,7 @@ function normalizeModeVisits(value) {
     adjectivePhrases: toSafeNumber(source.adjectivePhrases),
     canCouldModal: toSafeNumber(source.canCouldModal),
     mayMightModal: toSafeNumber(source.mayMightModal),
+    mustHaveToModal: toSafeNumber(source.mustHaveToModal),
   }
 }
 
@@ -1479,6 +1485,143 @@ function buildMayMightPatternGroups(verb) {
     {
       title: 'might',
       rows: ['might'],
+    },
+  ]
+}
+
+const MUST_HAVE_TO_VERBS = Object.freeze([
+  {
+    base: 'understand',
+    turkish: 'anlamak',
+    subjects: ['the new student', 'the people in the meeting'],
+    questions: ['Why must?', 'What must?', 'When do/does have to?', 'Why do/does have to?'],
+    objects: [
+      'the question',
+      'this rule',
+      'the problem',
+      'her accent',
+      'the instructions',
+      'the truth',
+    ],
+  },
+  {
+    base: 'take',
+    turkish: 'almak / götürmek',
+    subjects: ['the delivery driver', 'the parents after school'],
+    questions: ['What must?', 'Where must?', 'When do/does have to?', 'What do/does have to?'],
+    objects: [
+      'the bus',
+      'this book',
+      'her bag',
+      'the kids to school',
+      'medicine',
+      'a break',
+    ],
+  },
+  {
+    base: 'bring',
+    turkish: 'getirmek',
+    subjects: ['the waiter in the cafe', 'the guests from Izmir'],
+    questions: ['What must?', 'Where must?', 'When do/does have to?', 'Who do/does have to?'],
+    objects: [
+      'the documents',
+      'your passport',
+      'some food',
+      'the keys',
+      'coffee',
+      'the children home',
+    ],
+  },
+  {
+    base: 'tidy',
+    turkish: 'düzenlemek / tertiplemek',
+    pronunciation: 'tay-di',
+    subjects: ['the hotel cleaner', 'the kids after the party'],
+    questions: ['What must?', 'Why must?', 'When do/does have to?', 'Which room do/does have to?'],
+    objects: [
+      'the room',
+      'the desk',
+      'the kitchen',
+      'the files',
+      'the garage',
+      'the classroom',
+    ],
+  },
+  {
+    base: 'smoke',
+    turkish: 'sigara içmek',
+    subjects: ['the man near the door', 'the workers during the break'],
+    questions: ['Where must?', 'Why must not?', 'Where do/does have to?', 'When do/does have to?'],
+    objects: [
+      'outside',
+      'in the garden',
+      'after dinner',
+      'near the door',
+      'in this area',
+      'during the break',
+    ],
+  },
+  {
+    base: 'call',
+    turkish: 'aramak / çağırmak / seslenmek',
+    subjects: ['the receptionist', 'the neighbors downstairs'],
+    questions: ['Who must?', 'Why must?', 'When do/does have to?', 'Who do/does have to?'],
+    objects: [
+      'me',
+      'the doctor',
+      'his mother',
+      'the police',
+      'Ali',
+      'the office',
+    ],
+  },
+  {
+    base: 'find',
+    turkish: 'bulmak',
+    pronunciation: 'faynd',
+    subjects: ['the detective', 'the students in the library'],
+    questions: ['What must?', 'Where must?', 'When do/does have to?', 'What do/does have to?'],
+    objects: [
+      'the keys',
+      'a new job',
+      'the address',
+      'her phone',
+      'the answer',
+      'a hotel',
+    ],
+  },
+  {
+    base: 'lose',
+    turkish: 'kaybetmek',
+    pronunciation: 'luuz',
+    subjects: ['the young player', 'the tourists in the old city'],
+    questions: ['What must not?', 'Why must not?', 'When do/does have to?', 'What do/does have to?'],
+    objects: [
+      'the keys',
+      'money',
+      'the game',
+      'his phone',
+      'their way',
+      'this document',
+    ],
+  },
+])
+
+function buildMustHaveToPatternGroups(verb) {
+  return [
+    {
+      title: 'must',
+      rows: ['must', "mustn't", 'must?', verb.questions[0], verb.questions[1]],
+    },
+    {
+      title: 'have to',
+      rows: [
+        'have to / has to',
+        "don't have to / doesn't have to",
+        'do/does have to?',
+        verb.questions[2],
+        verb.questions[3],
+      ],
     },
   ]
 }
@@ -2948,6 +3091,14 @@ function ModalsHub({ onBack, onSelect }) {
             May/might kalıplarını fiile özel karmaşık özneler, soru kalıpları ve nesnelerle çalış.
           </p>
         </button>
+
+        <button type="button" className="mode-card" onClick={() => onSelect('mustHaveToModal')}>
+          <p className="mode-index">8.3 Alt Çalışma</p>
+          <h2>Must Have To Modalı</h2>
+          <p>
+            Zorunluluk kalıplarını must ve have to/has to ayrımıyla fiile özel tekrar et.
+          </p>
+        </button>
       </div>
     </section>
   )
@@ -3124,6 +3275,22 @@ function MayMightModalStudy({ onBack, onAction }) {
       modeKey="mayMightModal"
       modalNote="May/might sonrasında fiil yalın halde kullanılır."
       buildPatternGroups={buildMayMightPatternGroups}
+      onBack={onBack}
+      onAction={onAction}
+    />
+  )
+}
+
+function MustHaveToModalStudy({ onBack, onAction }) {
+  return (
+    <ModalTableStudy
+      title="Must Have To Modalı"
+      subtitle="Must ve have to/has to zorunluluk kalıplarını fiile özel özneler ve nesnelerle tekrar et."
+      emptySubtitle="Must/have to fiil listesi yüklenemedi."
+      verbs={MUST_HAVE_TO_VERBS}
+      modeKey="mustHaveToModal"
+      modalNote="Must ve have to/has to sonrasında fiil yalın halde kullanılır."
+      buildPatternGroups={buildMustHaveToPatternGroups}
       onBack={onBack}
       onAction={onAction}
     />
@@ -4654,6 +4821,9 @@ function App() {
         )}
         {mode === 'mayMightModal' && (
           <MayMightModalStudy onBack={goBack} onAction={trackAction} />
+        )}
+        {mode === 'mustHaveToModal' && (
+          <MustHaveToModalStudy onBack={goBack} onAction={trackAction} />
         )}
         {mode === 'profile' && (
           <ProfilePage

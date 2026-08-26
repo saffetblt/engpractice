@@ -14,6 +14,7 @@ English speaking and vocabulary practice app built with React + Vite.
 8. Modal practice
    - Can/could modal table practice
    - May/might modal table practice
+   - Must/have to modal table practice
 
 ## Local Development
 
