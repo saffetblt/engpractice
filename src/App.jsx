@@ -1494,7 +1494,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     base: 'understand',
     turkish: 'anlamak',
     subjects: ['the new student', 'the people in the meeting'],
-    questions: ['Why must?', 'What must?', 'When do/does have to?', 'Why do/does have to?'],
+    questions: ['When do/does have to?', 'Why do/does have to?'],
     objects: [
       'the question',
       'this rule',
@@ -1508,7 +1508,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     base: 'take',
     turkish: 'almak / götürmek',
     subjects: ['the delivery driver', 'the parents after school'],
-    questions: ['What must?', 'Where must?', 'When do/does have to?', 'What do/does have to?'],
+    questions: ['When do/does have to?', 'What do/does have to?'],
     objects: [
       'the bus',
       'this book',
@@ -1522,7 +1522,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     base: 'bring',
     turkish: 'getirmek',
     subjects: ['the waiter in the cafe', 'the guests from Izmir'],
-    questions: ['What must?', 'Where must?', 'When do/does have to?', 'Who do/does have to?'],
+    questions: ['When do/does have to?', 'Who do/does have to?'],
     objects: [
       'the documents',
       'your passport',
@@ -1537,7 +1537,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     turkish: 'düzenlemek / tertiplemek',
     pronunciation: 'tay-di',
     subjects: ['the hotel cleaner', 'the kids after the party'],
-    questions: ['What must?', 'Why must?', 'When do/does have to?', 'Which room do/does have to?'],
+    questions: ['When do/does have to?', 'Which room do/does have to?'],
     objects: [
       'the room',
       'the desk',
@@ -1551,7 +1551,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     base: 'smoke',
     turkish: 'sigara içmek',
     subjects: ['the man near the door', 'the workers during the break'],
-    questions: ['Where must?', 'Why must not?', 'Where do/does have to?', 'When do/does have to?'],
+    questions: ['Where do/does have to?', 'When do/does have to?'],
     objects: [
       'outside',
       'in the garden',
@@ -1565,7 +1565,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     base: 'call',
     turkish: 'aramak / çağırmak / seslenmek',
     subjects: ['the receptionist', 'the neighbors downstairs'],
-    questions: ['Who must?', 'Why must?', 'When do/does have to?', 'Who do/does have to?'],
+    questions: ['When do/does have to?', 'Who do/does have to?'],
     objects: [
       'me',
       'the doctor',
@@ -1580,7 +1580,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     turkish: 'bulmak',
     pronunciation: 'faynd',
     subjects: ['the detective', 'the students in the library'],
-    questions: ['What must?', 'Where must?', 'When do/does have to?', 'What do/does have to?'],
+    questions: ['When do/does have to?', 'What do/does have to?'],
     objects: [
       'the keys',
       'a new job',
@@ -1595,7 +1595,7 @@ const MUST_HAVE_TO_VERBS = Object.freeze([
     turkish: 'kaybetmek',
     pronunciation: 'luuz',
     subjects: ['the young player', 'the tourists in the old city'],
-    questions: ['What must not?', 'Why must not?', 'When do/does have to?', 'What do/does have to?'],
+    questions: ['When do/does have to?', 'What do/does have to?'],
     objects: [
       'the keys',
       'money',
@@ -1611,7 +1611,7 @@ function buildMustHaveToPatternGroups(verb) {
   return [
     {
       title: 'must',
-      rows: ['must', "mustn't", 'must?', verb.questions[0], verb.questions[1]],
+      rows: ['must', "mustn't"],
     },
     {
       title: 'have to',
@@ -1619,8 +1619,8 @@ function buildMustHaveToPatternGroups(verb) {
         'have to / has to',
         "don't have to / doesn't have to",
         'do/does have to?',
-        verb.questions[2],
-        verb.questions[3],
+        verb.questions[0],
+        verb.questions[1],
       ],
     },
   ]
